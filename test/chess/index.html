@@ -11,17 +11,33 @@
         integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
         crossorigin="anonymous"></script>
 <script src="./chess.js"></script>
+<style type="text/css">
+.highlight-white {
+  box-shadow: inset 0 0 3px 3px yellow;
+}
+.highlight-black {
+  box-shadow: inset 0 0 3px 3px blue;
+}
+</style>
 </head>
 <body>
 	<div id="myBoard" style="width: 400px"></div>
 </body>
 
 <script>
-	// NOTE: this example uses the chess.js library:
+// NOTE: this example uses the chess.js library:
 // https://github.com/jhlywa/chess.js
 
-var board = null;
-var game = new Chess();
+var board = null
+var $board = $('#myBoard')
+var game = new Chess()
+var squareToHighlight = null
+var squareClass = 'square-55d63'
+
+function removeHighlights (color) {
+  $board.find('.' + squareClass)
+    .removeClass('highlight-' + color)
+}
 
 function onDragStart (source, piece, position, orientation) {
   // do not pick up pieces if the game is over
@@ -32,14 +48,24 @@ function onDragStart (source, piece, position, orientation) {
 }
 
 function makeRandomMove () {
-  var possibleMoves = game.moves();
+  var possibleMoves = game.moves({
+    verbose: true
+  })
 
   // game over
-  if (possibleMoves.length === 0) return;
+  if (possibleMoves.length === 0) return
 
-  var randomIdx = Math.floor(Math.random() * possibleMoves.length);
-  game.move(possibleMoves[randomIdx]);
-  board.position(game.fen());
+  var randomIdx = Math.floor(Math.random() * possibleMoves.length)
+  var move = possibleMoves[randomIdx]
+  game.move(move.san)
+
+  // highlight black's move
+  removeHighlights('black')
+  $board.find('.square-' + move.from).addClass('highlight-black')
+  squareToHighlight = move.to
+
+  // update the board to the new position
+  board.position(game.fen())
 }
 
 function onDrop (source, target) {
@@ -48,19 +74,29 @@ function onDrop (source, target) {
     from: source,
     to: target,
     promotion: 'q' // NOTE: always promote to a queen for example simplicity
-  });
+  })
 
   // illegal move
-  if (move === null) return 'snapback';
+  if (move === null) return 'snapback'
 
-  // make random legal move for black
-  window.setTimeout(makeRandomMove, 250);
+  // highlight white's move
+  removeHighlights('white')
+  $board.find('.square-' + source).addClass('highlight-white')
+  $board.find('.square-' + target).addClass('highlight-white')
+
+  // make random move for black
+  window.setTimeout(makeRandomMove, 250)
+}
+
+function onMoveEnd () {
+  $board.find('.square-' + squareToHighlight)
+    .addClass('highlight-black')
 }
 
 // update the board position after the piece snap
 // for castling, en passant, pawn promotion
 function onSnapEnd () {
-  board.position(game.fen());
+  board.position(game.fen())
 }
 
 var config = {
@@ -68,7 +104,8 @@ var config = {
   position: 'start',
   onDragStart: onDragStart,
   onDrop: onDrop,
+  onMoveEnd: onMoveEnd,
   onSnapEnd: onSnapEnd
 }
-board = Chessboard('myBoard', config);
+board = Chessboard('myBoard', config)
 </script>
