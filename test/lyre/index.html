@@ -42,14 +42,35 @@ copy paste a melody in the text area or compose a melody on your own.
 
 </pre>
 	<textarea id="songarea">
-		H J {vnafQ} | Q W {msgJ} | QJH | G (Dn)a (jw)
-		 | {nadhq}
-		H J (Qv)a (Js) (Ha) (Hb)msgjw (Gm)
+v a q g v a q f v a q g v a q f c a q g c a q f c a q g c a q f
+
+x a q g x a q f x a q g x a q f c a q g c a q f c a q g c a q f
+
+v a q (~gh) v a q f v a q (~gh) v a q f c a q (~gh) c a q f c a q (~gh) c a q f
+
+x a q (~gh) x a q f x a q (~gh) x a q f x n q (~gh) x n q f z a q (~gh) z a q f
+
+x n q (~gh) x n q f c b q (~gh) c n q f
+
+[tv]rq gfa trq gfa ytq gfa rwq gfq [tc]rq gfa trq gfa ytq gfa rwq gfw
+
+[tx]rq gfa trq gfa ytq gfa rwq gfq [tc]rq gfa trq gfa ytq gfa rwq gfw
+
+[tgv] [tg]rq [yh]rq [rf]wq [tgc] [tg]rq [yh]rq [rf]wq
+
+[tgx] [tg]rq [yh]rq [rf]wq [tgc] [tg]rq [yh]rq [rf]wq
+
+(~vnah) q t h q r h q t h q r... (~cnah) q t h q r h q t h q r...
+
+(~xnah) q t h q r h q t h q r... (~cnah) q t h q r h q t h q r... 
+
+(~fghqr)
 	</textarea>
-	<input type="button" id="playsongareafast" value="play song fast"/>
-	<input type="button" id="playsongareaslow" value="play song slow"/>
-	<input type="button" id="playsongareanumbers" value="play song with numbers"/>
-	<input type="button" id="playsongareaspace" value="play song wait for space"/>
+	bpm: <input type="number" id="tempo" value="116"/>
+	<!-- <input type="button" id="playsongareafast" value="play song fast"/> -->
+	<input type="button" id="playsongareaslow" value="play song (bpm timing)"/>
+	<input type="button" id="playsongareanumbers" value="play song (number timing)"/>
+	<input type="button" id="playsongareaspace" value="play song (keypress timing)"/>
 	<input type="button" id="playsongareastop" value="stop playing"/>
 	<textarea id="outputarea">
 	</textarea>
@@ -148,8 +169,8 @@ copy paste a melody in the text area or compose a melody on your own.
 		console.log(waitforspace.keys[waitforspace.i], timeleng);
 		playSound(waitforspace.keys[waitforspace.i]);
 
-		if(timeleng > 260)  {
-			$('#outputarea').val($('#outputarea').val()+" ");
+		if(timeleng > tempo)  {
+			$('#outputarea').val($('#outputarea').val()+".".repeat(Math.floor(timeleng/tempo)));
 		}
 		$('#outputarea').val($('#outputarea').val()+waitforspace.keys[waitforspace.i]);
 		waitforspace.i++;
@@ -185,8 +206,9 @@ copy paste a melody in the text area or compose a melody on your own.
 				console.log(gathered);
 				var timeleng = (Date.now() - timestart);
 
-				if(timeleng > 260) {
-					$('#outputarea').val($('#outputarea').val()+" ");
+				if(timeleng > tempo) {
+
+					$('#outputarea').val($('#outputarea').val()+".".repeat(Math.ceil(timeleng/tempo)));
 				}
 
 				$('#outputarea').val($('#outputarea').val()+'{'+gathered.join('')+'}');
@@ -276,22 +298,29 @@ copy paste a melody in the text area or compose a melody on your own.
 		keys: [],
 		i: 0,
 	};
-	var delays = [260,600,100];
+
+	var bpm = $('#tempo').val()*1; //4/4
+	var tempo = 60000/bpm/4;
+	var delays = [tempo,tempo,(tempo/2)];
 	var stopPlaying = false;
 
+	$('#tempo').change(function(){
+		var bpm = $(this).val()*1;
+		tempo = 60000/bpm/4;
+		delays = [tempo,tempo,(tempo/2)];
+	});
 	$('#playsongareanumbers').on('click', function(){
 		stopPlaying = true; 
 		waitforspace.enable = false;
 		setTimeout(playSongNumbers,1000);
 	});
 	$('#playsongareafast').on('click', function(){
-		delays[0] = 130; delays[1] = 300; delays[2] = 50;
+		delays = [129,129,50];
 		stopPlaying = true; 
 		waitforspace.enable = false;
 		setTimeout(playSong,1000);
 	});
 	$('#playsongareaslow').on('click', function(){
-		delays = [260,260,100];
 		stopPlaying = true; 
 		waitforspace.enable = false;
 		setTimeout(playSong,1000);
@@ -324,7 +353,7 @@ copy paste a melody in the text area or compose a melody on your own.
 
 		var keys = pasedMult
 		.toLowerCase()
-		.replaceAll(/[',\|\s]+/g, '')
+		.replaceAll(/['\.,\|\s]+/g, '')
 		.trim()
 		.split('');
 		console.log(keys);
@@ -378,6 +407,10 @@ copy paste a melody in the text area or compose a melody on your own.
 				temp.push(p1);
 			}
 			return temp.join('');
+		});
+
+		pasedMult = pasedMult.replace(/(\(\~)(\w+)(\))/g, function(match, p1, p2, p3, offset, string) {
+			return ['{',p2,'}'].join('');
 		});
 
 		console.log(pasedMult);
