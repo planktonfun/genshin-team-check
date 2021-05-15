@@ -41,7 +41,34 @@ Put melody in the text area and press the button play song fast or play song slo
 copy paste a melody in the text area or compose a melody on your own.
 
 </pre>
-	<textarea id="songarea">
+
+<div> Orchestra:
+	<ul class="generated">
+		<li>
+			<textarea id="songarea-2"></textarea>
+			bpm:<input type="number" id="tempo-2" value="116"/>
+			<input type="button" class="playsongarea" pid="2" value="play"/>
+			<input type="button" class="stopplaying" pid="2" value="stop"/>
+		</li>
+	</ul>
+	<input type="button" id="add-more" value="add-more"/>
+	<script>
+		var o_index = 2;
+		$('#add-more').click(function(){
+			o_index++;
+			$('.generated').append(`
+				<li>
+					<textarea id="songarea-${ o_index }"></textarea>
+					bpm:<input type="number" id="tempo-${ o_index }" value="116"/>
+					<input type="button" class="playsongarea" pid="${ o_index }" value="play"/>
+					<input type="button" class="stopplaying" pid="${ o_index }" value="stop"/>
+				</li>
+			`);
+		});
+	</script>
+</div>
+
+<textarea id="songarea">
 v a q g v a q f v a q g v a q f c a q g c a q f c a q g c a q f
 
 x a q g x a q f x a q g x a q f c a q g c a q f c a q g c a q f
@@ -304,6 +331,12 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 	var delays = [tempo,tempo,(tempo/2)];
 	var stopPlaying = false;
 
+	function getTempo(ide) {
+		var bpm = $(ide).val()*1;
+		var tempo = 60000/bpm/4;
+		return [tempo,tempo,(tempo/2)];
+	}
+
 	$('#tempo').change(function(){
 		var bpm = $(this).val()*1;
 		tempo = 60000/bpm/4;
@@ -325,6 +358,17 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 		waitforspace.enable = false;
 		setTimeout(playSong,1000);
 	});
+
+	var players = {};
+
+	$(document).on('click', '.playsongarea', function(){
+		players[$(this).attr('pid')] = new PlayerObject('#songarea-' + $(this).attr('pid'), getTempo('#tempo-' + $(this).attr('pid')));
+		players[$(this).attr('pid')].play();
+	});
+	$(document).on('click', '.stopplaying', function(){
+		players[$(this).attr('pid')].stop();
+	});
+
 	$('#playsongareastop').on('click', function(){
 		stopPlaying = true; 
 		waitforspace.enable = false;
@@ -339,7 +383,7 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 
 	function waitForKey(){
 		waitforspace.enable = true;
-		stopPlaying = false; 
+		stopPlaying = false;
 		// parse the multipliers
 		var pasedMult = $('#songarea').val().replace(/(\(\w+\)|\w|[ \w]+)x(\d+)/g, function(match, p1, p2, offset, string) {
 			var temp = [];
@@ -362,7 +406,7 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 	}
 
 	function playSongNumbers(){
-		stopPlaying = false; 
+		stopPlaying = false;
 		var keys = $('#songarea').val()
 		.toLowerCase()
 		.replaceAll("↵", ' ')
@@ -396,7 +440,7 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 		})(keys);
 	}
 
-	function playSong(){
+	function playSong() {
 		// 260
 		// 600
 		stopPlaying = false; 
@@ -484,5 +528,100 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 
 		    })(zerodelay, fastdelay);
 		})(keys);
+	};
+
+	var PlayerObject = function(areaId, delays) {
+		this.stop = function() {
+			this.stopPlayingObj = true;
+		};
+
+		this.delays = JSON.parse(JSON.stringify(delays));
+		// parse the multipliers
+		var pasedMult = $(areaId).val().replace(/(\(\w+\)|\w|[ \w]+)x(\d+)/g, function(match, p1, p2, offset, string) {
+			var temp = [];
+			for (var i = 0; i < p2; i++) {
+				temp.push(p1);
+			}
+			return temp.join('');
+		});
+
+		pasedMult = pasedMult.replace(/(\(\~)(\w+)(\))/g, function(match, p1, p2, p3, offset, string) {
+			return ['{',p2,'}'].join('');
+		});
+
+		console.log(pasedMult);
+
+		this.keys = pasedMult
+		.toLowerCase()
+		.replaceAll("↵", ' ')
+		.replaceAll('\n\t\t', ' ')
+		.replaceAll('\t\t', ' ')
+		.replaceAll('\n', ' ')
+		.replaceAll('  ', ' ')
+		.trim()
+		.split('');
+
+		this.play = function() {
+			(function(keys, parent){
+				var i = 0;
+				var zerodelay = false;
+				var fastdelay = false;
+			    (function k(zerodelay, fastdelay){
+
+			        switch(keys[i]) {
+						case "{":
+							fastdelay = true;
+						break;
+						case "}":
+							fastdelay = false;
+						break;
+						case "[":
+						case "(":
+							zerodelay = true;
+						break;
+						case "]":
+						case ")":
+							zerodelay = false;
+						break;
+					}
+
+					console.log(keys[i],{zerodelay},{fastdelay});
+
+					var delay = parent.delays[0];
+					if(fastdelay) delay = parent.delays[2];
+					if(zerodelay) delay = 10;
+
+					switch(keys[i]) {
+						case "[":
+						case "]":
+						case "(":
+						case ")":
+						break;
+						case ",":
+						case ".":
+						case "|":
+						case "↵":
+						case " ":
+						case "\n":
+						case "\t":
+							delay = parent.delays[1];
+						break;
+						default:
+							playSound(keys[i]);
+						break;
+					}
+
+					if(parent.stopPlayingObj == true) {
+						parent.stopPlayingObj = false;
+						return;
+					}
+					i++;
+			        if(i < keys.length) {
+			        	setTimeout(()=>{k(zerodelay,fastdelay);}, delay );
+			        }
+
+			    })(zerodelay, fastdelay);
+			})(this.keys, this);
+		};
 	};
 </script>
