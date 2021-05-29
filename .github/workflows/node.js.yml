@@ -1,33 +1,38 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: Node.js CI
-
+# This workflow will do a screen shot from the url provided
+# For more information see: https://github.com/marketplace/actions/screenshots-ci-action
+name: screenshots ci actions
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+    - main
 
-defaults:
-  run:
-    working-directory: ./pau-app
 jobs:
-  build:
-
+  screenshots:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+    - name: install puppeteer-headful
+      uses: mujo-code/puppeteer-headful@master
+      env:
+        CI: 'true'
+    - name: screenshots-desktop-facebook
+      uses: flameddd/screenshots-ci-action@v1.1.1
       with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run e2e
-    - run: npm test
+        url: http://dev-trademark.s3-website-ap-southeast-2.amazonaws.com/
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Download-desktop-screenshots
+        path: screenshots
+    - run: rm ./screenshots/*
+
+    - name: screenshots-mobile-facebook
+      uses: flameddd/screenshots-ci-action@v1.1.1
+      with:
+        url: http://dev-trademark.s3-website-ap-southeast-2.amazonaws.com/
+        devices: iPhone 6,iPhone 6 landscape
+        noDesktop: true
+    - uses: actions/upload-artifact@v2
+      with:
+        path: screenshots
+        name: Download-mobile-screenshots
+    - run: rm ./screenshots/*
