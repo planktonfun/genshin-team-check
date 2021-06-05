@@ -7,12 +7,19 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
         crossorigin="anonymous"></script>
+    <style type="text/css" media="screen">
+    	textarea {
+    		height: 120px;
+    		width: 520px;
+    	}
+    </style>
 </head>
 <body>
-	<pre>
+<pre>
 Note:
 You can play notes here 
 just press any QWERTYUASDFGHJZXCVBNM within this web page.
+BPM is wonky, adjust it to make it sound right (dunno the maths to compute bpm)
 (doesn't work with mobile and safar browsers)
 
 Reading Keymaps:
@@ -21,86 +28,85 @@ Keyboard (QWERTY) Notation
 
 e.g.	G | A DH G | A DH G | A Q
 
-UPPERCASE		main melody
-lowercase			bass/harmony
+UPPERCASE                   main melody
+lowercase                   bass/harmony
 
-pipe |				pause
-ellipses …			pause longer (about one bar)
-spaced notes (e.g. A S D)	approx. one beat each
-joined notes (e.g. ASD)	play quickly
-brackets ()			play notes at the same time
-curly brackets {}		play notes at the same time, but with a tiny delay between 
-				notes (arpeggio)
-1. / 2.				play verse with 1. the first time,
-				then repeat verse with 2. the second time
-slashes // and arrow →	repeat the notes quickly and end on the note after the arrow (e.g. Q//A → Q) (tremolo)
-
-Using the player:
-Put melody in the text area and press the button play song fast or play song slow.
-
-copy paste a melody in the text area or compose a melody on your own.
+pipe |                      pause
+ellipses …                  pause longer (about one bar)
+spaced notes (e.g. A S D)   approx. one beat each
+joined notes (e.g. ASD)     play quickly
+brackets ()                 play notes at the same time
+curly brackets {}           play notes at the same time, but with a tiny delay between 
+                            notes (arpeggio)
+hyphens -                   grouping notes for readability; play as usual
+tilde ~                     wait half a beat before playing next note ("swing")
+1. / 2.                     play verse with 1. the first time,
+                            then repeat verse with 2. the second time
+slashes // and arrow →      repeat the notes quickly and end on the note after the arrow
+(e.g. Q//A → Q)             (tremolo)
 
 </pre>
 
 <div> Orchestra:
 	<ul class="generated">
 		<li>
-			<textarea id="songarea-2"></textarea>
-			bpm:<input type="number" id="tempo-2" value="116"/>
-			<input type="button" class="playsongarea" pid="2" value="play"/>
-			<input type="button" class="stopplaying" pid="2" value="stop"/>
+			<textarea id="songarea">
+[DN] {EEE} W Q [JB] Q W [JB] G  
+[NC] {EEE} W Q [JB] Q T [EA]    
+[NX] {EEE} W Q [JN] Q W [JB] G  
+[HV] J Q Q [QN] J H [HC] [JMC] 
+
+[DN] N {EE[EN]} W Q [JB] Q W [JB] G 
+[NC] C {EE[EC]} W Q [JB] Q T [EA] W Q 
+[SFN] N {EE[EN]} W Q [JB] Q W [JB] T 
+[YSV] V V [RM] [TM] [YM] [UEC] [UEC] [UEC] [UEC] H J 
+
+[QHV] V {VV} V V [GSB] B {QW[JS]} [HX] G  
+[DN] N J [JN] C N [SB] [SB] [DN] G H J 
+[QHV] V ({VV}) V V [GSB] B {QW[JS]} [HX] G 
+[HND] N [EC] [EC] C [HN] [QA] [WS] [EN] 
+
+[DN] {EEE} W Q [JB] Q W [JB] G 
+C {WWW} Q J [JB] Q T [EA] W Q 
+[SN] {HHH} D H [JC] Q W [JC] Q W [JN] {HG[DN]} 
+E E E
+[EDC] [WS] [QA] [HN] cbm [WS] [TG] [UJ] {nadh}
+			</textarea>
+			bpm: <input type="number" id="tempo" value="80"/>
+			<input type="button" id="playsongareaslow" value="play"/>
+			<input type="button" id="playsongareastop" value="stop"/>
 		</li>
 	</ul>
 	<input type="button" id="add-more" value="add-more"/>
+	<input type="button" id="remove-last" value="remove-last"/>
+	<!-- <input type="button" id="playsongareanumbers" value="play by numbers"/> -->
+	<!-- <input type="button" id="playsongareaspace" value="play by key press"/> -->
 	<script>
-		var o_index = 2;
-		$('#add-more').click(function(){
+		var o_index = 1;
+
+		function addMore(textData, bpmData) {
 			o_index++;
 			$('.generated').append(`
 				<li>
-					<textarea id="songarea-${ o_index }"></textarea>
-					bpm:<input type="number" id="tempo-${ o_index }" value="116"/>
+					<textarea id="songarea-${ o_index }">${textData}</textarea>
+					bpm:<input type="number" id="tempo-${ o_index }" value="${bpmData}"/>
 					<input type="button" class="playsongarea" pid="${ o_index }" value="play"/>
 					<input type="button" class="stopplaying" pid="${ o_index }" value="stop"/>
 				</li>
 			`);
+		}
+
+		$('#add-more').click(function(){ addMore("", 80); });
+		$('#remove-last').click(function(){
+			$('.generated li:last').remove();
 		});
 	</script>
 </div>
-
-<textarea id="songarea">
-v a q g v a q f v a q g v a q f c a q g c a q f c a q g c a q f
-
-x a q g x a q f x a q g x a q f c a q g c a q f c a q g c a q f
-
-v a q (~gh) v a q f v a q (~gh) v a q f c a q (~gh) c a q f c a q (~gh) c a q f
-
-x a q (~gh) x a q f x a q (~gh) x a q f x n q (~gh) x n q f z a q (~gh) z a q f
-
-x n q (~gh) x n q f c b q (~gh) c n q f
-
-[tv]rq gfa trq gfa ytq gfa rwq gfq [tc]rq gfa trq gfa ytq gfa rwq gfw
-
-[tx]rq gfa trq gfa ytq gfa rwq gfq [tc]rq gfa trq gfa ytq gfa rwq gfw
-
-[tgv] [tg]rq [yh]rq [rf]wq [tgc] [tg]rq [yh]rq [rf]wq
-
-[tgx] [tg]rq [yh]rq [rf]wq [tgc] [tg]rq [yh]rq [rf]wq
-
-(~vnah) q t h q r h q t h q r... (~cnah) q t h q r h q t h q r...
-
-(~xnah) q t h q r h q t h q r... (~cnah) q t h q r h q t h q r... 
-
-(~fghqr)
-	</textarea>
-	bpm: <input type="number" id="tempo" value="116"/>
-	<!-- <input type="button" id="playsongareafast" value="play song fast"/> -->
-	<input type="button" id="playsongareaslow" value="play song (bpm timing)"/>
-	<input type="button" id="playsongareanumbers" value="play song (number timing)"/>
-	<input type="button" id="playsongareaspace" value="play song (keypress timing)"/>
-	<input type="button" id="playsongareastop" value="stop playing"/>
-	<textarea id="outputarea">
-	</textarea>
+<br>
+<!-- <div>
+	Output:<br>
+	<textarea id="outputarea" readonly></textarea>
+</div> -->
 </body>
 <script>
 	var numResourcesLoaded = 0;
@@ -160,6 +166,35 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 
 	$(function(){
 		loadAll( );
+
+		addMore(`
+W E {sfhwR} | R T {dgqE} | REW | Q (Hs)f (te) | {sfhwr}
+W E (Rs)f (Eg) (Wf) (Wa)dgqet (Qd)
+
+(sx)
+(Nv) | (Nv) (Ab) (Nv) | (Bc) (Nv)
+(Hfsn) (Hfsn) (Hfsn) (Qgda) (Hfsn) | (Gdb) (Fab)
+
+xcxc-bnasd-nasdg-sdgh-we
+
+(Mv) A N (Mv) | A N (Mv) | D | S A {MAM} N
+(Mv) A N (Mv) | A N M (Av) | G
+
+{DG(Hv)} ~v | (Jv) Q (Wv) ~v | {EW(Qv)}J(Qv) ~v | (Jv) H (Jv) ~vG v
+(Hx) ~x | (Hx){(Qc)JH(Gv)} Fv F (Dv)b (Sn) ~n{SFG(Hn)}
+HJQW(Egb) ~(Egb) ~(Egba)(Egns) (Edn)
+
+(Hx)xns | nJ(Qs)(Wb)xms | {(Es)WQ}(Jb)(Qa)cma | c(Jm)(Ha)(Jx)xma(Gx)ma
+(Hav) v v (Gv)F(Db) (Gb) (Qb) (Eb) (Wn) ~n ~n n
+
+bvxsx(Ns)xsxs-(Mc)dcdcdcd
+v(Av)v(Fv)(Hv)v(Qv)(Rv)-(Eb)bb{(rb)e(wb)j(gb)s(mb)s(fb)j(wb)}
+(Fn) s | (Hf) f | (Js) {bnmsgj}((Wv)//S → (Wsv))
+(Jm) (Jm) (Jm)
+
+S D (Fv) ~v ~(Fv) G (Db) SbS A (Sn) nH n ~n ~n
+S S (Db) (Fv) ~v ~(Fv) {GF(Db)} SbS A (Sn)adh ~n ~adh
+(Um)sdh ~m ~sdh | (Yh) (Yh)`, 90);
 	});
 </script>
 <script>
@@ -200,8 +235,15 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 			$('#outputarea').val($('#outputarea').val()+".".repeat(Math.floor(timeleng/tempo)));
 		}
 		$('#outputarea').val($('#outputarea').val()+waitforspace.keys[waitforspace.i]);
+
+		var pasedMult = $('#outputarea').val().replace(/(\[)(\.+)/g, function(match, p1, p2, offset, string) {
+			return [p2,p1].join('');
+		});
+
+		$('#outputarea').val(pasedMult);
+
 		waitforspace.i++;
-		if(waitforspace.i > waitforspace.keys.length) waitforspace.enable = false;
+		if(waitforspace.i >= waitforspace.keys.length) waitforspace.enable = false;
 		timestart = Date.now();
 	}
 
@@ -213,7 +255,7 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 	    	if(waitforspace.keys[waitforspace.i] == "{") {
 				gatherFastKeys = true;
 		    	waitforspace.i++;
-		    	if(waitforspace.i > waitforspace.keys.length) waitforspace.enable = false;
+		    	if(waitforspace.i >= waitforspace.keys.length) waitforspace.enable = false;
 			}
 
 			if(gatherFastKeys) {
@@ -222,11 +264,11 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 					if(waitforspace.keys[waitforspace.i] == "}") {
 						gatherFastKeys = false;
 		    			waitforspace.i++;
-		    			if(waitforspace.i > waitforspace.keys.length) waitforspace.enable = false;
+		    			if(waitforspace.i >= waitforspace.keys.length) waitforspace.enable = false;
 	    			} else {
 	    				gathered.push(waitforspace.keys[waitforspace.i]);
 		    			waitforspace.i++;
-		    			if(waitforspace.i > waitforspace.keys.length) waitforspace.enable = false;
+		    			if(waitforspace.i >= waitforspace.keys.length) waitforspace.enable = false;
 	    			}
 				}
 
@@ -235,7 +277,7 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 
 				if(timeleng > tempo) {
 
-					$('#outputarea').val($('#outputarea').val()+".".repeat(Math.ceil(timeleng/tempo)));
+					$('#outputarea').val($('#outputarea').val()+".".repeat(Math.floor(timeleng/tempo)));
 				}
 
 				$('#outputarea').val($('#outputarea').val()+'{'+gathered.join('')+'}');
@@ -261,7 +303,7 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 					$('#outputarea').val($('#outputarea').val()+"[");
 					gatherKeys = true;
 		    		waitforspace.i++;
-		    		if(waitforspace.i > waitforspace.keys.length) waitforspace.enable = false;
+		    		if(waitforspace.i >= waitforspace.keys.length) waitforspace.enable = false;
 				break;
 			}
 
@@ -273,7 +315,7 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 							$('#outputarea').val($('#outputarea').val()+"]");
 							gatherKeys = false;
 		    				waitforspace.i++;
-		    				if(waitforspace.i > waitforspace.keys.length) waitforspace.enable = false;
+		    				if(waitforspace.i >= waitforspace.keys.length) waitforspace.enable = false;
 						break;
 						default:
 	    					pushPlay();
@@ -362,6 +404,7 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 	var players = {};
 
 	$(document).on('click', '.playsongarea', function(){
+		if(players[$(this).attr('pid')] != undefined) players[$(this).attr('pid')].stop();
 		players[$(this).attr('pid')] = new PlayerObject('#songarea-' + $(this).attr('pid'), getTempo('#tempo-' + $(this).attr('pid')));
 		players[$(this).attr('pid')].play();
 	});
@@ -382,6 +425,7 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 	});
 
 	function waitForKey(){
+		timestart = Date.now();
 		waitforspace.enable = true;
 		stopPlaying = false;
 		// parse the multipliers
@@ -393,11 +437,19 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 			return temp.join('');
 		});
 
+		pasedMult = pasedMult.replace(/(\(\~)(\w+)(\))/g, function(match, p1, p2, p3, offset, string) {
+			return ['{',p2,'}'].join('');
+		});
+
+		pasedMult = pasedMult.replace(/\((\w)\/\/(\w)\s→\s([\w\(\)]+)/g, function(match, p1, p2, p3, offset, string) {
+			return ['{',p1,p2,p1,p2,p1,p2,p1,p2,'}',p3].join('');
+		});
+
 		console.log(pasedMult);
 
 		var keys = pasedMult
 		.toLowerCase()
-		.replaceAll(/['\.,\|\s]+/g, '')
+		.replaceAll(/['\.,\|\s\-]+/g, '')
 		.trim()
 		.split('');
 		console.log(keys);
@@ -414,9 +466,9 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 		.replaceAll('\t\t', ' ')
 		.replaceAll('\n', ' ')
 		.replaceAll('  ', ' ')
+		.replaceAll('-', '')
 		.trim()
 		.split(' ');
-		console.log(keys);
 
 		(function(keys){
 			var i = 0;
@@ -457,6 +509,10 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 			return ['{',p2,'}'].join('');
 		});
 
+		pasedMult = pasedMult.replace(/\((\w)\/\/(\w)\s→\s([\w\(\)]+)/g, function(match, p1, p2, p3, offset, string) {
+			return ['{',p1,p2,p1,p2,p1,p2,p1,p2,'}',p3].join('');
+		});
+
 		console.log(pasedMult);
 
 		var keys = pasedMult
@@ -465,6 +521,7 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 		.replaceAll('\n\t\t', ' ')
 		.replaceAll('\t\t', ' ')
 		.replaceAll('\n', ' ')
+		.replaceAll('-', '')
 		.replaceAll('  ', ' ')
 		.trim()
 		.split('');
@@ -494,13 +551,16 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 					break;
 				}
 
-				console.log(keys[i],{zerodelay},{fastdelay});
+				// console.log(keys[i],{zerodelay},{fastdelay});
 
 				var delay = delays[0];
 				if(fastdelay) delay = delays[2];
 				if(zerodelay) delay = 10;
 
 				switch(keys[i]) {
+					case "~":
+						delay = delays[1]/2;
+					break;
 					case "[":
 					case "]":
 					case "(":
@@ -549,7 +609,11 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 			return ['{',p2,'}'].join('');
 		});
 
-		console.log(pasedMult);
+		pasedMult = pasedMult.replace(/\((\w)\/\/(\w)\s→\s([\w\(\)]+)/g, function(match, p1, p2, p3, offset, string) {
+			return ['{',p1,p2,p1,p2,p1,p2,p1,p2,'}',p3].join('');
+		});
+
+		// console.log(pasedMult);
 
 		this.keys = pasedMult
 		.toLowerCase()
@@ -557,6 +621,7 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 		.replaceAll('\n\t\t', ' ')
 		.replaceAll('\t\t', ' ')
 		.replaceAll('\n', ' ')
+		.replaceAll('-', '')
 		.replaceAll('  ', ' ')
 		.trim()
 		.split('');
@@ -592,6 +657,9 @@ x n q (~gh) x n q f c b q (~gh) c n q f
 					if(zerodelay) delay = 10;
 
 					switch(keys[i]) {
+						case "~":
+							delay = delays[1]/2;
+						break;
 						case "[":
 						case "]":
 						case "(":
