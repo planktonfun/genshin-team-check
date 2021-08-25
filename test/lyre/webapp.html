@@ -199,12 +199,19 @@ ctrl+mouse scroll up/down to zoom in zoom out.
 
 	var timestart = Date.now();
 
+	var keyHeld = {};
 
 	addEvent(document, "keydown", function (e) {
 	    e = e || window.event;
 
 	    console.log(e.keyCode, keymap[e.keyCode], (Date.now() - timestart));
 	    if(keymap[e.keyCode] != undefined) {
+
+	    	if(keyHeld[e.keyCode] == true) return;
+	    	if(keyHeld[e.keyCode] == undefined) keyHeld[e.keyCode] = true;
+
+	    	keyHeld[e.keyCode] = true;
+
 	    	playSound(keymap[e.keyCode]);
 
 	    	for (var i = 0; i < mobilePlayers.length; i++) {
@@ -212,6 +219,10 @@ ctrl+mouse scroll up/down to zoom in zoom out.
 	    	}
 	    }
 	    timestart = Date.now();
+	});
+
+	addEvent(document, "keyup", function (e) {
+	    if(keyHeld[e.keyCode] != undefined) keyHeld[e.keyCode] = false;
 	});
 
 	function addEvent(element, eventName, callback) {
