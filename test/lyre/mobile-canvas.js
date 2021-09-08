@@ -330,8 +330,14 @@ var videos = [
 	'./booba3.mp4',
 	'./booba4.mp4',
 	'./booba5.mp4',
-	'./booba7.mp4'
+	'./booba7.mp4',
+	'./booba8.mp4',
+	'./booba9.mp4',
+	'./booba10.mp4',
+	'./booba11.mp4',
+	'./booba12.mp4'
 ];
+
 
 var mobilePlayers = [];
 var mpIndex = 0;
