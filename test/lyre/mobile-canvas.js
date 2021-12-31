@@ -54,7 +54,94 @@ var MobileCanvas = function(canvasId, videolink) {
 
 		this.updateLoop();
 		this.initateCursor();
+
+		// this.record();
 	};
+
+	this.record = () => {
+
+		try {
+
+			// Video recording
+			$("#recording-video").hide();
+			$("#recording-video-link").hide();
+			var canvasStream = this.canvas.captureStream(30);
+
+			this.mediaRecorder = new MediaRecorder(canvasStream);
+			var video = document.querySelector("#recording-video");
+			var audio = document.querySelector("#recording-audio");
+
+			var chunks = [];
+
+			this.mediaRecorder.onstop = function(e) {
+				var videoBlob = new Blob(chunks, { 'type' : 'video/mp4' });
+				chunks = [];
+				var a = new FileReader();
+			    a.onload = function(e) {
+			    	video.src = e.target.result
+			    	$('#recording-video-link').attr('href',e.target.result);
+			    }
+			    a.readAsDataURL(videoBlob);
+
+				// var videoURL = URL.createObjectURL(videoBlob);
+				// video.src = videoURL;
+			};
+
+			this.mediaRecorder.ondataavailable = function(e) {
+				chunks.push(e.data);
+			};
+
+			// Audio recording
+			$("#recording-audio").hide();
+			$("#recording-audio-link").hide();
+			this.audioContext = new AudioContext();
+			this.audioStream = this.audioContext.createMediaStreamDestination();
+			this.audioRecorder = new MediaRecorder(this.audioStream.stream);
+			var audioChunks = [];
+
+			this.audioRecorder.onstop = function(e) {
+				var blob = new Blob(audioChunks, { 'type' : 'audio/mp3' });
+				audioChunks = [];
+
+				var a = new FileReader();
+			    a.onload = function(e) {
+			    	audio.src = e.target.result;
+			    	$('#recording-audio-link').attr('href',e.target.result);
+			    }
+			    a.readAsDataURL(blob);
+
+				// var audioUrl = URL.createObjectURL(blob);
+				// audio.src = audioUrl;
+			};
+
+			this.audioRecorder.ondataavailable = function(e) {
+				audioChunks.push(e.data);
+			};
+
+			// combine both video and audio
+
+
+			// Begin recording
+			this.mediaRecorder.start();
+			this.audioRecorder.start();
+
+		} catch (e) {
+			console.log(e);
+		}
+	}
+
+
+	this.stopRecord = () => {
+		let parent = this;
+		setTimeout(function(){
+			parent.audioRecorder.stop();
+			parent.mediaRecorder.stop();
+			$("#recording-video").show();
+			$("#recording-audio").show();
+			$("#recording-video-link").show();
+			$("#recording-audio-link").show();
+		}, 2000);
+	}
 
 	this.startOffset = {
 		crow: 0,
@@ -338,7 +425,6 @@ var videos = [
 	'./booba12.mp4'
 ];
 
-
 var mobilePlayers = [];
 var mpIndex = 0;
 var pidPlayers = {};
@@ -364,6 +450,13 @@ function createMobilePlayer() {
 
 	return temp;
 }
+
+// $('.record').click(()=>{
+// 	for(var i in pidPlayers) {
+// 		console.log('recording...');
+// 		pidPlayers[i].record();
+// 	}
+// })
 
 // var mob = new MobileCanvas('mobile-canvas', videos[Math.floor(Math.random()*videos.length)]);
 // mob.start();
