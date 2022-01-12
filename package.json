@@ -1,0 +1,25 @@
+{
+  "name": "genshin-team-check",
+  "version": "1.0.0",
+  "description": "Recommends a party based on equipments and characters in the Genshin Impact Mihoyo game.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planktonfun/genshin-team-check.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/planktonfun/genshin-team-check/issues"
+  },
+  "homepage": "https://github.com/planktonfun/genshin-team-check#readme",
+  "dependencies": {
+    "dotenv": "^11.0.0"
+  }
+}
