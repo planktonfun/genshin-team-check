@@ -28,4 +28,4 @@ jobs:
 
     - run: npm ci
     # - run: node test/daily-report/main.js
-    # - run: node test/daily-report/daily.js
+    - run: node test/daily-report/daily.js
