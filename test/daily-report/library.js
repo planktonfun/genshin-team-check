@@ -861,6 +861,13 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
                     break;
                 }*/
 
+                // If its the last multiplier for the balanace go all in, since you cannot recover with the remaining balance at all
+                if(Math.ceil(price*multiplier*multiplier) > lastBalance) {
+                    console.log('this is last balance, going all in');
+                    multiplier = 1;
+                    price = Math.floor(lastBalance);
+                }
+
                 let response = callDigitalPositionWithRetries(aid, percent, Math.ceil(price*multiplier), lastBalance);
                 positionExpiration = ((globalExpirationData.expiration - Math.ceil(getUserTime()/1000)) + 4) * 1000;
                 createStarted = getUserTime();
@@ -924,6 +931,13 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
                         ws.close();
                         break;
                     }*/
+
+                    // If its the last multiplier for the balanace go all in, since you cannot recover with the remaining balance at all
+                    if(Math.ceil(price*multiplier*multiplier) > lastBalance) {
+                        console.log('this is last balance, going all in');
+                        multiplier = 1;
+                        price = Math.floor(lastBalance);
+                    }
 
                     let response = callDigitalPositionWithRetries(aid, percent, Math.ceil(price*multiplier), lastBalance);
                     positionExpiration = ((globalExpirationData.expiration - Math.ceil(getUserTime()/1000)) + 4) * 1000;
