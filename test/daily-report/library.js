@@ -643,6 +643,41 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
 
     }
 
+    function getOptimizedDistributionPrice(capital, rewardPercent) {
+
+        let multiplierInc = Math.ceil(1/rewardPercent)+1;
+
+        let prices = []
+        let pricesRaw = []
+        let price = (capital/(multiplierInc/2));
+
+        prices.push(Math.round(price));
+
+        while(true) {
+            temp = price/multiplierInc;
+
+            if(Math.round(temp) == 0) break;
+
+            price = temp;
+            prices.push(Math.round(price));
+            pricesRaw.push(price);
+        }
+
+        prices.sort((a,b)=>{return a-b});
+        pricesRaw.sort((a,b)=>{return a-b});
+
+        let sum = prices.reduce((a, b) => { return a + b }, 0)
+
+        if(sum > capital)  prices[prices.length - 1] -= sum-capital;
+        if(sum < capital)  prices[prices.length - 1] += capital-sum;
+
+        sum = prices.reduce((a, b) => { return a + b }, 0)
+
+        let onePercent = (pricesRaw.length > 4) ? pricesRaw[pricesRaw.length-1-4] : pricesRaw[0];
+
+        return {price: pricesRaw[0], prices, sum, onePercent};
+    }
+
     async function createFunds(goalBalance) {
         let tries = Math.floor(initialBalance/20000);
 
@@ -711,9 +746,11 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
 
         // Set minimum base to 0.1% and 1% goal
         if(argumentStopProfit == "auto") {
-            price = Math.floor(initialBalance*0.001);
+            // price = Math.floor(initialBalance*0.001);
+            price = getOptimizedDistributionPrice(initialBalance, percent/100).onePercent; // optimized minimum cost
             argumentStopProfit = Math.floor(initialBalance*0.01);
             casualMode = true;
+
         }
 
         if(argumentStopProfit == "infinite") {
@@ -775,11 +812,11 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
         if (lastPosition == null) {
             console.log({action: 'initial order'})
             lastBalance = await getBalance(accountType);
-            let response = callDigitalPositionWithRetries(aid, percent, Math.ceil(price*multiplier), lastBalance);
+            let response = callDigitalPositionWithRetries(aid, percent, Math.round(price*multiplier), lastBalance);
             positionExpiration = ((globalExpirationData.expiration - Math.ceil(getUserTime()/1000)) + 4) * 1000;
             createStarted = getUserTime();
             lastPosition = candleGenerated.close;
-            maxStake = Math.max(maxStake, Math.ceil(price*multiplier))
+            maxStake = Math.max(maxStake, Math.round(price*multiplier))
 
             console.log({
                 symbol,
@@ -844,7 +881,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
                 }
 
               /*  // stop trading, no more balance
-                if(Math.ceil(price*multiplier) > lastBalance) {
+                if(Math.round(price*multiplier) > lastBalance) {
                     console.log({
                         symbol,
                         currentBalance: lastBalance,
@@ -868,11 +905,11 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
                     price = Math.floor(lastBalance);
                 }
 
-                let response = callDigitalPositionWithRetries(aid, percent, Math.ceil(price*multiplier), lastBalance);
+                let response = callDigitalPositionWithRetries(aid, percent, Math.round(price*multiplier), lastBalance);
                 positionExpiration = ((globalExpirationData.expiration - Math.ceil(getUserTime()/1000)) + 4) * 1000;
                 createStarted = getUserTime();
                 lastPosition = candleGenerated.close;
-                maxStake = Math.max(maxStake, Math.ceil(price*multiplier))
+                maxStake = Math.max(maxStake, Math.round(price*multiplier))
 
                 console.log({
                     symbol,
@@ -915,7 +952,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
                     }
 
                /*     // stop trading, no more balance
-                    if(Math.ceil(price*multiplier) > lastBalance) {
+                    if(Math.round(price*multiplier) > lastBalance) {
                         console.log({
                             symbol,
                             currentBalance: lastBalance,
@@ -939,12 +976,12 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
                         price = Math.floor(lastBalance);
                     }
 
-                    let response = callDigitalPositionWithRetries(aid, percent, Math.ceil(price*multiplier), lastBalance);
+                    let response = callDigitalPositionWithRetries(aid, percent, Math.round(price*multiplier), lastBalance);
                     positionExpiration = ((globalExpirationData.expiration - Math.ceil(getUserTime()/1000)) + 4) * 1000;
                     createStarted = getUserTime();
                     lastPosition = candleGenerated.close;
                     suddenPriceStamp = getUserTime();
-                    maxStake = Math.max(maxStake, Math.ceil(price*multiplier))
+                    maxStake = Math.max(maxStake, Math.round(price*multiplier))
 
                     console.log({
                         symbol,
