@@ -434,6 +434,8 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
     var multipleRetryLimit = 10;
     var multipleRetryCount = 0;
     var purchasingLimit = 10000;
+    var stopAllProcess = false;
+    var errorMessage = "";
 
     async function callDigitalPositionWithRetries(aid, percent, price, balance) {
         let priceMultiple =[];
@@ -450,29 +452,33 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
 
         console.log({priceMultiple})
 
+        try {
+            // Replenish balance first if balance is not enough
+            if(price > balance) {
+                let remainingBalance = balance;
 
-        // Replenish balance first if balance is not enough
-        if(price > balance) {
-            let remainingBalance = balance;
+                for (var i = 0; i < priceMultiple.length; i++) {
+                    remainingBalance -= priceMultiple[i];
 
-            for (var i = 0; i < priceMultiple.length; i++) {
-                remainingBalance -= priceMultiple[i];
+                    if(remainingBalance < 10000) {
+                        await replenishBalance();
+                    }
 
-                if(remainingBalance < 10000) {
-                    await replenishBalance();
+                    callDigitalPositionHigherLevel(aid, percent, priceMultiple[i]);
+                }
+            } else {
+                // Call everything at once
+                let orders = [];
+
+                for (var i = 0; i < priceMultiple.length; i++) {
+                    orders.push(callDigitalPositionHigherLevel(aid, percent, priceMultiple[i]));
                 }
 
-                callDigitalPositionHigherLevel(aid, percent, priceMultiple[i]);
+                await Promise.all(orders);
             }
-        } else {
-            // Call everything at once
-            let orders = [];
-
-            for (var i = 0; i < priceMultiple.length; i++) {
-                orders.push(callDigitalPositionHigherLevel(aid, percent, priceMultiple[i]));
-            }
-
-            await Promise.all(orders);
+        } catch(e) {
+            errorMessage = e;
+            stopAllProcess = true;
         }
 
         return ((globalExpirationData.expiration - Math.ceil(getUserTime()/1000)) + 4) * 1000;
@@ -1007,6 +1013,13 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
             // stop trading, goal achieved
             if((Math.ceil(lastBalance - initialBalance)) >= argumentStopProfit) {
                 console.log('goal achieved');
+                ws.close();
+                break;
+            }
+
+            if(stopAllProcess) {
+                console.log('an error occurred stop everything');
+                console.log({errorMessage});
                 ws.close();
                 break;
             }
