@@ -653,7 +653,9 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
 
         prices.push(Math.round(price));
 
-        while(true) {
+        let temp = 1;
+
+        while(Math.round(temp) > 0) {
             temp = price/multiplierInc;
 
             if(Math.round(temp) == 0) break;
