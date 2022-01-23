@@ -313,6 +313,34 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
                 "user_balance_id": userBalanceAccount,
                 "client_platform_id": 9,
                 "instrument_type": "crypto",
+                "instrument_id": "BTCUSD-L",
+                "side": "buy",
+                "type": "market",
+                "amount": qty.toString(),
+                "leverage": 100,
+                "limit_price": 0.0,
+                "stop_price": 0.0,
+                "auto_margin_call": false,
+                "use_trail_stop": false,
+                "take_profit_value": 20.0,
+                "take_profit_kind": "percent",
+                "stop_lose_value": 95.0,
+                "stop_lose_kind": "percent"
+            }
+        });
+
+        console.log(orderMsg);
+    }
+
+    async function explicitOrderPositionsReplenish(qty) {
+
+        let orderMsg = await syncedMessage({
+            "name": "place-order-temp",
+            "version": "4.0",
+            "body": {
+                "user_balance_id": userBalanceAccount,
+                "client_platform_id": 9,
+                "instrument_type": "crypto",
                 "instrument_id": "BTCUSD",
                 "side": "buy",
                 "type": "market",
@@ -322,6 +350,8 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
                 "stop_price": 0.0,
                 "auto_margin_call": false,
                 "use_trail_stop": false,
+                // "take_profit_value": 20.0,
+                // "take_profit_kind": "percent",
                 "stop_lose_value": 95.0,
                 "stop_lose_kind": "percent"
             }
@@ -437,6 +467,21 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
     var stopAllProcess = false;
     var errorMessage = "";
 
+    function getMultiples(price, purchasingLimit, callback) {
+        let priceMultiple =[];
+        let multipleOrders = Math.floor(price/purchasingLimit);
+
+        for (var i = 0; i < multipleOrders; i++) priceMultiple.push(purchasingLimit);
+
+        let remainder = price - (multipleOrders*purchasingLimit);
+
+        if (remainder > 0) priceMultiple.push(remainder);
+
+        for (var i = 0; i < priceMultiple.length; i++) {
+            callback(Math.floor(priceMultiple[i]));
+        }
+    }
+
     async function callDigitalPositionWithRetries(aid, percent, price, balance) {
         let priceMultiple =[];
 
@@ -455,17 +500,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
         try {
             // Replenish balance first if balance is not enough
             if(price > balance) {
-                let remainingBalance = balance;
-
-                for (var i = 0; i < priceMultiple.length; i++) {
-                    remainingBalance -= priceMultiple[i];
-
-                    if(remainingBalance < 10000) {
-                        await replenishBalance();
-                    }
-
-                    callDigitalPositionHigherLevel(aid, percent, priceMultiple[i]);
-                }
+                throw new Error('out of balance');
             } else {
                 // Call everything at once
                 let orders = [];
@@ -687,11 +722,13 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
     }
 
     async function createFunds(goalBalance) {
+        let accountType = userBalanceType;
+        let initialBalance = await getBalance(accountType);
         let tries = Math.floor(initialBalance/20000);
 
         for (var i = 0; i < tries; i++) {
             goalBalance -= 20000;
-            explicitOrderPositions(20000);
+            explicitOrderPositionsReplenish(20000);
         }
 
         let moreTries = Math.ceil(goalBalance/20000);
@@ -699,7 +736,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
         for (var i = 0; i < moreTries; i++) {
             goalBalance -= 10000;
             await replenishBalance();
-            explicitOrderPositions(10000);
+            explicitOrderPositionsReplenish(10000);
         }
 
         ws.close();
@@ -762,8 +799,8 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
         }
 
         if(argumentStopProfit == "infinite") {
-            price = Math.floor(initialBalance*0.001);
-            argumentStopProfit = Math.floor(initialBalance*10);
+            price =  getOptimizedDistributionPrice(initialBalance, percent/100).onePercent; // optimized minimum cost
+            argumentStopProfit = Math.floor(initialBalance*2);
             casualMode = true;
         }
 
@@ -888,7 +925,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
                     break;
                 }
 
-              /*  // stop trading, no more balance
+                // stop trading, no more balance
                 if(Math.round(price*multiplier) > lastBalance) {
                     console.log({
                         symbol,
@@ -904,7 +941,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
                     console.log('no more balance');
                     ws.close();
                     break;
-                }*/
+                }
 
                 // If its the last multiplier for the balanace go all in, since you cannot recover with the remaining balance at all
                 if(Math.ceil(price*multiplier*multiplier) > lastBalance) {
@@ -959,7 +996,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
                         break;
                     }
 
-               /*     // stop trading, no more balance
+                    // stop trading, no more balance
                     if(Math.round(price*multiplier) > lastBalance) {
                         console.log({
                             symbol,
@@ -975,7 +1012,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
                         console.log('no more balance');
                         ws.close();
                         break;
-                    }*/
+                    }
 
                     // If its the last multiplier for the balanace go all in, since you cannot recover with the remaining balance at all
                     if(Math.ceil(price*multiplier*multiplier) > lastBalance) {
@@ -1135,6 +1172,18 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
             break;
         case 'call':
             await monitorStuff();
+            break;
+        case 'replenish':
+            await createFunds(150000);
+            break;
+        case 'leverage':
+            let accountType = userBalanceType;
+            let initialBalance = await getBalance(accountType);
+            let distributionPrice = getOptimizedDistributionPrice(initialBalance, 0.2)
+            console.log({distributionPrice})
+            getMultiples(distributionPrice.onePercent, 20000, (qty) => {
+                explicitOrderPositions(qty);
+            });
             break;
         case 'info':
             let assets = await getAllAssetInfo();
