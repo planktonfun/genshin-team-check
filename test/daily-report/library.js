@@ -689,10 +689,13 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
         let multiplierInc = Math.ceil(1/rewardPercent)+1;
 
         let prices = []
+        let gains = []
         let pricesRaw = []
         let price = (capital/(multiplierInc/2));
+        let capitalOnePercent = capital*0.01;
 
         prices.push(Math.round(price));
+        gains.push([Math.round(price), (Math.round(price)*rewardPercent)-capitalOnePercent]);
 
         let temp = 1;
 
@@ -703,10 +706,14 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
 
             price = temp;
             prices.push(Math.round(price));
+            gains.push([Math.round(price), (Math.round(price)*rewardPercent)-capitalOnePercent]);
             pricesRaw.push(price);
         }
 
         prices.sort((a,b)=>{return a-b});
+        gains.sort((a,b)=>{
+            return Math.abs(a[1])-Math.abs(b[1])
+        });
         pricesRaw.sort((a,b)=>{return a-b});
 
         let sum = prices.reduce((a, b) => { return a + b }, 0)
@@ -716,9 +723,59 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
 
         sum = prices.reduce((a, b) => { return a + b }, 0)
 
-        let onePercent = (pricesRaw.length > 4) ? pricesRaw[pricesRaw.length-1-4] : pricesRaw[0];
+        let riskySteps = 2; // more = less risky, less = more risky
+        let onePercent = (pricesRaw.length > riskySteps) ? pricesRaw[pricesRaw.length-1-riskySteps] : pricesRaw[0];
 
-        return {price: pricesRaw[0], prices, sum, onePercent};
+        return {
+            price: pricesRaw[0],
+            prices,
+            tinyRisks: calculateTinyRisk(capital, rewardPercent, Math.ceil(capitalOnePercent*(1+rewardPercent))),
+            sum,
+            onePercent,
+            // onePercentGain: gains[0][0]
+            onePercentGain: Math.ceil(capitalOnePercent*(1+rewardPercent)) // better
+        };
+    }
+
+    function getSumOfArray(arrays) {
+        return arrays.reduce((a, b) => { return a + b }, 0)
+    }
+
+    function calculateTinyRisk(capital, rewardPercent, start) {
+        let multiplier = 1;
+
+        let result = [];
+        let sum = 0;
+
+        let bet = Math.round(start);
+        result.push([bet, (bet * rewardPercent)-sum ]);
+        capital -= bet;
+        sum += bet;
+
+        while((capital * rewardPercent)-sum >= 0) {
+            multiplier = (((1/rewardPercent)+1)*multiplier);
+            let bet = Math.round(start*multiplier);
+
+            result.push([bet, (bet * rewardPercent)-sum ]);
+
+            capital -= bet;
+            sum += bet;
+        }
+
+        sum -= result[result.length-1][0];
+
+        result[result.length-1] = [
+            capital+result[result.length-1][0],
+            ((capital+result[result.length-1][0]) * rewardPercent)-sum
+        ];
+
+        let results = [];
+
+        for (var i = 0; i < result.length; i++) {
+            results.push(result[i][0])
+        }
+
+        return results;
     }
 
     async function createFunds(goalBalance) {
@@ -792,14 +849,14 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
         // Set minimum base to 0.1% and 1% goal
         if(argumentStopProfit == "auto") {
             // price = Math.floor(initialBalance*0.001);
-            price = getOptimizedDistributionPrice(initialBalance, percent/100).onePercent; // optimized minimum cost
+            price = getOptimizedDistributionPrice(initialBalance, percent/100).onePercentGain; // optimized minimum cost
             argumentStopProfit = Math.floor(initialBalance*0.01);
             casualMode = true;
 
         }
 
         if(argumentStopProfit == "infinite") {
-            price =  getOptimizedDistributionPrice(initialBalance, percent/100).onePercent; // optimized minimum cost
+            price =  getOptimizedDistributionPrice(initialBalance, percent/100).onePercentGain; // optimized minimum cost
             argumentStopProfit = Math.floor(initialBalance*2);
             casualMode = true;
         }
@@ -1181,7 +1238,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
             let initialBalance = await getBalance(accountType);
             let distributionPrice = getOptimizedDistributionPrice(initialBalance, 0.2)
             console.log({distributionPrice})
-            getMultiples(distributionPrice.onePercent, 20000, (qty) => {
+            getMultiples(distributionPrice.onePercentGain, 20000, (qty) => {
                 explicitOrderPositions(qty);
             });
             break;
