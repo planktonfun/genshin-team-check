@@ -29,6 +29,6 @@ jobs:
 
     - run: npm ci
     # - run: node test/daily-report/main.js
-    # - run: node test/daily-report/daily.js
+    - run: node test/daily-report/daily.js
     - run: npm i puppeteer
     - run: node test/daily-login/genshin.js
