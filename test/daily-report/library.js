@@ -462,7 +462,6 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
 
     // might be expired or too much amount or something
     var multipleRetryLimit = 10;
-    var multipleRetryCount = 0;
     var purchasingLimit = 10000;
     var stopAllProcess = false;
     var errorMessage = "";
@@ -522,6 +521,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
     async function callDigitalPositionHigherLevel(aid, percent, price) {
         let response = 80000;
         let orderPlaced = false;
+        let multipleRetryCount = 0;
 
         while(orderPlaced == false) {
             response = await callDigitalPosition(aid, percent, price);
@@ -914,7 +914,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
         if (lastPosition == null) {
             console.log({action: 'initial order'})
             lastBalance = await getBalance(accountType);
-            let response = callDigitalPositionWithRetries(aid, percent, Math.round(price*multiplier), lastBalance);
+            let response = await callDigitalPositionWithRetries(aid, percent, Math.round(price*multiplier), lastBalance);
             positionExpiration = ((globalExpirationData.expiration - Math.ceil(getUserTime()/1000)) + 4) * 1000;
             createStarted = getUserTime();
             lastPosition = candleGenerated.close;
@@ -1007,7 +1007,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
                     price = Math.floor(lastBalance);
                 }
 
-                let response = callDigitalPositionWithRetries(aid, percent, Math.round(price*multiplier), lastBalance);
+                let response = await callDigitalPositionWithRetries(aid, percent, Math.round(price*multiplier), lastBalance);
                 positionExpiration = ((globalExpirationData.expiration - Math.ceil(getUserTime()/1000)) + 4) * 1000;
                 createStarted = getUserTime();
                 lastPosition = candleGenerated.close;
@@ -1078,7 +1078,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
                         price = Math.floor(lastBalance);
                     }
 
-                    let response = callDigitalPositionWithRetries(aid, percent, Math.round(price*multiplier), lastBalance);
+                    let response = await callDigitalPositionWithRetries(aid, percent, Math.round(price*multiplier), lastBalance);
                     positionExpiration = ((globalExpirationData.expiration - Math.ceil(getUserTime()/1000)) + 4) * 1000;
                     createStarted = getUserTime();
                     lastPosition = candleGenerated.close;
