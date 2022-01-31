@@ -723,7 +723,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
 
         sum = prices.reduce((a, b) => { return a + b }, 0)
 
-        let riskySteps = 2; // more = less risky, less = more risky
+        let riskySteps = 5; // more = less risky, less = more risky
         let onePercent = (pricesRaw.length > riskySteps) ? pricesRaw[pricesRaw.length-1-riskySteps] : pricesRaw[0];
 
         return {
@@ -849,14 +849,14 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
         // Set minimum base to 0.1% and 1% goal
         if(argumentStopProfit == "auto") {
             // price = Math.floor(initialBalance*0.001);
-            price = getOptimizedDistributionPrice(initialBalance, percent/100).onePercentGain; // optimized minimum cost
+            price = getOptimizedDistributionPrice(initialBalance, percent/100).onePercent; // optimized minimum cost
             argumentStopProfit = Math.floor(initialBalance*0.01);
             casualMode = true;
 
         }
 
         if(argumentStopProfit == "infinite") {
-            price =  getOptimizedDistributionPrice(initialBalance, percent/100).onePercentGain; // optimized minimum cost
+            price =  getOptimizedDistributionPrice(initialBalance, percent/100).onePercent; // optimized minimum cost
             argumentStopProfit = Math.floor(initialBalance*2);
             casualMode = true;
         }
