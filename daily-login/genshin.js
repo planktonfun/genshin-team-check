@@ -1,6 +1,7 @@
 require('dotenv').config();
 const puppeteer = require('puppeteer');
-const cookieFile = process.env.MIHOYO_COOKIE;
+const { cookieParser } = require('./cookie-parser');
+const cookieFile = cookieParser(process.env.MIHOYO_COOKIE);
 
 // remove in production
 /*const os = require('os');
@@ -71,20 +72,23 @@ if (/^win/i.test(osPlatform)) {
   await page.goto("https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481&lang=en-us", {waitUntil: 'domcontentloaded', timeout: 60000})
 
   await sleep(5*1000);
-  await page.evaluate(async function(inputs){
-    let allItemsList = document.querySelectorAll('html > body > div:nth-of-type(1) > div:nth-of-type(2) > div > div:nth-of-type(4) div');
+  try {
+    await page.evaluate(async function(inputs){
+      let allItemsList = document.querySelectorAll('html > body > div:nth-of-type(1) > div:nth-of-type(2) > div > div:nth-of-type(4) div');
 
-    for (var i = 0; i < allItemsList.length; i++) {
-      let numberofImage = allItemsList[i].getAttribute('class').split(' ').length;
-      console.log(allItemsList[i], numberofImage);
+      for (var i = 0; i < allItemsList.length; i++) {
+        let numberofImage = allItemsList[i].getAttribute('class').split(' ').length;
+        console.log(allItemsList[i], numberofImage);
 
-      if(numberofImage > 1) {
-        allItemsList[i].click();
+        if(numberofImage > 1) {
+          allItemsList[i].click();
+        }
       }
-    }
-  }, {});
-
-  await sleep(5*1000);
-
-  await browser.close();
+    }, {});
+  } catch(e) {
+    throw new Error('didnt get any rewards today, have you claimed it already?');
+  } finally {
+    await sleep(5*1000);
+    await browser.close();
+  }
 })();

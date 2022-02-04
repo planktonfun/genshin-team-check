@@ -1,6 +1,7 @@
 require('dotenv').config();
 const puppeteer = require('puppeteer');
-const cookieFile = process.env.MIHOYO_COOKIE;
+const { cookieParser } = require('./cookie-parser');
+const cookieFile = cookieParser(process.env.MIHOYO_COOKIE);
 
 // remove in production
 /*const os = require('os');
@@ -70,12 +71,14 @@ if (/^win/i.test(osPlatform)) {
   await useCookie(cookieFile);
   await page.goto("https://webstatic-sea.mihoyo.com/bbs/event/signin-bh3/index.html?act_id=e202110291205111", {waitUntil: 'domcontentloaded', timeout: 60000})
 
-  await sleep(5*1000);
-  await page.evaluate(async function(inputs){
-    document.querySelector( "div[class*='signday']" ).click();
-  }, {});
-
-  await sleep(5*1000);
-
-  await browser.close();
+  try {
+    await page.evaluate(async function(inputs){
+      document.querySelector( "div[class*='signday']" ).click();
+    }, {});
+  } catch(e) {
+    throw new Error('didnt get any rewards today, have you claimed it already?');
+  } finally {
+    await sleep(5*1000);
+    await browser.close();
+  }
 })();
