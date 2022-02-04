@@ -1,4 +1,4 @@
-name: Daily test
+name: Daily login
 
 on:
   schedule:
@@ -6,9 +6,6 @@ on:
   workflow_dispatch:
   
 env:
-  USER_ID: ${{ secrets.USER_ID }}
-  IO_USER: ${{ secrets.IO_USER }}
-  IO_SSID: ${{ secrets.IO_SSID }}
   MIHOYO_COOKIE: ${{ secrets.MIHOYO_COOKIE }}
 
 jobs:
@@ -28,8 +25,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - run: npm ci
-    # - run: node test/daily-report/main.js
-    - run: node test/daily-report/daily.js
     - run: npm i puppeteer
-    - run: node test/daily-login/genshin.js
-    - run: node test/daily-login/honkai.js
+    - run: node daily-login/genshin.js
+    - run: node daily-login/honkai.js
