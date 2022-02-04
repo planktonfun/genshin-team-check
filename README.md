@@ -1,5 +1,6 @@
-# genshin-team-check
-Recommends a party based on equipments and characters in the Genshin Impact Mihoyo game.
+# Daily genshin and honkai login
+
+Auto checkin everday at 1am GMT +8
 
 add MIHOYO_COOKIE environment
 
