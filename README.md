@@ -3,4 +3,4 @@ Recommends a party based on equipments and characters in the Genshin Impact Miho
 
 add MIHOYO_COOKIE environment
 
-get document.cookie from hoyolab checkin page
+get document.cookie from the browser console in the hoyolab checkin page
