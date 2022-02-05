@@ -358,6 +358,8 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
         });
 
         console.log(orderMsg);
+
+        return true
     }
 
     let isDigitalOption = false;
@@ -466,7 +468,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
     var stopAllProcess = false;
     var errorMessage = "";
 
-    function getMultiples(price, purchasingLimit, callback) {
+    async function getMultiples(price, purchasingLimit, callback) {
         let priceMultiple =[];
         let multipleOrders = Math.floor(price/purchasingLimit);
 
@@ -793,7 +795,8 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
         for (var i = 0; i < moreTries; i++) {
             goalBalance -= 10000;
             await replenishBalance();
-            explicitOrderPositionsReplenish(10000);
+            await explicitOrderPositionsReplenish(10000);
+            await sleep(800)
         }
 
         ws.close();
@@ -802,20 +805,35 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
 
     function displaySpreadFromAssetList(assetList) {
         let theList = [];
+        let uniqueSpreads = {};
 
         for (var i in assetList) {
             // console.log(i);
             if(spreadListIndex[i] != undefined) {
-                theList.push({name: i, 'priceSpread%': spreadListIndex[i]})
+                // theList.push({name: i, 'priceSpread%': spreadListIndex[i]});
+
+                if(uniqueSpreads[spreadListIndex[i]] == undefined)
+                    uniqueSpreads[spreadListIndex[i]] = i;
             } else if(spreadListIndex[i.replace('-OTC','')] != undefined) {
-                theList.push({name: i, 'priceSpread%': spreadListIndex[i]})
+                // theList.push({name: i, 'priceSpread%': spreadListIndex[i.replace('-OTC','')]})
+                uniqueSpreads[spreadListIndex[i.replace('-OTC','')]] = i;
             } else {
-                theList.push({name: i, 'priceSpread%': 0})
+                uniqueSpreads[0] = i;
+                // theList.push({name: i, 'priceSpread%': 0})
             }
         }
 
+        // console.log({uniqueSpreads});
+        // prioritize OTC
+        for (var i in uniqueSpreads) {
+            theList.push({
+                name: uniqueSpreads[i],
+                'priceSpread%': i*1
+            })
+        }
+
         theList.sort((a,b)=>{return a['priceSpread%']-b['priceSpread%']})
-        console.log({theList});
+
 
         return theList;
     }
@@ -1231,15 +1249,15 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
             await monitorStuff();
             break;
         case 'replenish':
-            await createFunds(150000);
+            await createFunds(process.argv.slice(2)[2]*1*2);
             break;
         case 'leverage':
             let accountType = userBalanceType;
             let initialBalance = await getBalance(accountType);
             let distributionPrice = getOptimizedDistributionPrice(initialBalance, 0.2)
             console.log({distributionPrice})
-            getMultiples(distributionPrice.onePercentGain, 20000, (qty) => {
-                explicitOrderPositions(qty);
+            await getMultiples(distributionPrice.tinyRisks[process.argv.slice(2)[2]*1], 20000, async (qty) => {
+                await explicitOrderPositions(qty);
             });
             break;
         case 'info':
@@ -1249,6 +1267,7 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
     }
 
     console.log('done closing');
+    console.log('**** IF THE TERMINAL DID NOT CLOSE PLEASE CLOSE MANUALLY ****');
     ws.close(); // disconnect after done
 
     return info;
