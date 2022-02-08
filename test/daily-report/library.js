@@ -823,16 +823,19 @@ var handleIqOption = async function(payload, iqOptionSymbol, ssid, userBalanceTy
             }
         }
 
-        // console.log({uniqueSpreads});
+        console.log({uniqueSpreads});
         // prioritize OTC
         for (var i in uniqueSpreads) {
+
+            if(i*1 == 0) continue;
+
             theList.push({
                 name: uniqueSpreads[i],
                 'priceSpread%': i*1
             })
         }
 
-        theList.sort((a,b)=>{return a['priceSpread%']-b['priceSpread%']})
+        theList.sort((a,b)=>{return b['priceSpread%']-a['priceSpread%']})
 
 
         return theList;
