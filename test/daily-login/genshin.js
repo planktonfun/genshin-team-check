@@ -72,7 +72,7 @@ if (/^win/i.test(osPlatform)) {
 
   await sleep(5*1000);
   await page.evaluate(async function(inputs){
-    let allItemsList = document.querySelectorAll('html > body > div:nth-of-type(1) > div:nth-of-type(2) > div > div:nth-of-type(4) div');
+    let allItemsList = document.querySelectorAll('html > body > div:nth-of-type(1) > div:nth-of-type(3) > div > div:nth-of-type(5) > div');
 
     for (var i = 0; i < allItemsList.length; i++) {
       let numberofImage = allItemsList[i].getAttribute('class').split(' ').length;
