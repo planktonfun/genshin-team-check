@@ -72,19 +72,27 @@ if (/^win/i.test(osPlatform)) {
 
   await sleep(5*1000);
   await page.evaluate(async function(inputs){
-    let allItemsList = document.querySelectorAll('html > body > div:nth-of-type(1) > div:nth-of-type(2) > div > div:nth-of-type(5) > div');
+    
+    function divPool(path) {
+      let allItemsList = document.querySelectorAll(path);
 
-    for (var i = 0; i < allItemsList.length; i++) {
-      let numberofImage = allItemsList[i].getAttribute('class').split(' ').length;
-      console.log(allItemsList[i], numberofImage);
+      for (var i = 0; i < allItemsList.length; i++) {
+        let numberofImage = allItemsList[i].getAttribute('class').split(' ').length;
+        console.log(allItemsList[i], numberofImage);
 
-      if(numberofImage > 1) {
-        allItemsList[i].click();
+        if(numberofImage > 1) {
+          allItemsList[i].click();
+        }
       }
     }
+
+    divPool('html > body > div:nth-of-type(1) > div:nth-of-type(2) > div > div:nth-of-type(5) > div');
+    divPool('html > body > div:nth-of-type(1) > div:nth-of-type(6) > div > div:nth-of-type(2) > div');
+    
   }, {});
 
   await sleep(5*1000);
   // await saveCookie();
   await browser.close();
 })();
+html > body > div:nth-of-type(1) > div:nth-of-type(6) > div > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1)
