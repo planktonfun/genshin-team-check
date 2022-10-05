@@ -95,4 +95,3 @@ if (/^win/i.test(osPlatform)) {
   // await saveCookie();
   await browser.close();
 })();
-html > body > div:nth-of-type(1) > div:nth-of-type(6) > div > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1)
