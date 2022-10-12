@@ -88,7 +88,8 @@ if (/^win/i.test(osPlatform)) {
 
     divPool('html > body > div:nth-of-type(1) > div:nth-of-type(2) > div > div:nth-of-type(5) > div');
     divPool('html > body > div:nth-of-type(1) > div:nth-of-type(6) > div > div:nth-of-type(2) > div');
-    
+    divPool('html > body > div:nth-of-type(1) > div:nth-of-type(5) > div > div:nth-of-type(2) > div');
+
   }, {});
 
   await sleep(5*1000);
