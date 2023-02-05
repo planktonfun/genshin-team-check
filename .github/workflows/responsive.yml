@@ -4,20 +4,19 @@ on:
   workflow_dispatch:
 
 jobs:
-  screenshots:
-    runs-on: ubuntu-latest
+  screenshot:
+    name: Screenshot
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        width: [1200, 992, 768, 600]
+    runs-on: ${{ matrix.os }}
+
     steps:
-    - uses: actions/checkout@v2
-    - name: install puppeteer-headful
-      uses: mujo-code/puppeteer-headful@master
-      env:
-        CI: 'true'
-    - name: screenshots-ci-action
-      uses: xxidbr9/screenshots-ci-action@v1.1.5
+
+    - name: Screenshot Website
+      uses: swinton/screenshot-website@v1.x
       with:
-        url: https://planktonfun.itch.io/catsandbees
-        devices: iPhone 6,iPhone 6 landscape,Nexus 7,Pad Pro,Galaxy S III landscape,iPad Pro landscape
-    - uses: actions/upload-artifact@v2
-      with:
-        path: screenshots
-        name: Download-screenshots
+        source: https://planktonfun.itch.io/catsandbees
+        destination: screenshot-${{ matrix.os }}-${{ matrix.width }}.png
+        width: ${{ matrix.width }}
