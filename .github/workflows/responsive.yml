@@ -15,7 +15,7 @@ jobs:
     - name: screenshots-ci-action
       uses: xxidbr9/screenshots-ci-action@v1.1.5
       with:
-        url: https://lime-for-group-1567103664368.firebaseapp.com/
+        url: https://planktonfun.itch.io/catsandbees
         devices: iPhone 6,iPhone 6 landscape,Nexus 7,Pad Pro,Galaxy S III landscape,iPad Pro landscape
     - uses: actions/upload-artifact@v2
       with:
