@@ -68,27 +68,30 @@ if (/^win/i.test(osPlatform)) {
   // check if user is logged in
   console.log('using cookies');
   await useCookie(cookieFile);
-  await page.goto("https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&utm_source=hoyolab&utm_medium=tools&lang=en-us&bbs_theme=dark&bbs_theme_device=0", {waitUntil: 'domcontentloaded', timeout: 60000})
+  await page.goto("https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481&hyl_auth_required=true&hyl_presentation_style=fullscreen&utm_source=hoyolab&utm_medium=tools&lang=en-us&bbs_theme=dark&bbs_theme_device=0", {waitUntil: 'domcontentloaded', timeout: 60000})
 
   await sleep(5*1000);
   await page.evaluate(async function(inputs){
-    
-    function divPool(path) {
-      let allItemsList = document.querySelectorAll(path);
 
-      for (var i = 0; i < allItemsList.length; i++) {
-        let numberofImage = allItemsList[i].getAttribute('class').split(' ').length;
-        console.log(allItemsList[i], numberofImage);
+    function findClassByPartialName(partialName) {
+      var elements = document.querySelectorAll('span');
+      var matchingElements = [];
 
-        if(numberofImage > 1) {
-          allItemsList[i].click();
+      for (var i = 0; i < elements.length; i++) {
+        var classNames = elements[i].className.split(' ');
+        for (var j = 0; j < classNames.length; j++) {
+          if (classNames[j].indexOf(partialName) > -1) {
+            matchingElements.push(elements[i]);
+            break;
+          }
         }
       }
+
+      return matchingElements;
     }
 
-    divPool('html > body > div:nth-of-type(1) > div:nth-of-type(2) > div > div:nth-of-type(5) > div');
-    divPool('html > body > div:nth-of-type(1) > div:nth-of-type(6) > div > div:nth-of-type(2) > div');
-    divPool('html > body > div:nth-of-type(1) > div:nth-of-type(5) > div > div:nth-of-type(2) > div');
+    var a = findClassByPartialName("red-point");
+    a[0].parentElement.click()
 
   }, {});
 
