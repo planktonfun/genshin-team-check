@@ -1,0 +1,35 @@
+name: Build Android AAB
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14.x
+    - name: Install Cordova CLI
+      run: npm install -g cordova
+    - name: Install Android SDK
+      uses: android-actions/setup-android@v2
+      with:
+        sdk-version: '30.0.3'
+        ndk-version: '22.0.7026061'
+        arch: 'x86'
+    - name: Build AAB
+      run: |
+        cordova platform add android
+        cordova build android --prod --buildConfig=./build.json -- --gradleArg=-PcdvBuildMultipleApks=false
+      env:
+        ANDROID_HOME: ${{ env.ANDROID_SDK_ROOT }}
+        JAVA_HOME: ${{ env.JDK_HOME }}
+        PATH: ${{ env.ANDROID_HOME }}/tools:$${{ env.ANDROID_HOME }}/platform-tools:$${{ env.JAVA_HOME }}/bin:$${{ env.PATH }}
+    - name: Upload AAB artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: my-app.aab
+        path: platforms/android/app/build/outputs/bundle/release/app-release.aab

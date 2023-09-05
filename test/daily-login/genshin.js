@@ -79,7 +79,6 @@ if (/^win/i.test(osPlatform)) {
 
       for (var i = 0; i < elements.length; i++) {
         var classNames = elements[i].className.split(' ');
-
         for (var j = 0; j < classNames.length; j++) {
           if (classNames[j].indexOf(partialName) > -1) {
             matchingElements.push(elements[i]);
@@ -92,7 +91,6 @@ if (/^win/i.test(osPlatform)) {
     }
 
     var a = findClassByPartialName("red-point");
-
     a[0].parentElement.click()
 
   }, {});

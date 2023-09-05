@@ -1,8 +1,9 @@
+# updated 5/9/2023
 name: Daily test
 
 on:
   schedule:
-  - cron: "1 18 * * *"
+  - cron: "1 19 * * *"
   workflow_dispatch:
   
 env:
@@ -17,7 +18,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [16.x]
         
     steps:
     - uses: actions/checkout@v2
