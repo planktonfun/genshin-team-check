@@ -1,0 +1,20 @@
+Logging in...
+<script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const peerId = urlParams.get('peerId');
+
+    // Create a new PeerJS instance
+    const peer = new Peer();
+
+    peer.on('open', ()=>{
+        // Connect to the peer
+        const conn = peer.connect(peerId);
+
+        // Handle the connection event
+        conn.on('open', function() {
+            // Connection established, you can now send and receive data
+            window.close();
+        });
+    });
+</script>
