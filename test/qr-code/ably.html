@@ -1,0 +1,21 @@
+<script src="https://cdn.ably.io/lib/ably.min-1.js"></script>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const peerId = urlParams.get('peerId');
+
+   document.addEventListener('DOMContentLoaded', () => {
+        const ably = new Ably.Realtime('ikRU1g.5m2H5Q:mP5mbK8vLhou2vGYMZ1dTQz9HoJ7OaFufJO8owaEs48');
+        const channel = ably.channels.get('test-channel');
+
+        // Publish a message
+        const msg = "Hello";
+        channel.publish(peerId, msg, (err) => {
+            if (err) {
+                console.log('Error:', err);
+            } else {
+                console.log('Message sent:', msg);
+                window.close();
+            }
+        });
+    });
+</script>
