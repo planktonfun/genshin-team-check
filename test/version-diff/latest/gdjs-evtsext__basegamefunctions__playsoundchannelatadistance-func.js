@@ -1,0 +1,133 @@
+
+if (typeof gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance !== "undefined") {
+  gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.registeredGdjsCallbacks.forEach(callback =>
+    gdjs._unregisterCallback(callback)
+  );
+}
+
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance = {};
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1= [];
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects2= [];
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDWarpzoneObjects1= [];
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDWarpzoneObjects2= [];
+
+
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.mapOfGDgdjs_9546evtsExt_9595_9595BaseGameFunctions_9595_9595PlaySoundChannelAtADistance_9546GDWarpzoneObjects1Objects = Hashtable.newFrom({"Warpzone": gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDWarpzoneObjects1});
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.sound.isSoundOnChannelPlaying(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Channel")) || 0 : 0));
+if (isConditionTrue_0) {
+/* Reuse gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1 */
+/* Reuse gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDWarpzoneObjects1 */
+{gdjs.evtTools.sound.setSoundOnChannelVolume(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("Channel")) || 0 : 0), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("TempVolume")) - (gdjs.evtTools.common.normalize(gdjs.evtTools.common.distanceBetweenPositions((( gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDWarpzoneObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDWarpzoneObjects1[0].getCenterXInScene()), (( gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDWarpzoneObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDWarpzoneObjects1[0].getCenterYInScene()), (( gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1[0].getCenterXInScene()), (( gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1[0].getCenterYInScene())), 0, 500) * gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("TempVolume"))));
+}}
+
+}
+
+
+};gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.eventsList1 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+gdjs.copyArray(eventsFunctionContext.getObjects("PlayerSpawn"), gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1);
+gdjs.copyArray(eventsFunctionContext.getObjects("Warpzone"), gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDWarpzoneObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1.length;i<l;++i) {
+    if ( gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1[i].getVariableString(gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1[i].getVariables().get("uid")) == gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("PeerID")) ) {
+        isConditionTrue_0 = true;
+        gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1[k] = gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1[i];
+        ++k;
+    }
+}
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.object.pickNearestObject(gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.mapOfGDgdjs_9546evtsExt_9595_9595BaseGameFunctions_9595_9595PlaySoundChannelAtADistance_9546GDWarpzoneObjects1Objects, (( gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1[0].getCenterXInScene()), (( gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1.length === 0 ) ? 0 :gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1[0].getCenterYInScene()), false);
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().get("TempVolume").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("Config").getChild("SFXVolume")));
+}
+{ //Subevents
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+}
+
+}
+
+
+};
+
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.func = function(runtimeScene, Distance, PlayerSpawn, Warpzone, Channel, MaxVolume, parentEventsFunctionContext) {
+var eventsFunctionContext = {
+  _objectsMap: {
+"PlayerSpawn": PlayerSpawn
+, "Warpzone": Warpzone
+},
+  _objectArraysMap: {
+"PlayerSpawn": gdjs.objectsListsToArray(PlayerSpawn)
+, "Warpzone": gdjs.objectsListsToArray(Warpzone)
+},
+  _behaviorNamesMap: {
+},
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+if (argName === "Distance") return Distance;
+if (argName === "Channel") return Channel;
+if (argName === "MaxVolume") return MaxVolume;
+    return "";
+  },
+  getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
+};
+
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects1.length = 0;
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDPlayerSpawnObjects2.length = 0;
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDWarpzoneObjects1.length = 0;
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.GDWarpzoneObjects2.length = 0;
+
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.eventsList1(runtimeScene, eventsFunctionContext);
+
+return;
+}
+
+gdjs.evtsExt__BaseGameFunctions__PlaySoundChannelAtADistance.registeredGdjsCallbacks = [];

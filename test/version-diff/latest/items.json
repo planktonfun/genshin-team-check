@@ -1,0 +1,107 @@
+{
+    "consumable": [
+        "potion-hp",
+        "potion-mp",
+        "tangerine",
+        "card-pack",
+        "broom",
+        "galders",
+        "galder-coupon",
+        "10-galder-coupon",
+        "desert-witch-broom",
+        "star-card-pack-1",
+        "star-card-pack-2",
+        "star-card-pack-3",
+        "tutankhamen-legendary-box"
+    ],
+    "equippable": [
+        "rookie-sword",
+        "rookie-shield",
+        "rookie-hat",
+        "art-antique-gun",
+        "moon-staff",
+        "old-ebony-gun",
+        "old-metal-shield",
+        "old-poniard",
+        "old-wooden-sword",
+        "sharp-poniard",
+        "sharp-wooden-sword",
+        "strong-ebony-gun",
+        "strong-metal-shield",
+        "ult-beanie",
+        "ult-bokken",
+        "ult-kane-rod",
+        "ult-knife",
+        "ult-wood-gun",
+        "ult-wood-helmet",
+        "old-staff",
+        "pet_boxer_lina",
+        "succubus",
+        "incubus"
+    ],
+    "questItem": [
+        "baby-carrot",
+        "dark-round-seal",
+        "gray-round-seal",
+        "red-round-seal",
+        "nemeth-hair-towel",
+        "janus-feather",
+        "flail",
+        "shtellas-profile"
+    ],
+    "gun": [
+        "art-antique-gun",
+        "old-ebony-gun",
+        "strong-ebony-gun",
+        "ult-wood-gun"
+    ],
+    "equipmentIndex": [
+        "Weapon",
+        "Shield",
+        "Cape",
+        "Belt",
+        "Face_Accessory",
+        "Speed_Accessory",
+        "Head_Accessory",
+        "Ring",
+        "Hat",
+        "Pet"
+    ],
+    "Weapon": [
+        "rookie-sword",
+        "art-antique-gun",
+        "moon-staff",
+        "old-ebony-gun",
+        "old-poniard",
+        "old-wooden-sword",
+        "sharp-poniard",
+        "sharp-wooden-sword",
+        "strong-ebony-gun",
+        "ult-bokken",
+        "ult-kane-rod",
+        "ult-knife",
+        "ult-wood-gun",
+        "old-staff"
+    ],
+    "Shield": [
+        "rookie-shield",
+        "old-metal-shield",
+        "strong-metal-shield"
+    ],
+    "Cape": [],
+    "Belt": [],
+    "Face_Accessory": [],
+    "Speed_Accessory": [],
+    "Head_Accessory": [],
+    "Ring": [],
+    "Hat": [
+        "rookie-hat",
+        "ult-beanie",
+        "ult-wood-helmet"
+    ],
+    "Pet": [
+        "pet_boxer_lina",
+        "succubus",
+        "incubus"
+    ]
+}

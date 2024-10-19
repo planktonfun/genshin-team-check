@@ -1,0 +1,1032 @@
+{
+    "player": {
+        "name": "Player",
+        "aggro": false,
+        "level": 1,
+        "xp": 100,
+        "tm": 30,
+        "type": "Charm",
+        "baseStats": {
+            "Gun AP": 0,
+            "AP": 14,
+            "AC": 49,
+            "DX": 10,
+            "MP": 50,
+            "MA": 49,
+            "MD": -14,
+            "WT": 1120,
+            "DA": -1,
+            "LK": -1,
+            "HP": 420,
+            "DP": -8,
+            "HV": -1
+        },
+        "hpBars":1,
+        "resistance": {
+            "Fire R": 0,
+            "Water R": 0,
+            "Air R": 0,
+            "Soil R": 0,
+            "Elec R": 0,
+            "Light R": 0,
+            "Dark R": 0,
+            "Magic R": 0,
+            "Phys R": 0,
+            "Gun R": 0,
+            "Shadow R": 0
+        },
+        "skills": [],
+        "sounds": {},
+        "images": [],
+        "summons": [],
+        "aoe": [],
+        "drops": []
+    },
+    "dummy": {
+        "name": "Dummy",
+        "aggro": false,
+        "level": 999,
+        "xp": 1,
+        "tm": 1,
+        "type": "Power",
+        "baseStats": {
+            "AP": 0,
+            "AC": 0,
+            "DX": 10,
+            "MP": 0,
+            "MA": 0,
+            "MD": 0,
+            "WT": 0,
+            "DA": 0,
+            "LK": 0,
+            "HP": 9999999,
+            "DP": 0,
+            "HV": 0
+        },
+        "hpBars":10,
+        "resistance": {
+            "Fire R": 0,
+            "Water R": 0,
+            "Air R": 0,
+            "Soil R": 0,
+            "Elec R": 0,
+            "Light R": 0,
+            "Dark R": 0,
+            "Magic R": 0,
+            "Phys R": 0,
+            "Gun R": 0,
+            "Shadow R": 0
+        },
+        "skills": [
+        ],
+        "sounds": {
+            "move": "sdmon144.mp3",
+            "hurt": "sgmon018.mp3"
+        },
+        "images": [
+            "curl -O https://static.wikia.nocookie.net/oto/images/7/74/Monster_Tottochi.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/7/74/Monster_Tottochi.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/a/af/Monster_Tottochi_Move.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/9/9f/Monster_Tottochi_Fight.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/8/8c/Monster_Tottochi_Death.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/5/58/Card_Tottochi_Card_Icon.gif"
+        ],
+        "summons": [],
+        "aoe": [],
+        "drops": []
+    },
+    "tottochi": {
+        "name": "Tottochi",
+        "aggro": false,
+        "level": 2,
+        "xp": 135,
+        "tm": 50,
+        "type": "Power",
+        "baseStats": {
+            "AP": 8,
+            "AC": 50,
+            "DX": 10,
+            "MP": 75,
+            "MA": 50,
+            "MD": 0,
+            "WT": 590,
+            "DA": 0,
+            "LK": 0,
+            "HP": 135,
+            "DP": 0,
+            "HV": 0
+        },
+        "hpBars":1,
+        "resistance": {
+            "Fire R": 0,
+            "Water R": 0,
+            "Air R": 0,
+            "Soil R": 0,
+            "Elec R": 0,
+            "Light R": 0,
+            "Dark R": 0,
+            "Magic R": 0,
+            "Phys R": 0,
+            "Gun R": 0,
+            "Shadow R": 0
+        },
+        "skills": [
+        ],
+        "sounds": {
+            "move": "sdmon144.mp3",
+            "hurt": "sgmon018.mp3"
+        },
+        "images": [
+            "curl -O https://static.wikia.nocookie.net/oto/images/7/74/Monster_Tottochi.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/7/74/Monster_Tottochi.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/a/af/Monster_Tottochi_Move.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/9/9f/Monster_Tottochi_Fight.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/8/8c/Monster_Tottochi_Death.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/5/58/Card_Tottochi_Card_Icon.gif"
+        ],
+        "summons": [],
+        "aoe": [],
+        "drops": [
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/d/df/Item_Galder_Icon.png",
+                "itemName": "Galders",
+                "itemQty": 60,
+                "dropChance": 1
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/5/58/Card_Tottochi_Card_Icon.gif",
+                "itemName": "Tottochi Card",
+                "itemQty": 1,
+                "dropChance": 0.03
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/8/80/Item_10_Galder_Coupon_Icon.png",
+                "itemName": "10 Galder Coupon",
+                "itemQty": 10,
+                "dropChance": 0.3
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/7/79/Weapon_Wood_Sword_Icon.gif",
+                "itemName": "Old Wooden Sword",
+                "itemQty": 1,
+                "dropChance": 0.32
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/7/74/Weapon_Poniard_Icon.gif",
+                "itemName": "Old Poniard",
+                "itemQty": 1,
+                "dropChance": 0.32
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/0/0e/Gun_Ebony_Gun_Icon.png",
+                "itemName": "Old Ebony Gun",
+                "itemQty": 1,
+                "dropChance": 0.32
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/c/ca/Weapon_Staff_Icon.png",
+                "itemName": "Old Staff",
+                "itemQty": 1,
+                "dropChance": 0.32
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/7/79/Weapon_Wood_Sword_Icon.gif",
+                "itemName": "Sharp Wooden Sword",
+                "itemQty": 1,
+                "dropChance": 0.08
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/7/74/Weapon_Poniard_Icon.gif",
+                "itemName": "Sharp Poniard",
+                "itemQty": 1,
+                "dropChance": 0.08
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/0/0e/Gun_Ebony_Gun_Icon.png",
+                "itemName": "Strong Ebony Gun",
+                "itemQty": 1,
+                "dropChance": 0.08
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/c/ca/Weapon_Staff_Icon.png",
+                "itemName": "Moon Staff",
+                "itemQty": 1,
+                "dropChance": 0.08
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/5/57/Item_Envelope_with_Photo_Icon.png",
+                "itemName": "Shtellas Profile",
+                "itemQty": 1,
+                "dropChance": 0.02
+            }
+        ]
+    },
+    "janus":{
+        "name": "Janus",
+        "aggro": true,
+        "level": 410,
+        "xp": 23718,
+        "tm": 9852,
+        "type": "Power",
+        "baseStats": {
+            "AP": 5122,
+            "AC": 276,
+            "DX": -5,
+            "MP": 18486,
+            "MA": 300,
+            "MD": 4080,
+            "WT": 48012,
+            "DA": 213,
+            "LK": 186,
+            "HP": 118590,
+            "DP": 4085,
+            "HV": 1
+        },
+        "hpBars":5,
+        "resistance": {
+            "Fire R": 0.82,
+            "Water R": 0.82,
+            "Air R": 0.82,
+            "Soil R": 0.82,
+            "Elec R": 0.82,
+            "Light R": 0.82,
+            "Dark R": 0.85,
+            "Magic R": 0.82,
+            "Phys R": 0.87,
+            "Gun R": 0.87,
+            "Shadow R": 0
+        },
+        "skills": [
+            "Summon",
+            "CleavingTerra",
+            "Cure",
+            "Lacerator",
+            "EnhancedResistance",
+            "MWickedFlame",
+            "StaffOfThunder"
+        ],
+        "sounds": {},
+        "images": [
+            "curl -O https://static.wikia.nocookie.net/oto/images/c/c0/Monster_Janus_Idle.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/a/ad/Monster_Janus_Fight.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/1/12/Monster_Janus_Move.gif"
+        ],
+        "summons": [
+            "Nereides"
+        ],
+        "aoe": [],
+        "drops": [
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/d/df/Item_Galder_Icon.png",
+                "itemName": "Galders",
+                "itemQty": 1,
+                "dropChance": 0.03
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/a/a3/Item_Janus%27_Feather_Icon.png",
+                "itemName": "Janus Feather",
+                "itemQty": 1,
+                "dropChance": 1
+            }
+        ]
+    },
+    "torobbie": {
+        "name": "Torobbie",
+        "aggro": false,
+        "level": 1,
+        "xp": 100,
+        "tm": 30,
+        "type": "Charm",
+        "baseStats": {
+            "AP": 4,
+            "AC": 50,
+            "DX": 10,
+            "MP": 40,
+            "MA": 50,
+            "MD": 0,
+            "WT": 500,
+            "DA": 0,
+            "LK": 0,
+            "HP": 100,
+            "DP": 0,
+            "HV": 0
+        },
+        "hpBars":1,
+        "resistance": {
+            "Fire R": 0,
+            "Water R": 0,
+            "Air R": 0,
+            "Soil R": 0,
+            "Elec R": 0,
+            "Light R": 0,
+            "Dark R": 0,
+            "Magic R": 0,
+            "Phys R": 0,
+            "Gun R": 0,
+            "Shadow R": 0
+        },
+        "skills": [
+        ],
+        "sounds": {
+            "move": "sdmon144.mp3",
+            "hurt": "sgmon018.mp3"
+        },
+        "images": [
+            "curl -O https://static.wikia.nocookie.net/oto/images/d/dd/Monster_Torobbie_Idle.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/d/dd/Monster_Torobbie_Idle.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/0/0b/Monster_Torobbie_Move.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/d/da/Monster_Torobbie_Fight.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/a/a3/Monster_Torobbie_Death.gif"
+        ],
+        "summons": [
+        ],
+        "aoe": [],
+        "drops": [
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/d/df/Item_Galder_Icon.png",
+                "itemName": "Galders",
+                "itemQty": 51,
+                "dropChance": 0.2
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/6/6b/Item_Baby_Carrot_Icon.png",
+                "itemName": "Baby Carrot",
+                "itemQty": 1,
+                "dropChance": 1
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/7/7c/Card_Torobbie_Card_Icon.png",
+                "itemName": "Torobbie Card",
+                "itemQty": 1,
+                "dropChance": 0.02
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/8/80/Item_10_Galder_Coupon_Icon.png",
+                "itemName": "10 Galder Coupon",
+                "itemQty": 10,
+                "dropChance": 0.05
+            }
+        ]
+    },
+    "tutankhamen": {
+        "name": "Tutankhamen",
+        "aggro": true,
+        "level": 71,
+        "xp": 4085,
+        "tm": 1430,
+        "type": "Magic",
+        "baseStats": {
+            "AP": 660,
+            "AC": 79,
+            "DX": 5,
+            "MP": 4135,
+            "MA": 80,
+            "MD": 626,
+            "WT": 10580,
+            "DA": 29,
+            "LK": 29,
+            "HP": 16340,
+            "DP": 630,
+            "HV": 2
+        },
+        "hpBars":4,
+        "resistance": {
+            "Fire R": 0.56,
+            "Water R": 0.56,
+            "Air R": 0.67,
+            "Soil R": 0.56,
+            "Elec R": 0.56,
+            "Light R": 0.73,
+            "Dark R": 0.56,
+            "Magic R": 0.73,
+            "Phys R": 0.39,
+            "Gun R": 0.39,
+            "Shadow R": 0
+        },
+        "skills": [
+            "Summon",
+            "Cure",
+            "ManaArrow",
+            "ManaRing",
+            "ManaShield",
+            "Rust",
+            "EnhancedResistance"
+        ],
+        "sounds": {},
+        "images": [
+            "curl -O https://static.wikia.nocookie.net/oto/images/5/5f/Monster_Tutankhamen_Idle.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/c/c1/Monster_Tutankhamen_Move.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/1/1a/Monster_Tutankhamen_Fight.gif"
+        ],
+        "summons": [
+            "Sergeant",
+            "Lieutenant",
+            "Captain",
+            "Sphinx"
+        ],
+        "aoe": [
+            "MWarp"
+        ],
+        "respawnSeconds": 1200,
+        "drops": [
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/d/df/Item_Galder_Icon.png",
+                "itemName": "Galders",
+                "itemQty": 3764,
+                "dropChance": 1
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/4/4b/Item_Broom_Icon.png",
+                "itemName": "Desert Witch Broom",
+                "itemQty": 1,
+                "dropChance": 0.5
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/7/7f/Card_Tutankhamen_Card_Icon.png",
+                "itemName": "Tutankhamen Card",
+                "itemQty": 1,
+                "dropChance": 0.01
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/9/98/Box_Chest_of_the_Forgotten_God_Icon.png",
+                "itemName": "Tutankhamen Legendary Box",
+                "itemQty": 1,
+                "dropChance": 0.01
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/b/ba/Weapon_Bokken_Icon.png",
+                "itemName": "Ult Bokken",
+                "itemQty": 1,
+                "dropChance": 0.5
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/d/d0/Weapon_Knife_Icon.png",
+                "itemName": "Ult Knife",
+                "itemQty": 1,
+                "dropChance": 0.5
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/c/ca/Weapon_Staff_Icon.png",
+                "itemName": "Ult Kane Rod",
+                "itemQty": 1,
+                "dropChance": 0.5
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/8/89/Gun_Wood_Gun_Icon.png",
+                "itemName": "Ult Wood Gun",
+                "itemQty": 1,
+                "dropChance": 0.5
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/2/27/Hat_Wood_Helmet_Icon.png",
+                "itemName": "Ult Wood Helmet",
+                "itemQty": 1,
+                "dropChance": 0.5
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/4/40/Hat_Beanie_Icon.png",
+                "itemName": "Ult Beanie",
+                "itemQty": 1,
+                "dropChance": 0.5
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/7/77/Item_Flail_Icon.png",
+                "itemName": "Flail",
+                "itemQty": 1,
+                "dropChance": 0.5
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/0/02/Item_Nemeth_Hair_Towel_Icon.png",
+                "itemName": "Nemeth Hair Towel",
+                "itemQty": 1,
+                "dropChance": 0.5
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/f/f5/Item_Compound_Waste_Icon.png",
+                "itemName": "Compound Waste",
+                "itemQty": 1,
+                "dropChance": 0.5
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/e/e3/Shield_Metal_Shield_Icon.png",
+                "itemName": "Old Metal Shield",
+                "itemQty": 1,
+                "dropChance": 0.5
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/e/e3/Shield_Metal_Shield_Icon.png",
+                "itemName": "Strong Metal Shield",
+                "itemQty": 1,
+                "dropChance": 0.5
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/b/b8/Gun_Antique_Gun_Icon.png",
+                "itemName": "Art Antique Gun",
+                "itemQty": 1,
+                "dropChance": 0.5
+            }
+        ]
+    },
+    "sergeant": {
+        "name": "Sergeant",
+        "aggro": true,
+        "level": 55,
+        "xp": 2270,
+        "tm": 1110,
+        "type": "Charm",
+        "baseStats": {
+            "AP": 334,
+            "AC": 64,
+            "DX": 8,
+            "MP": 2035,
+            "MA": 64,
+            "MD": 248,
+            "WT": 5630,
+            "DA": 14,
+            "LK": 14,
+            "HP": 2270,
+            "DP": 282,
+            "HV": 1
+        },
+        "hpBars":1,
+        "resistance": {
+            "Fire R": 0.05,
+            "Water R": 0.05,
+            "Air R": 0.05,
+            "Soil R": 0.05,
+            "Elec R": 0.06,
+            "Light R": 0.05,
+            "Dark R": 0.07,
+            "Magic R": 0.07,
+            "Phys R": 0.05,
+            "Gun R": 0.04,
+            "Shadow R": 0
+        },
+        "skills": [
+            "MDefenseFailure",
+            "Shockwave"
+        ],
+        "sounds": {},
+        "images": [
+            "curl -O https://static.wikia.nocookie.net/oto/images/6/61/Monster_Rotten_Mummy_Idle.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/0/05/Monster_Rotten_Mummy_Move.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/0/09/Monster_Rotten_Mummy_Fight.gif"
+        ],
+        "summons": [
+        ],
+        "aoe":[
+        ],
+        "drops": [
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/d/df/Item_Galder_Icon.png",
+                "itemName": "Galders",
+                "itemQty": 2366,
+                "dropChance": 0.03
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/1/1a/Item_Dark_Round_Seal_Icon.png",
+                "itemName": "Dark Round Seal",
+                "itemQty": 1,
+                "dropChance": 1
+            }
+        ]
+    },
+    "captain": {
+        "name": "Captain",
+        "aggro": true,
+        "level": 55,
+        "xp": 1535,
+        "tm": 1110,
+        "type": "Magic",
+        "baseStats": {
+            "AP": 268,
+            "AC": 64,
+            "DX": 8,
+            "MP": 2210,
+            "MA": 69,
+            "MD": 446,
+            "WT": 5630,
+            "DA": 14,
+            "LK": 14,
+            "HP": 1535,
+            "DP": 189,
+            "HV": 1
+        },
+        "hpBars":1,
+        "resistance": {
+            "Fire R": 0.07,
+            "Water R": 0.07,
+            "Air R": 0.07,
+            "Soil R": 0.07,
+            "Elec R": 0.08,
+            "Light R": 0.07,
+            "Dark R": 0.09,
+            "Magic R": 0.09,
+            "Phys R": 0.04,
+            "Gun R": 0.04,
+            "Shadow R": 0
+        },
+        "skills": [
+            "Cure",
+            "ManaArrow",
+            "ManaRing"
+        ],
+        "sounds": {},
+        "images": [
+            "curl -O https://static.wikia.nocookie.net/oto/images/3/3b/Monster_Queen_Mummy_Idle.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/6/68/Monster_Queen_Mummy_Move.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/7/71/Monster_Queen_Mummy_Fight.gif"
+        ],
+        "summons": [
+        ],
+        "aoe":[
+        ],
+        "drops": [
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/d/df/Item_Galder_Icon.png",
+                "itemName": "Galders",
+                "itemQty": 2366,
+                "dropChance": 0.03
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/9/92/Item_Red_Round_Seal_Icon.png",
+                "itemName": "Red Round Seal",
+                "itemQty": 1,
+                "dropChance": 1
+            }
+        ]
+    },
+    "lieutenant": {
+        "name": "Lieutenant",
+        "aggro": true,
+        "level": 55,
+        "xp": 2095,
+        "tm": 1110,
+        "type": "Power",
+        "baseStats": {
+            "AP": 430,
+            "AC": 65,
+            "DX": 7,
+            "MP": 2035,
+            "MA": 64,
+            "MD": 105,
+            "WT": 5630,
+            "DA": 14,
+            "LK": 15,
+            "HP": 2095,
+            "DP": 109,
+            "HV": 1
+        },
+        "hpBars":1,
+        "resistance": {
+            "Fire R": 0.04,
+            "Water R": 0.04,
+            "Air R": 0.04,
+            "Soil R": 0.04,
+            "Elec R": 0.04,
+            "Light R": 0.04,
+            "Dark R": 0.04,
+            "Magic R": 0.04,
+            "Phys R": 0.07,
+            "Gun R": 0.07,
+            "Shadow R": 0
+        },
+        "skills": [
+            "MBerserker",
+            "Shockwave"
+        ],
+        "sounds": {},
+        "images": [
+            "curl -O https://static.wikia.nocookie.net/oto/images/6/6b/Monster_Basic_Mummy_Idle.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/e/e3/Monster_Basic_Mummy_Move.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/d/db/Monster_Basic_Mummy_Fight.gif"
+        ],
+        "summons": [
+        ],
+        "aoe":[
+        ],
+        "drops": [
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/d/df/Item_Galder_Icon.png",
+                "itemName": "Galders",
+                "itemQty": 2366,
+                "dropChance": 0.03
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/6/6c/Item_Gray_Round_Seal_Icon.png",
+                "itemName": "Gray Round Seal",
+                "itemQty": 1,
+                "dropChance": 1
+            }
+        ]
+    },
+    "thiefmon": {
+        "name": "Thiefmon",
+        "level": 13,
+        "aggro": false,
+        "xp": 520,
+        "tm": 270,
+        "hpBars": 1,
+        "type": "Sense",
+        "baseStats": {
+            "AP": 52,
+            "AC": 53,
+            "DX": 10,
+            "MP": 460,
+            "MA": 53,
+            "MD": 32,
+            "WT": 1580,
+            "DA": 3,
+            "LK": 3,
+            "HP": 520,
+            "DP": 36,
+            "HV": 0
+        },
+        "resistance": {
+            "Fire R": 0,
+            "Water R": 0,
+            "Air R": 0,
+            "Soil R": 0,
+            "Elec R": 0,
+            "Light R": 0,
+            "Dark R": 0,
+            "Magic R": 0,
+            "Phys R": 0,
+            "Gun R": 0,
+            "Shadow R": 0
+        },
+        "skills": [
+        ],
+        "images": [
+            "curl -O https://static.wikia.nocookie.net/oto/images/e/e4/Monster_Thiefmon_Idle.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/e/e4/Monster_Thiefmon_Idle.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/7/75/Monster_Thiefmon_Move.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/3/30/Monster_Thiefmon_Fight.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/9/99/Monster_Thiefmon_Death.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/4/40/Card_Thiefmon_Card_Icon.gif"
+        ],
+        "summons": [
+        ],
+        "aoe": [],
+        "drops": [
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/d/df/Item_Galder_Icon.png",
+                "itemName": "Galders",
+                "itemQty": 124,
+                "dropChance": 0.1
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/4/40/Card_Thiefmon_Card_Icon.gif",
+                "itemName": "Thiefmon Card",
+                "itemQty": 1,
+                "dropChance": 0.012
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/5/5e/Item_50_Galder_Coupon_Icon.png",
+                "itemName": "Galder Coupon",
+                "itemQty": 50,
+                "dropChance": 0.3
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/5/57/Item_Envelope_with_Photo_Icon.png",
+                "itemName": "s Profile",
+                "itemQty": 1,
+                "dropChance": 0.013999999999999999
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/7/79/Weapon_Wood_Sword_Icon.gif",
+                "itemName": "Old Wooden Sword",
+                "itemQty": 1,
+                "dropChance": 0.013999999999999999
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/7/74/Weapon_Poniard_Icon.gif",
+                "itemName": "Old Poniard",
+                "itemQty": 1,
+                "dropChance": 0.013999999999999999
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/0/0e/Gun_Ebony_Gun_Icon.png",
+                "itemName": "Old Ebony Gun",
+                "itemQty": 1,
+                "dropChance": 0.013999999999999999
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/c/ca/Weapon_Staff_Icon.png",
+                "itemName": "Old Staff",
+                "itemQty": 1,
+                "dropChance": 0.013999999999999999
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/7/79/Weapon_Wood_Sword_Icon.gif",
+                "itemName": "Sharp Wooden Sword",
+                "itemQty": 1,
+                "dropChance": 0.0036
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/7/74/Weapon_Poniard_Icon.gif",
+                "itemName": "Sharp Poniard",
+                "itemQty": 1,
+                "dropChance": 0.0036
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/0/0e/Gun_Ebony_Gun_Icon.png",
+                "itemName": "Strong Ebony Gun",
+                "itemQty": 1,
+                "dropChance": 0.0036
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/c/ca/Weapon_Staff_Icon.png",
+                "itemName": "Moon Staff",
+                "itemQty": 1,
+                "dropChance": 0.0036
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/7/70/Potion_Pink_Potion_A_Icon.png",
+                "itemName": "Pink Potion A",
+                "itemQty": 1,
+                "dropChance": 0.08
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/4/4e/Potion_Blue_Potion_A_Icon.png",
+                "itemName": "Blue Potion A",
+                "itemQty": 1,
+                "dropChance": 0.08
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/0/0a/Item_Pointy_Object_Icon.png",
+                "itemName": "5x Pointy Object",
+                "itemQty": 1,
+                "dropChance": 0.04
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/9/9d/Item_Power_Stone_Icon.png",
+                "itemName": "AP Stone",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/9/9d/Item_Power_Stone_Icon.png",
+                "itemName": "AC Stone",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/9/9d/Item_Power_Stone_Icon.png",
+                "itemName": "DX Stone",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/e/ed/Item_Magic_Stone_Icon.png",
+                "itemName": "MP Stone",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/e/ed/Item_Magic_Stone_Icon.png",
+                "itemName": "MA Stone",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/e/ed/Item_Magic_Stone_Icon.png",
+                "itemName": "MD Stone",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/b/b1/Item_Sense_Stone_Icon.png",
+                "itemName": "WT Stone",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/b/b1/Item_Sense_Stone_Icon.png",
+                "itemName": "DA Stone",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/b/b1/Item_Sense_Stone_Icon.png",
+                "itemName": "LK Stone",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/2/27/Item_Charm_Stone_Icon.png",
+                "itemName": "HP Stone",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/2/27/Item_Charm_Stone_Icon.png",
+                "itemName": "DP Stone",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/2/27/Item_Charm_Stone_Icon.png",
+                "itemName": "HV Stone",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/c/c3/Item_Air_Crystal_Icon.png",
+                "itemName": "Air Crystal",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/e/e0/Item_Water_Crystal_Icon.png",
+                "itemName": "Water Crystal",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/1/1e/Item_Fire_Crystal_Icon.png",
+                "itemName": "Fire Crystal",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/9/97/Item_Light_Crystal_Icon.png",
+                "itemName": "Light Crystal",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/b/b7/Item_Dark_Crystal_Icon.png",
+                "itemName": "Dark Crystal",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/d/d6/Item_Elec_Crystal_Icon.png",
+                "itemName": "Electric Crystal",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/1/14/Item_Soil_Crystal_Icon.png",
+                "itemName": "Soil Crystal",
+                "itemQty": 1,
+                "dropChance": 0.002
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/d/d7/Item_Air_R_Crystal_Icon.png",
+                "itemName": "Air R Crystal",
+                "itemQty": 1,
+                "dropChance": 0.013000000000000001
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/0/0f/Item_Water_R_Crystal_Icon.png",
+                "itemName": "Water R Crystal",
+                "itemQty": 1,
+                "dropChance": 0.0013
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/1/19/Item_Fire_R_Crystal_Icon.png",
+                "itemName": "Fire R Crystal",
+                "itemQty": 1,
+                "dropChance": 0.0013
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/4/49/Item_Light_R_Crystal_Icon.png",
+                "itemName": "Light R Crystal",
+                "itemQty": 1,
+                "dropChance": 0.0013
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/e/e1/Item_Dark_R_Crystal_Icon.png",
+                "itemName": "Dark R Crystal",
+                "itemQty": 1,
+                "dropChance": 0.0013
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/8/85/Item_Elec_R_Crystal_Icon.png",
+                "itemName": "Electric R Crystal",
+                "itemQty": 1,
+                "dropChance": 0.0013
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/c/ce/Item_Soil_R_Crystal_Icon.png",
+                "itemName": "Soil R Crystal",
+                "itemQty": 1,
+                "dropChance": 0.0013
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/f/f6/Item_Block_Metal_Icon.png",
+                "itemName": "Block Metal",
+                "itemQty": 1,
+                "dropChance": 0.0013
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/d/db/Item_Critical_Metal_Icon.png",
+                "itemName": "Critical Metal",
+                "itemQty": 1,
+                "dropChance": 0.0013
+            }
+        ]
+    }
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "Tutorial Part I",
+    "description": "Talk to GM Eni",
+    "questType": "story",
+    "prerequisites": [],
+    "area": "TutorialMapLayout",
+    "npcStart": "gm_eni",
+    "dialogStart": "GM_Eni-0",
+    "dialogEnd": "GM_Eni-1",
+    "npcEnd": "gm_eni",
+    "criteria": [
+      {
+        "type": "gm_eni",
+        "description": "Talk to GM Eni",
+        "amount": 1
+      },
+      {
+        "type": "tutorial_question",
+        "description": "Answer question correctly",
+        "amount": 1
+      }
+    ],
+    "rewards": [
+      {
+        "type": "rookie-sword",
+        "amount": 1
+      },
+      {
+        "type": "rookie-shield",
+        "amount": 1
+      },
+      {
+        "type": "xp",
+        "amount": 200
+      },
+      {
+        "type": "tm",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Tutorial Part II",
+    "description": "Talk to Pia",
+    "questType": "story",
+    "prerequisites": [],
+    "area": "TutorialMapLayout",
+    "npcStart": "pia",
+    "dialogStart": "BunnyMaidA",
+    "dialogEnd": "Pia-1",
+    "npcEnd": "pia",
+    "criteria": [
+      {
+        "type": "pia",
+        "description": "Talk to Pia",
+        "amount": 1
+      },
+      {
+        "type": "tangerine",
+        "description": "Get a Tangerine",
+        "amount": 1
+      }
+    ],
+    "rewards": [
+      {
+        "type": "rookie-hat",
+        "amount": 1
+      },
+      {
+        "type": "xp",
+        "amount": 300
+      },
+      {
+        "type": "tm",
+        "amount": 300
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Tutorial Part III",
+    "description": "Talk to Magician Sephira",
+    "questType": "story",
+    "prerequisites": [],
+    "area": "TutorialMapLayout",
+    "npcStart": "magician_sephira",
+    "dialogStart": "Magician_Sephira-0",
+    "dialogEnd": "Magician_Sephira-1",
+    "npcEnd": "magician_sephira",
+    "criteria": [
+      {
+        "type": "magician_sephira",
+        "description": "Talk to Magician Sephira",
+        "amount": 1
+      },
+      {
+        "type": "learn-skill",
+        "description": "Learn a skill using a skill card",
+        "amount": 1
+      }
+    ],
+    "rewards": [
+      {
+        "type": "potion-hp",
+        "amount": 10
+      },
+      {
+        "type": "potion-mp",
+        "amount": 10
+      },
+      {
+        "type": "xp",
+        "amount": 200
+      },
+      {
+        "type": "tm",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Tutorial Part IV",
+    "description": "Talk to RoseMary",
+    "questType": "story",
+    "prerequisites": [
+      1,
+      2,
+      3
+    ],
+    "area": "TutorialMapLayout",
+    "dialogStart": "Rosemary-0",
+    "dialogEnd": "Rosemary-1",
+    "npcStart": "rosemary",
+    "npcEnd": "rosemary",
+    "criteria": [
+      {
+        "type": "rosemary",
+        "description": "Talk to RoseMary",
+        "amount": 1
+      },
+      {
+        "type": "baby-carrot",
+        "description": "Get a baby carrot",
+        "amount": 1
+      },
+      {
+        "type": "torobbie",
+        "description": "Defeat a Torobbie",
+        "amount": 1
+      }
+    ],
+    "rewards": [
+      {
+        "type": "xp",
+        "amount": 300
+      },
+      {
+        "type": "tm",
+        "amount": 300
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "End of Quests",
+    "description": "Defeat Torobbies",
+    "questType": "repeatable",
+    "prerequisites": [],
+    "area": "TutorialMapLayout",
+    "dialogStart": "Dorothy-0",
+    "dialogEnd": "Dorothy-1",
+    "npcStart": "dorothy",
+    "npcEnd": "dorothy",
+    "criteria": [
+      {
+        "type": "torobbie",
+        "description": "Defeat a Torobbie",
+        "amount": 10
+      }
+    ],
+    "rewards": [
+      {
+        "type": "potion-hp",
+        "amount": 10
+      },
+      {
+        "type": "xp",
+        "amount": 300
+      },
+      {
+        "type": "tm",
+        "amount": 300
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Drilling for Dummies",
+    "description": "Drilling for Dummies",
+    "questType": "side",
+    "prerequisites": [],
+    "area": "SandCityMapLayout",
+    "dialogStart": "Driller_Marky-0",
+    "dialogEnd": "idle",
+    "npcStart": "Driller_Marky",
+    "npcEnd": "Driller_Marky",
+    "criteria": [
+      {
+        "type": "drill",
+        "description": "Drill 20 times",
+        "amount": 20
+      },
+      {
+        "type": "tanning-oil",
+        "description": "Get 2 Tanning Oil",
+        "amount": 2
+      }
+    ],
+    "rewards": [
+      {
+        "type": "potion-hp",
+        "amount": 10
+      },
+      {
+        "type": "potion-mp",
+        "amount": 10
+      },
+      {
+        "type": "xp",
+        "amount": 300
+      },
+      {
+        "type": "tm",
+        "amount": 300
+      }
+    ]
+  }
+]
