@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__LoadQuestState !== "undefined") {
 gdjs.evtsExt__InterfaceFunctions__LoadQuestState = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__LoadQuestState.userFunc0x11c8b50 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__LoadQuestState.userFunc0x5122428 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(!window['questManager']) return;
 
@@ -46,7 +46,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__LoadQuestState.userFunc0x11c8b50(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__LoadQuestState.userFunc0x5122428(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

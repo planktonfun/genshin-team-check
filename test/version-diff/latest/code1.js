@@ -1470,7 +1470,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.CharacterCreationCode.asyncCallback73401276 = function (runtimeScene, asyncObjectsList) {
+};gdjs.CharacterCreationCode.asyncCallback80681412 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Tutorial", false);
 }}
 gdjs.CharacterCreationCode.eventsList32 = function(runtimeScene, asyncObjectsList) {
@@ -1482,7 +1482,7 @@ gdjs.CharacterCreationCode.eventsList32 = function(runtimeScene, asyncObjectsLis
 const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback73401276(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback80681412(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1570,7 +1570,7 @@ gdjs.CharacterCreationCode.eventsList33(runtimeScene, asyncObjectsList);} //End 
 }
 
 
-};gdjs.CharacterCreationCode.asyncCallback73398204 = function (runtimeScene, asyncObjectsList) {
+};gdjs.CharacterCreationCode.asyncCallback80670684 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
 gdjs.CharacterCreationCode.eventsList34(runtimeScene, asyncObjectsList);} //End of subevents
@@ -1585,7 +1585,7 @@ gdjs.CharacterCreationCode.eventsList35 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.CharacterCreationCode.GDrightupInputObjects2) asyncObjectsList.addObject("rightupInput", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__InterfaceFunctions__ContainsBadWords.func(runtimeScene, (( gdjs.CharacterCreationCode.GDrightupInputObjects2.length === 0 ) ? "" :gdjs.CharacterCreationCode.GDrightupInputObjects2[0].getString()), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback73398204(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__InterfaceFunctions__ContainsBadWords.func(runtimeScene, (( gdjs.CharacterCreationCode.GDrightupInputObjects2.length === 0 ) ? "" :gdjs.CharacterCreationCode.GDrightupInputObjects2[0].getString()), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback80670684(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1693,7 +1693,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getScene().getVariables().get("PlayerRetrieved"), true);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(73394916);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(80664756);
 }
 }
 if (isConditionTrue_0) {
@@ -2393,7 +2393,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("selected")) != (gdjs.RuntimeObject.getVariableString(((gdjs.CharacterCreationCode.GDleftupObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.CharacterCreationCode.GDleftupObjects2[0].getVariables()).get("id")));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(73376180);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(80641068);
 }
 }
 }
@@ -2864,7 +2864,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "TransparentMessageTimer") >= gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("TransparentTextMessageSeconds"));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(76806820);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(87480628);
 }
 }
 if (isConditionTrue_0) {
@@ -3181,7 +3181,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(76426476);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(86891988);
 }
 }
 if (isConditionTrue_0) {

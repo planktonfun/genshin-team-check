@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ArrayTools__GlobalShiftString !== "undefined") {
 gdjs.evtsExt__ArrayTools__GlobalShiftString = {};
 
 
-gdjs.evtsExt__ArrayTools__GlobalShiftString.userFunc0xd7fb50 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ArrayTools__GlobalShiftString.userFunc0x470d1c0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable} */
 const array = eventsFunctionContext.getArgument("Array");
@@ -24,7 +24,7 @@ gdjs.evtsExt__ArrayTools__GlobalShiftString.eventsList0 = function(runtimeScene,
 {
 
 
-gdjs.evtsExt__ArrayTools__GlobalShiftString.userFunc0xd7fb50(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ArrayTools__GlobalShiftString.userFunc0x470d1c0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

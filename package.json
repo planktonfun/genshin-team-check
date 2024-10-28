@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/planktonfun/genshin-team-check#readme",
   "dependencies": {
+    "archiver": "^7.0.1",
     "dotenv": "^11.0.0",
     "ws": "^8.4.0"
   }

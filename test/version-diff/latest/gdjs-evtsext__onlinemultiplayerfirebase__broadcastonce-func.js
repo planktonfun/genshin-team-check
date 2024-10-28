@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce !== "undefined
 gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xef5e38 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x4934a80 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 // lobby.sendMessage(
 //       eventsFunctionContext.getArgument("Type").toString(),
@@ -43,12 +43,12 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.eventsList0 = function(ru
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xef5e38(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x4934a80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
 
-};gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xe82cb8 = function(runtimeScene, eventsFunctionContext) {
+};gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xafce18 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 //  lobby.sendMessageNoHistory(
 //       eventsFunctionContext.getArgument("Type").toString(),
@@ -72,7 +72,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.eventsList1 = function(ru
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xe82cb8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xafce18(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

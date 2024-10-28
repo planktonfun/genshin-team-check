@@ -1,6 +1,6 @@
 
 		// Replace 'your_zip_file_url' with the actual URL of the zip file
-		const zipFileUrl = './compressed_png.zip';
+		const zipFileUrl = './latest.zip';
 		const versionUrl = './version.txt';
 
 		var extractedProgress = {total:0,progress:0};
@@ -124,7 +124,7 @@
 		        var a = await browserDB.getDataById(cacheKey);
 		        if(a && (version == a.data.version)) {
 		            console.log('using cache')
-		            loadTheZipFromUrl(convertArrayBufferToURL(a.data.file));
+		            loadTheZipFromUrl(convertArrayBufferToURL(a.data.file), true);
 		        } else {
 		            console.log('not using cache')
 		            var arrayBuffer = await getFileAsArrayBuffer(zipFileUrl);
@@ -143,13 +143,21 @@
 	        cachedProcess(zipFileUrl, versionUrl); // use this so user doesn't have to download large files upon browser refresh
 	    }
 
-		function loadTheZipFromUrl(zipFileUrl) {
+	    function bytesToMB(bytes) {
+		    return (bytes / (1024 * 1024)).toFixed(2);
+		}
+
+		function loadTheZipFromUrl(zipFileUrl, isCache=false) {
 			const xhr = new XMLHttpRequest();
 
 			xhr.onprogress = function (event) {
 	            if (event.lengthComputable) {
 	                const percentComplete = (event.loaded / event.total) * 100;
 	                document.getElementById('progress-bar').style.width = percentComplete + '%';
+	                if(isCache)
+	                	document.getElementById('progress-size').innerText = `Latest version 0 MB / 0 MB`;
+	                else
+	                	document.getElementById('progress-size').innerText = `Updating version ${bytesToMB(event.loaded)} MB / ${bytesToMB(event.total)} MB`;
 	            }
 	        };
 
@@ -221,6 +229,7 @@
 
 			const percentComplete = (extractedProgress.progress / extractedProgress.total) * 100;
             document.getElementById('progress-bar2').style.width = percentComplete + '%';
+            document.getElementById('progress-percent').innerText = `Extracting ${percentComplete.toFixed(2)} %`;
 
 			if(extractedProgress.progress != extractedProgress.total) return;
 
@@ -257,6 +266,62 @@
 		      }
 		}
 
+		function dataUrlToBlobUrl(dataUrl) {
+            const byteString = atob(dataUrl.split(',')[1]); // Decode base64
+            const mimeString = dataUrl.split(',')[0].split(':')[1].split(';')[0]; // Extract MIME type
+
+            // Create an ArrayBuffer and fill it with the byte data
+            const arrayBuffer = new ArrayBuffer(byteString.length);
+            const uintArray = new Uint8Array(arrayBuffer);
+
+            for (let i = 0; i < byteString.length; i++) {
+                uintArray[i] = byteString.charCodeAt(i);
+            }
+
+            // Return the Blob
+            const fileBlob = new Blob([arrayBuffer], { type: mimeString });
+
+            return URL.createObjectURL(fileBlob);
+        }
+
+		function loadFromCurrent(files) {
+			extractedProgress.total = files.length*2;
+
+			const batchSize = 400; // Adjust batch size as needed
+			let currentIndex = 0;
+
+			const processBatch = () => {
+	            const batch = files.slice(currentIndex, currentIndex + batchSize);
+	            batch.forEach(async function (f) {
+		          extractedProgress.progress++;
+		          var filename = f.filename.toLowerCase();
+		          // const {base64Data, mimeType} = JSON.parse(f.b64);
+		          const fileBlob = f.b64.base64Data; // convert this to raw blob so its faster
+		          // console.log(base64Data)
+		          // const blobUrl = dataUrlToBlobUrl(base64Data);
+		          const blobUrl = URL.createObjectURL(fileBlob);
+		          // console.log(filename);
+
+		          if(filename.indexOf(".js") == filename.length - 3) {
+		          	extractedJSFiles[filename] = blobUrl;
+				  } else {
+		          	extractedAudioFiles[filename] = await convertAudioBlobURLToDataUrl(blobUrl);
+		          	extractedFiles[filename] = blobUrl;
+		          }
+
+		          extractedProgress.progress++;
+	    		  checkComplete();
+		        });
+
+	            currentIndex += batchSize;
+
+	            if (currentIndex < files.length) {
+	                setTimeout(processBatch, 0); // Allow UI to update
+	            }
+	        };
+
+	        processBatch();
+		}
 
 		function loadTheZipBlob(zipBlob) {
 			// Create a new JSZip instance
@@ -277,6 +342,8 @@
 			        // Extract the file
 			        file.async('blob').then(async function (content) {
 			          var filename = relativePath.replace('compressed_png/', '').toLowerCase();
+
+			          console.log(filename);
 
 			          if(filename.indexOf(".js") == filename.length - 3) {
 			          	extractedJSFiles[filename] = URL.createObjectURL(content); //await convertJSBlobURLToDataUrl(URL.createObjectURL(content));
