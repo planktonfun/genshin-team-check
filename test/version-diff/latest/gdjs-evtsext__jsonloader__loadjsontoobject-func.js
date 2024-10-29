@@ -9,7 +9,7 @@ gdjs.evtsExt__JsonLoader__LoadJSONToObject = {};
 gdjs.evtsExt__JsonLoader__LoadJSONToObject.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__JsonLoader__LoadJSONToObject.userFunc0x4851d50 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__JsonLoader__LoadJSONToObject.userFunc0x11aed28 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext
     .getArgument("Variable")
@@ -26,7 +26,7 @@ gdjs.evtsExt__JsonLoader__LoadJSONToObject.eventsList0 = function(runtimeScene, 
 {
 
 
-gdjs.evtsExt__JsonLoader__LoadJSONToObject.userFunc0x4851d50(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__JsonLoader__LoadJSONToObject.userFunc0x11aed28(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

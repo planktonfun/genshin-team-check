@@ -9,7 +9,7 @@ gdjs.evtsExt__ArrayTools__ObjectMean = {};
 gdjs.evtsExt__ArrayTools__ObjectMean.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__ArrayTools__ObjectMean.userFunc0x2c2c190 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ArrayTools__ObjectMean.userFunc0x4136e40 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable[]} */
 const internalArray = eventsFunctionContext.getArgument("Array").getAllChildrenArray();
@@ -25,7 +25,7 @@ gdjs.evtsExt__ArrayTools__ObjectMean.eventsList0 = function(runtimeScene, events
 {
 
 
-gdjs.evtsExt__ArrayTools__ObjectMean.userFunc0x2c2c190(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ArrayTools__ObjectMean.userFunc0x4136e40(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__BaseGameFunctions__IsSeedCrit !== "undefined") {
 gdjs.evtsExt__BaseGameFunctions__IsSeedCrit = {};
 
 
-gdjs.evtsExt__BaseGameFunctions__IsSeedCrit.userFunc0x36f5e48 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__BaseGameFunctions__IsSeedCrit.userFunc0x12f86f0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 var baseStats = eventsFunctionContext.getArgument("BaseStats").toJSObject();
 var equipment = eventsFunctionContext.getArgument("Equipment").toJSObject();
@@ -183,7 +183,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__BaseGameFunctions__IsSeedCrit.userFunc0x36f5e48(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BaseGameFunctions__IsSeedCrit.userFunc0x12f86f0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

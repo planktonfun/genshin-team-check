@@ -36,7 +36,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("DeathSprite"), gdjs.evtsExt__Re
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(65199180);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(70646372);
 }
 if (isConditionTrue_0) {
 {runtimeScene.getScene().getVariables().get("Camera").getChild("Default").getChild("X").setNumber(gdjs.evtTools.camera.getCameraX(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("Layer")), 0));
