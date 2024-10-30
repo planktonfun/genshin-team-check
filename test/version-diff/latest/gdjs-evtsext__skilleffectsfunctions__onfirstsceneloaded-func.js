@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__SkillEffectsFunctions__onFirstSceneLoaded !== "undefine
 gdjs.evtsExt__SkillEffectsFunctions__onFirstSceneLoaded = {};
 
 
-gdjs.evtsExt__SkillEffectsFunctions__onFirstSceneLoaded.userFunc0x11f5a90 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__SkillEffectsFunctions__onFirstSceneLoaded.userFunc0x13c5200 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 function getState() {
   if (document.visibilityState === 'hidden') {
@@ -69,7 +69,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__SkillEffectsFunctions__onFirstSceneLoaded.userFunc0x11f5a90(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__SkillEffectsFunctions__onFirstSceneLoaded.userFunc0x13c5200(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

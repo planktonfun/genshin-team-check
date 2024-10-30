@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__BaseGameFunctions__PlaySoundUsingString !== "undefined"
 gdjs.evtsExt__BaseGameFunctions__PlaySoundUsingString = {};
 
 
-gdjs.evtsExt__BaseGameFunctions__PlaySoundUsingString.userFunc0x1068970 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__BaseGameFunctions__PlaySoundUsingString.userFunc0x1482480 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 // if(!window.active) return;
 
@@ -26,7 +26,7 @@ gdjs.evtsExt__BaseGameFunctions__PlaySoundUsingString.eventsList0 = function(run
 {
 
 
-gdjs.evtsExt__BaseGameFunctions__PlaySoundUsingString.userFunc0x1068970(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BaseGameFunctions__PlaySoundUsingString.userFunc0x1482480(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

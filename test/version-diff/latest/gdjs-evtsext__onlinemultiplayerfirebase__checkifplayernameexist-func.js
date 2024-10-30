@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__CheckIfPlayerNameExist !== "
 gdjs.evtsExt__OnlineMultiplayerFirebase__CheckIfPlayerNameExist = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__CheckIfPlayerNameExist.userFunc0x10a5070 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__CheckIfPlayerNameExist.userFunc0x132fb18 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 runtimeScene.getVariables().get('PlayerRetrieved').setBoolean(false);
 if(window['lobby']) {
@@ -30,7 +30,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__CheckIfPlayerNameExist.eventsList0 = fu
 
 
 var objects = [];
-gdjs.evtsExt__OnlineMultiplayerFirebase__CheckIfPlayerNameExist.userFunc0x10a5070(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__CheckIfPlayerNameExist.userFunc0x132fb18(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

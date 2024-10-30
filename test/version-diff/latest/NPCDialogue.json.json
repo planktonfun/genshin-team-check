@@ -508,5 +508,25 @@
 			"y": -1080
 		},
 		"colorID": 0
+	},
+	{
+		"title": "Tutankhamen-1",
+		"tags": "",
+		"body": "Who dares to disturb my peaceful rest!",
+		"position": {
+			"x": -440,
+			"y": -600
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Tutankhamen-2",
+		"tags": "",
+		"body": "Let the curse of Tutankhamen fall upon you!",
+		"position": {
+			"x": -160,
+			"y": -600
+		},
+		"colorID": 0
 	}
 ]

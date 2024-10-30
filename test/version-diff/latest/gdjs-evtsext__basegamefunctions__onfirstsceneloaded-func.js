@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__BaseGameFunctions__onFirstSceneLoaded !== "undefined") 
 gdjs.evtsExt__BaseGameFunctions__onFirstSceneLoaded = {};
 
 
-gdjs.evtsExt__BaseGameFunctions__onFirstSceneLoaded.userFunc0x12fb088 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__BaseGameFunctions__onFirstSceneLoaded.userFunc0x14caf70 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 window.onfocus = function () {
     window.active = true;
@@ -33,7 +33,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__BaseGameFunctions__onFirstSceneLoaded.userFunc0x12fb088(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BaseGameFunctions__onFirstSceneLoaded.userFunc0x14caf70(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

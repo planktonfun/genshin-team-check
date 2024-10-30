@@ -10,7 +10,7 @@ gdjs.evtsExt__InterfaceFunctions__StartMonsterQuest.GDMonsterQuestObjectsObjects
 gdjs.evtsExt__InterfaceFunctions__StartMonsterQuest.GDMonsterQuestObjectsObjects2= [];
 
 
-gdjs.evtsExt__InterfaceFunctions__StartMonsterQuest.userFunc0x1170788 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__StartMonsterQuest.userFunc0x1340460 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 // Create Borders and background
 const layer = runtimeScene.getVariables().get('LayerToUse').getAsString();
@@ -37,7 +37,7 @@ gdjs.evtsExt__InterfaceFunctions__StartMonsterQuest.eventsList0 = function(runti
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__StartMonsterQuest.userFunc0x1170788(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__StartMonsterQuest.userFunc0x1340460(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

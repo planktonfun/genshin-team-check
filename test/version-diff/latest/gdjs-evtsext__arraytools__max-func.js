@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ArrayTools__Max !== "undefined") {
 gdjs.evtsExt__ArrayTools__Max = {};
 
 
-gdjs.evtsExt__ArrayTools__Max.userFunc0x40f0978 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ArrayTools__Max.userFunc0x3fb9640 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable[]} */
 const internalArray = eventsFunctionContext.getArgument("Array").getAllChildrenArray();
@@ -39,7 +39,7 @@ gdjs.evtsExt__ArrayTools__Max.eventsList0 = function(runtimeScene, eventsFunctio
 {
 
 
-gdjs.evtsExt__ArrayTools__Max.userFunc0x40f0978(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ArrayTools__Max.userFunc0x3fb9640(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
