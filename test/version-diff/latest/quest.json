@@ -49,7 +49,7 @@
     "prerequisites": [],
     "area": "TutorialMapLayout",
     "npcStart": "pia",
-    "dialogStart": "BunnyMaidA",
+    "dialogStart": "Pia-0",
     "dialogEnd": "Pia-1",
     "npcEnd": "pia",
     "criteria": [

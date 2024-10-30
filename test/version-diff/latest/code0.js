@@ -221,7 +221,7 @@ gdjs.LoginCode.GDAnnouncementIconObjects5= [];
 gdjs.LoginCode.GDAnnouncementIconObjects6= [];
 
 
-gdjs.LoginCode.userFunc0x149cf60 = function(runtimeScene) {
+gdjs.LoginCode.userFunc0x3e24580 = function(runtimeScene) {
 "use strict";
 window.addEventListener("keydown", function (event) {
     // Check if Page Down (key code 34) is pressed
@@ -328,7 +328,7 @@ gdjs.LoginCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.LoginCode.userFunc0xaf6858 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x3e24ea8 = function(runtimeScene) {
 "use strict";
 var a = {
         "GlobalVariables": {
@@ -434,7 +434,7 @@ gdjs.LoginCode.eventsList4 = function(runtimeScene) {
 {
 
 
-gdjs.LoginCode.userFunc0x149cf60(runtimeScene);
+gdjs.LoginCode.userFunc0x3e24580(runtimeScene);
 
 }
 
@@ -557,7 +557,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.LoginCode.userFunc0xaf6858(runtimeScene);
+gdjs.LoginCode.userFunc0x3e24ea8(runtimeScene);
 
 }
 
