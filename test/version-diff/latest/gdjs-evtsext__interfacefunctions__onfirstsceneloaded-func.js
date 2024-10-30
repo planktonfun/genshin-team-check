@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded !== "undefined")
 gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x137e298 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x56cbff8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 class EquipmentManager
 {
@@ -49,7 +49,7 @@ class EquipmentManager
 
 window.equipmentManager = new EquipmentManager();
 };
-gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x1384608 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x55a32b0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /**
  * Bundled by jsDelivr using Rollup v2.79.1 and Terser v5.19.2.
@@ -2000,7 +2000,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x137e298(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x56cbff8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -2018,7 +2018,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x1384608(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x55a32b0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

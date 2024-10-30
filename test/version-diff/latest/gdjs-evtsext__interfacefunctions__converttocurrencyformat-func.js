@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__ConvertToCurrencyFormat !== "undefi
 gdjs.evtsExt__InterfaceFunctions__ConvertToCurrencyFormat = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__ConvertToCurrencyFormat.userFunc0x136aa28 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__ConvertToCurrencyFormat.userFunc0x140f6b0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = eventsFunctionContext.getArgument("NumberInput").toLocaleString('en-US');
 
@@ -18,7 +18,7 @@ gdjs.evtsExt__InterfaceFunctions__ConvertToCurrencyFormat.eventsList0 = function
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__ConvertToCurrencyFormat.userFunc0x136aa28(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__ConvertToCurrencyFormat.userFunc0x140f6b0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

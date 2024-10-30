@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__ReadGeneralWordsIndex !== "u
 gdjs.evtsExt__OnlineMultiplayerFirebase__ReadGeneralWordsIndex = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__ReadGeneralWordsIndex.userFunc0x1338328 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__ReadGeneralWordsIndex.userFunc0x15207e8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const animationMap = new WordIdMapper([
     "Idle",
@@ -74,7 +74,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__ReadGeneralWordsIndex.userFunc0x1338328(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__ReadGeneralWordsIndex.userFunc0x15207e8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
