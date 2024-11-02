@@ -9,7 +9,7 @@ gdjs.evtsExt__InterfaceFunctions__AppendChatMessage = {};
 gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.GDChatObjectObjects1= [];
 
 
-gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x140f6b0 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x96c700 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 if(!window.lad) {
     function LimitedArrayDisplayer() {
@@ -61,7 +61,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("ChatObject"), gdjs.evtsExt__Int
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.GDChatObjectObjects1);
-gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x140f6b0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x96c700(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
