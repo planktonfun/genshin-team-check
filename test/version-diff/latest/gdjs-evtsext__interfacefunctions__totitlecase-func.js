@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__ToTitleCase !== "undefined") {
 gdjs.evtsExt__InterfaceFunctions__ToTitleCase = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__ToTitleCase.userFunc0x306c628 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__ToTitleCase.userFunc0x11b8c48 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 function toTitleCase(str) {
   return str.replace(/\w\S*/g, function(txt) {
@@ -33,7 +33,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__ToTitleCase.userFunc0x306c628(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__ToTitleCase.userFunc0x11b8c48(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

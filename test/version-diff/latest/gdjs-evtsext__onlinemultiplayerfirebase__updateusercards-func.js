@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__UpdateUserCards !== "undefin
 gdjs.evtsExt__OnlineMultiplayerFirebase__UpdateUserCards = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__UpdateUserCards.userFunc0x3064958 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__UpdateUserCards.userFunc0xf65c50 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 if(window['lobby']) {
     lobby.setUserCards(
@@ -32,7 +32,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__UpdateUserCards.eventsList0 = function(
 
 
 var objects = [];
-gdjs.evtsExt__OnlineMultiplayerFirebase__UpdateUserCards.userFunc0x3064958(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__UpdateUserCards.userFunc0xf65c50(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

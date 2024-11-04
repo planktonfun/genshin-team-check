@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__SaveQuestState !== "undefined") {
 gdjs.evtsExt__InterfaceFunctions__SaveQuestState = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__SaveQuestState.userFunc0x3070838 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__SaveQuestState.userFunc0x11b8b58 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(!window['questManager']) return;
 
@@ -32,7 +32,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__SaveQuestState.userFunc0x3070838(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__SaveQuestState.userFunc0x11b8b58(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
