@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__JsonLoader__onSceneLoaded !== "undefined") {
 gdjs.evtsExt__JsonLoader__onSceneLoaded = {};
 
 
-gdjs.evtsExt__JsonLoader__onSceneLoaded.userFunc0x1180948 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__JsonLoader__onSceneLoaded.userFunc0x11a9538 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 window.loadedJS = {};
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__JsonLoader__onSceneLoaded.eventsList0 = function(runtimeScene, eve
 {
 
 
-gdjs.evtsExt__JsonLoader__onSceneLoaded.userFunc0x1180948(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__JsonLoader__onSceneLoaded.userFunc0x11a9538(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

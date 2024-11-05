@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay !== "und
 gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xf3cf78 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xec9db0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 // lobby.sendOneWay(
 //       eventsFunctionContext.getArgument("Type").toString(),
@@ -38,7 +38,7 @@ sendAsDeflated(
   }
 );
 };
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xf3d048 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xf2c828 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const currentMap = runtimeScene.getGame().getVariables().get('SaveData').toJSObject();
 const mapList = runtimeScene.getGame().getVariables().get('MapList').toJSObject();
@@ -62,7 +62,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.eventsList0 = funct
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xf3d048(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xf2c828(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -72,7 +72,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xf3d048(ru
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xf3cf78(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xec9db0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

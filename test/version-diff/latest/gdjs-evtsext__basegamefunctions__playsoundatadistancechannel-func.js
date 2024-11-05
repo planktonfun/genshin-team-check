@@ -14,7 +14,7 @@ gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistanceChannel.GDWarpzoneObjects2=
 
 gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistanceChannel.mapOfGDgdjs_9546evtsExt_9595_9595BaseGameFunctions_9595_9595PlaySoundAtADistanceChannel_9546GDPlayerSpawnObjects1Objects = Hashtable.newFrom({"PlayerSpawn": gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistanceChannel.GDPlayerSpawnObjects1});
 gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistanceChannel.mapOfGDgdjs_9546evtsExt_9595_9595BaseGameFunctions_9595_9595PlaySoundAtADistanceChannel_9546GDWarpzoneObjects1Objects = Hashtable.newFrom({"Warpzone": gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistanceChannel.GDWarpzoneObjects1});
-gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistanceChannel.userFunc0x12d4b20 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistanceChannel.userFunc0x12c4a90 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 var volume = runtimeScene.getVariables().get('Volume').getAsNumber();
 var soundFileName = eventsFunctionContext.getArgument("SoundResource"); //eventsFunctionContext.getArgument("SoundResource").toString();
@@ -35,7 +35,7 @@ gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistanceChannel.eventsList0 = funct
 {
 
 
-gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistanceChannel.userFunc0x12d4b20(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistanceChannel.userFunc0x12c4a90(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

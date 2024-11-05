@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__EquipItem !== "undefined") {
 gdjs.evtsExt__InterfaceFunctions__EquipItem = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__EquipItem.userFunc0x117ce18 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__EquipItem.userFunc0x116c5a0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 // Use javascript as a workaround to pick all itemIcons
 var itemIcons = runtimeScene.getObjects("itemIcons");
@@ -64,7 +64,7 @@ gdjs.evtsExt__InterfaceFunctions__EquipItem.eventsList0 = function(runtimeScene,
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__EquipItem.userFunc0x117ce18(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__EquipItem.userFunc0x116c5a0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
