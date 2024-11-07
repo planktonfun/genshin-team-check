@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__GetRandomInRangeFromSeed !==
 gdjs.evtsExt__OnlineMultiplayerFirebase__GetRandomInRangeFromSeed = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__GetRandomInRangeFromSeed.userFunc0xf3eaa0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__GetRandomInRangeFromSeed.userFunc0x4324248 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 var result = randomInRange(
     eventsFunctionContext.getArgument("Min").valueOf(),
@@ -35,7 +35,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__GetRandomInRangeFromSeed.userFunc0xf3eaa0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__GetRandomInRangeFromSeed.userFunc0x4324248(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

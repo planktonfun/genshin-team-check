@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ArrayTools__GlobalAppendAll !== "undefined") {
 gdjs.evtsExt__ArrayTools__GlobalAppendAll = {};
 
 
-gdjs.evtsExt__ArrayTools__GlobalAppendAll.userFunc0x4221a28 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ArrayTools__GlobalAppendAll.userFunc0x4322ae8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable} */
 const array = eventsFunctionContext.getArgument("Array");
@@ -25,7 +25,7 @@ gdjs.evtsExt__ArrayTools__GlobalAppendAll.eventsList0 = function(runtimeScene, e
 {
 
 
-gdjs.evtsExt__ArrayTools__GlobalAppendAll.userFunc0x4221a28(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ArrayTools__GlobalAppendAll.userFunc0x4322ae8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

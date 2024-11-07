@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__RetrievePlayerStatsFromServe
 gdjs.evtsExt__OnlineMultiplayerFirebase__RetrievePlayerStatsFromServer = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__RetrievePlayerStatsFromServer.userFunc0xf51ec0 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__RetrievePlayerStatsFromServer.userFunc0x5104a38 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 runtimeScene.getVariables().get('PlayerRetrieved').setBoolean(false);
 if(window['lobby']) {
@@ -59,7 +59,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__RetrievePlayerStatsFromServer.eventsLis
 
 
 var objects = [];
-gdjs.evtsExt__OnlineMultiplayerFirebase__RetrievePlayerStatsFromServer.userFunc0xf51ec0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__RetrievePlayerStatsFromServer.userFunc0x5104a38(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
