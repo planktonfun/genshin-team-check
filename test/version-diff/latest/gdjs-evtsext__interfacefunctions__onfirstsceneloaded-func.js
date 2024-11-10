@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded !== "undefined")
 gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x2421060 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x491b438 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 class EquipmentManager
 {
@@ -49,7 +49,7 @@ class EquipmentManager
 
 window.equipmentManager = new EquipmentManager();
 };
-gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x20452d8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x4598940 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /**
  * Bundled by jsDelivr using Rollup v2.79.1 and Terser v5.19.2.
@@ -1965,7 +1965,9 @@ const matcher = new RegExpMatcher({
     ...englishRecommendedTransformers,
 });
 
-const censor = new TextCensor();
+const asteriskStrategy = (ctx) => '*'.repeat(ctx.matchLength);
+const censor = new TextCensor().setStrategy(asteriskStrategy);
+
 
 function hasBadWords(input) {
     const matches = matcher.getAllMatches(input);
@@ -2000,7 +2002,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x2421060(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x491b438(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -2018,7 +2020,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x20452d8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__onFirstSceneLoaded.userFunc0x4598940(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

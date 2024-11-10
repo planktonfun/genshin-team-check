@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__SetRespawnTime !== "undefine
 gdjs.evtsExt__OnlineMultiplayerFirebase__SetRespawnTime = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__SetRespawnTime.userFunc0x4a1a728 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__SetRespawnTime.userFunc0x3ed3880 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(window['lobby']) {
     lobby.setServerRespawnVariable(
@@ -34,7 +34,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__SetRespawnTime.userFunc0x4a1a728(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__SetRespawnTime.userFunc0x3ed3880(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

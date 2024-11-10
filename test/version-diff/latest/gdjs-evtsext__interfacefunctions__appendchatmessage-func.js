@@ -9,7 +9,7 @@ gdjs.evtsExt__InterfaceFunctions__AppendChatMessage = {};
 gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.GDChatObjectObjects1= [];
 
 
-gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x43ea100 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x2523390 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 if(!window.lad) {
     function LimitedArrayDisplayer() {
@@ -42,16 +42,28 @@ if(!window.lad) {
     // objects[0].getVariables().get('initialY').setNumber(687);
 }
 
+function splitStringIntoChunks(str, chunkSize) {
+    const result = [];
+    for (let i = 0; i < str.length; i += chunkSize) {
+        result.push(str.slice(i, i + chunkSize));
+    }
+    return result;
+}
+
 function appendChatObject(text) {
     // if its a command don't display it
     if(text.search(': /') > -1) return;
 
-    var compress = window.lad(text.trim().slice(0, 40));
+    var compress = window.lad(text.trim().slice(0, 75));
     objects[0].setText(compress.text); // objects[0].getText()+"\n"+text.trim());
-    objects[0].setY(objects[0].getVariables().get('initialY').getAsNumber()-(16*compress.length))
+    // objects[0].setY(objects[0].getVariables().get('initialY').getAsNumber()-(16*compress.length))
+    objects[0].setY(objects[0].getVariables().get('initialY').getAsNumber()-objects[0].getHeight()+16)
 }
 
-appendChatObject(eventsFunctionContext.getArgument("TextContent"))
+const chunks = splitStringIntoChunks(eventsFunctionContext.getArgument("TextContent"), 75);
+
+chunks.forEach(c=>appendChatObject(c))
+
 };
 gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -61,7 +73,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("ChatObject"), gdjs.evtsExt__Int
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.GDChatObjectObjects1);
-gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x43ea100(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x2523390(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
