@@ -8,37 +8,42 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay !== "und
 gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0x439de80 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xed8370 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
-// lobby.sendOneWay(
-//       eventsFunctionContext.getArgument("Type").toString(),
-//       JSON.parse(eventsFunctionContext.getArgument("Data").toString()),
-//       eventsFunctionContext.getArgument("DelayMillisecond").valueOf()
-//     );
+const enableDeflation = false; // deflation costs about 5 fps to lower end settings
 
-const lastSent = runtimeScene.getVariables().get('LastSent').toJSObject();
+if(!enableDeflation) {
+lobby.sendOneWay(
+      eventsFunctionContext.getArgument("Type").toString(),
+      JSON.parse(eventsFunctionContext.getArgument("Data").toString()),
+      eventsFunctionContext.getArgument("DelayMillisecond").valueOf()
+    );
+} else {
+    const lastSent = runtimeScene.getVariables().get('LastSent').toJSObject();
 
-lastSent[eventsFunctionContext.getArgument("Type").toString()] = {
-  Type: eventsFunctionContext.getArgument("Type").toString(),
-  Data: JSON.parse(eventsFunctionContext.getArgument("Data").toString()),
-  DelayMillisecond:eventsFunctionContext.getArgument("DelayMillisecond").valueOf(),
+    lastSent[eventsFunctionContext.getArgument("Type").toString()] = {
+      Type: eventsFunctionContext.getArgument("Type").toString(),
+      Data: JSON.parse(eventsFunctionContext.getArgument("Data").toString()),
+      DelayMillisecond:eventsFunctionContext.getArgument("DelayMillisecond").valueOf(),
+    };
+
+    runtimeScene.getVariables().get('LastSent').fromJSObject(lastSent);
+    runtimeScene.getVariables().get('LastEventUpdated').setBoolean(true);
+
+    sendAsDeflated(
+      runtimeScene.getVariables().get('PeerID').getAsString(),
+      eventsFunctionContext.getArgument("Type").toString(),
+      eventsFunctionContext.getArgument("Data").toString(),
+      eventsFunctionContext.getArgument("DelayMillisecond").valueOf(),
+      (type,data,delay,info)=>{
+        lobby.sendOneWay(type,data,delay)
+        runtimeScene.getVariables().get('EventBytes').setString(info);
+      }
+    );
+}
+
 };
-
-runtimeScene.getVariables().get('LastSent').fromJSObject(lastSent);
-runtimeScene.getVariables().get('LastEventUpdated').setBoolean(true);
-
-sendAsDeflated(
-  runtimeScene.getVariables().get('PeerID').getAsString(),
-  eventsFunctionContext.getArgument("Type").toString(),
-  eventsFunctionContext.getArgument("Data").toString(),
-  eventsFunctionContext.getArgument("DelayMillisecond").valueOf(),
-  (type,data,delay,info)=>{
-    lobby.sendOneWay(type,data,delay)
-    runtimeScene.getVariables().get('EventBytes').setString(info);
-  }
-);
-};
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0x3839b40 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xed8478 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const currentMap = runtimeScene.getGame().getVariables().get('SaveData').toJSObject();
 const mapList = runtimeScene.getGame().getVariables().get('MapList').toJSObject();
@@ -62,7 +67,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.eventsList0 = funct
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0x3839b40(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xed8478(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -72,7 +77,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0x3839b40(r
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0x439de80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xed8370(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

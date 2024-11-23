@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__RestoreUserCard !== "undefin
 gdjs.evtsExt__OnlineMultiplayerFirebase__RestoreUserCard = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__RestoreUserCard.userFunc0x4537c78 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__RestoreUserCard.userFunc0xf03d30 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 if(window['lobby']) {
 
@@ -43,7 +43,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__RestoreUserCard.eventsList0 = function(
 
 
 var objects = [];
-gdjs.evtsExt__OnlineMultiplayerFirebase__RestoreUserCard.userFunc0x4537c78(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__RestoreUserCard.userFunc0xf03d30(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

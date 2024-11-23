@@ -8,71 +8,81 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce !== "undefined
 gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x1c99158 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xed6b80 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
-// lobby.sendMessage(
-//       eventsFunctionContext.getArgument("Type").toString(),
-//       JSON.parse(eventsFunctionContext.getArgument("Data").toString()),
-//       eventsFunctionContext.getArgument("DelayMillisecond").valueOf()
-//     );
+const enableDeflation = false; // deflation costs about 5 fps to lower end settings
 
-const lastSent = runtimeScene.getVariables().get('LastSent').toJSObject();
+if(!enableDeflation) {
+    lobby.sendMessage(
+      eventsFunctionContext.getArgument("Type").toString(),
+      JSON.parse(eventsFunctionContext.getArgument("Data").toString()),
+      eventsFunctionContext.getArgument("DelayMillisecond").valueOf()
+    );
+} else {
+    const lastSent = runtimeScene.getVariables().get('LastSent').toJSObject();
 
-lastSent[eventsFunctionContext.getArgument("Type").toString()] = {
-  Type: eventsFunctionContext.getArgument("Type").toString(),
-  Data: JSON.parse(eventsFunctionContext.getArgument("Data").toString()),
-  DelayMillisecond:eventsFunctionContext.getArgument("DelayMillisecond").valueOf(),
-};
+    lastSent[eventsFunctionContext.getArgument("Type").toString()] = {
+      Type: eventsFunctionContext.getArgument("Type").toString(),
+      Data: JSON.parse(eventsFunctionContext.getArgument("Data").toString()),
+      DelayMillisecond:eventsFunctionContext.getArgument("DelayMillisecond").valueOf(),
+    };
 
-runtimeScene.getVariables().get('LastSent').fromJSObject(lastSent);
-runtimeScene.getVariables().get('LastEventUpdated').setBoolean(true);
+    runtimeScene.getVariables().get('LastSent').fromJSObject(lastSent);
+    runtimeScene.getVariables().get('LastEventUpdated').setBoolean(true);
 
-sendAsDeflated(
-  runtimeScene.getVariables().get('PeerID').getAsString(),
-  eventsFunctionContext.getArgument("Type").toString(),
-  eventsFunctionContext.getArgument("Data").toString(),
-  eventsFunctionContext.getArgument("DelayMillisecond").valueOf(),
-  (type,data,delay,info)=>{
-    lobby.sendMessage(type,data,delay)
-    runtimeScene.getVariables().get('EventBytes').setString(info);
-  }
-);
+    sendAsDeflated(
+      runtimeScene.getVariables().get('PeerID').getAsString(),
+      eventsFunctionContext.getArgument("Type").toString(),
+      eventsFunctionContext.getArgument("Data").toString(),
+      eventsFunctionContext.getArgument("DelayMillisecond").valueOf(),
+      (type,data,delay,info)=>{
+        lobby.sendMessage(type,data,delay)
+        runtimeScene.getVariables().get('EventBytes').setString(info);
+      }
+    );
+}
+
 };
 gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x1c99158(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xed6b80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
 
-};gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x439de80 = function(runtimeScene, eventsFunctionContext) {
+};gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xed6d80 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
-//  lobby.sendMessageNoHistory(
-//       eventsFunctionContext.getArgument("Type").toString(),
-//       JSON.parse(eventsFunctionContext.getArgument("Data").toString()),
-//       eventsFunctionContext.getArgument("DelayMillisecond").valueOf()
-//     );
+const enableDeflation = false; // deflation costs about 5 fps to lower end settings
 
-sendAsDeflated(
-  runtimeScene.getVariables().get('PeerID').getAsString(),
-  eventsFunctionContext.getArgument("Type").toString(),
-  eventsFunctionContext.getArgument("Data").toString(),
-  eventsFunctionContext.getArgument("DelayMillisecond").valueOf(),
-  (type,data,delay,info)=>{
-    lobby.sendMessageNoHistory(type,data,delay)
-    runtimeScene.getVariables().get('EventBytes').setString(info);
-  }
-);
+if(!enableDeflation) {
+ lobby.sendMessageNoHistory(
+      eventsFunctionContext.getArgument("Type").toString(),
+      JSON.parse(eventsFunctionContext.getArgument("Data").toString()),
+      eventsFunctionContext.getArgument("DelayMillisecond").valueOf()
+    );
+} else {
+    sendAsDeflated(
+      runtimeScene.getVariables().get('PeerID').getAsString(),
+      eventsFunctionContext.getArgument("Type").toString(),
+      eventsFunctionContext.getArgument("Data").toString(),
+      eventsFunctionContext.getArgument("DelayMillisecond").valueOf(),
+      (type,data,delay,info)=>{
+        lobby.sendMessageNoHistory(type,data,delay)
+        runtimeScene.getVariables().get('EventBytes').setString(info);
+      }
+    );
+
+}
 };
 gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.eventsList1 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x439de80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xed6d80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

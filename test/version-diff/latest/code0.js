@@ -221,7 +221,21 @@ gdjs.LoginCode.GDAnnouncementIconObjects5= [];
 gdjs.LoginCode.GDAnnouncementIconObjects6= [];
 
 
-gdjs.LoginCode.userFunc0x34fb660 = function(runtimeScene) {
+gdjs.LoginCode.userFunc0xf86670 = function(runtimeScene) {
+"use strict";
+window.runtimeScene=runtimeScene;
+};
+gdjs.LoginCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+gdjs.LoginCode.userFunc0xf86670(runtimeScene);
+
+}
+
+
+};gdjs.LoginCode.userFunc0x1f390f0 = function(runtimeScene) {
 "use strict";
 window.addEventListener("keydown", function (event) {
     // Check if Page Down (key code 34) is pressed
@@ -233,7 +247,7 @@ window.addEventListener("keydown", function (event) {
     }
 });
 };
-gdjs.LoginCode.eventsList0 = function(runtimeScene) {
+gdjs.LoginCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -254,7 +268,7 @@ gdjs.copyArray(runtimeScene.getObjects("loadingImg"), gdjs.LoginCode.GDloadingIm
 }
 
 
-};gdjs.LoginCode.eventsList1 = function(runtimeScene, asyncObjectsList) {
+};gdjs.LoginCode.eventsList2 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -275,12 +289,12 @@ gdjs.copyArray(runtimeScene.getObjects("loadingImg"), gdjs.LoginCode.GDloadingIm
 }
 
 
-};gdjs.LoginCode.asyncCallback82896276 = function (runtimeScene, asyncObjectsList) {
+};gdjs.LoginCode.asyncCallback74503772 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
-gdjs.LoginCode.eventsList1(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.LoginCode.eventsList2(runtimeScene, asyncObjectsList);} //End of subevents
 }
-gdjs.LoginCode.eventsList2 = function(runtimeScene) {
+gdjs.LoginCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -289,14 +303,14 @@ gdjs.LoginCode.eventsList2 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.LoginCode.GDStartButtonObjects2) asyncObjectsList.addObject("StartButton", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LoginCode.asyncCallback82896276(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LoginCode.asyncCallback74503772(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.LoginCode.eventsList3 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -307,7 +321,7 @@ isConditionTrue_0 = gdjs.evtTools.systemInfo.isPreview(runtimeScene);
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList0(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList1(runtimeScene);} //End of subevents
 }
 
 }
@@ -322,13 +336,13 @@ isConditionTrue_0 = !(gdjs.evtTools.systemInfo.isPreview(runtimeScene));
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList2(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.LoginCode.userFunc0x309d828 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0xed2bb8 = function(runtimeScene) {
 "use strict";
 var a = {
         "GlobalVariables": {
@@ -415,11 +429,40 @@ window.lad = false;
 window.retrieveFirstTime = false;
 
 };
-gdjs.LoginCode.eventsList4 = function(runtimeScene) {
+gdjs.LoginCode.userFunc0x10cbe88 = function(runtimeScene) {
+"use strict";
+console.log(runtimeScene)
+};
+gdjs.LoginCode.eventsList5 = function(runtimeScene) {
 
 {
 
 
+gdjs.LoginCode.userFunc0x10cbe88(runtimeScene);
+
+}
+
+
+};gdjs.LoginCode.eventsList6 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.systemInfo.isPreview(runtimeScene);
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.LoginCode.eventsList0(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -434,7 +477,7 @@ gdjs.LoginCode.eventsList4 = function(runtimeScene) {
 {
 
 
-gdjs.LoginCode.userFunc0x34fb660(runtimeScene);
+gdjs.LoginCode.userFunc0x1f390f0(runtimeScene);
 
 }
 
@@ -519,7 +562,7 @@ gdjs.copyArray(runtimeScene.getObjects("StartButton"), gdjs.LoginCode.GDStartBut
 }
 }
 { //Subevents
-gdjs.LoginCode.eventsList3(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList4(runtimeScene);} //End of subevents
 }
 
 }
@@ -557,7 +600,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.LoginCode.userFunc0x309d828(runtimeScene);
+gdjs.LoginCode.userFunc0xed2bb8(runtimeScene);
 
 }
 
@@ -566,7 +609,12 @@ gdjs.LoginCode.userFunc0x309d828(runtimeScene);
 
 
 let isConditionTrue_0 = false;
-{
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.systemInfo.isPreview(runtimeScene);
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.LoginCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 }
@@ -574,7 +622,7 @@ let isConditionTrue_0 = false;
 
 };gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDStartButtonObjects1Objects = Hashtable.newFrom({"StartButton": gdjs.LoginCode.GDStartButtonObjects1});
 gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDStartButtonObjects1Objects = Hashtable.newFrom({"StartButton": gdjs.LoginCode.GDStartButtonObjects1});
-gdjs.LoginCode.eventsList5 = function(runtimeScene) {
+gdjs.LoginCode.eventsList7 = function(runtimeScene) {
 
 {
 
@@ -592,7 +640,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.LoginCode.eventsList6 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList8 = function(runtimeScene) {
 
 {
 
@@ -643,7 +691,7 @@ gdjs.copyArray(runtimeScene.getObjects("Nickname"), gdjs.LoginCode.GDNicknameObj
 }
 }
 { //Subevents
-gdjs.LoginCode.eventsList5(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList7(runtimeScene);} //End of subevents
 }
 
 }
@@ -681,7 +729,7 @@ for(var i = 0, len = gdjs.LoginCode.GDExitTextObjects1.length ;i < len;++i) {
 }
 
 
-};gdjs.LoginCode.eventsList7 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList9 = function(runtimeScene) {
 
 {
 
@@ -692,7 +740,7 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Lef
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList6(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList8(runtimeScene);} //End of subevents
 }
 
 }
@@ -700,7 +748,7 @@ gdjs.LoginCode.eventsList6(runtimeScene);} //End of subevents
 
 };gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDExitButtonObjects1Objects = Hashtable.newFrom({"ExitButton": gdjs.LoginCode.GDExitButtonObjects1});
 gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDLoginButtonObjects1Objects = Hashtable.newFrom({"LoginButton": gdjs.LoginCode.GDLoginButtonObjects1});
-gdjs.LoginCode.eventsList8 = function(runtimeScene) {
+gdjs.LoginCode.eventsList10 = function(runtimeScene) {
 
 {
 
@@ -730,7 +778,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.LoginCode.eventsList9 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList11 = function(runtimeScene) {
 
 {
 
@@ -749,13 +797,13 @@ gdjs.LoginCode.GDNicknameObjects1.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList8(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList10(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.LoginCode.eventsList10 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList12 = function(runtimeScene) {
 
 {
 
@@ -781,7 +829,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.LoginCode.eventsList11 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList13 = function(runtimeScene) {
 
 {
 
@@ -1013,13 +1061,13 @@ for(var i = 0, len = gdjs.LoginCode.GDRestoreButtonObjects3.length ;i < len;++i)
 }
 }
 { //Subevents
-gdjs.LoginCode.eventsList10(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList12(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.LoginCode.eventsList12 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList14 = function(runtimeScene) {
 
 {
 
@@ -1131,13 +1179,13 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.LoginCode.eventsList11(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList13(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.LoginCode.eventsList13 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList15 = function(runtimeScene) {
 
 {
 
@@ -1176,7 +1224,7 @@ if (true)
 {runtimeScene.getScene().getVariables().get("index").add(1);
 }
 { //Subevents: 
-gdjs.LoginCode.eventsList12(runtimeScene);} //Subevents end.
+gdjs.LoginCode.eventsList14(runtimeScene);} //Subevents end.
 }
 }
 }
@@ -1184,7 +1232,7 @@ gdjs.LoginCode.eventsList12(runtimeScene);} //Subevents end.
 }
 
 
-};gdjs.LoginCode.eventsList14 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList16 = function(runtimeScene) {
 
 {
 
@@ -1220,13 +1268,13 @@ let isConditionTrue_0 = false;
 {
 
 { //Subevents
-gdjs.LoginCode.eventsList13(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList15(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.LoginCode.eventsList15 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList17 = function(runtimeScene) {
 
 {
 
@@ -1275,13 +1323,13 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.ge
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList14(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList16(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.LoginCode.eventsList16 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList18 = function(runtimeScene) {
 
 {
 
@@ -1345,17 +1393,17 @@ for(var i = 0, len = gdjs.LoginCode.GDRestoreButtonObjects1.length ;i < len;++i)
 }
 }
 { //Subevents
-gdjs.LoginCode.eventsList15(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList17(runtimeScene);} //End of subevents
 }
 
 }
 
 
 };gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDcreateCharacterObjects2Objects = Hashtable.newFrom({"createCharacter": gdjs.LoginCode.GDcreateCharacterObjects2});
-gdjs.LoginCode.asyncCallback82908508 = function (runtimeScene, asyncObjectsList) {
+gdjs.LoginCode.asyncCallback74515228 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "CharacterCreation", false);
 }}
-gdjs.LoginCode.eventsList17 = function(runtimeScene) {
+gdjs.LoginCode.eventsList19 = function(runtimeScene) {
 
 {
 
@@ -1363,14 +1411,14 @@ gdjs.LoginCode.eventsList17 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LoginCode.asyncCallback82908508(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LoginCode.asyncCallback74515228(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.LoginCode.eventsList18 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList20 = function(runtimeScene) {
 
 {
 
@@ -1397,14 +1445,14 @@ if (isConditionTrue_0) {
 {gdjs.evtsExt__InterfaceFunctions__SetTransparentTextMessageWithTimeout.func(runtimeScene, "Character creation...", 2, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 { //Subevents
-gdjs.LoginCode.eventsList17(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList19(runtimeScene);} //End of subevents
 }
 
 }
 
 
 };gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDdeleteButtonObjects2Objects = Hashtable.newFrom({"deleteButton": gdjs.LoginCode.GDdeleteButtonObjects2});
-gdjs.LoginCode.eventsList19 = function(runtimeScene) {
+gdjs.LoginCode.eventsList21 = function(runtimeScene) {
 
 {
 
@@ -1441,7 +1489,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.LoginCode.eventsList20 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList22 = function(runtimeScene) {
 
 {
 
@@ -1510,13 +1558,13 @@ gdjs.LoginCode.GDDeleteTextObjects2.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList19(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList21(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.LoginCode.eventsList21 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList23 = function(runtimeScene) {
 
 {
 
@@ -1685,7 +1733,7 @@ for(var i = 0, len = gdjs.LoginCode.GDRestoreButtonObjects4.length ;i < len;++i)
 }
 
 
-};gdjs.LoginCode.eventsList22 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList24 = function(runtimeScene) {
 
 {
 
@@ -1699,13 +1747,13 @@ if (isConditionTrue_0) {
 {runtimeScene.getScene().getVariables().get("UserRetrievedCount").sub(1);
 }
 { //Subevents
-gdjs.LoginCode.eventsList21(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList23(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.LoginCode.eventsList23 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList25 = function(runtimeScene) {
 
 {
 
@@ -1729,14 +1777,14 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.LoginCode.eventsList22(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList24(runtimeScene);} //End of subevents
 }
 
 }
 
 
 };gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDRestoreButtonObjects2Objects = Hashtable.newFrom({"RestoreButton": gdjs.LoginCode.GDRestoreButtonObjects2});
-gdjs.LoginCode.eventsList24 = function(runtimeScene) {
+gdjs.LoginCode.eventsList26 = function(runtimeScene) {
 
 {
 
@@ -1790,7 +1838,7 @@ for(var i = 0, len = gdjs.LoginCode.GDRestoreButtonObjects2.length ;i < len;++i)
 
 
 };gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDCardsBackgroundObjects2Objects = Hashtable.newFrom({"CardsBackground": gdjs.LoginCode.GDCardsBackgroundObjects2});
-gdjs.LoginCode.eventsList25 = function(runtimeScene) {
+gdjs.LoginCode.eventsList27 = function(runtimeScene) {
 
 {
 
@@ -1836,48 +1884,7 @@ if (isConditionTrue_0) {
 
 
 };gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDOkayButtonObjects3Objects = Hashtable.newFrom({"OkayButton": gdjs.LoginCode.GDOkayButtonObjects3});
-gdjs.LoginCode.asyncCallback82925580 = function (runtimeScene, asyncObjectsList) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "CharacterCreation", false);
-}}
-gdjs.LoginCode.eventsList26 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LoginCode.asyncCallback82925580(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.LoginCode.eventsList27 = function(runtimeScene) {
-
-{
-
-
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-{gdjs.evtsExt__InterfaceFunctions__SetTransparentTextMessageWithTimeout.func(runtimeScene, "Character creation...", 2, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}
-{ //Subevents
-gdjs.LoginCode.eventsList26(runtimeScene);} //End of subevents
-}
-
-}
-
-
-};gdjs.LoginCode.asyncCallback82927604 = function (runtimeScene, asyncObjectsList) {
+gdjs.LoginCode.asyncCallback74532300 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "CharacterCreation", false);
 }}
 gdjs.LoginCode.eventsList28 = function(runtimeScene) {
@@ -1888,7 +1895,7 @@ gdjs.LoginCode.eventsList28 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LoginCode.asyncCallback82927604(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LoginCode.asyncCallback74532300(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1918,7 +1925,48 @@ gdjs.LoginCode.eventsList28(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.LoginCode.eventsList30 = function(runtimeScene) {
+};gdjs.LoginCode.asyncCallback74534324 = function (runtimeScene, asyncObjectsList) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "CharacterCreation", false);
+}}
+gdjs.LoginCode.eventsList30 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LoginCode.asyncCallback74534324(runtimeScene, asyncObjectsList)));
+}
+}
+
+}
+
+
+};gdjs.LoginCode.eventsList31 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{gdjs.evtsExt__InterfaceFunctions__SetTransparentTextMessageWithTimeout.func(runtimeScene, "Character creation...", 2, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+{ //Subevents
+gdjs.LoginCode.eventsList30(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.LoginCode.eventsList32 = function(runtimeScene) {
 
 {
 
@@ -1929,7 +1977,7 @@ isConditionTrue_0 = gdjs.evtTools.variable.getVariableChildCount(runtimeScene.ge
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList27(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList29(runtimeScene);} //End of subevents
 }
 
 }
@@ -1945,7 +1993,7 @@ isConditionTrue_0 = false;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList29(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList31(runtimeScene);} //End of subevents
 }
 
 }
@@ -1972,10 +2020,10 @@ if (isConditionTrue_0) {
 
 
 };gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDBackButtonObjects2Objects = Hashtable.newFrom({"BackButton": gdjs.LoginCode.GDBackButtonObjects2});
-gdjs.LoginCode.asyncCallback82932308 = function (runtimeScene, asyncObjectsList) {
+gdjs.LoginCode.asyncCallback74539028 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Tutorial", false);
 }}
-gdjs.LoginCode.eventsList31 = function(runtimeScene) {
+gdjs.LoginCode.eventsList33 = function(runtimeScene) {
 
 {
 
@@ -1983,14 +2031,14 @@ gdjs.LoginCode.eventsList31 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LoginCode.asyncCallback82932308(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LoginCode.asyncCallback74539028(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.LoginCode.eventsList32 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList34 = function(runtimeScene) {
 
 {
 
@@ -2015,13 +2063,13 @@ isConditionTrue_0 = !(gdjs.evtTools.systemInfo.isPreview(runtimeScene));
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList31(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList33(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.LoginCode.eventsList33 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList35 = function(runtimeScene) {
 
 {
 
@@ -2037,7 +2085,7 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Lef
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList18(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList20(runtimeScene);} //End of subevents
 }
 
 }
@@ -2080,7 +2128,7 @@ gdjs.LoginCode.GDCardsBackgroundObjects2.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList20(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList22(runtimeScene);} //End of subevents
 }
 
 }
@@ -2100,7 +2148,7 @@ let isConditionTrue_0 = false;
 if (true) {
 
 { //Subevents: 
-gdjs.LoginCode.eventsList23(runtimeScene);} //Subevents end.
+gdjs.LoginCode.eventsList25(runtimeScene);} //Subevents end.
 }
 }
 
@@ -2132,7 +2180,7 @@ gdjs.LoginCode.GDRestoreButtonObjects2.length = k;
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList24(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList26(runtimeScene);} //End of subevents
 }
 
 }
@@ -2152,7 +2200,7 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Lef
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList25(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList27(runtimeScene);} //End of subevents
 }
 
 }
@@ -2196,7 +2244,7 @@ isConditionTrue_2 = false;
 isConditionTrue_2 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(20), true);
 if (isConditionTrue_2) {
 isConditionTrue_2 = false;
-{isConditionTrue_2 = runtimeScene.getOnceTriggers().triggerOnce(82924908);
+{isConditionTrue_2 = runtimeScene.getOnceTriggers().triggerOnce(74531628);
 }
 }
 }
@@ -2213,7 +2261,7 @@ gdjs.copyArray(gdjs.LoginCode.GDOkayButtonObjects2_1final, gdjs.LoginCode.GDOkay
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList30(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList32(runtimeScene);} //End of subevents
 }
 
 }
@@ -2247,7 +2295,7 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("PlayerRetrieved"), false);
 }
 { //Subevents
-gdjs.LoginCode.eventsList32(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList34(runtimeScene);} //End of subevents
 }
 
 }
@@ -2257,7 +2305,7 @@ gdjs.LoginCode.eventsList32(runtimeScene);} //End of subevents
 gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDcreateCharacterObjects1ObjectsGDgdjs_9546LoginCode_9546GDdeleteButtonObjects1ObjectsGDgdjs_9546LoginCode_9546GDRestoreButtonObjects1Objects = Hashtable.newFrom({"createCharacter": gdjs.LoginCode.GDcreateCharacterObjects1, "deleteButton": gdjs.LoginCode.GDdeleteButtonObjects1, "RestoreButton": gdjs.LoginCode.GDRestoreButtonObjects1});
 gdjs.LoginCode.mapOfEmptyGDCursorsObjects = Hashtable.newFrom({"Cursors": []});
 gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDCursorsObjects1Objects = Hashtable.newFrom({"Cursors": gdjs.LoginCode.GDCursorsObjects1});
-gdjs.LoginCode.eventsList34 = function(runtimeScene) {
+gdjs.LoginCode.eventsList36 = function(runtimeScene) {
 
 {
 
@@ -2275,7 +2323,7 @@ gdjs.LoginCode.GDCursorsObjects1.length = 0;
 
 
 };gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDLoadingScreenObjects1ObjectsGDgdjs_9546LoginCode_9546GDStartButtonObjects1Objects = Hashtable.newFrom({"LoadingScreen": gdjs.LoginCode.GDLoadingScreenObjects1, "StartButton": gdjs.LoginCode.GDStartButtonObjects1});
-gdjs.LoginCode.eventsList35 = function(runtimeScene) {
+gdjs.LoginCode.eventsList37 = function(runtimeScene) {
 
 {
 
@@ -2301,7 +2349,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.LoginCode.eventsList36 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList38 = function(runtimeScene) {
 
 {
 
@@ -2312,7 +2360,7 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList35(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList37(runtimeScene);} //End of subevents
 }
 
 }
@@ -2323,7 +2371,7 @@ gdjs.LoginCode.mapOf = Hashtable.newFrom({});
 gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDExitButtonObjects2Objects = Hashtable.newFrom({"ExitButton": gdjs.LoginCode.GDExitButtonObjects2});
 gdjs.LoginCode.mapOf = Hashtable.newFrom({});
 gdjs.LoginCode.mapOf = Hashtable.newFrom({});
-gdjs.LoginCode.eventsList37 = function(runtimeScene) {
+gdjs.LoginCode.eventsList39 = function(runtimeScene) {
 
 {
 
@@ -2593,7 +2641,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.LoginCode.eventsList38 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList40 = function(runtimeScene) {
 
 {
 
@@ -2677,7 +2725,7 @@ gdjs.copyArray(runtimeScene.getObjects("TransparentBackgroundText"), gdjs.LoginC
 }
 
 
-};gdjs.LoginCode.eventsList39 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList41 = function(runtimeScene) {
 
 {
 
@@ -2703,7 +2751,7 @@ let isConditionTrue_0 = false;
 {
 
 { //Subevents
-gdjs.LoginCode.eventsList38(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList40(runtimeScene);} //End of subevents
 }
 
 }
@@ -2717,7 +2765,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "TransparentMessageTimer") >= gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("TransparentTextMessageSeconds"));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(86540612);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(78152708);
 }
 }
 if (isConditionTrue_0) {
@@ -2727,7 +2775,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.LoginCode.eventsList40 = function(runtimeScene) {
+};gdjs.LoginCode.eventsList42 = function(runtimeScene) {
 
 {
 
@@ -2738,7 +2786,7 @@ isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList4(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList6(runtimeScene);} //End of subevents
 }
 
 }
@@ -2786,7 +2834,7 @@ if (isConditionTrue_0) {
 }
 }
 { //Subevents
-gdjs.LoginCode.eventsList7(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList9(runtimeScene);} //End of subevents
 }
 
 }
@@ -2870,7 +2918,7 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Lef
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList9(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList11(runtimeScene);} //End of subevents
 }
 
 }
@@ -2883,7 +2931,7 @@ let isConditionTrue_0 = false;
 {
 
 { //Subevents
-gdjs.LoginCode.eventsList16(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList18(runtimeScene);} //End of subevents
 }
 
 }
@@ -2898,7 +2946,7 @@ isConditionTrue_0 = gdjs.evtTools.camera.layerIsVisible(runtimeScene, "Character
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList33(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList35(runtimeScene);} //End of subevents
 }
 
 }
@@ -3028,7 +3076,7 @@ isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList34(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList36(runtimeScene);} //End of subevents
 }
 
 }
@@ -3218,7 +3266,7 @@ gdjs.copyArray(runtimeScene.getObjects("Cursors"), gdjs.LoginCode.GDCursorsObjec
 }
 }
 { //Subevents
-gdjs.LoginCode.eventsList36(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList38(runtimeScene);} //End of subevents
 }
 
 }
@@ -3232,13 +3280,13 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(86157724);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(77768732);
 }
 }
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.LoginCode.eventsList37(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList39(runtimeScene);} //End of subevents
 }
 
 }
@@ -3258,7 +3306,7 @@ let isConditionTrue_0 = false;
 {
 
 { //Subevents
-gdjs.LoginCode.eventsList39(runtimeScene);} //End of subevents
+gdjs.LoginCode.eventsList41(runtimeScene);} //End of subevents
 }
 
 }
@@ -3480,7 +3528,7 @@ gdjs.LoginCode.GDAnnouncementIconObjects4.length = 0;
 gdjs.LoginCode.GDAnnouncementIconObjects5.length = 0;
 gdjs.LoginCode.GDAnnouncementIconObjects6.length = 0;
 
-gdjs.LoginCode.eventsList40(runtimeScene);
+gdjs.LoginCode.eventsList42(runtimeScene);
 
 return;
 

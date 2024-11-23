@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ModifiedLoadImageFromURL__onScenePostEvents !== "undefi
 gdjs.evtsExt__ModifiedLoadImageFromURL__onScenePostEvents = {};
 
 
-gdjs.evtsExt__ModifiedLoadImageFromURL__onScenePostEvents.userFunc0x368a610 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ModifiedLoadImageFromURL__onScenePostEvents.userFunc0xe22980 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(!window.imgLoaders) window.imgLoaders = [];
 
@@ -22,7 +22,7 @@ gdjs.evtsExt__ModifiedLoadImageFromURL__onScenePostEvents.eventsList0 = function
 {
 
 
-gdjs.evtsExt__ModifiedLoadImageFromURL__onScenePostEvents.userFunc0x368a610(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ModifiedLoadImageFromURL__onScenePostEvents.userFunc0xe22980(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -34,7 +34,7 @@ gdjs.evtsExt__ModifiedLoadImageFromURL__onScenePostEvents.userFunc0x368a610(runt
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(80064956);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(71668396);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "pointtwotimer");
