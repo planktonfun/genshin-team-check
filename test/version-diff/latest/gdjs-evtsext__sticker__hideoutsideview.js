@@ -59,7 +59,7 @@ gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEvents
 gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.userFunc0xae0fd0 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.userFunc0x81fa80 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 if(!window.game) return;
 
@@ -97,7 +97,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Sticker
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.GDObjectObjects1);
-gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.userFunc0xae0fd0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.userFunc0x81fa80(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

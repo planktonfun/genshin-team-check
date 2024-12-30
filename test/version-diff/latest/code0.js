@@ -221,7 +221,7 @@ gdjs.LoginCode.GDAnnouncementIconObjects5= [];
 gdjs.LoginCode.GDAnnouncementIconObjects6= [];
 
 
-gdjs.LoginCode.userFunc0x1edb228 = function(runtimeScene) {
+gdjs.LoginCode.userFunc0x15ca718 = function(runtimeScene) {
 "use strict";
 window.runtimeScene=runtimeScene;
 };
@@ -230,12 +230,12 @@ gdjs.LoginCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.LoginCode.userFunc0x1edb228(runtimeScene);
+gdjs.LoginCode.userFunc0x15ca718(runtimeScene);
 
 }
 
 
-};gdjs.LoginCode.userFunc0x1edbeb8 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x15ca108 = function(runtimeScene) {
 "use strict";
 window.addEventListener("keydown", function (event) {
     // Check if Page Down (key code 34) is pressed
@@ -289,7 +289,7 @@ gdjs.copyArray(runtimeScene.getObjects("loadingImg"), gdjs.LoginCode.GDloadingIm
 }
 
 
-};gdjs.LoginCode.asyncCallback78752548 = function (runtimeScene, asyncObjectsList) {
+};gdjs.LoginCode.asyncCallback78761604 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
 gdjs.LoginCode.eventsList2(runtimeScene, asyncObjectsList);} //End of subevents
@@ -303,7 +303,7 @@ gdjs.LoginCode.eventsList3 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.LoginCode.GDStartButtonObjects2) asyncObjectsList.addObject("StartButton", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LoginCode.asyncCallback78752548(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LoginCode.asyncCallback78761604(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -342,7 +342,7 @@ gdjs.LoginCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.LoginCode.userFunc0xaf0ec8 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x2bead50 = function(runtimeScene) {
 "use strict";
 var a = {
         "GlobalVariables": {
@@ -433,7 +433,7 @@ window.lad = false;
 window.retrieveFirstTime = false;
 
 };
-gdjs.LoginCode.userFunc0xaf0778 = function(runtimeScene) {
+gdjs.LoginCode.userFunc0xca0520 = function(runtimeScene) {
 "use strict";
 console.log(runtimeScene)
 };
@@ -442,7 +442,7 @@ gdjs.LoginCode.eventsList5 = function(runtimeScene) {
 {
 
 
-gdjs.LoginCode.userFunc0xaf0778(runtimeScene);
+gdjs.LoginCode.userFunc0xca0520(runtimeScene);
 
 }
 
@@ -481,7 +481,7 @@ gdjs.LoginCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.LoginCode.userFunc0x1edbeb8(runtimeScene);
+gdjs.LoginCode.userFunc0x15ca108(runtimeScene);
 
 }
 
@@ -493,7 +493,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("LoadingScreen"), gdjs.LoginCode.GDLoadingScreenObjects2);
 {for(var i = 0, len = gdjs.LoginCode.GDLoadingScreenObjects2.length ;i < len;++i) {
-    gdjs.LoginCode.GDLoadingScreenObjects2[i].setAnimation(gdjs.randomInRange(0, 1));
+    gdjs.LoginCode.GDLoadingScreenObjects2[i].setAnimation(gdjs.evtTools.common.mod(gdjs.evtTools.runtimeScene.getTime(runtimeScene, "mon"), 3));
 }
 }}
 
@@ -604,7 +604,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.LoginCode.userFunc0xaf0ec8(runtimeScene);
+gdjs.LoginCode.userFunc0x2bead50(runtimeScene);
 
 }
 
@@ -1404,7 +1404,7 @@ gdjs.LoginCode.eventsList17(runtimeScene);} //End of subevents
 
 
 };gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDcreateCharacterObjects2Objects = Hashtable.newFrom({"createCharacter": gdjs.LoginCode.GDcreateCharacterObjects2});
-gdjs.LoginCode.asyncCallback78765028 = function (runtimeScene, asyncObjectsList) {
+gdjs.LoginCode.asyncCallback78774084 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "CharacterCreation", false);
 }}
 gdjs.LoginCode.eventsList19 = function(runtimeScene) {
@@ -1415,7 +1415,7 @@ gdjs.LoginCode.eventsList19 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LoginCode.asyncCallback78765028(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LoginCode.asyncCallback78774084(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1888,7 +1888,7 @@ if (isConditionTrue_0) {
 
 
 };gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDOkayButtonObjects3Objects = Hashtable.newFrom({"OkayButton": gdjs.LoginCode.GDOkayButtonObjects3});
-gdjs.LoginCode.asyncCallback78782100 = function (runtimeScene, asyncObjectsList) {
+gdjs.LoginCode.asyncCallback78791156 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "CharacterCreation", false);
 }}
 gdjs.LoginCode.eventsList28 = function(runtimeScene) {
@@ -1899,7 +1899,7 @@ gdjs.LoginCode.eventsList28 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LoginCode.asyncCallback78782100(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LoginCode.asyncCallback78791156(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1929,7 +1929,7 @@ gdjs.LoginCode.eventsList28(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.LoginCode.asyncCallback78784124 = function (runtimeScene, asyncObjectsList) {
+};gdjs.LoginCode.asyncCallback78793180 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "CharacterCreation", false);
 }}
 gdjs.LoginCode.eventsList30 = function(runtimeScene) {
@@ -1940,7 +1940,7 @@ gdjs.LoginCode.eventsList30 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LoginCode.asyncCallback78784124(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.LoginCode.asyncCallback78793180(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -2024,7 +2024,7 @@ if (isConditionTrue_0) {
 
 
 };gdjs.LoginCode.mapOfGDgdjs_9546LoginCode_9546GDBackButtonObjects2Objects = Hashtable.newFrom({"BackButton": gdjs.LoginCode.GDBackButtonObjects2});
-gdjs.LoginCode.asyncCallback78788828 = function (runtimeScene, asyncObjectsList) {
+gdjs.LoginCode.asyncCallback78797884 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Tutorial", false);
 }}
 gdjs.LoginCode.eventsList33 = function(runtimeScene) {
@@ -2035,7 +2035,7 @@ gdjs.LoginCode.eventsList33 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LoginCode.asyncCallback78788828(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.LoginCode.asyncCallback78797884(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -2248,7 +2248,7 @@ isConditionTrue_2 = false;
 isConditionTrue_2 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().getFromIndex(20), true);
 if (isConditionTrue_2) {
 isConditionTrue_2 = false;
-{isConditionTrue_2 = runtimeScene.getOnceTriggers().triggerOnce(78781428);
+{isConditionTrue_2 = runtimeScene.getOnceTriggers().triggerOnce(78790484);
 }
 }
 }
@@ -2769,7 +2769,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "TransparentMessageTimer") >= gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("TransparentTextMessageSeconds"));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(82576748);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(82585948);
 }
 }
 if (isConditionTrue_0) {
@@ -3284,7 +3284,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(82175836);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(82185212);
 }
 }
 if (isConditionTrue_0) {
