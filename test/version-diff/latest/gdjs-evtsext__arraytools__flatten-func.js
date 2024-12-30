@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ArrayTools__Flatten !== "undefined") {
 gdjs.evtsExt__ArrayTools__Flatten = {};
 
 
-gdjs.evtsExt__ArrayTools__Flatten.userFunc0xca4738 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ArrayTools__Flatten.userFunc0x3a308d0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable} */
 const array = eventsFunctionContext.getArgument("Array");
@@ -40,7 +40,7 @@ gdjs.evtsExt__ArrayTools__Flatten.eventsList0 = function(runtimeScene, eventsFun
 {
 
 
-gdjs.evtsExt__ArrayTools__Flatten.userFunc0xca4738(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ArrayTools__Flatten.userFunc0x3a308d0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -9,7 +9,7 @@ gdjs.evtsExt__InterfaceFunctions__AppendChatMessage = {};
 gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.GDChatObjectObjects1= [];
 
 
-gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0xf4b4c8 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x82ad08 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 if(!window.lad) {
     function LimitedArrayDisplayer() {
@@ -42,25 +42,45 @@ if(!window.lad) {
     // objects[0].getVariables().get('initialY').setNumber(687);
 }
 
-function splitStringIntoChunks(str, chunkSize) {
-    const result = [];
-    for (let i = 0; i < str.length; i += chunkSize) {
-        result.push(str.slice(i, i + chunkSize));
+function splitStringByPixelWidth(text, maxWidth) {
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+    let lines = [];
+    let currentLine = '';
+    let currentWidth = 0;
+
+    for (let char of text) {
+        const metrics = context.measureText(char);
+        const charWidth = metrics.width;
+
+        // Check if adding the character exceeds the max width
+        if (currentWidth + charWidth > maxWidth) {
+            lines.push(currentLine); // Store the current line
+            currentLine = char; // Start a new line with the current character
+            currentWidth = charWidth; // Reset current width to the new character's width
+        } else {
+            currentLine += char; // Add character to the current line
+            currentWidth += charWidth; // Update the current width
+        }
     }
-    return result;
+
+    if (currentLine) {
+        lines.push(currentLine); // Add any remaining characters as the last line
+    }
+
+    return lines;
 }
 
 function appendChatObject(text) {
     // if its a command don't display it
     if(text.search(': /') > -1) return;
 
-    var compress = window.lad(text.trim().slice(0, 75));
-    objects[0].setText(compress.text); // objects[0].getText()+"\n"+text.trim());
-    // objects[0].setY(objects[0].getVariables().get('initialY').getAsNumber()-(16*compress.length))
+    var compress = window.lad(text.trim());
+    objects[0].setText(compress.text);
     objects[0].setY(objects[0].getVariables().get('initialY').getAsNumber()-objects[0].getHeight()+16)
 }
 
-const chunks = splitStringIntoChunks(eventsFunctionContext.getArgument("TextContent"), 75);
+const chunks = splitStringByPixelWidth(eventsFunctionContext.getArgument("TextContent").trim(), 216.65);
 
 chunks.forEach(c=>appendChatObject(c))
 
@@ -73,7 +93,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("ChatObject"), gdjs.evtsExt__Int
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.GDChatObjectObjects1);
-gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0xf4b4c8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x82ad08(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

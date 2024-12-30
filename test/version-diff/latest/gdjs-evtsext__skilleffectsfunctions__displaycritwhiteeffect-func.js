@@ -12,7 +12,7 @@ gdjs.evtsExt__SkillEffectsFunctions__DisplayCritWhiteEffect.GDNewSpriteObjects3=
 gdjs.evtsExt__SkillEffectsFunctions__DisplayCritWhiteEffect.GDNewSpriteObjects4= [];
 
 
-gdjs.evtsExt__SkillEffectsFunctions__DisplayCritWhiteEffect.userFunc0xf80dc0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__SkillEffectsFunctions__DisplayCritWhiteEffect.userFunc0x4709e08 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 function randomInRange(min, max) {
   return Math.random() * (max - min) + min;
@@ -93,7 +93,7 @@ gdjs.evtsExt__SkillEffectsFunctions__DisplayCritWhiteEffect.GDNewSpriteObjects3.
 {
 
 
-gdjs.evtsExt__SkillEffectsFunctions__DisplayCritWhiteEffect.userFunc0xf80dc0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__SkillEffectsFunctions__DisplayCritWhiteEffect.userFunc0x4709e08(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

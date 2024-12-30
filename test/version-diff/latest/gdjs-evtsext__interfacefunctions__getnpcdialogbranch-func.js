@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__GetNPCDialogBranch !== "undefined")
 gdjs.evtsExt__InterfaceFunctions__GetNPCDialogBranch = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__GetNPCDialogBranch.userFunc0xf571d8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__GetNPCDialogBranch.userFunc0x35c6e88 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const area = eventsFunctionContext.getArgument('Area');
 const npc = eventsFunctionContext.getArgument('NpcName');
@@ -34,10 +34,7 @@ function getDefaultBranch(npc) {
     return npcStates[layout][npc];
 }
 
-runtimeScene.getGame().getVariables().get('QuestState').fromJSObject({
-    A: JSON.stringify(questManager.saveState()),
-    B: questData.toJSON()
-});
+
 
 // default dialog
 eventsFunctionContext.returnValue = getDefaultBranch(npc);
@@ -46,6 +43,11 @@ if(!window['questManager']) {
     eventsFunctionContext.returnValue = getDefaultBranch(npc);
     return;
 }
+
+runtimeScene.getGame().getVariables().get('QuestState').fromJSObject({
+    A: JSON.stringify(questManager.saveState()),
+    B: questData.toJSON()
+});
 
 // questManager.checkAllQuests();
 // check for quest individually
@@ -75,7 +77,7 @@ gdjs.evtsExt__InterfaceFunctions__GetNPCDialogBranch.eventsList0 = function(runt
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__GetNPCDialogBranch.userFunc0xf571d8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__GetNPCDialogBranch.userFunc0x35c6e88(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

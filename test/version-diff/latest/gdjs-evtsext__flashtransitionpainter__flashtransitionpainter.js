@@ -720,7 +720,7 @@ if (true)
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(71870004);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(76039692);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FlashTransitionPainter__FlashTransitionPainter.FlashTransitionPainter.prototype.doStepPostEventsContext.GDObjectObjects1);
@@ -1271,7 +1271,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__FlashTr
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(71898524);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(76068212);
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;

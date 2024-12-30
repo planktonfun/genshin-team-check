@@ -11,7 +11,7 @@ gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.GDBannerMapObjects2= [];
 
 
 gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.mapOfGDgdjs_9546evtsExt_9595_9595InterfaceFunctions_9595_9595ShowMapBanner_9546GDBannerMapObjects1Objects = Hashtable.newFrom({"BannerMap": gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.GDBannerMapObjects1});
-gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.userFunc0xf26f78 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.userFunc0x35fa020 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const BannerMap = [
 	'Abyss',
@@ -53,7 +53,7 @@ var frameIndex = BannerMap.indexOf(mapName);
 objects[0].setAnimationFrame(frameIndex);
 
 };
-gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.asyncCallback72266588 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
+gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.asyncCallback76436276 = function (runtimeScene, eventsFunctionContext, asyncObjectsList) {
 gdjs.copyArray(asyncObjectsList.getObjects("BannerMap"), gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.GDBannerMapObjects2);
 
 {for(var i = 0, len = gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.GDBannerMapObjects2.length ;i < len;++i) {
@@ -69,7 +69,7 @@ gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.eventsList0 = function(runtimeSc
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.GDBannerMapObjects1) asyncObjectsList.addObject("BannerMap", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.asyncCallback72266588(runtimeScene, eventsFunctionContext, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.asyncCallback76436276(runtimeScene, eventsFunctionContext, asyncObjectsList)));
 }
 }
 
@@ -85,7 +85,7 @@ gdjs.copyArray(gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.GDBannerMapObject
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.GDBannerMapObjects2);
-gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.userFunc0xf26f78(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.userFunc0x35fa020(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

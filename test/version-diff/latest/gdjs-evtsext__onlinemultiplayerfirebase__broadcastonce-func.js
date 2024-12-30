@@ -8,9 +8,9 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce !== "undefined
 gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xed6b80 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x1cca360 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
-const enableDeflation = false; // deflation costs about 5 fps to lower end settings
+const enableDeflation = true; // deflation costs about 5 fps to lower end settings
 
 if(!enableDeflation) {
     lobby.sendMessage(
@@ -48,15 +48,15 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.eventsList0 = function(ru
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xed6b80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x1cca360(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
 
-};gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xed6d80 = function(runtimeScene, eventsFunctionContext) {
+};gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x3b3af18 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
-const enableDeflation = false; // deflation costs about 5 fps to lower end settings
-
+const enableDeflation = true; // deflation costs about 5 fps to lower end settings
+// console.log('hello')
 if(!enableDeflation) {
  lobby.sendMessageNoHistory(
       eventsFunctionContext.getArgument("Type").toString(),
@@ -82,7 +82,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.eventsList1 = function(ru
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xed6d80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x3b3af18(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

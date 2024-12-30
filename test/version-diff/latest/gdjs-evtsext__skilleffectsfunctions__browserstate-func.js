@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__SkillEffectsFunctions__BrowserState !== "undefined") {
 gdjs.evtsExt__SkillEffectsFunctions__BrowserState = {};
 
 
-gdjs.evtsExt__SkillEffectsFunctions__BrowserState.userFunc0xf16b80 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__SkillEffectsFunctions__BrowserState.userFunc0x3b25c48 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = window.browserState;
 };
@@ -27,7 +27,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__SkillEffectsFunctions__BrowserState.userFunc0xf16b80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__SkillEffectsFunctions__BrowserState.userFunc0x3b25c48(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
