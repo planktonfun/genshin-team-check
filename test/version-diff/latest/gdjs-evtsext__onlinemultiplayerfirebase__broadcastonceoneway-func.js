@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay !== "und
 gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0x3b3af18 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xecd700 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const enableDeflation = true; // deflation costs about 5 fps to lower end settings
 
@@ -43,7 +43,7 @@ lobby.sendOneWay(
 }
 
 };
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0x1a46960 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xecd7d0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const currentMap = runtimeScene.getGame().getVariables().get('SaveData').toJSObject();
 const mapList = runtimeScene.getGame().getVariables().get('MapList').toJSObject();
@@ -67,7 +67,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.eventsList0 = funct
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0x1a46960(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xecd7d0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -77,7 +77,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0x1a46960(r
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0x3b3af18(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xecd700(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

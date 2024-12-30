@@ -11,7 +11,7 @@ gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.GDBannerMapObjects2= [];
 
 
 gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.mapOfGDgdjs_9546evtsExt_9595_9595InterfaceFunctions_9595_9595ShowMapBanner_9546GDBannerMapObjects1Objects = Hashtable.newFrom({"BannerMap": gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.GDBannerMapObjects1});
-gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.userFunc0x35fa020 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.userFunc0x111c8c0 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const BannerMap = [
 	'Abyss',
@@ -85,7 +85,7 @@ gdjs.copyArray(gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.GDBannerMapObject
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.GDBannerMapObjects2);
-gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.userFunc0x35fa020(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__ShowMapBanner.userFunc0x111c8c0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

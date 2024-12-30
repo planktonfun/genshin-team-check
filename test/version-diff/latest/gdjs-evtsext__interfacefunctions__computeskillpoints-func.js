@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__ComputeSkillPoints !== "undefined")
 gdjs.evtsExt__InterfaceFunctions__ComputeSkillPoints = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__ComputeSkillPoints.userFunc0x35c6e88 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__ComputeSkillPoints.userFunc0x114a868 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const skillInfoObject = runtimeScene.getVariables().get('skillInfo').toJSObject();
 const skillDescriptions = {};
@@ -38,7 +38,7 @@ gdjs.evtsExt__InterfaceFunctions__ComputeSkillPoints.eventsList0 = function(runt
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__ComputeSkillPoints.userFunc0x35c6e88(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__ComputeSkillPoints.userFunc0x114a868(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

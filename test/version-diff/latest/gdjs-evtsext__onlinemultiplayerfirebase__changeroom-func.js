@@ -8,14 +8,14 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom !== "undefined") 
 gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0x387f938 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0xee83b0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(window['lobby']) {
     lobby.disconnect();
     // console.log('disconnecting');
 }
 };
-gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0x38a4b98 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0xee8458 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(!runtimeScene.getGame().getVariables().get('ServerPath').getAsString()) {
   throw new Error('please configure serverpath');
@@ -147,7 +147,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.eventsList0 = function(runti
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0x38a4b98(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0xee8458(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -157,7 +157,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0x38a4b98(runtimeSce
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0x387f938(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0xee83b0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

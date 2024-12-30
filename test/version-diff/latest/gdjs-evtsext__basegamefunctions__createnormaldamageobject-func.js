@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__BaseGameFunctions__CreateNormalDamageObject !== "undefi
 gdjs.evtsExt__BaseGameFunctions__CreateNormalDamageObject = {};
 
 
-gdjs.evtsExt__BaseGameFunctions__CreateNormalDamageObject.userFunc0xa995c0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__BaseGameFunctions__CreateNormalDamageObject.userFunc0x129ab40 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 var baseStats = eventsFunctionContext.getArgument("BaseStats").toJSObject();
 var equipment = eventsFunctionContext.getArgument("Equipment").toJSObject();
@@ -178,7 +178,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__BaseGameFunctions__CreateNormalDamageObject.userFunc0xa995c0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BaseGameFunctions__CreateNormalDamageObject.userFunc0x129ab40(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
