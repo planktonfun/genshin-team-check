@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__GetTimeStamp !== "undefined"
 gdjs.evtsExt__OnlineMultiplayerFirebase__GetTimeStamp = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__GetTimeStamp.userFunc0xe96c38 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__GetTimeStamp.userFunc0x1b64080 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = window.getTimeStamp();
 };
@@ -27,7 +27,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__GetTimeStamp.userFunc0xe96c38(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__GetTimeStamp.userFunc0x1b64080(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

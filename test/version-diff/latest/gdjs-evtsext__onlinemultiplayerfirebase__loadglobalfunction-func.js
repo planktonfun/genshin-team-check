@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction !== "unde
 gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction.userFunc0xe89160 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction.userFunc0x343cc40 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 var serverOffset = 0;
 var customServerOffset = 0;
@@ -298,7 +298,9 @@ class PeerPlayer {
                     const event = {
                         peerId: this.peer.id,
                         type: 'history',
-                        data: {history: JSON.stringify(this.history) },
+                        data: {
+                            history: JSON.stringify(this.history) 
+                        },
                         delayTimestamp: 0
                     };
 
@@ -764,7 +766,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction.eventsList0 = functi
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction.userFunc0xe89160(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction.userFunc0x343cc40(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -8,9 +8,9 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay !== "und
 gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xe9d8b0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0x34915e0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
-const enableDeflation = true; // deflation costs about 5 fps to lower end settings
+const enableDeflation = runtimeScene.getGame().getVariables().get('DeflateMessages').getAsBoolean(); // deflation costs about 5 fps to lower end settings
 
 if(!enableDeflation) {
 lobby.sendOneWay(
@@ -43,7 +43,7 @@ lobby.sendOneWay(
 }
 
 };
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xe9d988 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0x343cc40 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const currentMap = runtimeScene.getGame().getVariables().get('SaveData').toJSObject();
 const mapList = runtimeScene.getGame().getVariables().get('MapList').toJSObject();
@@ -67,7 +67,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.eventsList0 = funct
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xe9d988(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0x343cc40(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -77,7 +77,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xe9d988(ru
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0xe9d8b0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnceOneWay.userFunc0x34915e0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

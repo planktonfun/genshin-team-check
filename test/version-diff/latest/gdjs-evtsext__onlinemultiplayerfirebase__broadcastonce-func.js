@@ -8,9 +8,9 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce !== "undefined
 gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xe6d520 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xeb7278 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
-const enableDeflation = true; // deflation costs about 5 fps to lower end settings
+const enableDeflation = runtimeScene.getGame().getVariables().get('DeflateMessages').getAsBoolean(); // deflation costs about 5 fps to lower end settings
 
 if(!enableDeflation) {
     lobby.sendMessage(
@@ -48,14 +48,15 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.eventsList0 = function(ru
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xe6d520(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xeb7278(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
 
-};gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xe9c438 = function(runtimeScene, eventsFunctionContext) {
+};gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x34915e0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
-const enableDeflation = true; // deflation costs about 5 fps to lower end settings
+const enableDeflation = runtimeScene.getGame().getVariables().get('DeflateMessages').getAsBoolean(); // deflation costs about 5 fps to lower end settings
+
 // console.log('hello')
 if(!enableDeflation) {
  lobby.sendMessageNoHistory(
@@ -82,7 +83,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.eventsList1 = function(ru
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xe9c438(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x34915e0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

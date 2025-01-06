@@ -6,42 +6,10 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__AppendChatMessage !== "undefined") 
 }
 
 gdjs.evtsExt__InterfaceFunctions__AppendChatMessage = {};
-gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.GDChatObjectObjects1= [];
 
 
-gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x110e4e0 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x3457290 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
-if(!window.lad) {
-    function LimitedArrayDisplayer() {
-        // Define an array to store the strings
-        let stringArray = [];
-
-        // Function to append a string to the array
-        function append(str) {
-            // Add the new string to the beginning of the array
-            stringArray.push(str);
-
-            // Check if the array exceeds the limit of 100 elements
-            if (stringArray.length > 250) {
-                // If it does, remove the last element
-                stringArray.shift();
-            }
-
-            return {
-                text: stringArray.join("\n"),
-                length: stringArray.length-1
-            };
-        }
-
-        return append;
-    }
-
-    window.lad = LimitedArrayDisplayer();
-    // console.log(objects[0].getY())
-    objects[0].getVariables().get('initialY').setNumber(objects[0].getY());
-    // objects[0].getVariables().get('initialY').setNumber(687);
-}
-
 function splitStringByPixelWidth(text, maxWidth) {
     const canvas = document.createElement('canvas');
     const context = canvas.getContext('2d');
@@ -71,42 +39,184 @@ function splitStringByPixelWidth(text, maxWidth) {
     return lines;
 }
 
+const textContent = eventsFunctionContext.getArgument("TextContent").trim();
+const chunks = splitStringByPixelWidth(textContent, 216.65);
+
+let temp = [];
+
 function appendChatObject(text) {
     // if its a command don't display it
     if(text.search(': /') > -1) return;
 
-    var compress = window.lad(text.trim());
-    objects[0].setText(compress.text);
-    objects[0].setY(objects[0].getVariables().get('initialY').getAsNumber()-objects[0].getHeight()+16)
+    temp.push(text.trim())
 }
 
-const chunks = splitStringByPixelWidth(eventsFunctionContext.getArgument("TextContent").trim(), 216.65);
+chunks.forEach(e=>appendChatObject(e));
 
-chunks.forEach(c=>appendChatObject(c))
-
+runtimeScene.getVariables().get('TempChunks').fromJSObject(temp);
 };
 gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
-gdjs.copyArray(eventsFunctionContext.getObjects("ChatObject"), gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.GDChatObjectObjects1);
 
-var objects = [];
-objects.push.apply(objects,gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.GDChatObjectObjects1);
-gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x110e4e0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+let isConditionTrue_0 = false;
+{
+{runtimeScene.getScene().getVariables().get("Temp").getChild("content").setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("childqwe")));
+}{gdjs.evtTools.variable.variablePushCopy(runtimeScene.getScene().getVariables().get("__chatInterface").getChild("GeneralTextArray"), runtimeScene.getScene().getVariables().get("Temp"));
+}}
+
+}
+
+
+};gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.eventsList1 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x3457290(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("__chatInterface").getChild("FilterMessage"), true);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{runtimeScene.getScene().getVariables().get("Temp").getChild("color").setNumber(1);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (eventsFunctionContext.getArgument("Type") == "System");
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().get("Temp").getChild("color").setNumber(1);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (eventsFunctionContext.getArgument("Type") == "Whisper");
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().get("Temp").getChild("color").setNumber(2);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (eventsFunctionContext.getArgument("Type") == "User");
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().get("Temp").getChild("color").setNumber(3);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (eventsFunctionContext.getArgument("Type") == "Guild");
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().get("Temp").getChild("color").setNumber(4);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (eventsFunctionContext.getArgument("Type") == "Party");
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().get("Temp").getChild("color").setNumber(5);
+}}
+
+}
+
+
+{
+
+
+const valueIteratorReference2 = runtimeScene.getScene().getVariables().get("childqwe");
+const iterableReference2 = runtimeScene.getScene().getVariables().get("TempChunks");
+if(!iterableReference2.isPrimitive()) {
+for(
+    const iteratorKey2 in 
+    iterableReference2.getType() === "structure"
+      ? iterableReference2.getAllChildren()
+      : iterableReference2.getType() === "array"
+        ? iterableReference2.getAllChildrenArray()
+        : []
+) {
+    const structureChildVariable2 = iterableReference2.getChild(iteratorKey2)
+    valueIteratorReference2.castTo(structureChildVariable2.getType())
+    if(structureChildVariable2.isPrimitive()) {
+        valueIteratorReference2.setValue(structureChildVariable2.getValue());
+    } else if (structureChildVariable2.getType() === "structure") {
+        // Structures are passed by reference like JS objects
+        valueIteratorReference2.replaceChildren(structureChildVariable2.getAllChildren());
+    } else if (structureChildVariable2.getType() === "array") {
+        // Arrays are passed by reference like JS objects
+        valueIteratorReference2.replaceChildrenArray(structureChildVariable2.getAllChildrenArray());
+    } else console.warn("Cannot identify type: ", type);
+
+let isConditionTrue_0 = false;
+if (true)
+{
+
+{ //Subevents: 
+gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.eventsList0(runtimeScene, eventsFunctionContext);} //Subevents end.
+}
+}
+}
 
 }
 
 
 };
 
-gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.func = function(runtimeScene, TextContent, ChatObject, parentEventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.func = function(runtimeScene, TextContent, Type, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
-"ChatObject": ChatObject
 },
   _objectArraysMap: {
-"ChatObject": gdjs.objectsListsToArray(ChatObject)
 },
   _behaviorNamesMap: {
 },
@@ -148,14 +258,14 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
   },
   getArgument: function(argName) {
 if (argName === "TextContent") return TextContent;
+if (argName === "Type") return Type;
     return "";
   },
   getOnceTriggers: function() { return runtimeScene.getOnceTriggers(); }
 };
 
-gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.GDChatObjectObjects1.length = 0;
 
-gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.eventsList1(runtimeScene, eventsFunctionContext);
 
 return;
 }

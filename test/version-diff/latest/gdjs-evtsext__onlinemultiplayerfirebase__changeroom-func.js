@@ -8,14 +8,14 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom !== "undefined") 
 gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0xeb6e20 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0x27fce90 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(window['lobby']) {
     lobby.disconnect();
     // console.log('disconnecting');
 }
 };
-gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0xeb6eb0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0x34940f8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(!runtimeScene.getGame().getVariables().get('ServerPath').getAsString()) {
   throw new Error('please configure serverpath');
@@ -58,11 +58,11 @@ const lobby = new Lobby(serverPath, handleRecievedData, handleReadyCallback, han
 
 // console.log('connecting to room ' + roomName);
 
-function handleRecievedData(event) {
+function handleRecievedData(event, skipDuration=false) {
 	// Do something with recieved data
   const duration = Math.max(0, event.delayTimestamp - getTimeStamp());
 
-  setTimeout(()=>{
+  if(skipDuration) {
     if(event.type == 'action') {
       const controls = stateManager.parseRecievedMessage(event.data);
       event.controls = controls;
@@ -73,7 +73,21 @@ function handleRecievedData(event) {
     var a = new gdjs.Variable();
     a.fromJSObject(event);
     runtimeScene.getVariables().get('RecievedMessages').pushVariableCopy(a);
-  }, duration);
+  } else {
+    setTimeout(()=>{
+      if(event.type == 'action') {
+        const controls = stateManager.parseRecievedMessage(event.data);
+        event.controls = controls;
+      } else if(event.type == 'coordinates') {
+        event.coordinates = event.data;  
+      }
+
+      var a = new gdjs.Variable();
+      a.fromJSObject(event);
+      runtimeScene.getVariables().get('RecievedMessages').pushVariableCopy(a);
+    }, duration);
+  }
+  
 }
 
 function handleReadyCallback(peerId) {
@@ -147,7 +161,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.eventsList0 = function(runti
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0xeb6eb0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0x34940f8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -157,7 +171,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0xeb6eb0(runtimeScen
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0xeb6e20(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__ChangeRoom.userFunc0x27fce90(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
