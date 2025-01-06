@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__BaseGameFunctions__CreateOnOffSkillDamageObject !== "un
 gdjs.evtsExt__BaseGameFunctions__CreateOnOffSkillDamageObject = {};
 
 
-gdjs.evtsExt__BaseGameFunctions__CreateOnOffSkillDamageObject.userFunc0x76b808 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__BaseGameFunctions__CreateOnOffSkillDamageObject.userFunc0x1c17db8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 function getOnOffSkillDamage(skillName, baseStats, skillStats) {
 	switch(skillName) {
@@ -122,7 +122,7 @@ gdjs.evtsExt__BaseGameFunctions__CreateOnOffSkillDamageObject.eventsList0 = func
 {
 
 
-gdjs.evtsExt__BaseGameFunctions__CreateOnOffSkillDamageObject.userFunc0x76b808(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BaseGameFunctions__CreateOnOffSkillDamageObject.userFunc0x1c17db8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

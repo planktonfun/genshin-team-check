@@ -10,7 +10,7 @@ gdjs.evtsExt__SpriteMasking__Mask.GDMaskedObjects1= [];
 gdjs.evtsExt__SpriteMasking__Mask.GDMaskObjects1= [];
 
 
-gdjs.evtsExt__SpriteMasking__Mask.userFunc0x2619cd0 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__SpriteMasking__Mask.userFunc0x47dc188 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const maskObject = eventsFunctionContext.getObjects("Mask")[0];
 if (!maskObject) return;
@@ -29,7 +29,7 @@ gdjs.evtsExt__SpriteMasking__Mask.eventsList0 = function(runtimeScene, eventsFun
 
 
 var objects = [];
-gdjs.evtsExt__SpriteMasking__Mask.userFunc0x2619cd0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__SpriteMasking__Mask.userFunc0x47dc188(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

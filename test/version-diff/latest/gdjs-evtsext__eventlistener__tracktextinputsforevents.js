@@ -115,7 +115,7 @@ gdjs.evtsExt__EventListener__TrackTextInputsForEvents.TrackTextInputsForEvents.p
 gdjs.evtsExt__EventListener__TrackTextInputsForEvents.TrackTextInputsForEvents.prototype.onCreatedContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__EventListener__TrackTextInputsForEvents.TrackTextInputsForEvents.prototype.onCreatedContext.userFunc0x179d3b8 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__EventListener__TrackTextInputsForEvents.TrackTextInputsForEvents.prototype.onCreatedContext.userFunc0x293ea40 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
 const object = objects[0];
@@ -196,7 +196,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__EventLi
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__EventListener__TrackTextInputsForEvents.TrackTextInputsForEvents.prototype.onCreatedContext.GDObjectObjects1);
-gdjs.evtsExt__EventListener__TrackTextInputsForEvents.TrackTextInputsForEvents.prototype.onCreatedContext.userFunc0x179d3b8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__EventListener__TrackTextInputsForEvents.TrackTextInputsForEvents.prototype.onCreatedContext.userFunc0x293ea40(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -273,7 +273,7 @@ gdjs.evtsExt__EventListener__TrackTextInputsForEvents.TrackTextInputsForEvents.p
 gdjs.evtsExt__EventListener__TrackTextInputsForEvents.TrackTextInputsForEvents.prototype.doStepPostEventsContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__EventListener__TrackTextInputsForEvents.TrackTextInputsForEvents.prototype.doStepPostEventsContext.userFunc0x179d428 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__EventListener__TrackTextInputsForEvents.TrackTextInputsForEvents.prototype.doStepPostEventsContext.userFunc0x293ea40 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
 const object = objects[0];
@@ -303,7 +303,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__EventLi
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__EventListener__TrackTextInputsForEvents.TrackTextInputsForEvents.prototype.doStepPostEventsContext.GDObjectObjects1);
-gdjs.evtsExt__EventListener__TrackTextInputsForEvents.TrackTextInputsForEvents.prototype.doStepPostEventsContext.userFunc0x179d428(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__EventListener__TrackTextInputsForEvents.TrackTextInputsForEvents.prototype.doStepPostEventsContext.userFunc0x293ea40(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

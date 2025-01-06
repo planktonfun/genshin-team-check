@@ -9,7 +9,7 @@ gdjs.evtsExt__ArrayTools__ObjectMin = {};
 gdjs.evtsExt__ArrayTools__ObjectMin.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__ArrayTools__ObjectMin.userFunc0x343cc40 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ArrayTools__ObjectMin.userFunc0x48edc48 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable[]} */
 const internalArray = eventsFunctionContext.getArgument("Array").getAllChildrenArray();
@@ -40,7 +40,7 @@ gdjs.evtsExt__ArrayTools__ObjectMin.eventsList0 = function(runtimeScene, eventsF
 {
 
 
-gdjs.evtsExt__ArrayTools__ObjectMin.userFunc0x343cc40(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ArrayTools__ObjectMin.userFunc0x48edc48(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
