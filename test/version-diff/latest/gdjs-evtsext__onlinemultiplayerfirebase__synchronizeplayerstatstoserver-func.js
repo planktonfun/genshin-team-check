@@ -10,7 +10,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__SynchronizePlayerStatsToServer.GDPlayer
 gdjs.evtsExt__OnlineMultiplayerFirebase__SynchronizePlayerStatsToServer.GDPlayerObjectObjects2= [];
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__SynchronizePlayerStatsToServer.userFunc0x36c0500 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__SynchronizePlayerStatsToServer.userFunc0x20ce180 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 if(window['lobby']) {
     var PlayerVariables = objects[0].getVariables();
@@ -77,7 +77,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("PlayerObject"), gdjs.evtsExt__O
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__OnlineMultiplayerFirebase__SynchronizePlayerStatsToServer.GDPlayerObjectObjects1);
-gdjs.evtsExt__OnlineMultiplayerFirebase__SynchronizePlayerStatsToServer.userFunc0x36c0500(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__SynchronizePlayerStatsToServer.userFunc0x20ce180(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

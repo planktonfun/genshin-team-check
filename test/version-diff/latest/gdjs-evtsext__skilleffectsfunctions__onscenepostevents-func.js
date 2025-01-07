@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__SkillEffectsFunctions__onScenePostEvents !== "undefined
 gdjs.evtsExt__SkillEffectsFunctions__onScenePostEvents = {};
 
 
-gdjs.evtsExt__SkillEffectsFunctions__onScenePostEvents.userFunc0x48df9b0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__SkillEffectsFunctions__onScenePostEvents.userFunc0x215a238 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(window.skillEffects) {
     window.skillEffects.forEach(e => { e(); });
@@ -19,7 +19,7 @@ gdjs.evtsExt__SkillEffectsFunctions__onScenePostEvents.eventsList0 = function(ru
 {
 
 
-gdjs.evtsExt__SkillEffectsFunctions__onScenePostEvents.userFunc0x48df9b0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__SkillEffectsFunctions__onScenePostEvents.userFunc0x215a238(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

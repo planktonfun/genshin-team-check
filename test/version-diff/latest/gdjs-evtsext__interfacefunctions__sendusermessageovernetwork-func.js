@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork !== "und
 gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork.userFunc0x2d73960 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork.userFunc0x2119710 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 function sendAMessage(message) {
   lobby.sendMessage(
@@ -39,7 +39,7 @@ gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork.eventsList0 = funct
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork.userFunc0x2d73960(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork.userFunc0x2119710(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
