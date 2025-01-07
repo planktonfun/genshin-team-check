@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__CalculateDistributionPoints !== "un
 gdjs.evtsExt__InterfaceFunctions__CalculateDistributionPoints = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__CalculateDistributionPoints.userFunc0xd73da8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__CalculateDistributionPoints.userFunc0x1f53898 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 function increaseVariable(selectedVariable, increaseAmount=1, lockedVariable = 'a') {
   const minLimit = 1;
@@ -78,7 +78,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__CalculateDistributionPoints.userFunc0xd73da8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__CalculateDistributionPoints.userFunc0x1f53898(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

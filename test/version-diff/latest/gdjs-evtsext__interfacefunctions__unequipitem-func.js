@@ -20,7 +20,7 @@ gdjs.evtsExt__InterfaceFunctions__UnequipItem.GDitemIconsObjects3= [];
 gdjs.evtsExt__InterfaceFunctions__UnequipItem.GDitemIconsObjects4= [];
 
 
-gdjs.evtsExt__InterfaceFunctions__UnequipItem.userFunc0xefcd78 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__UnequipItem.userFunc0x3a1cce0 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 var type = objects[0].getVariables().get('EquipType').getAsString();
 
@@ -35,7 +35,7 @@ gdjs.copyArray(gdjs.evtsExt__InterfaceFunctions__UnequipItem.GDitemIconsObjects3
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__InterfaceFunctions__UnequipItem.GDitemIconsObjects4);
-gdjs.evtsExt__InterfaceFunctions__UnequipItem.userFunc0xefcd78(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__UnequipItem.userFunc0x3a1cce0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

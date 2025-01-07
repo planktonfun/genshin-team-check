@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__JsonLoader__LoadJSONFileFromURL !== "undefined") {
 gdjs.evtsExt__JsonLoader__LoadJSONFileFromURL = {};
 
 
-gdjs.evtsExt__JsonLoader__LoadJSONFileFromURL.userFunc0x8438e0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__JsonLoader__LoadJSONFileFromURL.userFunc0x354f990 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 async function fetchJSON(url) {
   const response = await fetch(url);
@@ -31,7 +31,7 @@ gdjs.evtsExt__JsonLoader__LoadJSONFileFromURL.eventsList0 = function(runtimeScen
 {
 
 
-gdjs.evtsExt__JsonLoader__LoadJSONFileFromURL.userFunc0x8438e0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__JsonLoader__LoadJSONFileFromURL.userFunc0x354f990(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
