@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__EventListener__onScenePostEvents !== "undefined") {
 gdjs.evtsExt__EventListener__onScenePostEvents = {};
 
 
-gdjs.evtsExt__EventListener__onScenePostEvents.userFunc0x48c9390 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__EventListener__onScenePostEvents.userFunc0x70a1a68 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 // Call the function for any object you want to track
 if(!window.__eventListenerObjectsToBeTracked) return;
@@ -29,7 +29,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__EventListener__onScenePostEvents.userFunc0x48c9390(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__EventListener__onScenePostEvents.userFunc0x70a1a68(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

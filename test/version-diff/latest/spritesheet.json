@@ -1,0 +1,74 @@
+{
+  "tanning-oil": {
+    "x": 0,
+    "y": 0,
+    "width": 26,
+    "height": 28
+  },
+  "5-galder-coupon": {
+    "x": 28,
+    "y": 0,
+    "width": 26,
+    "height": 28
+  },
+  "50-galder-coupon": {
+    "x": 56,
+    "y": 0,
+    "width": 26,
+    "height": 28
+  },
+  "100-galder-coupon": {
+    "x": 84,
+    "y": 0,
+    "width": 26,
+    "height": 28
+  },
+  "500-galder-coupon": {
+    "x": 0,
+    "y": 28,
+    "width": 26,
+    "height": 28
+  },
+  "10000-galder-coupon": {
+    "x": 28,
+    "y": 28,
+    "width": 26,
+    "height": 28
+  },
+  "20000-galder-coupon": {
+    "x": 56,
+    "y": 28,
+    "width": 26,
+    "height": 28
+  },
+  "5000-galder-coupon": {
+    "x": 84,
+    "y": 28,
+    "width": 28,
+    "height": 28
+  },
+  "30000-galder-coupon": {
+    "x": 0,
+    "y": 56,
+    "width": 28,
+    "height": 28
+  },
+  "2000-galder-coupon": {
+    "x": 28,
+    "y": 56,
+    "width": 28,
+    "height": 28
+  },
+  "20000-galder-coupon-2": {
+    "x": 56,
+    "y": 56,
+    "width": 28,
+    "height": 25
+  },
+  "1000-galder-coupon": {
+    "x": 84,
+    "y": 56,
+    "width": 28,
+    "height": 27
+  }
+}

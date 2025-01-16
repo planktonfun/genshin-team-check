@@ -9,7 +9,7 @@ gdjs.evtsExt__ArrayTools__ObjectFlatten = {};
 gdjs.evtsExt__ArrayTools__ObjectFlatten.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__ArrayTools__ObjectFlatten.userFunc0x200f050 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ArrayTools__ObjectFlatten.userFunc0x5308358 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable} */
 const array = eventsFunctionContext.getArgument("Array");
@@ -41,7 +41,7 @@ gdjs.evtsExt__ArrayTools__ObjectFlatten.eventsList0 = function(runtimeScene, eve
 {
 
 
-gdjs.evtsExt__ArrayTools__ObjectFlatten.userFunc0x200f050(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ArrayTools__ObjectFlatten.userFunc0x5308358(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

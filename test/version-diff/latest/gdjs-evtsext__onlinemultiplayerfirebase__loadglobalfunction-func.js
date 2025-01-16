@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction !== "unde
 gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction.userFunc0x20967e8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction.userFunc0x33ca5c8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 var serverOffset = 0;
 var customServerOffset = 0;
@@ -570,7 +570,7 @@ class FirebaseObject {
     }
 
     sendChatMessage(root, message) {
-        const limit = 100;
+        const limit = 500;
 
         const circularBufferRef = firebase.database().ref(root + '/_chats');
 
@@ -579,7 +579,7 @@ class FirebaseObject {
           const circularBuffer = currentData || [];
           circularBuffer.push(message);
 
-          // Maintain the buffer size (remove elements from the beginning if it exceeds 100)
+          // Maintain the buffer size (remove elements from the beginning if it exceeds 500)
           while (circularBuffer.length > limit) {
             circularBuffer.shift();
           }
@@ -766,7 +766,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction.eventsList0 = functi
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction.userFunc0x20967e8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction.userFunc0x33ca5c8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

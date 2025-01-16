@@ -59,34 +59,23 @@ gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEvents
 gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.userFunc0x15b4258 = function(runtimeScene, objects, eventsFunctionContext) {
-"use strict";
-if(!window.game) return;
-
-const obj = objects[0];
-const playerX = gdjs.evtTools.camera.getCameraX(runtimeScene,"");
-const playerY = gdjs.evtTools.camera.getCameraY(runtimeScene,"");
-
-const startX = playerX - game.viewportWidth / 2;
-const startY = playerY - game.viewportHeight / 2;
-const endX = playerX + game.viewportWidth / 2;
-const endY = playerY + game.viewportHeight / 2;
-
-const visible = (
-    obj.getAABBRight() > startX && obj.getAABBLeft() < endX &&
-    obj.getAABBBottom() > startY && obj.getAABBTop() < endY
-);
-
-obj.hide(!visible);
-};
+gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.mapOfGDgdjs_9546evtsExt_9595_9595Sticker_9595_9595HideOutsideView_9546HideOutsideView_9546prototype_9546doStepPreEventsContext_9546GDObjectObjects1Objects = Hashtable.newFrom({"Object": gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.GDObjectObjects1});
+gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.mapOfGDgdjs_9546evtsExt_9595_9595Sticker_9595_9595HideOutsideView_9546HideOutsideView_9546prototype_9546doStepPreEventsContext_9546GDObjectObjects1Objects = Hashtable.newFrom({"Object": gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.GDObjectObjects1});
 gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.GDObjectObjects1);
 
 let isConditionTrue_0 = false;
-{
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Sticker__IsInsidePlayerViewPort.func(runtimeScene, gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.mapOfGDgdjs_9546evtsExt_9595_9595Sticker_9595_9595HideOutsideView_9546HideOutsideView_9546prototype_9546doStepPreEventsContext_9546GDObjectObjects1Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if (isConditionTrue_0) {
+/* Reuse gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.GDObjectObjects1 */
+{for(var i = 0, len = gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.GDObjectObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.GDObjectObjects1[i].hide(false);
 }
+}}
 
 }
 
@@ -95,9 +84,15 @@ let isConditionTrue_0 = false;
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.GDObjectObjects1);
 
-var objects = [];
-objects.push.apply(objects,gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.GDObjectObjects1);
-gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.userFunc0x15b4258(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtsExt__Sticker__IsInsidePlayerViewPort.func(runtimeScene, gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.mapOfGDgdjs_9546evtsExt_9595_9595Sticker_9595_9595HideOutsideView_9546HideOutsideView_9546prototype_9546doStepPreEventsContext_9546GDObjectObjects1Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+if (isConditionTrue_0) {
+/* Reuse gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.GDObjectObjects1 */
+{for(var i = 0, len = gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.GDObjectObjects1.length ;i < len;++i) {
+    gdjs.evtsExt__Sticker__HideOutsideView.HideOutsideView.prototype.doStepPreEventsContext.GDObjectObjects1[i].hide();
+}
+}}
 
 }
 

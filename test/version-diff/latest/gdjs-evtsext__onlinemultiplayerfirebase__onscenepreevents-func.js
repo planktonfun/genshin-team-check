@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__onScenePreEvents !== "undefi
 gdjs.evtsExt__OnlineMultiplayerFirebase__onScenePreEvents = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__onScenePreEvents.userFunc0x120a3d8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__onScenePreEvents.userFunc0x33ca5c8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 timestampDisplay.update();
 timeSyncer.update();
@@ -18,7 +18,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__onScenePreEvents.eventsList0 = function
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__onScenePreEvents.userFunc0x120a3d8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__onScenePreEvents.userFunc0x33ca5c8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

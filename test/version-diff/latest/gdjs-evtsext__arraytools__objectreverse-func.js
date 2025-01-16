@@ -9,7 +9,7 @@ gdjs.evtsExt__ArrayTools__ObjectReverse = {};
 gdjs.evtsExt__ArrayTools__ObjectReverse.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__ArrayTools__ObjectReverse.userFunc0x200f050 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ArrayTools__ObjectReverse.userFunc0x48594a0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable} */
 const array = eventsFunctionContext.getArgument("Array");
@@ -25,7 +25,7 @@ gdjs.evtsExt__ArrayTools__ObjectReverse.eventsList0 = function(runtimeScene, eve
 {
 
 
-gdjs.evtsExt__ArrayTools__ObjectReverse.userFunc0x200f050(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ArrayTools__ObjectReverse.userFunc0x48594a0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

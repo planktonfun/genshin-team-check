@@ -8,22 +8,31 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork !== "und
 gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork.userFunc0x2119710 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork.userFunc0x5208548 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
+function isMessageACommand(text) {
+  return text.search(': /') > -1;
+}
+
 function sendAMessage(message) {
+  const playerMessage = runtimeScene.getGame().getVariables().get('PlayerName').getAsString() + ": " + message;
   lobby.sendMessage(
     "ChatMessageSent",
     {
       uid: runtimeScene.getVariables().get('PeerID').getAsString(),
-      message: runtimeScene.getGame().getVariables().get('PlayerName').getAsString() + ": " + message
+      message: playerMessage
     },
     0,
     false
   );
 
+  // if its a command don't put it into firebase
+  if(isMessageACommand(playerMessage)) return;
+
+  // send it into the firebase (exclude message commands)
   lobby.sendChatMessage(
     runtimeScene.getGame().getVariables().get('ServerPath').getAsString(),
-    runtimeScene.getGame().getVariables().get('PlayerName').getAsString() + ": " + message
+    playerMessage
   );
 }
 
@@ -39,7 +48,7 @@ gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork.eventsList0 = funct
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork.userFunc0x2119710(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork.userFunc0x5208548(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
