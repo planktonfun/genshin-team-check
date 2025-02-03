@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__LoadStateManager !== "undefi
 gdjs.evtsExt__OnlineMultiplayerFirebase__LoadStateManager = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadStateManager.userFunc0x129fda8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadStateManager.userFunc0x39f9e28 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 // Compresses keyboard or mouse clicks states into a number
 // Only supports states that contain booleans
@@ -144,7 +144,7 @@ class OnlineStateManager {
 
 window.OnlineStateManager = OnlineStateManager;
 };
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadStateManager.userFunc0x3934c18 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadStateManager.userFunc0x2232ce8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 // possible actions that is boolean
 const states = [
@@ -240,7 +240,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__LoadStateManager.eventsList0 = function
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadStateManager.userFunc0x129fda8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadStateManager.userFunc0x39f9e28(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -248,7 +248,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__LoadStateManager.userFunc0x129fda8(runt
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadStateManager.userFunc0x3934c18(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadStateManager.userFunc0x2232ce8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

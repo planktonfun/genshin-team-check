@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__StepFunctions__ToggleEveryInterval !== "undefined") {
 gdjs.evtsExt__StepFunctions__ToggleEveryInterval = {};
 
 
-gdjs.evtsExt__StepFunctions__ToggleEveryInterval.userFunc0x382bfc0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__StepFunctions__ToggleEveryInterval.userFunc0x36f7498 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = stepFunctions.toggleEveryInterval(
     eventsFunctionContext.getArgument("TimeStamp").valueOf(),
@@ -31,7 +31,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__StepFunctions__ToggleEveryInterval.userFunc0x382bfc0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__StepFunctions__ToggleEveryInterval.userFunc0x36f7498(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

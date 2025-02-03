@@ -9,7 +9,7 @@ gdjs.evtsExt__Observers__ObserveSceneVarByObject = {};
 gdjs.evtsExt__Observers__ObserveSceneVarByObject.GDObserverObjectObjects1= [];
 
 
-gdjs.evtsExt__Observers__ObserveSceneVarByObject.userFunc0x444b3c0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Observers__ObserveSceneVarByObject.userFunc0x2ab4b08 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const sceneVar = eventsFunctionContext.getArgument("SceneVariable");
 const observers = eventsFunctionContext.getObjects('ObserverObject');
@@ -85,7 +85,7 @@ gdjs.evtsExt__Observers__ObserveSceneVarByObject.eventsList0 = function(runtimeS
 {
 
 
-gdjs.evtsExt__Observers__ObserveSceneVarByObject.userFunc0x444b3c0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__ObserveSceneVarByObject.userFunc0x2ab4b08(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

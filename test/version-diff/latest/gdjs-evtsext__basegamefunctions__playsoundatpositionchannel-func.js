@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__BaseGameFunctions__PlaySoundAtPositionChannel !== "unde
 gdjs.evtsExt__BaseGameFunctions__PlaySoundAtPositionChannel = {};
 
 
-gdjs.evtsExt__BaseGameFunctions__PlaySoundAtPositionChannel.userFunc0x3705c58 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__BaseGameFunctions__PlaySoundAtPositionChannel.userFunc0x3e6e388 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 var volume = runtimeScene.getVariables().get('Volume').getAsNumber();
 var soundFileName = eventsFunctionContext.getArgument("SoundResource"); //eventsFunctionContext.getArgument("SoundResource").toString();
@@ -39,7 +39,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__BaseGameFunctions__PlaySoundAtPositionChannel.userFunc0x3705c58(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BaseGameFunctions__PlaySoundAtPositionChannel.userFunc0x3e6e388(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
