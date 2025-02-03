@@ -956,7 +956,7 @@ gdjs.LoginCode.GDAnnouncementIconObjects26= [];
 gdjs.LoginCode.GDAnnouncementIconObjects27= [];
 
 
-gdjs.LoginCode.userFunc0x142de70 = function(runtimeScene) {
+gdjs.LoginCode.userFunc0x187ad18 = function(runtimeScene) {
 "use strict";
 window.runtimeScene=runtimeScene;
 };
@@ -965,12 +965,12 @@ gdjs.LoginCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.LoginCode.userFunc0x142de70(runtimeScene);
+gdjs.LoginCode.userFunc0x187ad18(runtimeScene);
 
 }
 
 
-};gdjs.LoginCode.userFunc0xf08aa0 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x3e45620 = function(runtimeScene) {
 "use strict";
 window.addEventListener("keydown", function (event) {
     // Check if Page Down (key code 34) is pressed
@@ -998,7 +998,7 @@ gdjs.LoginCode.eventsList1 = function(runtimeScene) {
 }
 
 
-};gdjs.LoginCode.userFunc0x13c1e00 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x3636088 = function(runtimeScene) {
 "use strict";
 var a = {
         "GlobalVariables": {
@@ -1089,7 +1089,7 @@ window.lad = false;
 window.retrieveFirstTime = false;
 
 };
-gdjs.LoginCode.userFunc0x3b39cd0 = function(runtimeScene) {
+gdjs.LoginCode.userFunc0x37c33f0 = function(runtimeScene) {
 "use strict";
 console.log(runtimeScene)
 };
@@ -1098,7 +1098,7 @@ gdjs.LoginCode.eventsList2 = function(runtimeScene) {
 {
 
 
-gdjs.LoginCode.userFunc0x3b39cd0(runtimeScene);
+gdjs.LoginCode.userFunc0x37c33f0(runtimeScene);
 
 }
 
@@ -1137,7 +1137,7 @@ gdjs.LoginCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.LoginCode.userFunc0xf08aa0(runtimeScene);
+gdjs.LoginCode.userFunc0x3e45620(runtimeScene);
 
 }
 
@@ -1263,7 +1263,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.LoginCode.userFunc0x13c1e00(runtimeScene);
+gdjs.LoginCode.userFunc0x3636088(runtimeScene);
 
 }
 
@@ -1283,7 +1283,7 @@ gdjs.LoginCode.eventsList2(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.LoginCode.userFunc0x2042a88 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x187bff0 = function(runtimeScene) {
 "use strict";
 console.time('test load speed')
 };
@@ -2128,33 +2128,12 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddIm
 }
 
 
-};gdjs.LoginCode.asyncCallback80952604 = function (runtimeScene, asyncObjectsList) {
+};gdjs.LoginCode.asyncCallback80951300 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
 gdjs.LoginCode.eventsList44(runtimeScene, asyncObjectsList);} //End of subevents
 }
 gdjs.LoginCode.eventsList45 = function(runtimeScene, asyncObjectsList) {
-
-{
-
-
-{
-const parentAsyncObjectsList = asyncObjectsList;
-{
-const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForCharacters.func(runtimeScene, "SpriteSheets\\Fox.webp", "SpriteSheets\\Fox_character.json", "Fox", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.LoginCode.asyncCallback80952604(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.LoginCode.asyncCallback80951300 = function (runtimeScene, asyncObjectsList) {
-
-{ //Subevents
-gdjs.LoginCode.eventsList45(runtimeScene, asyncObjectsList);} //End of subevents
-}
-gdjs.LoginCode.eventsList46 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -2170,33 +2149,12 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddIm
 }
 
 
-};gdjs.LoginCode.asyncCallback80950492 = function (runtimeScene, asyncObjectsList) {
-
-{ //Subevents
-gdjs.LoginCode.eventsList46(runtimeScene, asyncObjectsList);} //End of subevents
-}
-gdjs.LoginCode.eventsList47 = function(runtimeScene, asyncObjectsList) {
-
-{
-
-
-{
-const parentAsyncObjectsList = asyncObjectsList;
-{
-const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForCharacters.func(runtimeScene, "SpriteSheets\\Dragon.webp", "SpriteSheets\\Dragon_character.json", "Dragon", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.LoginCode.asyncCallback80950492(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
 };gdjs.LoginCode.asyncCallback80951756 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
-gdjs.LoginCode.eventsList47(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.LoginCode.eventsList45(runtimeScene, asyncObjectsList);} //End of subevents
 }
-gdjs.LoginCode.eventsList48 = function(runtimeScene, asyncObjectsList) {
+gdjs.LoginCode.eventsList46 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -2215,9 +2173,9 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddIm
 };gdjs.LoginCode.asyncCallback80951372 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
-gdjs.LoginCode.eventsList48(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.LoginCode.eventsList46(runtimeScene, asyncObjectsList);} //End of subevents
 }
-gdjs.LoginCode.eventsList49 = function(runtimeScene, asyncObjectsList) {
+gdjs.LoginCode.eventsList47 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -2236,9 +2194,9 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddIm
 };gdjs.LoginCode.asyncCallback80951068 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
-gdjs.LoginCode.eventsList49(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.LoginCode.eventsList47(runtimeScene, asyncObjectsList);} //End of subevents
 }
-gdjs.LoginCode.eventsList50 = function(runtimeScene, asyncObjectsList) {
+gdjs.LoginCode.eventsList48 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -2257,9 +2215,9 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddIm
 };gdjs.LoginCode.asyncCallback80949820 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
-gdjs.LoginCode.eventsList50(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.LoginCode.eventsList48(runtimeScene, asyncObjectsList);} //End of subevents
 }
-gdjs.LoginCode.eventsList51 = function(runtimeScene, asyncObjectsList) {
+gdjs.LoginCode.eventsList49 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -2278,9 +2236,9 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddIm
 };gdjs.LoginCode.asyncCallback80950564 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
-gdjs.LoginCode.eventsList51(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.LoginCode.eventsList49(runtimeScene, asyncObjectsList);} //End of subevents
 }
-gdjs.LoginCode.eventsList52 = function(runtimeScene, asyncObjectsList) {
+gdjs.LoginCode.eventsList50 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -2299,9 +2257,9 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddIm
 };gdjs.LoginCode.asyncCallback80949892 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
-gdjs.LoginCode.eventsList52(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.LoginCode.eventsList50(runtimeScene, asyncObjectsList);} //End of subevents
 }
-gdjs.LoginCode.eventsList53 = function(runtimeScene, asyncObjectsList) {
+gdjs.LoginCode.eventsList51 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -2320,9 +2278,9 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddIm
 };gdjs.LoginCode.asyncCallback80948156 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
-gdjs.LoginCode.eventsList53(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.LoginCode.eventsList51(runtimeScene, asyncObjectsList);} //End of subevents
 }
-gdjs.LoginCode.eventsList54 = function(runtimeScene, asyncObjectsList) {
+gdjs.LoginCode.eventsList52 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -2341,9 +2299,9 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddIm
 };gdjs.LoginCode.asyncCallback80948556 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
-gdjs.LoginCode.eventsList54(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.LoginCode.eventsList52(runtimeScene, asyncObjectsList);} //End of subevents
 }
-gdjs.LoginCode.eventsList55 = function(runtimeScene, asyncObjectsList) {
+gdjs.LoginCode.eventsList53 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -2362,6 +2320,48 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddIm
 };gdjs.LoginCode.asyncCallback80948940 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
+gdjs.LoginCode.eventsList53(runtimeScene, asyncObjectsList);} //End of subevents
+}
+gdjs.LoginCode.eventsList54 = function(runtimeScene, asyncObjectsList) {
+
+{
+
+
+{
+const parentAsyncObjectsList = asyncObjectsList;
+{
+const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForCharacters.func(runtimeScene, "SpriteSheets\\Champion.webp", "SpriteSheets\\Champion_character.json", "Champion", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.LoginCode.asyncCallback80948940(runtimeScene, asyncObjectsList)));
+}
+}
+
+}
+
+
+};gdjs.LoginCode.asyncCallback66496204 = function (runtimeScene, asyncObjectsList) {
+
+{ //Subevents
+gdjs.LoginCode.eventsList54(runtimeScene, asyncObjectsList);} //End of subevents
+}
+gdjs.LoginCode.eventsList55 = function(runtimeScene, asyncObjectsList) {
+
+{
+
+
+{
+const parentAsyncObjectsList = asyncObjectsList;
+{
+const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForCharacters.func(runtimeScene, "SpriteSheets\\DragonR.webp", "SpriteSheets\\Dragon_character.json", "Dragon", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.LoginCode.asyncCallback66496204(runtimeScene, asyncObjectsList)));
+}
+}
+
+}
+
+
+};gdjs.LoginCode.asyncCallback80951684 = function (runtimeScene, asyncObjectsList) {
+
+{ //Subevents
 gdjs.LoginCode.eventsList55(runtimeScene, asyncObjectsList);} //End of subevents
 }
 gdjs.LoginCode.eventsList56 = function(runtimeScene, asyncObjectsList) {
@@ -2373,7 +2373,7 @@ gdjs.LoginCode.eventsList56 = function(runtimeScene, asyncObjectsList) {
 const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForCharacters.func(runtimeScene, "SpriteSheets\\Champion.webp", "SpriteSheets\\Champion_character.json", "Champion", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.LoginCode.asyncCallback80948940(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForCharacters.func(runtimeScene, "SpriteSheets\\FoxR.webp", "SpriteSheets\\Fox_character.json", "Fox", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.LoginCode.asyncCallback80951684(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -2423,7 +2423,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddIm
 {
 
 
-gdjs.LoginCode.userFunc0x2042a88(runtimeScene);
+gdjs.LoginCode.userFunc0x187bff0(runtimeScene);
 
 }
 
@@ -2526,7 +2526,7 @@ gdjs.LoginCode.eventsList58(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.LoginCode.userFunc0x3712310 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x362b790 = function(runtimeScene) {
 "use strict";
 console.timeEnd('test load speed')
 };
@@ -2535,7 +2535,7 @@ gdjs.LoginCode.eventsList60 = function(runtimeScene) {
 {
 
 
-gdjs.LoginCode.userFunc0x3712310(runtimeScene);
+gdjs.LoginCode.userFunc0x362b790(runtimeScene);
 
 }
 
@@ -4746,12 +4746,15 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getGame().getVariables().get("DynamicReady").getChild("Ready"), false);
+}
+if (isConditionTrue_0) {
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("DynamicReady").getChild("Mobs"), false);
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("DynamicReady").getChild("Pets"), false);
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("DynamicReady").getChild("Items"), false);
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("DynamicReady").getChild("Characters"), false);
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("DynamicReady").getChild("Npc"), false);
-}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("DynamicReady").getChild("Ready"), false);
 }
 { //Subevents
 gdjs.LoginCode.eventsList59(runtimeScene);} //End of subevents
