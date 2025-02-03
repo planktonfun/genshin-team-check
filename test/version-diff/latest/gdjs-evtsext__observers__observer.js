@@ -23,6 +23,7 @@ gdjs.evtsExt__Observers__Observer.Observer = class Observer extends gdjs.Runtime
     this._behaviorData.Y = Number("") || 0;
     this._behaviorData.Z = Number("") || 0;
     this._behaviorData.NotifiedDataNumber = Number("") || 0;
+    this._behaviorData.SubjectId = "";
   }
 
   // Hot-reload:
@@ -42,6 +43,8 @@ gdjs.evtsExt__Observers__Observer.Observer = class Observer extends gdjs.Runtime
       this._behaviorData.Z = newBehaviorData.Z;
     if (oldBehaviorData.NotifiedDataNumber !== newBehaviorData.NotifiedDataNumber)
       this._behaviorData.NotifiedDataNumber = newBehaviorData.NotifiedDataNumber;
+    if (oldBehaviorData.SubjectId !== newBehaviorData.SubjectId)
+      this._behaviorData.SubjectId = newBehaviorData.SubjectId;
 
     return true;
   }
@@ -93,6 +96,12 @@ gdjs.evtsExt__Observers__Observer.Observer = class Observer extends gdjs.Runtime
   _setNotifiedDataNumber(newValue) {
     this._behaviorData.NotifiedDataNumber = newValue;
   }
+  _getSubjectId() {
+    return this._behaviorData.SubjectId !== undefined ? this._behaviorData.SubjectId : "";
+  }
+  _setSubjectId(newValue) {
+    this._behaviorData.SubjectId = newValue;
+  }
 }
 
 /**
@@ -124,26 +133,29 @@ gdjs.evtsExt__Observers__Observer.Observer.prototype.onCreatedContext = {};
 gdjs.evtsExt__Observers__Observer.Observer.prototype.onCreatedContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Observers__Observer.Observer.prototype.onCreatedContext.userFunc0x3efdb40 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Observers__Observer.Observer.prototype.onCreatedContext.userFunc0x3e95dc0 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 // Observer
 class Observer {
   constructor(behavior, x, y) {
     this.behavior = behavior;
     this.logs=[];
+    this.latest = null;
   }
 
-  update(event, data, object) {
+  update(event, data, object, subjectId) {
     this.behavior._behaviorData.Notified = true;
-    this.logs.push({ event, data, object }); // stack it, so its not limited to one notification per frame
+    this.logs.push({ event, data, object, subjectId }); // stack it, so its not limited to one notification per frame
   }
 
   consumeData() {
-    const latest = this.logs.shift(); //this.logs.pop();
+    this.latest = this.logs.shift(); //this.logs.pop();
+    const latest = this.latest;
 
     this.behavior._behaviorData.NotifiedEvent = latest.event;
     this.behavior._behaviorData.NotifiedDataString = latest.data;
     this.behavior._behaviorData.NotifiedDataNumber = latest.data;
+    this.behavior._behaviorData.SubjectId = latest.subjectId;
 
     if(latest.object) {
       this.behavior._behaviorData.X = latest.object.getX();
@@ -171,7 +183,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Observe
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Observers__Observer.Observer.prototype.onCreatedContext.GDObjectObjects1);
-gdjs.evtsExt__Observers__Observer.Observer.prototype.onCreatedContext.userFunc0x3efdb40(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__Observer.Observer.prototype.onCreatedContext.userFunc0x3e95dc0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -368,7 +380,7 @@ gdjs.evtsExt__Observers__Observer.Observer.prototype.ConsumeDataContext = {};
 gdjs.evtsExt__Observers__Observer.Observer.prototype.ConsumeDataContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Observers__Observer.Observer.prototype.ConsumeDataContext.userFunc0x7335448 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Observers__Observer.Observer.prototype.ConsumeDataContext.userFunc0x2566450 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 
@@ -382,7 +394,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Observe
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Observers__Observer.Observer.prototype.ConsumeDataContext.GDObjectObjects1);
-gdjs.evtsExt__Observers__Observer.Observer.prototype.ConsumeDataContext.userFunc0x7335448(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__Observer.Observer.prototype.ConsumeDataContext.userFunc0x2566450(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -623,6 +635,188 @@ gdjs.evtsExt__Observers__Observer.Observer.prototype.YContext.GDObjectObjects1.l
 gdjs.evtsExt__Observers__Observer.Observer.prototype.YContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__Observers__Observer.Observer.prototype.YContext.eventsList0(runtimeScene, eventsFunctionContext);
+
+return Number(eventsFunctionContext.returnValue) || 0;
+}
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext = {};
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext.GDObjectObjects1= [];
+
+
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext.userFunc0x3e12260 = function(runtimeScene, objects, eventsFunctionContext) {
+"use strict";
+const pointName = eventsFunctionContext.getArgument("PointName").toString();
+
+eventsFunctionContext.returnValue = objects[0]._observer.latest.object.getPointX(pointName);
+};
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext.GDObjectObjects1);
+
+var objects = [];
+objects.push.apply(objects,gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext.GDObjectObjects1);
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext.userFunc0x3e12260(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+
+}
+
+
+};
+
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointX = function(PointName, parentEventsFunctionContext) {
+
+var that = this;
+var runtimeScene = this._runtimeScene;
+var thisObjectList = [this.owner];
+var Object = Hashtable.newFrom({Object: thisObjectList});
+var Behavior = this.name;
+var eventsFunctionContext = {
+  _objectsMap: {
+"Object": Object
+},
+  _objectArraysMap: {
+"Object": thisObjectList
+},
+  _behaviorNamesMap: {
+"Behavior": Behavior
+},
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+if (argName === "PointName") return PointName;
+    return "";
+  },
+  getOnceTriggers: function() { return that._onceTriggers; }
+};
+
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext.GDObjectObjects1.length = 0;
+
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext.eventsList0(runtimeScene, eventsFunctionContext);
+
+return Number(eventsFunctionContext.returnValue) || 0;
+}
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext = {};
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext.GDObjectObjects1= [];
+
+
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext.userFunc0x3e12260 = function(runtimeScene, objects, eventsFunctionContext) {
+"use strict";
+const pointName = eventsFunctionContext.getArgument("PointName").toString();
+
+eventsFunctionContext.returnValue = objects[0]._observer.latest.object.getPointY(pointName);
+};
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext.GDObjectObjects1);
+
+var objects = [];
+objects.push.apply(objects,gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext.GDObjectObjects1);
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext.userFunc0x3e12260(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+
+}
+
+
+};
+
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointY = function(PointName, parentEventsFunctionContext) {
+
+var that = this;
+var runtimeScene = this._runtimeScene;
+var thisObjectList = [this.owner];
+var Object = Hashtable.newFrom({Object: thisObjectList});
+var Behavior = this.name;
+var eventsFunctionContext = {
+  _objectsMap: {
+"Object": Object
+},
+  _objectArraysMap: {
+"Object": thisObjectList
+},
+  _behaviorNamesMap: {
+"Behavior": Behavior
+},
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+if (argName === "PointName") return PointName;
+    return "";
+  },
+  getOnceTriggers: function() { return that._onceTriggers; }
+};
+
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext.GDObjectObjects1.length = 0;
+
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext.eventsList0(runtimeScene, eventsFunctionContext);
 
 return Number(eventsFunctionContext.returnValue) || 0;
 }
@@ -969,6 +1163,92 @@ gdjs.evtsExt__Observers__Observer.Observer.prototype.NotifiedDataNumberContext.G
 gdjs.evtsExt__Observers__Observer.Observer.prototype.NotifiedDataNumberContext.eventsList0(runtimeScene, eventsFunctionContext);
 
 return Number(eventsFunctionContext.returnValue) || 0;
+}
+gdjs.evtsExt__Observers__Observer.Observer.prototype.SubjectIdContext = {};
+gdjs.evtsExt__Observers__Observer.Observer.prototype.SubjectIdContext.GDObjectObjects1= [];
+gdjs.evtsExt__Observers__Observer.Observer.prototype.SubjectIdContext.GDObjectObjects2= [];
+
+
+gdjs.evtsExt__Observers__Observer.Observer.prototype.SubjectIdContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Observers__Observer.Observer.prototype.SubjectIdContext.GDObjectObjects1);
+{if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Observers__Observer.Observer.prototype.SubjectIdContext.GDObjectObjects1.length === 0 ) ? "" :gdjs.evtsExt__Observers__Observer.Observer.prototype.SubjectIdContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getSubjectId()); }}}
+
+}
+
+
+};
+
+gdjs.evtsExt__Observers__Observer.Observer.prototype.SubjectId = function(parentEventsFunctionContext) {
+
+var that = this;
+var runtimeScene = this._runtimeScene;
+var thisObjectList = [this.owner];
+var Object = Hashtable.newFrom({Object: thisObjectList});
+var Behavior = this.name;
+var eventsFunctionContext = {
+  _objectsMap: {
+"Object": Object
+},
+  _objectArraysMap: {
+"Object": thisObjectList
+},
+  _behaviorNamesMap: {
+"Behavior": Behavior
+},
+  getObjects: function(objectName) {
+    return eventsFunctionContext._objectArraysMap[objectName] || [];
+  },
+  getObjectsLists: function(objectName) {
+    return eventsFunctionContext._objectsMap[objectName] || null;
+  },
+  getBehaviorName: function(behaviorName) {
+    return eventsFunctionContext._behaviorNamesMap[behaviorName] || behaviorName;
+  },
+  createObject: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    if (objectsList) {
+      const object = parentEventsFunctionContext ?
+        parentEventsFunctionContext.createObject(objectsList.firstKey()) :
+        runtimeScene.createObject(objectsList.firstKey());
+      if (object) {
+        objectsList.get(objectsList.firstKey()).push(object);
+        eventsFunctionContext._objectArraysMap[objectName].push(object);
+      }
+      return object;    }
+    return null;
+  },
+  getInstancesCountOnScene: function(objectName) {
+    const objectsList = eventsFunctionContext._objectsMap[objectName];
+    let count = 0;
+    if (objectsList) {
+      for(const objectName in objectsList.items)
+        count += parentEventsFunctionContext ?
+parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
+        runtimeScene.getInstancesCountOnScene(objectName);
+    }
+    return count;
+  },
+  getLayer: function(layerName) {
+    return runtimeScene.getLayer(layerName);
+  },
+  getArgument: function(argName) {
+    return "";
+  },
+  getOnceTriggers: function() { return that._onceTriggers; }
+};
+
+gdjs.evtsExt__Observers__Observer.Observer.prototype.SubjectIdContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__Observers__Observer.Observer.prototype.SubjectIdContext.GDObjectObjects2.length = 0;
+
+gdjs.evtsExt__Observers__Observer.Observer.prototype.SubjectIdContext.eventsList0(runtimeScene, eventsFunctionContext);
+
+return "" + eventsFunctionContext.returnValue;
 }
 
 gdjs.evtsExt__Observers__Observer.Observer.prototype.doStepPreEvents = function() {

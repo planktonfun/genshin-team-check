@@ -2,7 +2,7 @@
 	{
 		"title": "GM_Eni-0",
 		"tags": "",
-		"body": "<<changeNPCAnimation gm_eni 0>> SKIP\nSKIP\nHello and welcome to Caballa Island!\\n(Clapping~) I am GM Eni.\n<<changeNPCAnimation gm_eni 1>> You have to listen to me carefully and answer some questions, and if you answer them correctly I will\\npresent you with Rookie Sword and Rookie Shield as a gift.\n<<startQuest 1>>SKIP\n<<changeNPCAnimation gm_eni 0>>Well first, I want to explain the basic interface you see on the game screen...\nWhat you see on the left side is a graph which indicates your current information on...\nLevel and Experience, Stamina(HP), Mana(MP), Galders(Currency), and Weight, this can be useful in helping you with control of the game.\nIn Trickster, you can register up to 3 layers of 8 actions each for a total of 24 into Quick Slot system.\nThis is ideal for quickly accessing often used items, skills and weapons that registered to the slots.\nYou can use the actions registered via the keys on your keyboard from F1 to F8 and it makes for much easier use of key game elements.\nQuick slots 1 can be hidden or shown by using the \"T\" key on a keyboard. Make sure not to forget these things I told you.\nIn the bottom left corner of the screen is the chatting window.\nHere you can receive memos, whisper to others, and of course chat.\nThe icons you see on the right side of the bottom of the window indicate categories which are necessary for game play.\nIf you move the mouse over each menu item, a small window will pop up which you can click on to open the interface.\nA letter given in a red color indicates the Shortcut Key that can be used to open the item quickly.\nBasically that's all there is to know about the\\ninterface you see in the game screen, Did it help\\n you?\\nOK then, here's a Quiz and if you get it right, I'll give you a present.\n[[GM_ENI_TryAgainQuestion]]",
+		"body": "<<changeNPCAnimation Gm_Eni 0>> SKIP\nSKIP\nHello and welcome to Caballa Island!\\n(Clapping~) I am GM Eni.\n<<changeNPCAnimation Gm_Eni 1>> You have to listen to me carefully and answer some questions, and if you answer them correctly I will\\npresent you with Rookie Sword and Rookie Shield as a gift.\n<<startQuest 1>>SKIP\n<<changeNPCAnimation Gm_Eni 0>>Well first, I want to explain the basic interface you see on the game screen...\nWhat you see on the left side is a graph which indicates your current information on...\nLevel and Experience, Stamina(HP), Mana(MP), Galders(Currency), and Weight, this can be useful in helping you with control of the game.\nIn Trickster, you can register up to 3 layers of 8 actions each for a total of 24 into Quick Slot system.\nThis is ideal for quickly accessing often used items, skills and weapons that registered to the slots.\nYou can use the actions registered via the keys on your keyboard from F1 to F8 and it makes for much easier use of key game elements.\nQuick slots 1 can be hidden or shown by using the \"T\" key on a keyboard. Make sure not to forget these things I told you.\nIn the bottom left corner of the screen is the chatting window.\nHere you can receive memos, whisper to others, and of course chat.\nThe icons you see on the right side of the bottom of the window indicate categories which are necessary for game play.\nIf you move the mouse over each menu item, a small window will pop up which you can click on to open the interface.\nA letter given in a red color indicates the Shortcut Key that can be used to open the item quickly.\nBasically that's all there is to know about the\\ninterface you see in the game screen, Did it help\\n you?\\nOK then, here's a Quiz and if you get it right, I'll give you a present.\n[[GM_ENI_TryAgainQuestion]]",
 		"position": {
 			"x": 280,
 			"y": -160
@@ -12,7 +12,7 @@
 	{
 		"title": "Dorothy-0",
 		"tags": "",
-		"body": "<<changeNPCAnimation dorothy 1>> SKIP\n<<changeNPCState dorothy Dorothy-1>>SKIP\nCongratulations!\n<<changeNPCAnimation dorothy 0>>What are you looking at?",
+		"body": "<<changeNPCAnimation Dorothy 1>> SKIP\n<<changeNPCState Dorothy Dorothy-1>>SKIP\nCongratulations!\n<<changeNPCAnimation Dorothy 0>>What are you looking at?",
 		"position": {
 			"x": 760,
 			"y": -160
@@ -22,7 +22,7 @@
 	{
 		"title": "Item_Girl-0",
 		"tags": "",
-		"body": "<<changeNPCAnimation item_girl 1>> SKIP\nSKIP\n<<displayOptions 0>>How are you? I'm Item Girl! Not only am I a member of the 7-Princess Club, I also have a full time job selling items here. My stuff comes exclusively from Pia.\n[[ Buy Item |buy]]\n[[ Sell Item |sell]]\n[[ Exit Store |exit]]",
+		"body": "<<changeNPCAnimation Item_Girl 1>> SKIP\nSKIP\n<<displayOptions 0>>How are you? I'm Item Girl! Not only am I a member of the 7-Princess Club, I also have a full time job selling items here. My stuff comes exclusively from Pia.\n[[ Buy Item |buy]]\n[[ Sell Item |sell]]\n[[ Exit Store |exit]]",
 		"position": {
 			"x": 1080,
 			"y": -680
@@ -32,7 +32,7 @@
 	{
 		"title": "Pia-0",
 		"tags": "",
-		"body": "<<changeNPCAnimation pia 1>> SKIP\nSKIP\nHello, my name is Pia. I'm one of the members of the 7-Princess Club.\nI will explain to you the ways to use shops in the game.\nIf you can listen to my tutorial carefully, I will give you a Rookie Hat.\nInventory Window is where you keep track of money, cards and other items that you may pick up as you proceed in the game.\nFirst, you can check your items as well as galders you collected in Item Inventory, but then there's Card Inventory as well, for managing your cards.\nTo open up the item Inventory Window, click on the Item button at the menu or press the shortcut key \"I\".\nIn order to open up the  Card Inventory, click on the card button or the shortcut key \"C\".\nIn order to use an item, double click on the item you wan or simply press the Use button.\nEquipment, Drill, Pet are easily equipped by double clicking on them.\nIf you want to know the information about an item, press view button, or click on the right button of the mouse, then you will see some useful information about the item.\nHow do you drop an Item?\nIt's easy, Just press the Drop Button or drag an item out of the Item Window.\nShould I proceed to explain how to use the store?\n<<changeNPCAnimation pia 1>>Do you see Item Girl? She is also a member of the 7-Princess Club. Hoho~\n<<changeNPCAnimation pia 0>>You can sell your items or buy an item from her at the Item Shop.\nTo make a purchase, select the number of items you want to buy using the arrow button, and click on the BUY button to finalize the purchase.\n<<changeNPCAnimation pia 0>>\n<<giveGalder 1000>> \n<<startQuest 4>>\n<<changeNPCState item_girl Item_Girl-0>>\n<<changeNPCState pia Pia-1>>\nWell can you go to the Item Girl and buy me Tangerine?\nGo talk to Item Girl over there. I'll be waiting.",
+		"body": "<<changeNPCAnimation Pia 1>> SKIP\nSKIP\nHello, my name is Pia. I'm one of the members of the 7-Princess Club.\nI will explain to you the ways to use shops in the game.\nIf you can listen to my tutorial carefully, I will give you a Rookie Hat.\nInventory Window is where you keep track of money, cards and other items that you may pick up as you proceed in the game.\nFirst, you can check your items as well as galders you collected in Item Inventory, but then there's Card Inventory as well, for managing your cards.\nTo open up the item Inventory Window, click on the Item button at the menu or press the shortcut key \"I\".\nIn order to open up the  Card Inventory, click on the card button or the shortcut key \"C\".\nIn order to use an item, double click on the item you wan or simply press the Use button.\nEquipment, Drill, Pet are easily equipped by double clicking on them.\nIf you want to know the information about an item, press view button, or click on the right button of the mouse, then you will see some useful information about the item.\nHow do you drop an Item?\nIt's easy, Just press the Drop Button or drag an item out of the Item Window.\nShould I proceed to explain how to use the store?\n<<changeNPCAnimation Pia 1>>Do you see Item Girl? She is also a member of the 7-Princess Club. Hoho~\n<<changeNPCAnimation Pia 0>>You can sell your items or buy an item from her at the Item Shop.\nTo make a purchase, select the number of items you want to buy using the arrow button, and click on the BUY button to finalize the purchase.\n<<changeNPCAnimation Pia 0>>\n<<giveGalder 1000>> \n<<startQuest 4>>\n<<changeNPCState Item_Girl Item_Girl-0>>\n<<changeNPCState Pia Pia-1>>\nWell can you go to the Item Girl and buy me Tangerine?\nGo talk to Item Girl over there. I'll be waiting.",
 		"position": {
 			"x": 520,
 			"y": -160
@@ -42,7 +42,7 @@
 	{
 		"title": "correct",
 		"tags": "",
-		"body": "<<changeNPCState gm_eni GM_Eni-1>>SKIP\n<<changeNPCState pia Pia-0>>SKIP\n<<updateQuest tutorial_question 1>>SKIP\n<<updateQuest gm_eni 1>>SKIP\nCorrect answer! Here is your gift!\n<<changeNPCAnimation gm_eni 1>>Here's a present for you from Megalo Company just as I promised.\nYou can find more about the game on our website~\n<<changeNPCAnimation gm_eni 0>>Well, you should go talk to the girl standing next to me, her name is Pla.\\nShe will explain to you about Item Inventory as well as how to make use of the Store. You need to listen to her carefully because\\nshe has prepared a gift for those who answer here Quiz right. I will see you later in game~!\n<<questComplete>>SKIP",
+		"body": "<<changeNPCState Gm_Eni GM_Eni-1>>SKIP\n<<changeNPCState Pia Pia-0>>SKIP\n<<updateQuest tutorial_question 1>>SKIP\n<<updateQuest Gm_Eni 1>>SKIP\nCorrect answer! Here is your gift!\n<<changeNPCAnimation Gm_Eni 1>>Here's a present for you from Megalo Company just as I promised.\nYou can find more about the game on our website~\n<<changeNPCAnimation Gm_Eni 0>>Well, you should go talk to the girl standing next to me, her name is Pla.\\nShe will explain to you about Item Inventory as well as how to make use of the Store. You need to listen to her carefully because\\nshe has prepared a gift for those who answer here Quiz right. I will see you later in game~!\n<<questComplete>>SKIP",
 		"position": {
 			"x": -40,
 			"y": -160
@@ -62,7 +62,7 @@
 	{
 		"title": "buy",
 		"tags": "",
-		"body": "<<changeNPCAnimation item_girl 0>> SKIP\nSKIP\n<<displayWindow item-buy>>SKIP\nSKIP",
+		"body": "<<changeNPCAnimation Item_Girl 0>> SKIP\nSKIP\n<<displayWindow item-buy>>SKIP\nSKIP",
 		"position": {
 			"x": 960,
 			"y": -400
@@ -82,7 +82,7 @@
 	{
 		"title": "exit",
 		"tags": "",
-		"body": "<<changeNPCAnimation item_girl 0>> SKIP\nSKIP\nSee Ya!",
+		"body": "<<changeNPCAnimation Item_Girl 0>> SKIP\nSKIP\nSee Ya!",
 		"position": {
 			"x": 1080,
 			"y": 80
@@ -112,7 +112,7 @@
 	{
 		"title": "Pia-1",
 		"tags": "",
-		"body": "Did you go see Item Girl?\n<<changeNPCState pia Pia-2>>SKIP\n<<changeNPCState magician_sephira Magician_Sephira-0>>You brought me a Tangerine! Here's a gift as I promised, please take it.\n<<startQuest 6>>SKIP\nOnce is enough. Go to Blooming Cora for a real challenge.",
+		"body": "Did you go see Item Girl?\n<<changeNPCState Pia Pia-2>>SKIP\n<<changeNPCState Magician_Sephira Magician_Sephira-0>>You brought me a Tangerine! Here's a gift as I promised, please take it.\n<<startQuest 6>>SKIP\nOnce is enough. Go to Blooming Cora for a real challenge.",
 		"position": {
 			"x": 520,
 			"y": -400
@@ -132,7 +132,7 @@
 	{
 		"title": "Magician_Sephira-0",
 		"tags": "",
-		"body": "<<changeNPCAnimation magician_sephira 1>>SKIP\nSKIP\nHello, I am Magician Sephira.\\nI will tell you the ways of learning skills.\nIn order to learn a skill, you need to go see a Skill Master and purchase a Skill Card from them.\nWho are the Skill Master? I will explain all about them.\nFrom the left is Power-Type Master Louis, Sense-Type Master Cochma, Charm-Type Master Tiphreth and I'm the Magic-Type Master Sephira.\nYou will need to buy a Skill Card that first your Job and Level from the appropriate Skill Master.\nPurchase a Skill Card and then double click on the Skill Card in order to learn the skill.\nBut you need to have a high enough TM level as well as have enough TM points available in order to learn the skill.\nYou will earn 1 TM Point every time your TM level is increased.\nTM Level and TM Points can be checked in the skill window. Click on the Skill Window button or press a shortcut key \"S\" in order to open the skill window.\nThe skills you've learned are registered in the Skill Window. You can use skills by double clicking on the Skill Icons before attacking Monsters.\nSkills can be used more efficiently if you register them on a Quick Slot.\n<<changeNPCState magician_sephira Magician_Sephira-1>>SKIP\n<<changeNPCAnimation magician_sephira 0>>SKIP\n<<startQuest 7>><<giveItem card-pack 1>>SKIP\nWell, click on the \"C\" button to open up the Card Inventory. You will see one Skill Card in your inventory.",
+		"body": "<<changeNPCAnimation Magician_Sephira 1>>SKIP\nSKIP\nHello, I am Magician Sephira.\\nI will tell you the ways of learning skills.\nIn order to learn a skill, you need to go see a Skill Master and purchase a Skill Card from them.\nWho are the Skill Master? I will explain all about them.\nFrom the left is Power-Type Master Louis, Sense-Type Master Cochma, Charm-Type Master Tiphreth and I'm the Magic-Type Master Sephira.\nYou will need to buy a Skill Card that first your Job and Level from the appropriate Skill Master.\nPurchase a Skill Card and then double click on the Skill Card in order to learn the skill.\nBut you need to have a high enough TM level as well as have enough TM points available in order to learn the skill.\nYou will earn 1 TM Point every time your TM level is increased.\nTM Level and TM Points can be checked in the skill window. Click on the Skill Window button or press a shortcut key \"S\" in order to open the skill window.\nThe skills you've learned are registered in the Skill Window. You can use skills by double clicking on the Skill Icons before attacking Monsters.\nSkills can be used more efficiently if you register them on a Quick Slot.\n<<changeNPCState Magician_Sephira Magician_Sephira-1>>SKIP\n<<changeNPCAnimation Magician_Sephira 0>>SKIP\n<<startQuest 7>><<giveItem card-pack 1>>SKIP\nWell, click on the \"C\" button to open up the Card Inventory. You will see one Skill Card in your inventory.",
 		"position": {
 			"x": 1440,
 			"y": -120
@@ -142,7 +142,7 @@
 	{
 		"title": "Magician_Sephira-1",
 		"tags": "",
-		"body": "<<changeNPCState rosemary Rosemary-0>>SKIP\nI believe I have told you everything about the basics that you need to know about skills before you start the game.\nThere's just one more person to see and that is Rosemary, who's standing next to me. It's been a pleasure~",
+		"body": "<<changeNPCState Rosemary Rosemary-0>>SKIP\nI believe I have told you everything about the basics that you need to know about skills before you start the game.\nThere's just one more person to see and that is Rosemary, who's standing next to me. It's been a pleasure~",
 		"position": {
 			"x": 1440,
 			"y": 120
@@ -152,7 +152,7 @@
 	{
 		"title": "Rosemary-0",
 		"tags": "",
-		"body": "<<changeNPCAnimation rosemary 1>> SKIP\nSKIP\nHello I am RoseMary, I'm the current leader of a group called 7-Princess Club. You look really prepared today. Let's see what you've got~\nI will explain how to equip a weapon. First, you need to click on the EQUIP icon or press the shortcut key \"E\" to open the equipment window in order to equip the weapon. Then, open the Item Window and double click on a Item you want to use or drag the item to the Equipment Window. The same principle is applied to installing a Drill, equipping a Pet or wearing fashion items.\nLet me tell you about combat. If you move the mouse near a monster you want to attack, the mouse becomes the shape of a sword. That's when you attack the Monster by clicking it.\nThere are two ways to find out the level of the Monster you're attacking. You can click on the right mouse button over the Monster's head, or you can press \"alt\" key to display the name and level of all monsters nearby the area you're in. You can make good use of the Shortcut Keys if you memorize them. Got it? <<changeNPCState rosemary Rosemary-1>>\nI need to test you to see if you have followed my tutorial carefully. Let me give you a quest. If you succeed, I promise to reward you. Do you know what happens if you don't succeed? Well, you will be punished by the members of the 7-Princess Club!\nHohoho~ Don't worry too much. You just need to hunt a Torobbit and bring me a Mini Carrot. I will reward you with a Pet as a present only if you succeed.\nWow~ I like you already! Ok then, off to get some Mini Carrots~\n<<changeNPCAnimation rosemary 0>> SKIP\n<<startQuest 9>>SKIP\n<<spawnMonster torobbie>>SKIP\nSKIP",
+		"body": "<<changeNPCAnimation Rosemary 1>> SKIP\nSKIP\nHello I am RoseMary, I'm the current leader of a group called 7-Princess Club. You look really prepared today. Let's see what you've got~\nI will explain how to equip a weapon. First, you need to click on the EQUIP icon or press the shortcut key \"E\" to open the equipment window in order to equip the weapon. Then, open the Item Window and double click on a Item you want to use or drag the item to the Equipment Window. The same principle is applied to installing a Drill, equipping a Pet or wearing fashion items.\nLet me tell you about combat. If you move the mouse near a monster you want to attack, the mouse becomes the shape of a sword. That's when you attack the Monster by clicking it.\nThere are two ways to find out the level of the Monster you're attacking. You can click on the right mouse button over the Monster's head, or you can press \"alt\" key to display the name and level of all monsters nearby the area you're in. You can make good use of the Shortcut Keys if you memorize them. Got it? <<changeNPCState Rosemary Rosemary-1>>\nI need to test you to see if you have followed my tutorial carefully. Let me give you a quest. If you succeed, I promise to reward you. Do you know what happens if you don't succeed? Well, you will be punished by the members of the 7-Princess Club!\nHohoho~ Don't worry too much. You just need to hunt a Torobbit and bring me a Mini Carrot. I will reward you with a Pet as a present only if you succeed.\nWow~ I like you already! Ok then, off to get some Mini Carrots~\n<<changeNPCAnimation Rosemary 0>> SKIP\n<<startQuest 9>>SKIP\n<<spawnMonster torobbie>>SKIP\nSKIP",
 		"position": {
 			"x": 1680,
 			"y": -120
@@ -162,7 +162,7 @@
 	{
 		"title": "Rosemary-1",
 		"tags": "",
-		"body": "How was it? Wasn't Mini Carrot easy to obtain?\nGood Job. Looks like you are ready for an actual battle. Here, take this. This Pet is Called 'Young Egg'. You better take care of it Hohoho~\nIsn't your new pet a cutie? Double click on the pet to equip it~\nLooks like you're ready for the Game. Why don't you go to Blooming Cora and fill out an Application for participating in the game?<<updateQuest rosemary>>\n<<displayOptions 0>>If your heart is ready, I will teleport you to Blooming Cora, What do you say?\n[[ Ok, I'm ready |exitTutorial]]\n[[ I will go later |exit]]",
+		"body": "How was it? Wasn't Mini Carrot easy to obtain?\nGood Job. Looks like you are ready for an actual battle. Here, take this. This Pet is Called 'Young Egg'. You better take care of it Hohoho~\nIsn't your new pet a cutie? Double click on the pet to equip it~\nLooks like you're ready for the Game. Why don't you go to Blooming Cora and fill out an Application for participating in the game?<<updateQuest Rosemary>>\n<<displayOptions 0>>If your heart is ready, I will teleport you to Blooming Cora, What do you say?\n[[ Ok, I'm ready |exitTutorial]]\n[[ I will go later |exit]]",
 		"position": {
 			"x": 1680,
 			"y": 120
@@ -182,7 +182,7 @@
 	{
 		"title": "Dorothy-1",
 		"tags": "",
-		"body": "<<changeNPCAnimation dorothy 0>>What are you looking at?",
+		"body": "<<changeNPCAnimation Dorothy 0>>What are you looking at?",
 		"position": {
 			"x": 760,
 			"y": 80

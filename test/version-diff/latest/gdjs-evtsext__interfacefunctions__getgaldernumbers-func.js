@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__GetGalderNumbers !== "undefined") {
 gdjs.evtsExt__InterfaceFunctions__GetGalderNumbers = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__GetGalderNumbers.userFunc0x3818560 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__GetGalderNumbers.userFunc0x368b2e0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const itemName = eventsFunctionContext.getArgument("ItemName").toString();
 const galders = itemName.match(/\d+/)[0]; // Extracts the first number
@@ -30,7 +30,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__GetGalderNumbers.userFunc0x3818560(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__GetGalderNumbers.userFunc0x368b2e0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

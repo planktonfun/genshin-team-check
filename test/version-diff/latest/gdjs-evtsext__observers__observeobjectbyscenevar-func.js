@@ -9,7 +9,7 @@ gdjs.evtsExt__Observers__ObserveObjectBySceneVar = {};
 gdjs.evtsExt__Observers__ObserveObjectBySceneVar.GDSubjectObjectObjects1= [];
 
 
-gdjs.evtsExt__Observers__ObserveObjectBySceneVar.userFunc0x41d6ce0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Observers__ObserveObjectBySceneVar.userFunc0x444b3c0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const sceneVar = eventsFunctionContext.getArgument("SceneVariable");
 const subjects = eventsFunctionContext.getObjects('SubjectObject');
@@ -22,14 +22,18 @@ class Observer {
       NotificationEvent: '',
       NotificationMessage: '',
       Notified: false,
+      NotificationSubjectId: '',
     };
     this.sceneVariable.fromJSObject(this.content);
   }
 
-  update(event, data) {
-    this.content.Notified=true; // manually make this false after reading the data
-    this.content.NotificationEvent=event;
-    this.content.NotificationMessage=data;
+  update(event, message, object, subjectId) {
+    this.content = {
+      NotificationEvent: event,
+      NotificationMessage: message,
+      Notified: true, // manually make this false after reading the data
+      NotificationSubjectId: subjectId,
+    };
     this.sceneVariable.fromJSObject(this.content);
   }
 }
@@ -43,7 +47,7 @@ gdjs.evtsExt__Observers__ObserveObjectBySceneVar.eventsList0 = function(runtimeS
 {
 
 
-gdjs.evtsExt__Observers__ObserveObjectBySceneVar.userFunc0x41d6ce0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__ObserveObjectBySceneVar.userFunc0x444b3c0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

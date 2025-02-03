@@ -1,0 +1,152 @@
+{
+  "Idle": {
+    "offsets": {
+      "x": 28,
+      "y": 38
+    },
+    "animations": [
+      {
+        "name": "idle1",
+        "position": {
+          "x": 175,
+          "y": 0,
+          "width": 45,
+          "height": 83
+        }
+      }
+    ]
+  },
+  "Emote": {
+    "offsets": {
+      "x": 28,
+      "y": 38
+    },
+    "animations": [
+      {
+        "name": "emote1",
+        "position": {
+          "x": 220,
+          "y": 0,
+          "width": 42,
+          "height": 83
+        }
+      },
+      {
+        "name": "emote2",
+        "position": {
+          "x": 262,
+          "y": 0,
+          "width": 42,
+          "height": 83
+        }
+      },
+      {
+        "name": "emote3",
+        "position": {
+          "x": 304,
+          "y": 0,
+          "width": 42,
+          "height": 83
+        }
+      },
+      {
+        "name": "emote4",
+        "position": {
+          "x": 346,
+          "y": 0,
+          "width": 42,
+          "height": 83
+        }
+      },
+      {
+        "name": "emote5",
+        "position": {
+          "x": 388,
+          "y": 0,
+          "width": 42,
+          "height": 83
+        }
+      },
+      {
+        "name": "emote6",
+        "position": {
+          "x": 430,
+          "y": 0,
+          "width": 42,
+          "height": 83
+        }
+      },
+      {
+        "name": "emote7",
+        "position": {
+          "x": 472,
+          "y": 0,
+          "width": 42,
+          "height": 83
+        }
+      },
+      {
+        "name": "emote8",
+        "position": {
+          "x": 514,
+          "y": 0,
+          "width": 42,
+          "height": 83
+        }
+      },
+      {
+        "name": "emote9",
+        "position": {
+          "x": 556,
+          "y": 0,
+          "width": 42,
+          "height": 83
+        }
+      },
+      {
+        "name": "emote10",
+        "position": {
+          "x": 598,
+          "y": 0,
+          "width": 42,
+          "height": 83
+        }
+      },
+      {
+        "name": "emote11",
+        "position": {
+          "x": 640,
+          "y": 0,
+          "width": 42,
+          "height": 83
+        }
+      },
+      {
+        "name": "emote12",
+        "position": {
+          "x": 175,
+          "y": 83,
+          "width": 42,
+          "height": 83
+        }
+      }
+    ]
+  },
+  "Avatar": {
+    "offsets": {
+      "x": 0,
+      "y": 0
+    },
+    "animations": [
+      {
+        "name": "avatar1",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "width": 175,
+          "height": 305
+        }
+      }
+    ]
+  }
+}

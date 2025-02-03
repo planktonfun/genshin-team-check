@@ -8,84 +8,97 @@ if (typeof gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource !== "undefin
 gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource = {};
 
 
-gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource.userFunc0x41d6ce0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource.userFunc0x444b3c0 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const resourceName = eventsFunctionContext.getArgument('Image_Resource');
 const jsonResource = runtimeScene.getGame().getJsonManager().getLoadedJson(eventsFunctionContext.getArgument("JSON_Resource"));
-
-if(!runtimeScene.__dynamicResources) {
-    runtimeScene.__dynamicResources = {};
-    runtimeScene.__dynamicResources.textures = [];
-    runtimeScene.__dynamicResources.animationNames = [];
-}
 
 function getPixiTextureFromResourceName(resourceName) {
     return runtimeScene.getGame().getImageManager().getPIXITexture(resourceName);
 }
 
-function createImageResourceFromUrl(resourceName, resourceUrl) {
-    const imageManager = runtimeScene.getGame().getImageManager();
-    const resourceData = {
-        alwaysLoaded: false,
-        file: resourceUrl,
-        kind: "image",
-        metadata: "",
-        name: resourceName,
-        smoothed: false,
-        userAdded: false
-    };
+function createImageResourceFromUrl(resourceName, canvas) {
 
-    if(!imageManager._resources.has(resourceName)) {
-        imageManager._resources.set(resourceName, resourceData);
+    // Use canvas method
+    if(gdjs.__dynamicResources.canvasCollection.has(resourceName)) return;
+    gdjs.__dynamicResources.canvasCollection.set(resourceName, canvas);
+    return true;
 
-        // load it for later
-        imageManager.getPIXITexture(resourceName);
-    }
+    // const imageManager = runtimeScene.getGame().getImageManager();
+
+    // if(imageManager._resources.has(resourceName)) return;
+
+    // const resourceUrl = canvas.toDataURL();
+    // const resourceData = {
+    //     alwaysLoaded: false,
+    //     file: resourceUrl,
+    //     kind: "image",
+    //     metadata: "",
+    //     name: resourceName,
+    //     smoothed: false,
+    //     userAdded: false
+    // };
+
+    // imageManager._resources.set(resourceName, resourceData);
+
+    // return getPixiTextureFromResourceName(resourceName); // make sure to load it
 }
 
-function extractImageFromSpritesheet(resourceName, jsonMap, imageKey) {
-    const texture = getPixiTextureFromResourceName(resourceName);
+async function loadSpriteSheet(resourceName) {
 
-    // Extract the image from the PIXI.Texture
-    const baseTexture = texture.baseTexture;
-    const spriteSheetCanvas = baseTexture.resource.source; // This is a canvas element or sometimes an image element
+    return new Promise(resolve=>{
+        const texture = getPixiTextureFromResourceName(resourceName);
 
-    // Draw the image to the canvas
-    spriteSheetCanvas.onload = () => {
-        const canvas = document.createElement('canvas');
-        const context = canvas.getContext('2d');
-        const { x, y, width, height } = jsonMap[imageKey];
+        // Extract the image from the PIXI.Texture
+        const baseTexture = texture.baseTexture;
+        const spriteSheetCanvas = baseTexture.resource.source; // This is a canvas element or sometimes an image element
 
-        canvas.width = width;
-        canvas.height = height;
-        context.drawImage(spriteSheetCanvas, x, y, width, height, 0, 0, width, height);
+        // Draw the image to the canvas
+        spriteSheetCanvas.onload = () => {
+            resolve(spriteSheetCanvas);
+        }
 
-        createImageResourceFromUrl(imageKey, canvas.toDataURL());
-    }
-
-    // Handle the case where the image is already loaded
-    if (spriteSheetCanvas.complete) {
-        spriteSheetCanvas.onload();
-    }
+        // Handle the case where the image is already loaded
+        if (spriteSheetCanvas.complete) {
+            spriteSheetCanvas.onload();
+        }
+    })
 }
 
-for(var imageKey in jsonResource) {
-    extractImageFromSpritesheet(resourceName, jsonResource, imageKey);
+async function extractImageFromSpritesheet(spriteSheetCanvas, jsonMap, imageKey) {
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+    const { x, y, width, height } = jsonMap[imageKey];
 
-    runtimeScene.__dynamicResources.textures.push({
-        name: imageKey,
-        cacheId: imageKey
-    });
+    canvas.width = width;
+    canvas.height = height;
+    context.drawImage(spriteSheetCanvas, x, y, width, height, 0, 0, width, height);
 
-    runtimeScene.__dynamicResources.animationNames.push(imageKey);
+    return createImageResourceFromUrl(imageKey, canvas);
 }
+
+(async ()=> {
+    const spriteSheetCanvas = await loadSpriteSheet(resourceName);
+
+    for(var imageKey in jsonResource) {
+        await extractImageFromSpritesheet(spriteSheetCanvas, jsonResource, imageKey);
+
+        gdjs.__dynamicResources.items.push({
+            name: imageKey,
+            cacheId: imageKey
+        });
+    }
+
+    gdjs.evtTools.common.resolveAsyncEventsFunction(eventsFunctionContext);
+})();
 };
 gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource.userFunc0x41d6ce0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+var objects = [];
+gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource.userFunc0x444b3c0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -94,6 +107,7 @@ gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource.userFunc0x41d6ce0(runti
 
 gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource.func = function(runtimeScene, Image_Resource, JSON_Resource, parentEventsFunctionContext) {
 var eventsFunctionContext = {
+  task: new gdjs.ManuallyResolvableTask(),
   _objectsMap: {
 },
   _objectArraysMap: {
@@ -147,7 +161,7 @@ if (argName === "JSON_Resource") return JSON_Resource;
 
 gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource.eventsList0(runtimeScene, eventsFunctionContext);
 
-return;
+return eventsFunctionContext.task
 }
 
 gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource.registeredGdjsCallbacks = [];

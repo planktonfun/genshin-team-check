@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__onSceneUnloading !== "undefi
 gdjs.evtsExt__OnlineMultiplayerFirebase__onSceneUnloading = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__onSceneUnloading.userFunc0x34c7cc0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__onSceneUnloading.userFunc0x8c17f8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 lobby.disconnect();
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__onSceneUnloading.eventsList0 = function
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__onSceneUnloading.userFunc0x34c7cc0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__onSceneUnloading.userFunc0x8c17f8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

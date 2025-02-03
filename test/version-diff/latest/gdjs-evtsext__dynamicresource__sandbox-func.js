@@ -8,16 +8,10 @@ if (typeof gdjs.evtsExt__DynamicResource__Sandbox !== "undefined") {
 gdjs.evtsExt__DynamicResource__Sandbox = {};
 
 
-gdjs.evtsExt__DynamicResource__Sandbox.userFunc0x41d6ce0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__Sandbox.userFunc0x186ccd8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const resourceName = eventsFunctionContext.getArgument('Image_Resource');
 const jsonResource = runtimeScene.getGame().getJsonManager().getLoadedJson(eventsFunctionContext.getArgument("JSON_Resource"));
-
-if(!runtimeScene.__dynamicResources) {
-    runtimeScene.__dynamicResources = {};
-    runtimeScene.__dynamicResources.textures = [];
-    runtimeScene.__dynamicResources.animationNames = [];
-}
 
 function basename(str, sep) {
     return str.substr(str.lastIndexOf(sep) + 1);
@@ -119,12 +113,12 @@ console.log({jsonResource})
 for(var imageKey in jsonResource) {
     extractImageFromSpritesheet(resourceName, jsonResource, imageKey);
 
-    runtimeScene.__dynamicResources.textures.push({
+    gdjs.__dynamicResources.textures.push({
         name: imageKey,
         cacheId: imageKey //resourceName
     });
 
-    runtimeScene.__dynamicResources.animationNames.push(imageKey);
+    gdjs.__dynamicResources.animationNames.push(imageKey);
 }
 
 // createImageResourceFromUrl('tehe', 'https://about.canva.com/wp-content/uploads/sites/8/2019/03/blue.png');
@@ -132,7 +126,7 @@ for(var imageKey in jsonResource) {
 // createImageResourceFromPixiTexture('tehe', getPixiTextureFromResourceName(resourceName));
 // createImageResourceFromCanvas('tehe', 'https://about.canva.com/wp-content/uploads/sites/8/2019/03/blue.png');
 
-// runtimeScene.__dynamicResources.textures.push({
+// gdjs.__dynamicResources.textures.push({
 //     name: strip_extension(basename(resourceName,'\\')),
 //     cacheId: 'tehe' //resourceName
 // });
@@ -145,14 +139,14 @@ window.runtimeScene = runtimeScene;
 //     // PIXI.Texture.from('https://about.canva.com/wp-content/uploads/sites/8/2019/03/blue.png')
 // );
 
-runtimeScene.__dynamicResources.animationNames.push(strip_extension(basename(resourceName,'\\')));
+gdjs.__dynamicResources.animationNames.push(strip_extension(basename(resourceName,'\\')));
 };
 gdjs.evtsExt__DynamicResource__Sandbox.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__DynamicResource__Sandbox.userFunc0x41d6ce0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__Sandbox.userFunc0x186ccd8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

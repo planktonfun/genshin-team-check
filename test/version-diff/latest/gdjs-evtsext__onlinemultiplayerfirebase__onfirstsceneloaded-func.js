@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__onFirstSceneLoaded !== "unde
 gdjs.evtsExt__OnlineMultiplayerFirebase__onFirstSceneLoaded = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__onFirstSceneLoaded.userFunc0x33ca5c8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__onFirstSceneLoaded.userFunc0x4066118 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** Peer Simulator - simulate peerjs without using the internet */
 (()=>{
@@ -298,7 +298,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__onFirstSceneLoaded.userFunc0x33ca5c8 = 
 
 })();
 };
-gdjs.evtsExt__OnlineMultiplayerFirebase__onFirstSceneLoaded.userFunc0x6bd5f18 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__onFirstSceneLoaded.userFunc0x3772d38 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 function _random(seed) {
     var x = Math.sin(seed) * 10000;
@@ -333,7 +333,7 @@ if (isConditionTrue_0) {
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__onFirstSceneLoaded.userFunc0x33ca5c8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__onFirstSceneLoaded.userFunc0x4066118(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -353,7 +353,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__onFirstSceneLoaded.userFunc0x6bd5f18(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__onFirstSceneLoaded.userFunc0x3772d38(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

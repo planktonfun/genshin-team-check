@@ -6,13 +6,13 @@
     "questType": "story",
     "prerequisites": [],
     "area": "TutorialMapLayout",
-    "npcStart": "gm_eni",
+    "npcStart": "Gm_Eni",
     "dialogStart": "GM_Eni-0",
     "dialogEnd": "GM_Eni-1",
-    "npcEnd": "gm_eni",
+    "npcEnd": "Gm_Eni",
     "criteria": [
       {
-        "type": "gm_eni",
+        "type": "Gm_Eni",
         "description": "Talk to GM Eni",
         "amount": 1
       },
@@ -48,13 +48,13 @@
     "questType": "story",
     "prerequisites": [],
     "area": "TutorialMapLayout",
-    "npcStart": "pia",
+    "npcStart": "Pia",
     "dialogStart": "Pia-0",
     "dialogEnd": "Pia-1",
-    "npcEnd": "pia",
+    "npcEnd": "Pia",
     "criteria": [
       {
-        "type": "pia",
+        "type": "Pia",
         "description": "Talk to Pia",
         "amount": 1
       },
@@ -86,13 +86,13 @@
     "questType": "story",
     "prerequisites": [],
     "area": "TutorialMapLayout",
-    "npcStart": "magician_sephira",
+    "npcStart": "Magician_Sephira",
     "dialogStart": "Magician_Sephira-0",
     "dialogEnd": "Magician_Sephira-1",
-    "npcEnd": "magician_sephira",
+    "npcEnd": "Magician_Sephira",
     "criteria": [
       {
-        "type": "magician_sephira",
+        "type": "Magician_Sephira",
         "description": "Talk to Magician Sephira",
         "amount": 1
       },
@@ -134,11 +134,11 @@
     "area": "TutorialMapLayout",
     "dialogStart": "Rosemary-0",
     "dialogEnd": "Rosemary-1",
-    "npcStart": "rosemary",
-    "npcEnd": "rosemary",
+    "npcStart": "Rosemary",
+    "npcEnd": "Rosemary",
     "criteria": [
       {
-        "type": "rosemary",
+        "type": "Rosemary",
         "description": "Talk to RoseMary",
         "amount": 1
       },
@@ -173,8 +173,8 @@
     "area": "TutorialMapLayout",
     "dialogStart": "Dorothy-0",
     "dialogEnd": "Dorothy-1",
-    "npcStart": "dorothy",
-    "npcEnd": "dorothy",
+    "npcStart": "Dorothy",
+    "npcEnd": "Dorothy",
     "criteria": [
       {
         "type": "torobbie",

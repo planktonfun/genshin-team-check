@@ -1,0 +1,125 @@
+{
+  "Emote": {
+    "offsets": {
+      "x": 38,
+      "y": 57
+    },
+    "animations": [
+      {
+        "name": "emote1",
+        "position": {
+          "x": 305,
+          "y": 0,
+          "width": 106,
+          "height": 113
+        }
+      },
+      {
+        "name": "emote2",
+        "position": {
+          "x": 411,
+          "y": 0,
+          "width": 106,
+          "height": 113
+        }
+      },
+      {
+        "name": "emote3",
+        "position": {
+          "x": 517,
+          "y": 0,
+          "width": 106,
+          "height": 113
+        }
+      },
+      {
+        "name": "emote4",
+        "position": {
+          "x": 623,
+          "y": 0,
+          "width": 106,
+          "height": 113
+        }
+      },
+      {
+        "name": "emote5",
+        "position": {
+          "x": 729,
+          "y": 0,
+          "width": 106,
+          "height": 113
+        }
+      },
+      {
+        "name": "emote6",
+        "position": {
+          "x": 835,
+          "y": 0,
+          "width": 106,
+          "height": 113
+        }
+      },
+      {
+        "name": "emote7",
+        "position": {
+          "x": 941,
+          "y": 0,
+          "width": 106,
+          "height": 113
+        }
+      },
+      {
+        "name": "emote8",
+        "position": {
+          "x": 1047,
+          "y": 0,
+          "width": 106,
+          "height": 113
+        }
+      },
+      {
+        "name": "emote9",
+        "position": {
+          "x": 305,
+          "y": 113,
+          "width": 106,
+          "height": 113
+        }
+      }
+    ]
+  },
+  "Idle": {
+    "offsets": {
+      "x": 38,
+      "y": 45
+    },
+    "animations": [
+      {
+        "name": "idle1",
+        "position": {
+          "x": 1153,
+          "y": 0,
+          "width": 66,
+          "height": 95
+        }
+      }
+    ]
+  },
+  "Avatar": {
+    "offsets": {
+      "x": 0,
+      "y": 0
+    },
+    "animations": [
+      {
+        "name": "avatar1",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "width": 305,
+          "height": 305
+        }
+      }
+    ]
+  }
+}

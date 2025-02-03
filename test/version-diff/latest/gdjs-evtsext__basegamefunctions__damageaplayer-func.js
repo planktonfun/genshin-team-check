@@ -201,8 +201,8 @@ gdjs.copyArray(gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects1, gd
 
 gdjs.copyArray(eventsFunctionContext.getObjects("PlayerSpawn"), gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDPlayerSpawnObjects2);
 {gdjs.evtTools.network.jsonToVariableStructure(gdjs.evtTools.network.objectVariableStructureToJSON((gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDPlayerSpawnObjects2.length !== 0 ? gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDPlayerSpawnObjects2[0] : null), ((gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDPlayerSpawnObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDPlayerSpawnObjects2[0].getVariables()).get("BaseStats")), runtimeScene.getScene().getVariables().get("RecievingBaseStats"));
-}{gdjs.evtTools.network.jsonToVariableStructure(gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getScene().getVariables().get("MonsterDictionary").getChild((( gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects2.length === 0 ) ? "" :gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects2[0].getName())).getChild("baseStats")), runtimeScene.getScene().getVariables().get("BaseStats"));
-}{runtimeScene.getScene().getVariables().get("BaseStats").getChild("level").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("MonsterDictionary").getChild((( gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects2.length === 0 ) ? "" :gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects2[0].getName())).getChild("level")));
+}{gdjs.evtTools.network.jsonToVariableStructure(gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getScene().getVariables().get("MonsterDictionary").getChild((gdjs.RuntimeObject.getVariableString(((gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects2[0].getVariables()).get("MonsterName")))).getChild("baseStats")), runtimeScene.getScene().getVariables().get("BaseStats"));
+}{runtimeScene.getScene().getVariables().get("BaseStats").getChild("level").setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("MonsterDictionary").getChild((gdjs.RuntimeObject.getVariableString(((gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects2[0].getVariables()).get("MonsterName")))).getChild("level")));
 }{runtimeScene.getScene().getVariables().get("BaseStats").getChild("remainingHP").setNumber(1);
 }{runtimeScene.getScene().getVariables().get("Equipment").getChild("GunAP").setNumber(0);
 }{runtimeScene.getScene().getVariables().get("Equipment").getChild("ThrowAP").setNumber(0);
@@ -232,7 +232,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Mobs"), gdjs.evtsExt__BaseGameF
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.variableChildExists(runtimeScene.getScene().getVariables().get("MonsterDictionary"), (( gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects1.length === 0 ) ? "" :gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects1[0].getName()));
+isConditionTrue_0 = gdjs.evtTools.variable.variableChildExists(runtimeScene.getScene().getVariables().get("MonsterDictionary"), (gdjs.RuntimeObject.getVariableString(((gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects1[0].getVariables()).get("MonsterName"))));
 if (isConditionTrue_0) {
 
 { //Subevents
@@ -248,7 +248,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Mobs"), gdjs.evtsExt__BaseGameF
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.variable.variableChildExists(runtimeScene.getScene().getVariables().get("MonsterDictionary"), (( gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects1.length === 0 ) ? "" :gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects1[0].getName())));
+isConditionTrue_0 = !(gdjs.evtTools.variable.variableChildExists(runtimeScene.getScene().getVariables().get("MonsterDictionary"), (gdjs.RuntimeObject.getVariableString(((gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects1.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.evtsExt__BaseGameFunctions__DamageAPlayer.GDMobsObjects1[0].getVariables()).get("MonsterName")))));
 if (isConditionTrue_0) {
 }
 

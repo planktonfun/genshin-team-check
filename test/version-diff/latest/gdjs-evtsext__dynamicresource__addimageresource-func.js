@@ -8,15 +8,9 @@ if (typeof gdjs.evtsExt__DynamicResource__AddImageResource !== "undefined") {
 gdjs.evtsExt__DynamicResource__AddImageResource = {};
 
 
-gdjs.evtsExt__DynamicResource__AddImageResource.userFunc0x41d6ce0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__AddImageResource.userFunc0x186ccd8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const resourceName = eventsFunctionContext.getArgument('Image_Resource');
-
-if(!runtimeScene.__dynamicResources) {
-    runtimeScene.__dynamicResources = {};
-    runtimeScene.__dynamicResources.textures = [];
-    runtimeScene.__dynamicResources.animationNames = [];
-}
 
 function basename(str, sep) {
     return str.substr(str.lastIndexOf(sep) + 1);
@@ -26,20 +20,20 @@ function strip_extension(str) {
     return str.substr(0,str.lastIndexOf('.'));
 }
 
-runtimeScene.__dynamicResources.textures.push({
+gdjs.__dynamicResources.textures.push({
     name: strip_extension(basename(resourceName,'\\')),
     cacheId: resourceName
 });
 
 // for debugging
-runtimeScene.__dynamicResources.animationNames.push(strip_extension(basename(resourceName,'\\')));
+gdjs.__dynamicResources.animationNames.push(strip_extension(basename(resourceName,'\\')));
 };
 gdjs.evtsExt__DynamicResource__AddImageResource.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__DynamicResource__AddImageResource.userFunc0x41d6ce0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__AddImageResource.userFunc0x186ccd8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -1,0 +1,338 @@
+{
+  "variables": {
+    "travelDistance": 190,
+    "travelMs": 2533.3333333333335,
+    "attackRange": 50,
+    "attackFrame": 7,
+    "stepDistance": 44.11764705882353,
+    "aggressive": 0
+  },
+  "Death": {
+    "offsets": {
+      "x": 38,
+      "y": 48
+    },
+    "animations": [
+      {
+        "name": "death1",
+        "position": {
+          "x": 0,
+          "y": 348,
+          "width": 70,
+          "height": 87
+        }
+      },
+      {
+        "name": "death2",
+        "position": {
+          "x": 70,
+          "y": 348,
+          "width": 70,
+          "height": 87
+        }
+      },
+      {
+        "name": "death3",
+        "position": {
+          "x": 140,
+          "y": 348,
+          "width": 70,
+          "height": 87
+        }
+      },
+      {
+        "name": "death4",
+        "position": {
+          "x": 210,
+          "y": 348,
+          "width": 70,
+          "height": 87
+        }
+      },
+      {
+        "name": "death5",
+        "position": {
+          "x": 280,
+          "y": 348,
+          "width": 70,
+          "height": 87
+        }
+      },
+      {
+        "name": "death6",
+        "position": {
+          "x": 350,
+          "y": 348,
+          "width": 70,
+          "height": 87
+        }
+      },
+      {
+        "name": "death7",
+        "position": {
+          "x": 420,
+          "y": 348,
+          "width": 70,
+          "height": 87
+        }
+      }
+    ]
+  },
+  "Attack": {
+    "offsets": {
+      "x": 54,
+      "y": 59
+    },
+    "animations": [
+      {
+        "name": "attack1",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "width": 119,
+          "height": 129
+        }
+      },
+      {
+        "name": "attack10",
+        "position": {
+          "x": 357,
+          "y": 129,
+          "width": 119,
+          "height": 129
+        }
+      },
+      {
+        "name": "attack11",
+        "position": {
+          "x": 476,
+          "y": 129,
+          "width": 119,
+          "height": 129
+        }
+      },
+      {
+        "name": "attack2",
+        "position": {
+          "x": 119,
+          "y": 0,
+          "width": 119,
+          "height": 129
+        }
+      },
+      {
+        "name": "attack3",
+        "position": {
+          "x": 238,
+          "y": 0,
+          "width": 119,
+          "height": 129
+        }
+      },
+      {
+        "name": "attack4",
+        "position": {
+          "x": 357,
+          "y": 0,
+          "width": 119,
+          "height": 129
+        }
+      },
+      {
+        "name": "attack5",
+        "position": {
+          "x": 476,
+          "y": 0,
+          "width": 119,
+          "height": 129
+        }
+      },
+      {
+        "name": "attack6",
+        "position": {
+          "x": 595,
+          "y": 0,
+          "width": 119,
+          "height": 129
+        }
+      },
+      {
+        "name": "attack7",
+        "position": {
+          "x": 0,
+          "y": 129,
+          "width": 119,
+          "height": 129
+        }
+      },
+      {
+        "name": "attack8",
+        "position": {
+          "x": 119,
+          "y": 129,
+          "width": 119,
+          "height": 129
+        }
+      },
+      {
+        "name": "attack9",
+        "position": {
+          "x": 238,
+          "y": 129,
+          "width": 119,
+          "height": 129
+        }
+      }
+    ]
+  },
+  "Hit": {
+    "offsets": {
+      "x": 18,
+      "y": 48
+    },
+    "animations": [
+      {
+        "name": "hit1",
+        "position": {
+          "x": 490,
+          "y": 348,
+          "width": 48,
+          "height": 80
+        }
+      },
+      {
+        "name": "hit2",
+        "position": {
+          "x": 538,
+          "y": 348,
+          "width": 48,
+          "height": 80
+        }
+      },
+      {
+        "name": "hit3",
+        "position": {
+          "x": 586,
+          "y": 348,
+          "width": 48,
+          "height": 80
+        }
+      }
+    ]
+  },
+  "Idle": {
+    "offsets": {
+      "x": 18,
+      "y": 41
+    },
+    "animations": [
+      {
+        "name": "idle1",
+        "position": {
+          "x": 671,
+          "y": 129,
+          "width": 40,
+          "height": 74
+        }
+      }
+    ]
+  },
+  "Move": {
+    "offsets": {
+      "x": 32,
+      "y": 55
+    },
+    "animations": [
+      {
+        "name": "move1",
+        "position": {
+          "x": 595,
+          "y": 129,
+          "width": 76,
+          "height": 90
+        }
+      },
+      {
+        "name": "move10",
+        "position": {
+          "x": 608,
+          "y": 258,
+          "width": 76,
+          "height": 90
+        }
+      },
+      {
+        "name": "move2",
+        "position": {
+          "x": 0,
+          "y": 258,
+          "width": 76,
+          "height": 90
+        }
+      },
+      {
+        "name": "move3",
+        "position": {
+          "x": 76,
+          "y": 258,
+          "width": 76,
+          "height": 90
+        }
+      },
+      {
+        "name": "move4",
+        "position": {
+          "x": 152,
+          "y": 258,
+          "width": 76,
+          "height": 90
+        }
+      },
+      {
+        "name": "move5",
+        "position": {
+          "x": 228,
+          "y": 258,
+          "width": 76,
+          "height": 90
+        }
+      },
+      {
+        "name": "move6",
+        "position": {
+          "x": 304,
+          "y": 258,
+          "width": 76,
+          "height": 90
+        }
+      },
+      {
+        "name": "move7",
+        "position": {
+          "x": 380,
+          "y": 258,
+          "width": 76,
+          "height": 90
+        }
+      },
+      {
+        "name": "move8",
+        "position": {
+          "x": 456,
+          "y": 258,
+          "width": 76,
+          "height": 90
+        }
+      },
+      {
+        "name": "move9",
+        "position": {
+          "x": 532,
+          "y": 258,
+          "width": 76,
+          "height": 90
+        }
+      }
+    ]
+  }
+}

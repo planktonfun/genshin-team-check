@@ -2,7 +2,7 @@
 gdjs.evtsExt__DynamicResource__DynamicAnimationSprite = gdjs.evtsExt__DynamicResource__DynamicAnimationSprite || {};
 
 /**
- * Behavior generated from make image loading easier and faster
+ * Behavior generated from dynamic loading image for items
  */
 gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite = class DynamicAnimationSprite extends gdjs.RuntimeBehavior {
   constructor(instanceContainer, behaviorData, owner) {
@@ -30,7 +30,7 @@ gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite = c
 }
 
 /**
- * Shared data generated from make image loading easier and faster
+ * Shared data generated from dynamic loading image for items
  */
 gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.SharedData = class DynamicAnimationSpriteSharedData {
   constructor(sharedData) {
@@ -59,7 +59,7 @@ gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.pro
 gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.prototype.onCreatedContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.prototype.onCreatedContext.userFunc0x48ec5b0 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.prototype.onCreatedContext.userFunc0x3e95870 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 function basename(str, sep) {
     return str.substr(str.lastIndexOf(sep) + 1);
@@ -67,6 +67,16 @@ function basename(str, sep) {
 
 function strip_extension(str) {
     return str.substr(0,str.lastIndexOf('.'));
+}
+
+function modifyExistingAnimation(existingAnimation, animationSprites) {
+    existingAnimation.directions[0].frames.forEach((frame, index)=>{
+        const canvas = gdjs.__dynamicResources.canvasCollection.get(animationSprites[index].name);
+        frame.center.x = canvas.width/2;
+        frame.center.y = canvas.height/2;
+        frame.texture = PIXI.Texture.from(canvas);
+        frame.baseTexture = PIXI.BaseTexture.from(canvas);
+    });
 }
 
 function addAnimation(sprite, resource) {
@@ -79,7 +89,7 @@ function addAnimation(sprite, resource) {
             timeBetweenFrames: 0.08,
             looping: false,
             sprites: [{
-                image: resource.cacheId, //pixiTexture.textureCacheIds[0],
+                image: '', //resource.cacheId, //pixiTexture.textureCacheIds[0],
                 points: [{
                     name: 'qty', x: 8, y: 16
                 }],
@@ -96,20 +106,13 @@ function addAnimation(sprite, resource) {
     }
 
     const newAnimation = new gdjs.SpriteAnimation(imageManager, animationData);
+    modifyExistingAnimation(newAnimation, [{name: resource.cacheId}])
 
     // Add the new animation to the sprite
     sprite._animations.push(newAnimation);
 }
 
-if(!runtimeScene.__dynamicResources) {
-    runtimeScene.__dynamicResources = {};
-    runtimeScene.__dynamicResources.textures = [];
-    runtimeScene.__dynamicResources.animationNames = [];
-}
-
-runtimeScene.__dynamicResources.textures.forEach(resource=>addAnimation(objects[0], resource));
-
-// console.log(objects[0])
+gdjs.__dynamicResources.items.forEach(resource=>addAnimation(objects[0], resource));
 
 };
 gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.prototype.onCreatedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -119,7 +122,8 @@ gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.pro
 
 let isConditionTrue_0 = false;
 {
-}
+{gdjs.evtsExt__DynamicResource__InitializeVariables.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
 
 }
 
@@ -130,7 +134,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Dynamic
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.prototype.onCreatedContext.GDObjectObjects1);
-gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.prototype.onCreatedContext.userFunc0x48ec5b0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.prototype.onCreatedContext.userFunc0x3e95870(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ModifiedLoadImageFromURL__LoadURLIntoImageResource !== 
 gdjs.evtsExt__ModifiedLoadImageFromURL__LoadURLIntoImageResource = {};
 
 
-gdjs.evtsExt__ModifiedLoadImageFromURL__LoadURLIntoImageResource.userFunc0x34c7cc0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ModifiedLoadImageFromURL__LoadURLIntoImageResource.userFunc0x1461d98 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 runtimeScene
     .getGame()
@@ -22,7 +22,7 @@ gdjs.evtsExt__ModifiedLoadImageFromURL__LoadURLIntoImageResource.eventsList0 = f
 {
 
 
-gdjs.evtsExt__ModifiedLoadImageFromURL__LoadURLIntoImageResource.userFunc0x34c7cc0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ModifiedLoadImageFromURL__LoadURLIntoImageResource.userFunc0x1461d98(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

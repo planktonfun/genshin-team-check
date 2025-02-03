@@ -591,6 +591,70 @@
             }
         ]
     },
+    "sphinx": {
+        "name": "Sphinx",
+        "aggro": true,
+        "level": 55,
+        "xp": 2270,
+        "tm": 1110,
+        "type": "Charm",
+        "baseStats": {
+            "AP": 334,
+            "AC": 64,
+            "DX": 8,
+            "MP": 2035,
+            "MA": 64,
+            "MD": 248,
+            "WT": 5630,
+            "DA": 14,
+            "LK": 14,
+            "HP": 2270,
+            "DP": 282,
+            "HV": 1
+        },
+        "hpBars":1,
+        "resistance": {
+            "Fire R": 0.05,
+            "Water R": 0.05,
+            "Air R": 0.05,
+            "Soil R": 0.05,
+            "Elec R": 0.06,
+            "Light R": 0.05,
+            "Dark R": 0.07,
+            "Magic R": 0.07,
+            "Phys R": 0.05,
+            "Gun R": 0.04,
+            "Shadow R": 0
+        },
+        "skills": [
+            "MDefenseFailure",
+            "Shockwave"
+        ],
+        "sounds": {},
+        "images": [
+            "curl -O https://static.wikia.nocookie.net/oto/images/6/61/Monster_Rotten_Mummy_Idle.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/0/05/Monster_Rotten_Mummy_Move.gif",
+            "curl -O https://static.wikia.nocookie.net/oto/images/0/09/Monster_Rotten_Mummy_Fight.gif"
+        ],
+        "summons": [
+        ],
+        "aoe":[
+        ],
+        "drops": [
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/d/df/Item_Galder_Icon.png",
+                "itemName": "Galders",
+                "itemQty": 2366,
+                "dropChance": 0.03
+            },
+            {
+                "imageUrl": "curl -O https://static.wikia.nocookie.net/oto/images/1/1a/Item_Dark_Round_Seal_Icon.png",
+                "itemName": "Dark Round Seal",
+                "itemQty": 1,
+                "dropChance": 1
+            }
+        ]
+    },
     "captain": {
         "name": "Captain",
         "aggro": true,

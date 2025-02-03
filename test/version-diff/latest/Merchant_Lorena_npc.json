@@ -1,0 +1,53 @@
+{
+  "Emote": {
+    "offsets": {
+      "x": 24,
+      "y": 40
+    },
+    "animations": [
+      {
+        "name": "emote1",
+        "position": {
+          "x": 306,
+          "y": 0,
+          "width": 49,
+          "height": 80
+        }
+      }
+    ]
+  },
+  "Idle": {
+    "offsets": {
+      "x": 24,
+      "y": 40
+    },
+    "animations": [
+      {
+        "name": "idle1",
+        "position": {
+          "x": 355,
+          "y": 0,
+          "width": 49,
+          "height": 80
+        }
+      }
+    ]
+  },
+  "Avatar": {
+    "offsets": {
+      "x": 0,
+      "y": 0
+    },
+    "animations": [
+      {
+        "name": "avatar1",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "width": 306,
+          "height": 306
+        }
+      }
+    ]
+  }
+}

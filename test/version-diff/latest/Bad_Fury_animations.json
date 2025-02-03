@@ -1,0 +1,347 @@
+{
+  "variables": {
+    "travelDistance": 120,
+    "travelMs": 1600,
+    "attackRange": 24,
+    "attackFrame": 4,
+    "stepDistance": 35.294117647058826,
+    "aggressive": 1
+  },
+  "Move": {
+    "offsets": {
+      "x": 18,
+      "y": 43
+    },
+    "animations": [
+      {
+        "name": "move1",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "width": 37,
+          "height": 57
+        }
+      },
+      {
+        "name": "move2",
+        "position": {
+          "x": 37,
+          "y": 0,
+          "width": 37,
+          "height": 57
+        }
+      },
+      {
+        "name": "move3",
+        "position": {
+          "x": 74,
+          "y": 0,
+          "width": 37,
+          "height": 57
+        }
+      },
+      {
+        "name": "move4",
+        "position": {
+          "x": 111,
+          "y": 0,
+          "width": 37,
+          "height": 57
+        }
+      },
+      {
+        "name": "move5",
+        "position": {
+          "x": 148,
+          "y": 0,
+          "width": 37,
+          "height": 57
+        }
+      },
+      {
+        "name": "move6",
+        "position": {
+          "x": 185,
+          "y": 0,
+          "width": 37,
+          "height": 57
+        }
+      },
+      {
+        "name": "move7",
+        "position": {
+          "x": 0,
+          "y": 57,
+          "width": 37,
+          "height": 57
+        }
+      },
+      {
+        "name": "move8",
+        "position": {
+          "x": 37,
+          "y": 57,
+          "width": 37,
+          "height": 57
+        }
+      }
+    ]
+  },
+  "Attack": {
+    "offsets": {
+      "x": 24,
+      "y": 21
+    },
+    "animations": [
+      {
+        "name": "attack1",
+        "position": {
+          "x": 74,
+          "y": 57,
+          "width": 43,
+          "height": 38
+        }
+      },
+      {
+        "name": "attack2",
+        "position": {
+          "x": 117,
+          "y": 57,
+          "width": 43,
+          "height": 38
+        }
+      },
+      {
+        "name": "attack3",
+        "position": {
+          "x": 160,
+          "y": 57,
+          "width": 43,
+          "height": 38
+        }
+      },
+      {
+        "name": "attack4",
+        "position": {
+          "x": 203,
+          "y": 57,
+          "width": 43,
+          "height": 38
+        }
+      },
+      {
+        "name": "attack5",
+        "position": {
+          "x": 0,
+          "y": 114,
+          "width": 43,
+          "height": 38
+        }
+      },
+      {
+        "name": "attack6",
+        "position": {
+          "x": 43,
+          "y": 114,
+          "width": 43,
+          "height": 38
+        }
+      },
+      {
+        "name": "attack7",
+        "position": {
+          "x": 86,
+          "y": 114,
+          "width": 43,
+          "height": 38
+        }
+      }
+    ]
+  },
+  "Hit": {
+    "offsets": {
+      "x": 17,
+      "y": 20
+    },
+    "animations": [
+      {
+        "name": "hit1",
+        "position": {
+          "x": 129,
+          "y": 114,
+          "width": 39,
+          "height": 34
+        }
+      },
+      {
+        "name": "hit2",
+        "position": {
+          "x": 168,
+          "y": 114,
+          "width": 39,
+          "height": 34
+        }
+      }
+    ]
+  },
+  "Death": {
+    "offsets": {
+      "x": 21,
+      "y": 14
+    },
+    "animations": [
+      {
+        "name": "death1",
+        "position": {
+          "x": 207,
+          "y": 114,
+          "width": 39,
+          "height": 33
+        }
+      },
+      {
+        "name": "death2",
+        "position": {
+          "x": 0,
+          "y": 152,
+          "width": 39,
+          "height": 33
+        }
+      },
+      {
+        "name": "death3",
+        "position": {
+          "x": 39,
+          "y": 152,
+          "width": 39,
+          "height": 33
+        }
+      },
+      {
+        "name": "death4",
+        "position": {
+          "x": 78,
+          "y": 152,
+          "width": 39,
+          "height": 33
+        }
+      },
+      {
+        "name": "death5",
+        "position": {
+          "x": 117,
+          "y": 152,
+          "width": 39,
+          "height": 33
+        }
+      },
+      {
+        "name": "death6",
+        "position": {
+          "x": 156,
+          "y": 152,
+          "width": 39,
+          "height": 33
+        }
+      },
+      {
+        "name": "death7",
+        "position": {
+          "x": 195,
+          "y": 152,
+          "width": 39,
+          "height": 33
+        }
+      },
+      {
+        "name": "death8",
+        "position": {
+          "x": 0,
+          "y": 185,
+          "width": 39,
+          "height": 33
+        }
+      }
+    ]
+  },
+  "Idle": {
+    "offsets": {
+      "x": 18,
+      "y": 17
+    },
+    "animations": [
+      {
+        "name": "idle1",
+        "position": {
+          "x": 222,
+          "y": 0,
+          "width": 36,
+          "height": 31
+        }
+      },
+      {
+        "name": "idle2",
+        "position": {
+          "x": 39,
+          "y": 185,
+          "width": 36,
+          "height": 31
+        }
+      },
+      {
+        "name": "idle3",
+        "position": {
+          "x": 75,
+          "y": 185,
+          "width": 36,
+          "height": 31
+        }
+      },
+      {
+        "name": "idle4",
+        "position": {
+          "x": 111,
+          "y": 185,
+          "width": 36,
+          "height": 31
+        }
+      },
+      {
+        "name": "idle5",
+        "position": {
+          "x": 147,
+          "y": 185,
+          "width": 36,
+          "height": 31
+        }
+      },
+      {
+        "name": "idle6",
+        "position": {
+          "x": 183,
+          "y": 185,
+          "width": 36,
+          "height": 31
+        }
+      },
+      {
+        "name": "idle7",
+        "position": {
+          "x": 219,
+          "y": 185,
+          "width": 36,
+          "height": 31
+        }
+      },
+      {
+        "name": "idle8",
+        "position": {
+          "x": 0,
+          "y": 218,
+          "width": 36,
+          "height": 31
+        }
+      }
+    ]
+  }
+}

@@ -11,7 +11,7 @@ gdjs.evtsExt__BaseGameFunctions__CreateDamageDotObject.GDSkillTesterObjects2= []
 
 
 gdjs.evtsExt__BaseGameFunctions__CreateDamageDotObject.mapOfGDgdjs_9546evtsExt_9595_9595BaseGameFunctions_9595_9595CreateDamageDotObject_9546GDSkillTesterObjects1Objects = Hashtable.newFrom({"SkillTester": gdjs.evtsExt__BaseGameFunctions__CreateDamageDotObject.GDSkillTesterObjects1});
-gdjs.evtsExt__BaseGameFunctions__CreateDamageDotObject.userFunc0x498fef8 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BaseGameFunctions__CreateDamageDotObject.userFunc0x383fd08 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 var Equipment = eventsFunctionContext.getArgument("Equipment").toJSObject();
 var BaseStats = eventsFunctionContext.getArgument("BaseStats").toJSObject();
@@ -27,7 +27,7 @@ gdjs.evtsExt__BaseGameFunctions__CreateDamageDotObject.eventsList0 = function(ru
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__BaseGameFunctions__CreateDamageDotObject.GDSkillTesterObjects1);
-gdjs.evtsExt__BaseGameFunctions__CreateDamageDotObject.userFunc0x498fef8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BaseGameFunctions__CreateDamageDotObject.userFunc0x383fd08(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
