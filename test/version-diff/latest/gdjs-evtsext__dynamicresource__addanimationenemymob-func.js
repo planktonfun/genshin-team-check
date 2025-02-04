@@ -9,7 +9,7 @@ gdjs.evtsExt__DynamicResource__AddAnimationEnemyMob = {};
 gdjs.evtsExt__DynamicResource__AddAnimationEnemyMob.GDGeneralMobObjects1= [];
 
 
-gdjs.evtsExt__DynamicResource__AddAnimationEnemyMob.userFunc0x4425238 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__AddAnimationEnemyMob.userFunc0x798730 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 function basename(str, sep) {
     return str.substr(str.lastIndexOf(sep) + 1);
@@ -215,7 +215,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("GeneralMob"), gdjs.evtsExt__Dyn
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__DynamicResource__AddAnimationEnemyMob.GDGeneralMobObjects1);
-gdjs.evtsExt__DynamicResource__AddAnimationEnemyMob.userFunc0x4425238(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__AddAnimationEnemyMob.userFunc0x798730(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__ArrayIncludesChild !== "undefined")
 gdjs.evtsExt__InterfaceFunctions__ArrayIncludesChild = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__ArrayIncludesChild.userFunc0x3e37568 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__ArrayIncludesChild.userFunc0x29b4358 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 var equippable = eventsFunctionContext.getArgument('SceneVariable').toJSObject();
 var elementString = eventsFunctionContext.getArgument('ElementString').toString();
@@ -26,7 +26,7 @@ gdjs.evtsExt__InterfaceFunctions__ArrayIncludesChild.eventsList0 = function(runt
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__ArrayIncludesChild.userFunc0x3e37568(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__ArrayIncludesChild.userFunc0x29b4358(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

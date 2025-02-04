@@ -9,7 +9,7 @@ gdjs.evtsExt__DynamicResource__AddAnimationNpc = {};
 gdjs.evtsExt__DynamicResource__AddAnimationNpc.GDGeneralNpcObjects1= [];
 
 
-gdjs.evtsExt__DynamicResource__AddAnimationNpc.userFunc0x4450458 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__AddAnimationNpc.userFunc0x798730 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 function basename(str, sep) {
     return str.substr(str.lastIndexOf(sep) + 1);
@@ -182,7 +182,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("GeneralNpc"), gdjs.evtsExt__Dyn
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__DynamicResource__AddAnimationNpc.GDGeneralNpcObjects1);
-gdjs.evtsExt__DynamicResource__AddAnimationNpc.userFunc0x4450458(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__AddAnimationNpc.userFunc0x798730(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
