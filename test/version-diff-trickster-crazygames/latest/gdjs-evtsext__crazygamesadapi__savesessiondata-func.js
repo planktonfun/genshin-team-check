@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__SaveSessionData !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__SaveSessionData = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__SaveSessionData.userFunc0x301b0c8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__SaveSessionData.userFunc0x1162428 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 // Storing Persistent User Data
 async function saveUserData(key, value) {
@@ -40,7 +40,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__SaveSessionData.userFunc0x301b0c8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__SaveSessionData.userFunc0x1162428(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

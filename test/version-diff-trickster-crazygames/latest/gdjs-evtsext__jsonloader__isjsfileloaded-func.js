@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__JsonLoader__IsJSFileLoaded !== "undefined") {
 gdjs.evtsExt__JsonLoader__IsJSFileLoaded = {};
 
 
-gdjs.evtsExt__JsonLoader__IsJSFileLoaded.userFunc0x1549168 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__JsonLoader__IsJSFileLoaded.userFunc0x35b8730 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const url = eventsFunctionContext.getArgument("URL");
 
@@ -19,7 +19,7 @@ gdjs.evtsExt__JsonLoader__IsJSFileLoaded.eventsList0 = function(runtimeScene, ev
 {
 
 
-gdjs.evtsExt__JsonLoader__IsJSFileLoaded.userFunc0x1549168(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__JsonLoader__IsJSFileLoaded.userFunc0x35b8730(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

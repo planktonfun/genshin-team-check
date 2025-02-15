@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__Contains !== "undefined") {
 gdjs.evtsExt__InterfaceFunctions__Contains = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__Contains.userFunc0x127e768 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__Contains.userFunc0xd36a48 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const haystack = eventsFunctionContext.getArgument("Haystack").toString();
 const needle = eventsFunctionContext.getArgument("Needle").toString();
@@ -31,7 +31,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__Contains.userFunc0x127e768(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__Contains.userFunc0xd36a48(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -8,57 +8,97 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__LoadSDK !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__LoadSDK = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.userFunc0x17f7990 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.userFunc0x3721628 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const logger = new gdjs.Logger("CrazyGames SDK");
-const addScript = (src) => {
-    return new Promise((resolve, reject) => {
-        const scriptElement = document.createElement('script');
 
-        scriptElement.setAttribute('src', src);
-        scriptElement.addEventListener('load', resolve);
-        scriptElement.addEventListener('error', reject);
+if(!window['CrazyGamesSingleton']) {
+    window.CrazyGamesSingleton = (function () {
+        let isInitializing = false;
+        let isInitialized = false;
+        let initPromise = null;
 
-        document.body.appendChild(scriptElement);
-    });
+        async function initialize() {
+            if (isInitialized) {
+                console.log("CrazyGames SDK is already initialized.");
+                return Promise.resolve();
+            }
+            if (isInitializing) {
+                console.log("CrazyGames SDK initialization is in progress...");
+                return initPromise; // Return the same promise to avoid duplicate calls
+            }
+
+            isInitializing = true;
+            initPromise = new Promise(async (resolve, reject) => {
+                try {
+                    await CrazyGames.SDK.init();
+                    console.log("CrazyGames SDK initialized successfully.");
+                    isInitialized = true;
+                    resolve();
+                } catch (error) {
+                    console.error("Failed to initialize CrazyGames SDK:", error);
+                    reject(error);
+                } finally {
+                    isInitializing = false;
+                }
+            });
+
+            return initPromise;
+        }
+
+        return { initialize };
+    })();
+
 }
 
+
+// Function to check if CrazyGames SDK is already loaded
+function isCrazyGamesLoaded() {
+    return window.CrazyGames && window.CrazyGames.SDK;
+}
+
+// Function to initialize CrazyGames SDK safely
 async function initializeGame() {
-    try {
-        await CrazyGames.SDK.init();
-        console.log("CrazyGames SDK initialized successfully.");
-        // Start your game logic here
-    } catch (error) {
-        console.error("Failed to initialize CrazyGames SDK:", error);
-    }
-}
-
-addScript('https://sdk.crazygames.com/crazygames-sdk-v3.js').then(async () => {
-    await initializeGame();
     gdjs._crazyGamesExtension.isSdkReady = true;
-    logger.log("CrazyGames SDK successfully initialized.");
-
+    
+    // Add user listener
     const listener = (user) => {
         gdjs._crazyGamesExtension.userChanged = true;
         gdjs._crazyGamesExtension.username = user.username;
         gdjs._crazyGamesExtension.profilePictureUrl = user.profilePictureUrl;
     };
     
-    // add listener
     CrazyGames.SDK.user.addAuthListener(listener);
-
-    // remove listener
     CrazyGames.SDK.user.removeAuthListener(listener);
-
+    
     eventsFunctionContext.task.resolve();
-})
+}
+
+// Check if SDK is already loaded
+function isCrazyGamesLoaded() {
+    return window.CrazyGames && window.CrazyGames.SDK;
+}
+
+// Load SDK only if it's missing
+if (!isCrazyGamesLoaded()) {
+    const scriptElement = document.createElement('script');
+    scriptElement.src = 'https://sdk.crazygames.com/crazygames-sdk-v3.js';
+    scriptElement.onload = () => {
+        console.log("CrazyGames SDK script loaded.");
+        CrazyGamesSingleton.initialize().then(initializeGame);
+    };
+    document.body.appendChild(scriptElement);
+} else {
+    console.log("CrazyGames SDK already loaded.");
+    CrazyGamesSingleton.initialize().then(initializeGame);
+}
 };
 gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.userFunc0x17f7990(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.userFunc0x3721628(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

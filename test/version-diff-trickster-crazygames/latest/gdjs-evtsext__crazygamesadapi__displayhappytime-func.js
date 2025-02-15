@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__DisplayHappyTime !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__DisplayHappyTime = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__DisplayHappyTime.userFunc0x2b80730 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__DisplayHappyTime.userFunc0x8c4948 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 CrazyGames.SDK.game.happytime();
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__CrazyGamesAdApi__DisplayHappyTime.eventsList0 = function(runtimeSc
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__DisplayHappyTime.userFunc0x2b80730(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__DisplayHappyTime.userFunc0x8c4948(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

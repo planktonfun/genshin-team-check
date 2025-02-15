@@ -67,7 +67,7 @@ gdjs.evtsExt__Observers__Subject.Subject.prototype.onCreatedContext = {};
 gdjs.evtsExt__Observers__Subject.Subject.prototype.onCreatedContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Observers__Subject.Subject.prototype.onCreatedContext.userFunc0x38bc710 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Observers__Subject.Subject.prototype.onCreatedContext.userFunc0x37a9f30 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 // Subject class
 class Subject {
@@ -106,7 +106,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Observe
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Observers__Subject.Subject.prototype.onCreatedContext.GDObjectObjects1);
-gdjs.evtsExt__Observers__Subject.Subject.prototype.onCreatedContext.userFunc0x38bc710(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__Subject.Subject.prototype.onCreatedContext.userFunc0x37a9f30(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -271,7 +271,7 @@ gdjs.evtsExt__Observers__Subject.Subject.prototype.NotifyStringContext = {};
 gdjs.evtsExt__Observers__Subject.Subject.prototype.NotifyStringContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Observers__Subject.Subject.prototype.NotifyStringContext.userFunc0x1243480 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Observers__Subject.Subject.prototype.NotifyStringContext.userFunc0x37a9f30 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const obj = objects[0];
 obj._subject.notifyObservers(
@@ -288,7 +288,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Observe
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Observers__Subject.Subject.prototype.NotifyStringContext.GDObjectObjects1);
-gdjs.evtsExt__Observers__Subject.Subject.prototype.NotifyStringContext.userFunc0x1243480(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__Subject.Subject.prototype.NotifyStringContext.userFunc0x37a9f30(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -366,7 +366,7 @@ gdjs.evtsExt__Observers__Subject.Subject.prototype.NotifyNumberContext = {};
 gdjs.evtsExt__Observers__Subject.Subject.prototype.NotifyNumberContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Observers__Subject.Subject.prototype.NotifyNumberContext.userFunc0x1243480 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Observers__Subject.Subject.prototype.NotifyNumberContext.userFunc0x37a9f30 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const obj = objects[0];
 obj._subject.notifyObservers(
@@ -383,7 +383,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Observe
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Observers__Subject.Subject.prototype.NotifyNumberContext.GDObjectObjects1);
-gdjs.evtsExt__Observers__Subject.Subject.prototype.NotifyNumberContext.userFunc0x1243480(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__Subject.Subject.prototype.NotifyNumberContext.userFunc0x37a9f30(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

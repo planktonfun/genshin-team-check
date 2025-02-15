@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction !== "unde
 gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction.userFunc0x1c578f0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction.userFunc0xcaa708 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 var serverOffset = 0;
 var customServerOffset = 0;
@@ -766,7 +766,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction.eventsList0 = functi
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction.userFunc0x1c578f0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadGlobalFunction.userFunc0xcaa708(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

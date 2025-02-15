@@ -10,7 +10,7 @@ gdjs.evtsExt__Observers__ObserveObjectByObject.GDObserverObjectObjects1= [];
 gdjs.evtsExt__Observers__ObserveObjectByObject.GDSubjectObjectObjects1= [];
 
 
-gdjs.evtsExt__Observers__ObserveObjectByObject.userFunc0x38b0260 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Observers__ObserveObjectByObject.userFunc0xc35bc0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const observers = eventsFunctionContext.getObjects('ObserverObject');
 const subjects = eventsFunctionContext.getObjects('SubjectObject');
@@ -27,7 +27,7 @@ gdjs.evtsExt__Observers__ObserveObjectByObject.eventsList0 = function(runtimeSce
 {
 
 
-gdjs.evtsExt__Observers__ObserveObjectByObject.userFunc0x38b0260(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__ObserveObjectByObject.userFunc0xc35bc0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

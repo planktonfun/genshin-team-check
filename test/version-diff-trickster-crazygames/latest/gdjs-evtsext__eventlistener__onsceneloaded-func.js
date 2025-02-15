@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__EventListener__onSceneLoaded !== "undefined") {
 gdjs.evtsExt__EventListener__onSceneLoaded = {};
 
 
-gdjs.evtsExt__EventListener__onSceneLoaded.userFunc0x15e1638 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__EventListener__onSceneLoaded.userFunc0xe90a48 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 // Initialize tracker storage (run once per scene)
 if (!runtimeScene.__eventListener) {
@@ -212,7 +212,7 @@ gdjs.evtsExt__EventListener__onSceneLoaded.eventsList0 = function(runtimeScene, 
 {
 
 
-gdjs.evtsExt__EventListener__onSceneLoaded.userFunc0x15e1638(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__EventListener__onSceneLoaded.userFunc0xe90a48(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
