@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__StepFunctions__onSceneLoaded !== "undefined") {
 gdjs.evtsExt__StepFunctions__onSceneLoaded = {};
 
 
-gdjs.evtsExt__StepFunctions__onSceneLoaded.userFunc0x1da4990 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__StepFunctions__onSceneLoaded.userFunc0x1d6aa58 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 // e.g. 0 for 15 seconds then 1 for 15 seconds then back to 0 again for togglecycle 2
 // e.g. 0 for 15 seconds then 1 for 15 seconds then 2.. then back to 0 again for togglecycle 3
@@ -60,7 +60,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__StepFunctions__onSceneLoaded.userFunc0x1da4990(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__StepFunctions__onSceneLoaded.userFunc0x1d6aa58(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

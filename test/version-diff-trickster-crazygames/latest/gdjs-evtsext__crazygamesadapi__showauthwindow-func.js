@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.userFunc0x37ccc50 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.userFunc0xc81950 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
      
       function isTokenExpired(token) {
@@ -24,7 +24,8 @@ gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.userFunc0x37ccc50 = function(runti
                 console.log("User signed in:", user);
                 // Proceed with authenticated user
                 await getUserData();
-                getUserSession();
+                const data = await getUserSession();
+                gdjs._crazyGamesExtension.userId = data.userId;
                 gdjs._crazyGamesExtension.username = user.username;
                 gdjs._crazyGamesExtension.profilePictureUrl = user.profilePictureUrl;
                 eventsFunctionContext.task.resolve();
@@ -40,7 +41,7 @@ gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.userFunc0x37ccc50 = function(runti
       }
 
     async function getUserData() {
-        const userData = getUserSession();
+        const userData = await getUserSession();
         console.log("Decoded user data:", userData);
 
         // const publicKey = await fetchPublicKey();
@@ -116,7 +117,7 @@ gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.eventsList0 = function(runtimeScen
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.userFunc0x37ccc50(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.userFunc0xc81950(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

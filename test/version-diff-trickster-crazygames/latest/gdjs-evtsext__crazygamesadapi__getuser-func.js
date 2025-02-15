@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__GetUser !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__GetUser = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetUser.userFunc0x191cb68 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__GetUser.userFunc0x1b64af0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
       function wait(ms) {
           return new Promise(resolve => setTimeout(resolve, ms));
@@ -47,7 +47,7 @@ gdjs.evtsExt__CrazyGamesAdApi__GetUser.eventsList0 = function(runtimeScene, even
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetUser.userFunc0x191cb68(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__GetUser.userFunc0x1b64af0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

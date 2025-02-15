@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__LoadSDK !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__LoadSDK = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.userFunc0x191cb68 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.userFunc0x17f7990 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const logger = new gdjs.Logger("CrazyGames SDK");
 const addScript = (src) => {
@@ -58,7 +58,7 @@ gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.eventsList0 = function(runtimeScene, even
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.userFunc0x191cb68(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.userFunc0x17f7990(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

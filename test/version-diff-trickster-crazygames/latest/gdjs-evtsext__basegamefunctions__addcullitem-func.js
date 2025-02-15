@@ -9,7 +9,7 @@ gdjs.evtsExt__BaseGameFunctions__AddCullItem = {};
 gdjs.evtsExt__BaseGameFunctions__AddCullItem.GDobjectObjects1= [];
 
 
-gdjs.evtsExt__BaseGameFunctions__AddCullItem.userFunc0x916f78 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BaseGameFunctions__AddCullItem.userFunc0x322ef90 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 if(!window.game) return;
 
@@ -43,7 +43,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("object"), gdjs.evtsExt__BaseGam
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__BaseGameFunctions__AddCullItem.GDobjectObjects1);
-gdjs.evtsExt__BaseGameFunctions__AddCullItem.userFunc0x916f78(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BaseGameFunctions__AddCullItem.userFunc0x322ef90(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

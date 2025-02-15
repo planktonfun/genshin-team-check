@@ -9,7 +9,7 @@ gdjs.evtsExt__ArrayTools__ObjectFillNumber = {};
 gdjs.evtsExt__ArrayTools__ObjectFillNumber.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__ArrayTools__ObjectFillNumber.userFunc0x23b0078 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ArrayTools__ObjectFillNumber.userFunc0x3888c68 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable} */
 const array = eventsFunctionContext.getArgument("Array");
@@ -33,7 +33,7 @@ gdjs.evtsExt__ArrayTools__ObjectFillNumber.eventsList0 = function(runtimeScene, 
 {
 
 
-gdjs.evtsExt__ArrayTools__ObjectFillNumber.userFunc0x23b0078(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ArrayTools__ObjectFillNumber.userFunc0x3888c68(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

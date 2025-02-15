@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__GetSystemInfo !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__GetSystemInfo = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetSystemInfo.userFunc0x235bcd8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__GetSystemInfo.userFunc0x301b0c8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue= JSON.stringify(CrazyGames.SDK.user.systemInfo, null, 4);
 };
@@ -27,7 +27,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetSystemInfo.userFunc0x235bcd8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__GetSystemInfo.userFunc0x301b0c8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

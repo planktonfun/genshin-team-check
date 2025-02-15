@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam.userFunc0x235bcd8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam.userFunc0x301b0c8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const param = eventsFunctionContext.getArgument("Param").toString();
 eventsFunctionContext.returnValue=CrazyGames.SDK.game.getInviteParam(param);
@@ -28,7 +28,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam.userFunc0x235bcd8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam.userFunc0x301b0c8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

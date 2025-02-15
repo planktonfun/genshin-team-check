@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__ScanForAdBlockers !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__ScanForAdBlockers = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__ScanForAdBlockers.userFunc0x91b040 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__ScanForAdBlockers.userFunc0x2b80730 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const logger = new gdjs.Logger("CrazyGames SDK");
 
@@ -42,7 +42,7 @@ gdjs.evtsExt__CrazyGamesAdApi__ScanForAdBlockers.eventsList0 = function(runtimeS
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__ScanForAdBlockers.userFunc0x91b040(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__ScanForAdBlockers.userFunc0x2b80730(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

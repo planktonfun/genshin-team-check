@@ -9,7 +9,7 @@ gdjs.evtsExt__Sticker__IsInsidePlayerViewPort = {};
 gdjs.evtsExt__Sticker__IsInsidePlayerViewPort.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Sticker__IsInsidePlayerViewPort.userFunc0x3724d80 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Sticker__IsInsidePlayerViewPort.userFunc0x133f498 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 if(!window.game) return;
 
@@ -37,7 +37,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Sticker
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Sticker__IsInsidePlayerViewPort.GDObjectObjects1);
-gdjs.evtsExt__Sticker__IsInsidePlayerViewPort.userFunc0x3724d80(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Sticker__IsInsidePlayerViewPort.userFunc0x133f498(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

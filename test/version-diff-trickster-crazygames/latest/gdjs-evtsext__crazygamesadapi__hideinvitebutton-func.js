@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton.userFunc0x37ccc50 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton.userFunc0xc81950 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 CrazyGames.SDK.game.hideInviteButton();
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton.eventsList0 = function(runtimeSc
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton.userFunc0x37ccc50(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton.userFunc0xc81950(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

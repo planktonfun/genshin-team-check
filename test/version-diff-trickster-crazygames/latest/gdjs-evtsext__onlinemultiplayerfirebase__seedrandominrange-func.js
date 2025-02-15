@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__SeedRandomInRange !== "undef
 gdjs.evtsExt__OnlineMultiplayerFirebase__SeedRandomInRange = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__SeedRandomInRange.userFunc0xe3e900 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__SeedRandomInRange.userFunc0x3210788 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 
 const Min = eventsFunctionContext.getArgument("Min").valueOf();
@@ -31,7 +31,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__SeedRandomInRange.userFunc0xe3e900(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__SeedRandomInRange.userFunc0x3210788(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -9,7 +9,7 @@ gdjs.evtsExt__RelativeObjects__GetRelativeZoomedObjectPositionYV2 = {};
 gdjs.evtsExt__RelativeObjects__GetRelativeZoomedObjectPositionYV2.GDDeathSpriteObjects1= [];
 
 
-gdjs.evtsExt__RelativeObjects__GetRelativeZoomedObjectPositionYV2.userFunc0x1e0b230 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__RelativeObjects__GetRelativeZoomedObjectPositionYV2.userFunc0x3068e70 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const camera = gdjs.evtTools.camera;
 
@@ -30,7 +30,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("DeathSprite"), gdjs.evtsExt__Re
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__RelativeObjects__GetRelativeZoomedObjectPositionYV2.GDDeathSpriteObjects1);
-gdjs.evtsExt__RelativeObjects__GetRelativeZoomedObjectPositionYV2.userFunc0x1e0b230(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__RelativeObjects__GetRelativeZoomedObjectPositionYV2.userFunc0x3068e70(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

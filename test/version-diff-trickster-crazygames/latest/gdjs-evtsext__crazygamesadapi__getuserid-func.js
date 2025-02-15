@@ -1,30 +1,40 @@
 
-if (typeof gdjs.evtsExt__CrazyGamesAdApi__onScenePostEvents !== "undefined") {
-  gdjs.evtsExt__CrazyGamesAdApi__onScenePostEvents.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__CrazyGamesAdApi__GetUserId !== "undefined") {
+  gdjs.evtsExt__CrazyGamesAdApi__GetUserId.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__CrazyGamesAdApi__onScenePostEvents = {};
+gdjs.evtsExt__CrazyGamesAdApi__GetUserId = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__onScenePostEvents.userFunc0x1b64af0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__GetUserId.userFunc0x301b0c8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
-gdjs._crazyGamesExtension.hasVideoAdJustFinishedPlaying = false;
+eventsFunctionContext.returnValue=gdjs._crazyGamesExtension.userId;
 };
-gdjs.evtsExt__CrazyGamesAdApi__onScenePostEvents.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__GetUserId.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__onScenePostEvents.userFunc0x1b64af0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
+{
+
+
+gdjs.evtsExt__CrazyGamesAdApi__GetUserId.userFunc0x301b0c8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
 
 };
 
-gdjs.evtsExt__CrazyGamesAdApi__onScenePostEvents.func = function(runtimeScene, parentEventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__GetUserId.func = function(runtimeScene, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -75,13 +85,9 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
 };
 
 
-gdjs.evtsExt__CrazyGamesAdApi__onScenePostEvents.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__CrazyGamesAdApi__GetUserId.eventsList0(runtimeScene, eventsFunctionContext);
 
-return;
+return "" + eventsFunctionContext.returnValue;
 }
 
-gdjs.evtsExt__CrazyGamesAdApi__onScenePostEvents.registeredGdjsCallbacks = [];
-gdjs.evtsExt__CrazyGamesAdApi__onScenePostEvents.registeredGdjsCallbacks.push((runtimeScene) => {
-    gdjs.evtsExt__CrazyGamesAdApi__onScenePostEvents.func(runtimeScene, runtimeScene);
-})
-gdjs.registerRuntimeScenePostEventsCallback(gdjs.evtsExt__CrazyGamesAdApi__onScenePostEvents.registeredGdjsCallbacks[gdjs.evtsExt__CrazyGamesAdApi__onScenePostEvents.registeredGdjsCallbacks.length - 1]);
+gdjs.evtsExt__CrazyGamesAdApi__GetUserId.registeredGdjsCallbacks = [];
