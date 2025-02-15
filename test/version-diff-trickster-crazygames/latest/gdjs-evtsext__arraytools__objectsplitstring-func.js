@@ -9,7 +9,7 @@ gdjs.evtsExt__ArrayTools__ObjectSplitString = {};
 gdjs.evtsExt__ArrayTools__ObjectSplitString.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__ArrayTools__ObjectSplitString.userFunc0xe3e6a0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ArrayTools__ObjectSplitString.userFunc0x1351590 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable} */
 const array = eventsFunctionContext.getArgument("Array");
@@ -29,7 +29,7 @@ gdjs.evtsExt__ArrayTools__ObjectSplitString.eventsList0 = function(runtimeScene,
 {
 
 
-gdjs.evtsExt__ArrayTools__ObjectSplitString.userFunc0xe3e6a0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ArrayTools__ObjectSplitString.userFunc0x1351590(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

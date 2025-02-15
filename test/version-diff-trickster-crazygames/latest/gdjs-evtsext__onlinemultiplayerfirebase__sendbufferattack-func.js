@@ -17,7 +17,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__SendBufferAttack.GDContainerObjects2= [
 gdjs.evtsExt__OnlineMultiplayerFirebase__SendBufferAttack.GDContainerObjects3= [];
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__SendBufferAttack.userFunc0x10f9128 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__SendBufferAttack.userFunc0x2677f40 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 try {
     var data = objects[0].getVariables().get('data').toJSObject();
@@ -80,7 +80,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Container"), gdjs.evtsExt__Onli
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__OnlineMultiplayerFirebase__SendBufferAttack.GDContainerObjects1);
-gdjs.evtsExt__OnlineMultiplayerFirebase__SendBufferAttack.userFunc0x10f9128(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__SendBufferAttack.userFunc0x2677f40(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Observers__PointY !== "undefined") {
 gdjs.evtsExt__Observers__PointY = {};
 
 
-gdjs.evtsExt__Observers__PointY.userFunc0x3e55af8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Observers__PointY.userFunc0x387dcd0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const pointName = eventsFunctionContext.getArgument("PointName").toString();
 
@@ -19,7 +19,7 @@ gdjs.evtsExt__Observers__PointY.eventsList0 = function(runtimeScene, eventsFunct
 {
 
 
-gdjs.evtsExt__Observers__PointY.userFunc0x3e55af8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__PointY.userFunc0x387dcd0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
