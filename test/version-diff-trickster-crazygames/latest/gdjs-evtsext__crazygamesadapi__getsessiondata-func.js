@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__GetSessionData !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__GetSessionData = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetSessionData.userFunc0xc6f618 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__GetSessionData.userFunc0x235bcd8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const key = eventsFunctionContext.getArgument('Id').toString();
 
@@ -29,7 +29,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetSessionData.userFunc0xc6f618(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__GetSessionData.userFunc0x235bcd8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__SetLoadingStarted !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__SetLoadingStarted = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__SetLoadingStarted.userFunc0x23767d8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__SetLoadingStarted.userFunc0x15f1358 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 CrazyGames.SDK.game.loadingStart();
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__CrazyGamesAdApi__SetLoadingStarted.eventsList0 = function(runtimeS
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__SetLoadingStarted.userFunc0x23767d8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__SetLoadingStarted.userFunc0x15f1358(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

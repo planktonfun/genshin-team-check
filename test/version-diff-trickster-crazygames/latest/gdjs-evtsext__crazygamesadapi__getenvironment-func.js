@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__GetEnvironment !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__GetEnvironment = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetEnvironment.userFunc0x23b69d0 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__GetEnvironment.userFunc0x37ccc50 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = CrazyGames.SDK.environment;
 };
@@ -18,7 +18,7 @@ gdjs.evtsExt__CrazyGamesAdApi__GetEnvironment.eventsList0 = function(runtimeScen
 
 
 var objects = [];
-gdjs.evtsExt__CrazyGamesAdApi__GetEnvironment.userFunc0x23b69d0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__GetEnvironment.userFunc0x37ccc50(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
