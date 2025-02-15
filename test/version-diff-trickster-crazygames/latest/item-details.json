@@ -1,0 +1,534 @@
+{
+    "magical_soul_card": {
+        "description": "Magical Soul Card",
+        "page": "Magical_Soul",
+        "tmlv": 0,
+        "pt": 0
+    },
+    "mana_arrow_card": {
+        "description": "Mana Arrow Card",
+        "page": "Mana_Arrow",
+        "tmlv": 1,
+        "pt": 1
+    },
+    "cure_card": {
+        "description": "Cure Card",
+        "page": "Cure",
+        "tmlv": 10,
+        "pt": 1
+    },
+    "invincible_casting_card": {
+        "description": "Invincible Casting Card",
+        "page": "Invincible_Casting",
+        "tmlv": 10,
+        "pt": 5
+    },
+    "mana_ring_card": {
+        "description": "Mana Ring Card",
+        "page": "Mana_Ring",
+        "tmlv": 20,
+        "pt": 2
+    },
+    "bottle_of_mana_card": {
+        "description": "Bottle of Mana Card",
+        "page": "Bottle_of_Mana",
+        "tmlv": 20,
+        "pt": 2
+    },
+    "aura_of_mana_card": {
+        "description": "Aura of Mana Card",
+        "page": "Aura_of_Mana",
+        "tmlv": 20,
+        "pt": 2
+    },
+    "rust_card": {
+        "description": "Rust Card",
+        "page": "Rust",
+        "tmlv": 20,
+        "pt": 1
+    },
+    "mana_web_card": {
+        "description": "Mana Web Card",
+        "page": "Mana_Web",
+        "tmlv": 20,
+        "pt": 1
+    },
+    "mana_shield_card": {
+        "description": "Mana Shield Card",
+        "page": "Mana_Shield",
+        "tmlv": 30,
+        "pt": 2
+    },
+    "mana_storm_card": {
+        "description": "Mana Storm Card",
+        "page": "Mana_Storm",
+        "tmlv": 35,
+        "pt": 2
+    },
+    "mist_of_mana_card": {
+        "description": "Mist of Mana Card",
+        "page": "Mist_of_Mana",
+        "tmlv": 40,
+        "pt": 4
+    },
+    "mana_ring_booster_card": {
+        "description": "Mana Ring Booster Card",
+        "page": "Mana_Ring_Booster",
+        "tmlv": 50,
+        "pt": 3
+    },
+    "arrow_rush_card": {
+        "description": "Arrow Rush Card",
+        "page": "Arrow_Rush",
+        "tmlv": 50,
+        "pt": 4
+    },
+    "steel_punch_card": {
+        "description": "Steel Punch Card",
+        "page": "Steel_Punch",
+        "tmLv": 0,
+        "pt": 0
+    },
+    "shockwave_card": {
+        "description": "Shockwave Card",
+        "page": "Shockwave",
+        "tmLv": 1,
+        "pt": 1
+    },
+    "bulls_eye_card": {
+        "description": "Bulls Eye Card",
+        "page": "Bull's_Eye",
+        "tmLv": 10,
+        "pt": 2
+    },
+    "burning_rave_card": {
+        "description": "Burning Rave Card",
+        "page": "Burning_Rave",
+        "tmLv": 20,
+        "pt": 2
+    },
+    "shockvibe_card": {
+        "description": "Shockvibe Card",
+        "page": "Shockvibe",
+        "tmLv": 20,
+        "pt": 1
+    },
+    "sense_breaker_card": {
+        "description": "Sense Breaker Card",
+        "page": "Sense_Breaker",
+        "tmLv": 20,
+        "pt": 1
+    },
+    "luck_breaker_card": {
+        "description": "Luck Breaker Card",
+        "page": "Luck_Breaker",
+        "tmLv": 20,
+        "pt": 1
+    },
+    "pumping_heart_card": {
+        "description": "Pumping Heart Card",
+        "page": "Pumping_Heart",
+        "tmLv": 25,
+        "pt": 3
+    },
+    "armor_breaker_card": {
+        "description": "Armor Breaker Card",
+        "page": "Armor_Breaker",
+        "tmLv": 30,
+        "pt": 2
+    },
+    "upper_smash_card": {
+        "description": "Upper Smash Card",
+        "page": "Upper_Smash",
+        "tmLv": 40,
+        "pt": 2
+    },
+    "hyper_beat_card": {
+        "description": "Hyper Beat Card",
+        "page": "Hyper_Beat",
+        "tmLv": 45,
+        "pt": 4
+    },
+    "tornado_bomb_card": {
+        "description": "Tornado Bomb Card",
+        "page": "Tornado_Bomb",
+        "tmLv": 50,
+        "pt": 3
+    },
+    "stone_shower_card": {
+        "description": "Stone Shower Card",
+        "page": "Stone_Shower",
+        "tmLv": 0,
+        "pt": 0
+    },
+    "invincible_drill_card": {
+        "description": "Invincible Drill Card",
+        "page": "Invincible_Drill",
+        "tmLv": 1,
+        "pt": 1
+    },
+    "gun_carrier_card": {
+        "description": "Gun Carrier Card",
+        "page": "Gun_Carrier",
+        "tmLv": 1,
+        "pt": 5
+    },
+    "sixth_sense_card": {
+        "description": "Sixth Sense Card",
+        "page": "Sixth_Sense",
+        "tmLv": 1,
+        "pt": 2
+    },
+    "stone_strike_card": {
+        "description": "Stone Strike Card",
+        "page": "Stone_Strike",
+        "tmLv": 1,
+        "pt": 1
+    },
+    "heavy_carrier_card": {
+        "description": "Heavy Carrier Card",
+        "page": "Heavy_Carrier",
+        "tmLv": 10,
+        "pt": 1
+    },
+    "shuriken_master_card": {
+        "description": "Shuriken Master Card",
+        "page": "Shuriken_Master",
+        "tmLv": 15,
+        "pt": 2
+    },
+    "invincible_reload_card": {
+        "description": "Invincible Reload Card",
+        "page": "Invincible_Reload",
+        "tmLv": 20,
+        "pt": 5
+    },
+    "sticky_foot_card": {
+        "description": "Sticky Foot Card",
+        "page": "Sticky_Foot",
+        "tmLv": 20,
+        "pt": 1
+    },
+    "gun_booster_card": {
+        "description": "Gun Booster Card",
+        "page": "Gun_Booster",
+        "tmLv": 30,
+        "pt": 3
+    },
+    "basic_detection_card": {
+        "description": "Basic Detection Card",
+        "page": "Basic_Detection",
+        "tmLv": 35,
+        "pt": 2
+    },
+    "armor_destructor_card": {
+        "description": "Armor Destructor Card",
+        "page": "Armor_Destructor",
+        "tmLv": 40,
+        "pt": 2
+    },
+    "quick_reload_card": {
+        "description": "Quick Reload Card",
+        "page": "Quick_Reload",
+        "tmLv": 40,
+        "pt": 5
+    },
+    "lucky_seven_card": {
+        "description": "Lucky Seven Card",
+        "page": "Lucky_Seven",
+        "tmLv": 50,
+        "pt": 4
+    },
+    "anger_management_card": {
+        "description": "Anger Management Card",
+        "page": "Anger_Management",
+        "tmLv": 55,
+        "pt": 2
+    },
+    "compound_master_card": {
+        "description": "Compound Master Card",
+        "page": "Compound_Master",
+        "tmLv": 70,
+        "pt": 2
+    },
+    "warm_up_card": {
+        "description": "Warm Up Card",
+        "page": "Warm_Up",
+        "tmLv": 0,
+        "pt": 0
+    },
+    "power_blow_card": {
+        "description": "Power Blow Card",
+        "page": "Power_Blow",
+        "tmLv": 1,
+        "pt": 1
+    },
+    "dodge_master_card": {
+        "description": "Dodge Master Card",
+        "page": "Dodge_Master",
+        "tmLv": 10,
+        "pt": 1
+    },
+    "galder_thrower_card": {
+        "description": "Galder Thrower Card",
+        "page": "Galder_Thrower",
+        "tmLv": 20,
+        "pt": 2
+    },
+    "magic_meltdown_card": {
+        "description": "Magic Meltdown Card",
+        "page": "Magic_Meltdown",
+        "tmLv": 20,
+        "pt": 1
+    },
+    "magic_defense_breaker_card": {
+        "description": "M.Def Breaker Card",
+        "page": "Magic_Def_Breaker",
+        "tmLv": 20,
+        "pt": 1
+    },
+    "mana_reflector_card": {
+        "description": "Mana Reflector Card",
+        "page": "Mana_Reflector",
+        "tmLv": 20,
+        "pt": 2
+    },
+    "shield_all_card": {
+        "description": "Shield All Card",
+        "page": "Shield_All",
+        "tmLv": 25,
+        "pt": 3
+    },
+    "sturdy_shield_card": {
+        "description": "Sturdy Shield Card",
+        "page": "Sturdy_Shield",
+        "tmLv": 30,
+        "pt": 2
+    },
+    "titanium_wrist_card": {
+        "description": "Titanium Wrist Card",
+        "page": "Titanium_Wrist",
+        "tmLv": 40,
+        "pt": 3
+    },
+    "skunk_pouch_card": {
+        "description": "Skunk Pouch Card",
+        "page": "Skunk_Pouch",
+        "tmLv": 40,
+        "pt": 3
+    },
+    "physical_training_card": {
+        "description": "Physical Training Card",
+        "page": "Physical_Training",
+        "tmLv": 45,
+        "pt": 2
+    },
+    "final_blow_card": {
+        "description": "Final Blow Card",
+        "page": "Final_Blow",
+        "tmLv": 50,
+        "pt": 3
+    },
+    "torobbie-card": {
+        "description": "Torobbie Card",
+        "page": "Torobbie_Card",
+        "tmlv": 10,
+        "pt": 1
+    },
+    "tottochi-card": {
+        "description": "Tottochi Card",
+        "page": "Tottochi_Card",
+        "tmlv": 20,
+        "pt": 2
+    },
+    "tutankhamen-card": {
+        "description": "Tutankhamen Card",
+        "page": "Tutankhamen_Card",
+        "tmlv": 30,
+        "pt": 3
+    },
+    "potion-hp": {
+        "description": "Pink Potion A",
+        "page": "Pink_Potion_A"
+    },
+    "potion-mp": {
+        "description": "Blue Potion A",
+        "page": "Blue_Potion_A"
+    },
+    "tangerine": {
+        "description": "Tangerine",
+        "page": "Baby_Carrot"
+    },
+    "art-antique-gun": {
+        "description": "Art Antique Gun",
+        "page": "Art_Antique_Gun"
+    },
+    "ult-beanie": {
+        "description": "Ult Beanie",
+        "page": "Ult._Beanie"
+    },
+    "ult-bokken": {
+        "description": "Ult Bokken",
+        "page": "Ult._Bokken"
+    },
+    "ult-kane-rod": {
+        "description": "Ult Kane Rod",
+        "page": "Ult._Kane_Rod"
+    },
+    "ult-wood-helmet": {
+        "description": "Ult Wood Helmet",
+        "page": "Ult._Wood_Helmet"
+    },
+    "old-poniard": {
+        "description": "Old Poniard",
+        "page": "Old_Poniard"
+    },
+    "card-pack": {
+        "description": "Card Pack",
+        "page": "Star_Card_Pack_No.3"
+    },
+    "broom": {
+        "description": "Broom",
+        "page": "Desert_Witch%27s_Broom"
+    },
+    "10-galder-coupon": {
+        "description": "10 Galder Coupon",
+        "page": "10_Galder_Coupon"
+    },
+    "desert-witch-broom": {
+        "description": "Desert Witch Broom",
+        "page": "Desert_Witch%27s_Broom"
+    },
+    "star-card-pack-1": {
+        "description": "Star Card Pack 1",
+        "page": "Star_Card_Pack_No.1"
+    },
+    "star-card-pack-2": {
+        "description": "Star Card Pack 2",
+        "page": "Star_Card_Pack_No.2"
+    },
+    "star-card-pack-3": {
+        "description": "Star Card Pack 3",
+        "page": "Star_Card_Pack_No.3"
+    },
+    "tutankhamen-legendary-box": {
+        "description": "Tutankhamen Legendary Box",
+        "page": "Tutankhamen_Legendary_Box"
+    },
+    "rookie-sword": {
+        "description": "Rookie Sword",
+        "page": "Rookie_Sword"
+    },
+    "rookie-shield": {
+        "description": "Rookie Shield",
+        "page": "Rookie_Shield"
+    },
+    "rookie-hat": {
+        "description": "Rookie Hat",
+        "page": "Rookie_Hat"
+    },
+    "moon-staff": {
+        "description": "Moon Staff",
+        "page": "Moon_Staff"
+    },
+    "old-ebony-gun": {
+        "description": "Old Ebony Gun",
+        "page": "Old_Ebony_Gun"
+    },
+    "old-metal-shield": {
+        "description": "Old Metal Shield",
+        "page": "Old_Metal_Shield"
+    },
+    "metal-shield": {
+        "description": "Metal Shield",
+        "page": "Old_Metal_Shield"
+    },
+    "poniard": {
+        "description": "Poniard",
+        "page": "Poniard"
+    },
+    "round-seal": {
+        "description": "Round Seal",
+        "page": "Dark_Round_Seal"
+    },
+    "old-poniard": {
+        "description": "Old Poniard",
+        "page": "Old_Poniard"
+    },
+    "old-wooden-sword": {
+        "description": "Old Wooden Sword",
+        "page": "Old_Wooden_Sword"
+    },
+    "sharp-poniard": {
+        "description": "Sharp Poniard",
+        "page": "Sharp_Poniard"
+    },
+    "sharp-wooden-sword": {
+        "description": "Sharp Wooden Sword",
+        "page": "Sharp_Wooden_Sword"
+    },
+    "strong-ebony-gun": {
+        "description": "Strong Ebony Gun",
+        "page": "Strong_Ebony_Gun"
+    },
+    "strong-metal-shield": {
+        "description": "Strong Metal Shield",
+        "page": "Old_Metal_Shield"
+    },
+    "ult-knife": {
+        "description": "Ult Knife",
+        "page": "Ult._Knife"
+    },
+    "ult-wood-gun": {
+        "description": "Ult Wood Gun",
+        "page": "Ult._Wood_Gun"
+    },
+    "old-staff": {
+        "description": "Old Staff",
+        "page": "Old_Staff"
+    },
+    "baby-carrot": {
+        "description": "Baby Carrot",
+        "page": "Baby_Carrot"
+    },
+    "dark-round-seal": {
+        "description": "Dark Round Seal",
+        "page": "Dark_Round_Seal"
+    },
+    "gray-round-seal": {
+        "description": "Gray Round Seal",
+        "page": "Gray_Round_Seal"
+    },
+    "red-round-seal": {
+        "description": "Red Round Seal",
+        "page": "Red_Round_Seal"
+    },
+    "nemeth-hair-towel": {
+        "description": "Nemeth Hair Towel",
+        "page": "Nemeth_Hair_Towel"
+    },
+    "janus-feather": {
+        "description": "Janus Feather",
+        "page": "Janus%27_Feather"
+    },
+    "pet_boxer_lina": {
+        "description": "Pet Boxer Lina",
+        "page": "Boxer_Lina_60"
+    },
+    "succubus": {
+        "description": "Succubus",
+        "page": "Succubus_Nyxx_210"
+    },
+    "incubus": {
+        "description": "Incubus",
+        "page": "Incubus_Noxx_210"
+    },
+    "flail": {
+        "description": "Flail",
+        "page": "Flail"
+    },
+    "shtellas-profile": {
+        "description": "Shtellas Profile",
+        "page": "Shtella%27s_Profile"
+    }
+}

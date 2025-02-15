@@ -1,0 +1,362 @@
+{
+  "air-r-crystal": {
+    "x": 0,
+    "y": 0,
+    "width": 29,
+    "height": 28
+  },
+  "dark-r-crystal": {
+    "x": 29,
+    "y": 0,
+    "width": 29,
+    "height": 28
+  },
+  "elec-r-crystal": {
+    "x": 58,
+    "y": 0,
+    "width": 29,
+    "height": 28
+  },
+  "fire-r-crystal": {
+    "x": 87,
+    "y": 0,
+    "width": 29,
+    "height": 28
+  },
+  "light-r-crystal": {
+    "x": 116,
+    "y": 0,
+    "width": 29,
+    "height": 28
+  },
+  "soil-r-crystal": {
+    "x": 145,
+    "y": 0,
+    "width": 29,
+    "height": 28
+  },
+  "water-r-crystal": {
+    "x": 174,
+    "y": 0,
+    "width": 29,
+    "height": 28
+  },
+  "2000-galder-coupon": {
+    "x": 203,
+    "y": 0,
+    "width": 28,
+    "height": 28
+  },
+  "5000-galder-coupon": {
+    "x": 0,
+    "y": 28,
+    "width": 28,
+    "height": 28
+  },
+  "30000-galder-coupon": {
+    "x": 28,
+    "y": 28,
+    "width": 28,
+    "height": 28
+  },
+  "1000-galder-coupon": {
+    "x": 56,
+    "y": 28,
+    "width": 28,
+    "height": 27
+  },
+  "5-galder-coupon": {
+    "x": 0,
+    "y": 56,
+    "width": 26,
+    "height": 28
+  },
+  "50-galder-coupon": {
+    "x": 26,
+    "y": 56,
+    "width": 26,
+    "height": 28
+  },
+  "100-galder-coupon": {
+    "x": 52,
+    "y": 56,
+    "width": 26,
+    "height": 28
+  },
+  "500-galder-coupon": {
+    "x": 78,
+    "y": 56,
+    "width": 26,
+    "height": 28
+  },
+  "10000-galder-coupon": {
+    "x": 104,
+    "y": 56,
+    "width": 26,
+    "height": 28
+  },
+  "20000-galder-coupon": {
+    "x": 130,
+    "y": 56,
+    "width": 26,
+    "height": 28
+  },
+  "ac-stone": {
+    "x": 156,
+    "y": 56,
+    "width": 26,
+    "height": 28
+  },
+  "ap-stone": {
+    "x": 182,
+    "y": 56,
+    "width": 26,
+    "height": 28
+  },
+  "bad-fury-card": {
+    "x": 0,
+    "y": 84,
+    "width": 26,
+    "height": 28
+  },
+  "blue-potion-b": {
+    "x": 26,
+    "y": 84,
+    "width": 26,
+    "height": 28
+  },
+  "cacao": {
+    "x": 52,
+    "y": 84,
+    "width": 26,
+    "height": 28
+  },
+  "card-hunters-diary": {
+    "x": 78,
+    "y": 84,
+    "width": 26,
+    "height": 28
+  },
+  "clione-card": {
+    "x": 104,
+    "y": 84,
+    "width": 26,
+    "height": 28
+  },
+  "coin": {
+    "x": 130,
+    "y": 84,
+    "width": 26,
+    "height": 28
+  },
+  "cool-ice": {
+    "x": 156,
+    "y": 84,
+    "width": 26,
+    "height": 28
+  },
+  "cool-spring-water": {
+    "x": 182,
+    "y": 84,
+    "width": 26,
+    "height": 28
+  },
+  "da-stone": {
+    "x": 0,
+    "y": 112,
+    "width": 26,
+    "height": 28
+  },
+  "deens-notebook": {
+    "x": 26,
+    "y": 112,
+    "width": 26,
+    "height": 28
+  },
+  "fire-cracker": {
+    "x": 52,
+    "y": 112,
+    "width": 26,
+    "height": 28
+  },
+  "hp-stone": {
+    "x": 78,
+    "y": 112,
+    "width": 26,
+    "height": 28
+  },
+  "hv-stone": {
+    "x": 104,
+    "y": 112,
+    "width": 26,
+    "height": 28
+  },
+  "lk-stone": {
+    "x": 130,
+    "y": 112,
+    "width": 26,
+    "height": 28
+  },
+  "ma-stone": {
+    "x": 156,
+    "y": 112,
+    "width": 26,
+    "height": 28
+  },
+  "md-stone": {
+    "x": 182,
+    "y": 112,
+    "width": 26,
+    "height": 28
+  },
+  "mp-stone": {
+    "x": 0,
+    "y": 140,
+    "width": 26,
+    "height": 28
+  },
+  "mysterious-milk": {
+    "x": 26,
+    "y": 140,
+    "width": 26,
+    "height": 28
+  },
+  "panacea-herbs": {
+    "x": 52,
+    "y": 140,
+    "width": 26,
+    "height": 28
+  },
+  "pink-potion-a": {
+    "x": 78,
+    "y": 140,
+    "width": 26,
+    "height": 28
+  },
+  "plastic-bag": {
+    "x": 104,
+    "y": 140,
+    "width": 26,
+    "height": 28
+  },
+  "pocket-pouch": {
+    "x": 130,
+    "y": 140,
+    "width": 26,
+    "height": 28
+  },
+  "pointy-object": {
+    "x": 156,
+    "y": 140,
+    "width": 26,
+    "height": 28
+  },
+  "poppuri-box": {
+    "x": 182,
+    "y": 140,
+    "width": 26,
+    "height": 28
+  },
+  "registration-form": {
+    "x": 0,
+    "y": 168,
+    "width": 26,
+    "height": 28
+  },
+  "rookie-compound-box": {
+    "x": 26,
+    "y": 168,
+    "width": 26,
+    "height": 28
+  },
+  "rusty-chain": {
+    "x": 52,
+    "y": 168,
+    "width": 26,
+    "height": 28
+  },
+  "tanning-oil": {
+    "x": 78,
+    "y": 168,
+    "width": 26,
+    "height": 28
+  },
+  "wind-pendant": {
+    "x": 104,
+    "y": 168,
+    "width": 26,
+    "height": 28
+  },
+  "wt-stone": {
+    "x": 130,
+    "y": 168,
+    "width": 26,
+    "height": 28
+  },
+  "young-egg": {
+    "x": 156,
+    "y": 168,
+    "width": 26,
+    "height": 28
+  },
+  "20000-galder-coupon-2": {
+    "x": 84,
+    "y": 28,
+    "width": 28,
+    "height": 25
+  },
+  "block-metal": {
+    "x": 112,
+    "y": 28,
+    "width": 28,
+    "height": 23
+  },
+  "critical-metal": {
+    "x": 140,
+    "y": 28,
+    "width": 28,
+    "height": 23
+  },
+  "air-crystal": {
+    "x": 168,
+    "y": 28,
+    "width": 27,
+    "height": 15
+  },
+  "dark-crystal": {
+    "x": 195,
+    "y": 28,
+    "width": 27,
+    "height": 15
+  },
+  "elec-crystal": {
+    "x": 182,
+    "y": 168,
+    "width": 27,
+    "height": 15
+  },
+  "fire-crystal": {
+    "x": 0,
+    "y": 196,
+    "width": 27,
+    "height": 15
+  },
+  "light-crystal": {
+    "x": 27,
+    "y": 196,
+    "width": 27,
+    "height": 15
+  },
+  "soil-crystal": {
+    "x": 54,
+    "y": 196,
+    "width": 27,
+    "height": 15
+  },
+  "water-crystal": {
+    "x": 81,
+    "y": 196,
+    "width": 27,
+    "height": 15
+  }
+}

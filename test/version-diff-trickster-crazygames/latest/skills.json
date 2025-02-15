@@ -1,0 +1,1078 @@
+{
+    "SteelPunch": {
+        "mp": [
+            24
+        ],
+        "formula": "TotalAP + 140 + (2*Math.min(30,lvl))",
+        "coolDownSeconds": [
+            3
+        ],
+        "castingTimeSeconds": [
+            0.8
+        ],
+        "multiplier": [1,1,1,1,1,1,1,1,1,1],
+        "description": "It's very useful for beginners when hunting. Deals a powerful physical damage.",
+        "title": "Steel Punch",
+        "range": [
+            50
+        ],
+        "skillType": "On/Off",
+        "damageType": "physical",
+        "TmLevel": 0,
+        "TmLearn": 0,
+        "TmMaster": 0,
+        "projectileTime": 0
+    },
+    "MagicalSoul": {
+        "mp": [
+            10
+        ],
+        "formula": "(MA*(AP+1))/100",
+        "coolDownSeconds": [
+            1
+        ],
+        "castingTimeSeconds": [
+            1
+        ],
+        "multiplier": [1,1,1,1,1,1,1,1,1,1],
+        "description": "A simple attack for beginners. It's very useful in starting your adventure.",
+        "title": "Magical Soul",
+        "range": [
+            2500
+        ],
+        "skillType": "On/Off",
+        "damageType": "magical",
+        "TmLevel": 0,
+        "TmLearn": 0,
+        "TmMaster": 0,
+        "projectileTime": 1
+    },
+    "StoneShower": {
+        "mp": [
+            20
+        ],
+        "formula": "75",
+        "coolDownSeconds": [
+            2
+        ],
+        "castingTimeSeconds": [
+            0.8
+        ],
+        "multiplier": [1,1,1,1,1,1,1,1,1,1],
+        "description": "Those useless rocks on the road becomes a useful and effective weapon with this skill.",
+        "title": "Stone Shower",
+        "range": [
+            50
+        ],
+        "skillType": "On/Off",
+        "damageType": "magical",
+        "TmLevel": 0,
+        "TmLearn": 0,
+        "TmMaster": 0,
+        "projectileTime": 0
+    },
+    "WarmUp": {
+        "title": "Warm Up",
+        "description": "Warming up is always nice before taking on more serious skills.",
+        "skillType": "On/Off",
+        "mp": [
+            22
+        ],
+        "formula": "AP + 120 + Math.min(30,lvl)",
+        "coolDownSeconds": [
+            1
+        ],
+        "multiplier": [1,1,1,1,1,1,1,1,1,1],
+        "castingTimeSeconds": [
+            0.8
+        ],
+        "range": [
+            50
+        ],
+        "damageType": "physical",
+        "TmLevel": 0,
+        "TmLearn": 0,
+        "TmMaster": 0,
+        "projectileTime": 0
+    },
+    "InvincibleDrill": {
+        "title": "Invincible Drill",
+        "description": "Invincible Drill enhances concentration during drilling. Therefore, using drill is not canceled by interference by somebody. Once learning this skill, concentration can be exercised naturally during drilling without consuming specific Mana.",
+        "skillType": "Passive",
+        "TmLevel": 1,
+        "TmLearn": 1,
+        "TmMaster": 0
+    },
+    "PowerBlow": {
+        "title": "Power Blow",
+        "description": "After gathering power in the body, exert entwining attack using one's flexible arms and legs. This skill can do more severe damage to enemy than usual attack.",
+        "skillType": "On/Off",
+        "mp": [
+            30,
+            34,
+            38,
+            42,
+            46,
+            50,
+            54,
+            58,
+            62,
+            78,
+            94
+        ],
+        "formula": "AP * Multiplier",
+        "coolDownSeconds": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+        ],
+        "multiplier": [ 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.4],
+        "castingTimeSeconds": [
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "range": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+        ],
+        "damageType": "physical",
+        "TmLevel": 1,
+        "TmLearn": 1,
+        "TmMaster": 2,
+        "MasteryItem": "Clione Card x 2",
+        "projectileTime": 0
+    },
+    "StoneStrike": {
+        "title": "Stone Strike",
+        "description": "After finely analyzing enemy's weak part and environment's force flow by excellent perceptibility, strike a severe blow with the power of destroying even rocks.",
+        "skillType": "On/Off",
+        "mp": [
+            30,
+            33,
+            36,
+            39,
+            42,
+            45,
+            48,
+            51,
+            54,
+            57,
+            66
+        ],
+        "formula": "(DA + 1)*magRatio",
+        "coolDownSeconds": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+        ],
+        "multiplier": [
+            22,
+            24,
+            26,
+            28,
+            30,
+            32,
+            34,
+            36,
+            38,
+            40,
+            46
+        ],
+        "castingTimeSeconds": [
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "range": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+        ],
+        "damageType": "magical",
+        "TmLevel": 1,
+        "TmLearn": 1,
+        "TmMaster": 2,
+        "MasteryItem": "Clione Card x 2",
+        "projectileTime": 0
+    },
+    "Shockwave": {
+        "mp": [
+            32,
+            35,
+            38,
+            41,
+            44,
+            47,
+            50,
+            53,
+            56,
+            69,
+            80
+        ],
+        "formula": "TotalAP * Magnification",
+        "coolDownSeconds": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+        ],
+        "multiplier": [
+            1.3,
+            1.45,
+            1.6,
+            1.75,
+            1.9,
+            2.05,
+            2.2,
+            2.35,
+            2.5,
+            2.65,
+            3
+        ],
+        "castingTimeSeconds": [
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "description": "Power-attack attacking one target.",
+        "title": "Shockwave",
+        "range": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+        ],
+        "skillType": "On/Off",
+        "damageType": "physical",
+        "TmLevel": 1,
+        "TmLearn": 1,
+        "TmMaster": 2,
+        "MasteryItem": "Clione Card x 2",
+        "projectileTime": 0
+    },
+    "ManaArrow": {
+        "mp": [
+            50,
+            55,
+            60,
+            65,
+            70,
+            75,
+            80,
+            85,
+            90,
+            120,
+            140
+        ],
+        "formula": "(MA - 49) * Ratio",
+        "coolDownSeconds": [
+            1,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2
+        ],
+        "multiplier": [
+            23,
+            23.5,
+            24.0,
+            24.5,
+            25.0,
+            25.5,
+            26.0,
+            26.5,
+            27.0,
+            27.5,
+            30
+        ],
+        "castingTimeSeconds": [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+        ],
+        "description": "It attacks enemy with a mana arrow made by collecting magic force in nature.",
+        "title": "Mana Arrow",
+        "range": [
+            2000,
+            2050,
+            2100,
+            2150,
+            2200,
+            2250,
+            2300,
+            2350,
+            2400,
+            2450,
+            2500
+        ],
+        "skillType": "On/Off",
+        "damageType": "magical",
+        "TmLevel": 1,
+        "TmLearn": 1,
+        "TmMaster": 2,
+        "MasteryItem": "Clione Card x 2",
+        "projectileTime": 1.2
+    },
+    "Cure": {
+        "mp": [
+            40,
+            50,
+            60,
+            70,
+            80,
+            90,
+            100,
+            110,
+            120,
+            140,
+            160
+        ],
+        "formula": "(Max HP x Health Recovery) = Added HP",
+        "coolDownSeconds": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+        ],
+        "multiplier": [
+            0.06,
+            0.08,
+            0.10,
+            0.12,
+            0.14,
+            0.16,
+            0.18,
+            0.20,
+            0.22,
+            0.24,
+            0.30
+        ],
+        "castingTimeSeconds": [
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "description": "A debuff that lowers enemies Attack Power.",
+        "title": "Cure",
+        "range": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+        ],
+        "skillType": "Timer",
+        "damageType": "magical",
+        "TmLevel": 1,
+        "TmLearn": 1,
+        "TmMaster": 2,
+        "MasteryItem": "Hula Octopus Card x2",
+        "projectileTime": 0
+    },
+    "Rust": {
+        "mp": [
+            30,
+            32,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            48,
+            54
+        ],
+        "formula": "Enemy AP - (MA - 49) x Ratio x 16",
+        "coolDownSeconds": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+        ],
+        "multiplier": [
+            0.15,
+            0.18,
+            0.21,
+            0.24,
+            0.27,
+            0.3,
+            0.33,
+            0.36,
+            0.39,
+            0.42,
+            0.51
+        ],
+        "castingTimeSeconds": [
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "description": "A debuff that lowers enemies Attack Power.",
+        "title": "Rust",
+        "range": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+        ],
+        "skillType": "Timer",
+        "damageType": "magical",
+        "TmLevel": 1,
+        "TmLearn": 1,
+        "TmMaster": 2,
+        "MasteryItem": "Gold G Card x 2",
+        "projectileTime": 0
+    },
+    "steel_punch": {
+        "mp": [
+            24
+        ],
+        "formula": "TotalAP + 140 + (2*Math.min(30,lvl))",
+        "coolDownSeconds": [
+            3
+        ],
+        "castingTimeSeconds": [
+            0.8
+        ],
+        "multiplier": [1,1,1,1,1,1,1,1,1,1],
+        "description": "It's very useful for beginners when hunting. Deals a powerful physical damage.",
+        "title": "Steel Punch",
+        "range": [
+            50
+        ],
+        "skillType": "On/Off",
+        "damageType": "physical",
+        "TmLevel": 0,
+        "TmLearn": 0,
+        "TmMaster": 0,
+        "projectileTime": 0
+    },
+    "magical_soul": {
+        "mp": [
+            10
+        ],
+        "formula": "(MA*(AP+1))/100",
+        "coolDownSeconds": [
+            1
+        ],
+        "castingTimeSeconds": [
+            1
+        ],
+        "multiplier": [1,1,1,1,1,1,1,1,1,1],
+        "description": "A simple attack for beginners. It's very useful in starting your adventure.",
+        "title": "Magical Soul",
+        "range": [
+            2500
+        ],
+        "skillType": "On/Off",
+        "damageType": "magical",
+        "TmLevel": 0,
+        "TmLearn": 0,
+        "TmMaster": 0,
+        "projectileTime": 1
+    },
+    "stone_shower": {
+        "mp": [
+            20
+        ],
+        "formula": "75",
+        "coolDownSeconds": [
+            2
+        ],
+        "castingTimeSeconds": [
+            0.8
+        ],
+        "multiplier": [1,1,1,1,1,1,1,1,1,1],
+        "description": "Those useless rocks on the road becomes a useful and effective weapon with this skill.",
+        "title": "Stone Shower",
+        "range": [
+            50
+        ],
+        "skillType": "On/Off",
+        "damageType": "magical",
+        "TmLevel": 0,
+        "TmLearn": 0,
+        "TmMaster": 0,
+        "projectileTime": 0
+    },
+    "warm_up": {
+        "title": "Warm Up",
+        "description": "Warming up is always nice before taking on more serious skills.",
+        "skillType": "On/Off",
+        "mp": [
+            22
+        ],
+        "formula": "AP + 120 + Math.min(30,lvl)",
+        "coolDownSeconds": [
+            1
+        ],
+        "multiplier": [1,1,1,1,1,1,1,1,1,1],
+        "castingTimeSeconds": [
+            0.8
+        ],
+        "range": [
+            50
+        ],
+        "damageType": "physical",
+        "TmLevel": 0,
+        "TmLearn": 0,
+        "TmMaster": 0,
+        "projectileTime": 0
+    },
+    "invincible_drill": {
+        "title": "Invincible Drill",
+        "description": "Invincible Drill enhances concentration during drilling. Therefore, using drill is not canceled by interference by somebody. Once learning this skill, concentration can be exercised naturally during drilling without consuming specific Mana.",
+        "skillType": "Passive",
+        "TmLevel": 1,
+        "TmLearn": 1,
+        "TmMaster": 0
+    },
+    "power_blow": {
+        "title": "Power Blow",
+        "description": "After gathering power in the body, exert entwining attack using one's flexible arms and legs. This skill can do more severe damage to enemy than usual attack.",
+        "skillType": "On/Off",
+        "mp": [
+            30,
+            34,
+            38,
+            42,
+            46,
+            50,
+            54,
+            58,
+            62,
+            78,
+            94
+        ],
+        "formula": "AP * Multiplier",
+        "coolDownSeconds": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+        ],
+        "multiplier": [ 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.4],
+        "castingTimeSeconds": [
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "range": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+        ],
+        "damageType": "physical",
+        "TmLevel": 1,
+        "TmLearn": 1,
+        "TmMaster": 2,
+        "MasteryItem": "Clione Card x 2",
+        "projectileTime": 0
+    },
+    "stone_strike": {
+        "title": "Stone Strike",
+        "description": "After finely analyzing enemy's weak part and environment's force flow by excellent perceptibility, strike a severe blow with the power of destroying even rocks.",
+        "skillType": "On/Off",
+        "mp": [
+            30,
+            33,
+            36,
+            39,
+            42,
+            45,
+            48,
+            51,
+            54,
+            57,
+            66
+        ],
+        "formula": "(DA + 1)*magRatio",
+        "coolDownSeconds": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+        ],
+        "multiplier": [
+            22,
+            24,
+            26,
+            28,
+            30,
+            32,
+            34,
+            36,
+            38,
+            40,
+            46
+        ],
+        "castingTimeSeconds": [
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "range": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+        ],
+        "damageType": "magical",
+        "TmLevel": 1,
+        "TmLearn": 1,
+        "TmMaster": 2,
+        "MasteryItem": "Clione Card x 2",
+        "projectileTime": 0
+    },
+    "shock_wave": {
+        "mp": [
+            32,
+            35,
+            38,
+            41,
+            44,
+            47,
+            50,
+            53,
+            56,
+            69,
+            80
+        ],
+        "formula": "TotalAP * Magnification",
+        "coolDownSeconds": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+        ],
+        "multiplier": [
+            1.3,
+            1.45,
+            1.6,
+            1.75,
+            1.9,
+            2.05,
+            2.2,
+            2.35,
+            2.5,
+            2.65,
+            3
+        ],
+        "castingTimeSeconds": [
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "description": "Power-attack attacking one target.",
+        "title": "Shockwave",
+        "range": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+        ],
+        "skillType": "On/Off",
+        "damageType": "physical",
+        "TmLevel": 1,
+        "TmLearn": 1,
+        "TmMaster": 2,
+        "MasteryItem": "Clione Card x 2",
+        "projectileTime": 0
+    },
+    "mana_arrow": {
+        "mp": [
+            50,
+            55,
+            60,
+            65,
+            70,
+            75,
+            80,
+            85,
+            90,
+            120,
+            140
+        ],
+        "formula": "(MA - 49) * Ratio",
+        "coolDownSeconds": [
+            1,
+            1.1,
+            1.2,
+            1.3,
+            1.4,
+            1.5,
+            1.6,
+            1.7,
+            1.8,
+            1.9,
+            2
+        ],
+        "multiplier": [
+            23,
+            23.5,
+            24.0,
+            24.5,
+            25.0,
+            25.5,
+            26.0,
+            26.5,
+            27.0,
+            27.5,
+            30
+        ],
+        "castingTimeSeconds": [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+        ],
+        "description": "It attacks enemy with a mana arrow made by collecting magic force in nature.",
+        "title": "Mana Arrow",
+        "range": [
+            2000,
+            2050,
+            2100,
+            2150,
+            2200,
+            2250,
+            2300,
+            2350,
+            2400,
+            2450,
+            2500
+        ],
+        "skillType": "On/Off",
+        "damageType": "magical",
+        "TmLevel": 1,
+        "TmLearn": 1,
+        "TmMaster": 2,
+        "MasteryItem": "Clione Card x 2",
+        "projectileTime": 1.2
+    },
+    "cure": {
+        "mp": [
+            40,
+            50,
+            60,
+            70,
+            80,
+            90,
+            100,
+            110,
+            120,
+            140,
+            160
+        ],
+        "formula": "(Max HP x Health Recovery) = Added HP",
+        "coolDownSeconds": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+        ],
+        "multiplier": [
+            0.06,
+            0.08,
+            0.10,
+            0.12,
+            0.14,
+            0.16,
+            0.18,
+            0.20,
+            0.22,
+            0.24,
+            0.30
+        ],
+        "castingTimeSeconds": [
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "description": "A debuff that lowers enemies Attack Power.",
+        "title": "Cure",
+        "range": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+        ],
+        "skillType": "Timer",
+        "damageType": "magical",
+        "TmLevel": 1,
+        "TmLearn": 1,
+        "TmMaster": 2,
+        "MasteryItem": "Hula Octopus Card x2",
+        "projectileTime": 0
+    },
+    "rust": {
+        "mp": [
+            30,
+            32,
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            48,
+            54
+        ],
+        "formula": "Enemy AP - (MA - 49) x Ratio x 16",
+        "coolDownSeconds": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+        ],
+        "multiplier": [
+            0.15,
+            0.18,
+            0.21,
+            0.24,
+            0.27,
+            0.3,
+            0.33,
+            0.36,
+            0.39,
+            0.42,
+            0.51
+        ],
+        "castingTimeSeconds": [
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8
+        ],
+        "description": "A debuff that lowers enemies Attack Power.",
+        "title": "Rust",
+        "range": [
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200,
+            200
+        ],
+        "skillType": "Timer",
+        "damageType": "magical",
+        "TmLevel": 1,
+        "TmLearn": 1,
+        "TmMaster": 2,
+        "MasteryItem": "Gold G Card x 2",
+        "projectileTime": 0
+    }
+}

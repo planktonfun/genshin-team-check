@@ -1,0 +1,512 @@
+{
+    "magical_soul_card": {
+        "buy": 1,
+        "sell": 1,
+        "weight": 1
+    },
+    "mana_arrow_card": {
+        "buy": 300,
+        "sell": 10,
+        "weight": 100
+    },
+    "cure_card": {
+        "buy": 1000,
+        "sell": 10,
+        "weight": 100
+    },
+    "invincible_casting_card":{
+        "buy": 8750,
+        "sell": 10,
+        "weight": 100
+    },
+    "mana_ring_card":{
+        "buy": 4000,
+        "sell": 10,
+        "weight": 100
+    },
+    "bottle_of_mana_card":{
+        "buy": 4000,
+        "sell": 10,
+        "weight": 100
+    },
+    "aura_of_mana_card":{
+        "buy": 4000,
+        "sell": 10,
+        "weight": 100
+    },
+    "rust_card":{
+        "buy": 2000,
+        "sell": 10,
+        "weight": 100
+    },
+    "mana_web_card":{
+        "buy": 2000,
+        "sell": 10,
+        "weight": 100
+    },
+    "mana_shield_card":{
+        "buy": 6000,
+        "sell": 10,
+        "weight": 100
+    },
+    "mana_storm_card":{
+        "buy": 7000,
+        "sell": 10,
+        "weight": 100
+    },
+    "mist_of_mana_card":{
+        "buy": 16000,
+        "sell": 10,
+        "weight": 100
+    },
+    "mana_ring_booster_card":{
+        "buy": 15000,
+        "sell": 10,
+        "weight": 100
+    },
+    "arrow_rush_card":{
+        "buy": 20000,
+        "sell": 10,
+        "weight": 100
+    },
+    "steel_punch_card": {
+        "buy": 1,
+        "sell": 1,
+        "weight": 1
+    },
+    "shockwave_card": {
+        "buy": 300,
+        "sell": 10,
+        "weight": 100
+    },
+    "bulls_eye_card": {
+        "buy": 2000,
+        "sell": 10,
+        "weight": 100
+    },
+    "burning_rave_card": {
+        "buy": 4000,
+        "sell": 10,
+        "weight": 100
+    },
+    "shockvibe_card": {
+        "buy": 2000,
+        "sell": 10,
+        "weight": 100
+    },
+    "sense_breaker_card": {
+        "buy": 2000,
+        "sell": 10,
+        "weight": 100
+    },
+    "luck_breaker_card": {
+        "buy": 2000,
+        "sell": 10,
+        "weight": 100
+    },
+    "pumping_heart_card": {
+        "buy": 7500,
+        "sell": 10,
+        "weight": 100
+    },
+    "armor_breaker_card": {
+        "buy": 6000,
+        "sell": 10,
+        "weight": 100
+    },
+    "upper_smash_card": {
+        "buy": 8000,
+        "sell": 10,
+        "weight": 100
+    },
+    "hyper_beat_card": {
+        "buy": 18000,
+        "sell": 10,
+        "weight": 100
+    },
+    "tornado_bomb_card": {
+        "buy": 15000,
+        "sell": 10,
+        "weight": 100
+    },
+    "stone_shower_card":{
+        "buy": 1,
+        "sell": 1,
+        "weight": 1
+    },
+    "invincible_drill_card":{
+        "buy": 100,
+        "sell": 10,
+        "weight": 100
+    },
+    "gun_carrier_card":{
+        "buy": 500,
+        "sell": 10,
+        "weight": 100
+    },
+    "sixth_sense_card":{
+        "buy": 1000,
+        "sell": 10,
+        "weight": 100
+    },
+    "stone_strike_card":{
+        "buy": 300,
+        "sell": 10,
+        "weight": 100
+    },
+    "heavy_carrier_card":{
+        "buy": 1000,
+        "sell": 10,
+        "weight": 100
+    },
+    "shuriken_master_card":{
+        "buy": 3000,
+        "sell": 10,
+        "weight": 100
+    },
+    "invincible_reload_card":{
+        "buy": 10000,
+        "sell": 10,
+        "weight": 100
+    },
+    "sticky_foot_card":{
+        "buy": 2000,
+        "sell": 10,
+        "weight": 100
+    },
+    "gun_booster_card":{
+        "buy": 9000,
+        "sell": 10,
+        "weight": 100
+    },
+    "basic_detection_card":{
+        "buy": 7000,
+        "sell": 10,
+        "weight": 100
+    },
+    "armor_destructor_card":{
+        "buy": 8000,
+        "sell": 10,
+        "weight": 100
+    },
+    "quick_reload_card":{
+        "buy": 20000,
+        "sell": 10,
+        "weight": 100
+    },
+    "lucky_seven_card":{
+        "buy": 20000,
+        "sell": 10,
+        "weight": 100
+    },
+    "anger_management_card":{
+        "buy": 11000,
+        "sell": 10,
+        "weight": 100
+    },
+    "compound_master_card":{
+        "buy": 14000,
+        "sell": 10,
+        "weight": 100
+    },
+    "warm_up_card":{
+        "buy": 1,
+        "sell": 1,
+        "weight": 1
+    },
+    "power_blow_card":{
+        "buy": 300,
+        "sell": 10,
+        "weight": 100
+    },
+    "dodge_master_card":{
+        "buy": 1000,
+        "sell": 10,
+        "weight": 100
+    },
+    "galder_thrower_card":{
+        "buy": 4000,
+        "sell": 10,
+        "weight": 100
+    },
+    "magic_meltdown_card":{
+        "buy": 2000,
+        "sell": 10,
+        "weight": 100
+    },
+    "magic_defense_breaker_card":{
+        "buy": 2000,
+        "sell": 10,
+        "weight": 100
+    },
+    "mana_reflector_card":{
+        "buy": 4000,
+        "sell": 10,
+        "weight": 100
+    },
+    "shield_all_card":{
+        "buy": 7500,
+        "sell": 10,
+        "weight": 100
+    },
+    "sturdy_shield_card":{
+        "buy": 6000,
+        "sell": 10,
+        "weight": 100
+    },
+    "titanium_wrist_card":{
+        "buy": 12000,
+        "sell": 10,
+        "weight": 100
+    },
+    "skunk_pouch_card":{
+        "buy": 12000,
+        "sell": 10,
+        "weight": 100
+    },
+    "physical_training_card":{
+        "buy": 9000,
+        "sell": 10,
+        "weight": 100
+    },
+    "final_blow_card":{
+        "buy": 15000,
+        "sell": 10,
+        "weight": 100
+    },
+    "torobbie-card": {
+        "buy": 10000,
+        "sell": 10,
+        "weight": 0
+    },
+    "tottochi-card": {
+        "buy": 20000,
+        "sell": 10,
+        "weight": 0
+    },
+    "tutankhamen-card": {
+        "buy": 100000,
+        "sell": 10,
+        "weight": 0
+    },
+    "potion-hp": {
+        "buy": 100,
+        "sell": 30,
+        "weight": 2
+    },
+    "potion-mp": {
+        "buy": 100,
+        "sell": 30,
+        "weight": 2
+    },
+    "tangerine": {
+        "buy": 0,
+        "sell": 0,
+        "weight": 10
+    },
+    "art-antique-gun": {
+        "buy": 2500,
+        "sell": 750,
+        "weight": 10
+    },
+    "ult-beanie": {
+        "buy": 2500,
+        "sell": 750,
+        "weight": 10
+    },
+    "ult-bokken": {
+        "buy": 2500,
+        "sell": 750,
+        "weight": 10
+    },
+    "ult-kane-rod": {
+        "buy": 2500,
+        "sell": 750,
+        "weight": 40
+    },
+    "ult-wood-helmet": {
+        "buy": 2500,
+        "sell": 750,
+        "weight": 10
+    },
+    "old-poniard": {
+        "buy": 2500,
+        "sell": 750,
+        "weight": 10
+    },
+    "ammo": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "card-pack": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "broom": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "10-galder-coupon": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "desert-witch-broom": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "star-card-pack-1": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "star-card-pack-2": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "star-card-pack-3": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "tutankhamen-legendary-box": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "rookie-sword": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "rookie-shield": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "rookie-hat": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "moon-staff": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "old-ebony-gun": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "old-metal-shield": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "old-poniard": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "old-wooden-sword": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "sharp-poniard": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "sharp-wooden-sword": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "strong-ebony-gun": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "strong-metal-shield": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "ult-knife": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "ult-wood-gun": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "old-staff": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "baby-carrot": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "dark-round-seal": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "gray-round-seal": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "red-round-seal": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "nemeth-hair-towel": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "janus-feather": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "flail": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "shtellas-profile": {
+        "buy": 10,
+        "sell": 5,
+        "weight": 1
+    },
+    "succubus": {
+        "buy": 500000,
+        "sell": 5,
+        "weight": 1
+    },
+    "incubus": {
+        "buy": 500000,
+        "sell": 5,
+        "weight": 1
+    },
+    "pet_boxer_lina": {
+        "buy": 500000,
+        "sell": 5,
+        "weight": 1
+    }
+}

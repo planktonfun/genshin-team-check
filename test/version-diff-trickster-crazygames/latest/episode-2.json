@@ -1,0 +1,602 @@
+[
+  {
+    "title": "exit",
+    "tags": "",
+    "body": "See Ya!",
+    "position": {
+      "x": -150,
+      "y": -150
+    },
+    "colorID": 0
+  },
+  {
+    "title": "HeidiA",
+    "tags": "",
+    "body": "SKIP\n<<displayOptions>>It worked!\n[[ Yes |HeidiB]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 100,
+      "y": 100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "HeidiB",
+    "tags": "",
+    "body": "<<displayOptions>>If you want to start your adventure in [Caballa Island], you need to first complete your [Registration Form].\n[[ How can I? |HeidiC]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 350,
+      "y": 100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "HeidiC",
+    "tags": "",
+    "body": "<<displayOptions>>Please take the [Registration Form] that I'm going to give you and give them to [Bunny Maid]. She will be processing your registration.\n[[ Where is [Bunny Maid]? |HeidiD]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 600,
+      "y": 100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "HeidiD",
+    "tags": "",
+    "body": "<<displayOptions>>If you head north and follow the path of the welcoming hula dancers, you'll see a [Reception Building] and [Bunny Maid] standing in front.\n[[ Sounds good! |exit]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 850,
+      "y": 100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "BunnyMaidA",
+    "tags": "",
+    "body": "SKIP\n<<displayOptions>>Hello, I'm Bunny Maid. Are you here to complete your Registration?\n[[ Yes I am! |BunnyMaidB]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1100,
+      "y": 100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "BunnyMaidB",
+    "tags": "",
+    "body": "<<displayOptions>>Did you come to complete your [Registration Form]? If you give me your [Registration Form] then I can start the process right away! Once the registration has been completed you will receive a pack of equipment called the [Rookie Set].\n[[ Here you go! |BunnyMaidC]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1350,
+      "y": 100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "BunnyMaidC",
+    "tags": "",
+    "body": "<<displayOptions>>Please head to [Coral Beach Field 1] and bring me bacsk 2 [Baby Carrots]. You can acquire the carrots by hunting [Torobbies].\n[[ Okay |BunnyMaidD]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1600,
+      "y": 100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "BunnyMaidD",
+    "tags": "",
+    "body": "<<displayOptions>>Amazing! With that, you are now recognized as a geniune adventurer. Please feel free to explore and travel around [Caballa Island]!\n[[ So what do I do next? |BunnyMaidE]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1850,
+      "y": 100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "BunnyMaidE",
+    "tags": "",
+    "body": "<<displayOptions>>All over [Caballa Island] are people that are in need of an adventurer's help. Help those people and get stronger. I'm sure you will quickly find out what the goal of [the Trickster Game] is.\n[[ Oh I see! |BunnyMaidF]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 2100,
+      "y": 100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "BunnyMaidF",
+    "tags": "",
+    "body": "<<displayOptions>>Here in [Blooming Cora, there is a girl named [Winnie] that is looking for some help. Why don't you lend her a hand?\n[[ Sure, leave it to me! |exit]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 2350,
+      "y": 100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "WinnieA",
+    "tags": "",
+    "body": "SKIP\n<<displayOptions>>Hm... I wonder if Deens is working Hard?\n[[ Hello there! |WinnieB]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 100,
+      "y": 350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "WinnieB",
+    "tags": "",
+    "body": "<<displayOptions>>Ah! Did [Bunny Maid] send you? Well, it's a good thing since I do need help. You will help me, right? If you do I will give you a [Young Egg pet.]\n[[ What the heck is a Young Egg? … How do I help? |exit]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 350,
+      "y": 350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardDeenA",
+    "tags": "",
+    "body": "SKIP\n<<displayOptions>>Hey there! The safety of [Coral Beach] is my responsibility!\n[[ Oh really? |LifeguardDeenB]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 600,
+      "y": 350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardDeenB",
+    "tags": "",
+    "body": "<<displayOptions>>[Winnie] told you that she wanted me to call her? I told her that the beach would be dangerous and that she should stay in town. I guess she sent you instead of coming out herself.\n[[ Okay |LifeguardDeenC]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 850,
+      "y": 350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardDeenC",
+    "tags": "",
+    "body": "<<displayOptions>>Heh! She isn't my little sister by blood, but she definitely follows me around like she is. It looks like she's lonely. I've been pretty busy these days and haven't been able to play with her.\n[[ You mean you really don't... |LifeguardDeenD]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1100,
+      "y": 350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardDeenD",
+    "tags": "",
+    "body": "<<displayOptions>>Huh? What did you say?\n[[ Ah, nothing... |LifeguardDeenE]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1350,
+      "y": 350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardDeenE",
+    "tags": "",
+    "body": "<<displayOptions>>Heh! You're kind of thick, aren't you?\n[[ Rude... |LifeguardDeenF]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1600,
+      "y": 350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardDeenF",
+    "tags": "",
+    "body": "<<displayOptions>>Tottochis are a problem for Tinnie and her volleyball practice\n[[ Who is Tinnie- |LifeguardDeenG]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1850,
+      "y": 350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardDeenG",
+    "tags": "",
+    "body": "<<displayOptions>>Muhaha! If you hunt [Tottochi] for me then I will tell you all about [Tinnie]! If you can hunt 5 in 10 minutes then I'm sure [Tinnie] will be happy too!\n[[ ... Fine! I'll beat up the dumb little sea urchins. How'd I get suckered into doing this anyway? |LifeguardDeenH]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 2100,
+      "y": 350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardDeenH",
+    "tags": "",
+    "body": "<<displayOptions>>You already hunted them down? Not bad kid! Well as promised I'll tell you about [Tinnie]!\n[[ Okay |LifeguardDeenI]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 2350,
+      "y": 350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardDeenI",
+    "tags": "",
+    "body": "<<displayOptions>>[Tinnie] takes care of the beach volleyball courts in [Coral Beach Field 2]. Be sure to tell [Tinnie] that I hunted all the [Tottochies] on my own!\n[[ But I did... |exit]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 100,
+      "y": 600
+    },
+    "colorID": 0
+  },
+  {
+    "title": "TinnieA",
+    "tags": "",
+    "body": "SKIP\n<<displayOptions>>Hiya! I'm [Caballa Island's] ace volleyballer, [Tinnie]!\n[[ Hi Tinnie! |TinnieB]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 350,
+      "y": 600
+    },
+    "colorID": 0
+  },
+  {
+    "title": "TinnieB",
+    "tags": "",
+    "body": "<<displayOptions>>So you met with [Deen]? Me? I'm always doing well, of course hehe. Oh my! You hunted down the [Tottochies]? Thank you~\n[[ It was a piece of cake. |TinnieC]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 600,
+      "y": 600
+    },
+    "colorID": 0
+  },
+  {
+    "title": "TinnieC",
+    "tags": "",
+    "body": "<<displayOptions>>That's good, but… these days it's not the [Tottochies] that are bothering me, but another set of pests. Do you think you can help me with something?\n[[ Okay |TinnieD]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 850,
+      "y": 600
+    },
+    "colorID": 0
+  },
+  {
+    "title": "TinnieD",
+    "tags": "",
+    "body": "<<displayOptions>>Do you see the area around the [Beach Volleyball Court]? This is where I practice volleyball and take care of my official duties. The [Bad Fury] keep coming on to the court and disrupting my practice. If you could discipline 5 for 10 minutes then I'm sure that they'll stop disrupting my practice.\n[[ Consider it done |TinnieE]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1100,
+      "y": 600
+    },
+    "colorID": 0
+  },
+  {
+    "title": "TinnieE",
+    "tags": "",
+    "body": "<<displayOptions>>Like, if you use your [Skills], you will be able to hunt the monsters quicker. Come back once you've hunted them~\n[[ I'll try using skills |TinnieF]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1350,
+      "y": 600
+    },
+    "colorID": 0
+  },
+  {
+    "title": "TinnieF",
+    "tags": "",
+    "body": "<<displayOptions>>Wow~ You totally took care of them! You're like, amazing! Now I can practice in peace. Here's a gift for your totally hard work.\n[[ Thanks |TinnieG]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1600,
+      "y": 600
+    },
+    "colorID": 0
+  },
+  {
+    "title": "TinnieG",
+    "tags": "",
+    "body": "<<displayOptions>>Well, [Lifeguard Bean] has been, like, sending me gifts over and over again and it's starting to get super annoying. I've returned his gifts over and over again, but he still keeps sending them.\n[[ That really is annoying… and kinda creepy, not gonna lie. |exit]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1850,
+      "y": 600
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardBeanA",
+    "tags": "",
+    "body": "SKIP\n<<displayOptions>>Yoohoo~Hi! Welcome to the temple of my beauty, the lovely beach, the sanctuary of me!\n[[ Uh.. Hi? |LifeguardBeanB]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 2100,
+      "y": 600
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardBeanB",
+    "tags": "",
+    "body": "<<displayOptions>>Hehe~ Since you brought me a message from my lovely [Tinnie] I will tell you something good.\n[[ (He's even worse than I imagined!) |LifeguardBeanC]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 2350,
+      "y": 600
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardBeanC",
+    "tags": "",
+    "body": "<<displayOptions>>Look kid, I would love to tell you right away, however the world is a heartless place! I'm gonna take you under my wing and tell you some interesting things if you can bring me back 5 [Cool Ice]. You can get them from the [Blue Penguins] that are wandering around this area~\n[[ Ug... Fine... |LifeguardBeanD]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 100,
+      "y": 850
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardBeanD",
+    "tags": "",
+    "body": "<<displayOptions>>Yoohoo Looks like you were able to bring me all the [Cool Ice] like I asked! My favorite beach has been heating up because of my awesomeness. So that's why I needed the ice, to help cool it down.\n[[ Uh... We're in a desert? |LifeguardBeanE]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 350,
+      "y": 850
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardBeanE",
+    "tags": "",
+    "body": "<<displayOptions>>You do know how to Equip items right? Speak to me after you've equipped the [Pocket Pouch], okay? If you don't I'm gonna have to haunt you every day!\n[[ Equipping it now! |LifeguardBeanF]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 600,
+      "y": 850
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardBeanF",
+    "tags": "",
+    "body": "<<displayOptions>>You do know how to Equip items right? Speak to me after you've equipped the [Pocket Pouch], okay? If you don't I'm gonna have to haunt you every day!\n[[ Equipping it now! |LifeguardBeanG]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 850,
+      "y": 850
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardBeanG",
+    "tags": "",
+    "body": "<<displayOptions>>Ya know, truthfully, everything you've done up until now was a test for your Adventurer Registration. Surprising isn't it? Since you passed all the tests you are now areal adventurer! Now go out there are show everyone what you've got!\n[[ What do I do now? |LifeguardBeanH]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1100,
+      "y": 850
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardBeanH",
+    "tags": "",
+    "body": "<<displayOptions>>Well, first of all you should meet [Don Giuvanni]. He is the one that manages the game and is currently preparing to train beginner adventurers. So make sure you meet him~\n[[ Okay |LifeguardBeanI]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1350,
+      "y": 850
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardBeanI",
+    "tags": "",
+    "body": "<<displayOptions>>[Don Giuvanni] is the Vice President of the [Megalo Company] that created Trickster. Head east from here and you will see a cave. Go through the cave and you will get to [Gate of Desert Beach] and you should see him there\n[[ OK |LifeguardBeanH]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1600,
+      "y": 850
+    },
+    "colorID": 0
+  },
+  {
+    "title": "LifeguardBeanH",
+    "tags": "",
+    "body": "<<displayOptions>>Yoohoo~ If you want to get stronger, why don't you help out the people that you see on your way to meeting [Don Giuvanni]?\n[[ Oh okay |exit]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1850,
+      "y": 850
+    },
+    "colorID": 0
+  },
+  {
+    "title": "Hunter_YuriA",
+    "tags": "",
+    "body": "SKIP\n<<displayOptions>>Hi hi! My name is Yuri and I'm here to manage the monsters of [Coral Beach Fields]. However, recently there have been some monsters with serious attitude problems. They act like they own the place, and its getting me stressed out!\n[[ Tell me more! |exit]]\n[[ Check Monster Quest Rankings |exit]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 2100,
+      "y": 850
+    },
+    "colorID": 0
+  },
+  {
+    "title": "Explorer_ReinaA",
+    "tags": "",
+    "body": "SKIP\n<<displayOptions>>Hmph! It's way too hot for treasure hunting.\n[[ Can I help you? |Explorer_ReinaB]]\n[[ Stop complaining! |Explorer_ReinaB]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 2350,
+      "y": 850
+    },
+    "colorID": 0
+  },
+  {
+    "title": "Explorer_ReinaB",
+    "tags": "",
+    "body": "<<displayOptions>>Help? Really? Aren't you a helpful one! Do you think you can bring me 5 [Cool Spring Waters]? It should help cool me down a bit. You can get them from the [Clione] that are roaming around this area.\n[[ Okay |Explorer_ReinaC]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 100,
+      "y": 1100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "Explorer_ReinaC",
+    "tags": "",
+    "body": "<<displayOptions>>You didn't know? From what I heard, along with rewards there are lots of treasure buried all around... Of course the best treasure has to be the [Harkon].\n[[ Harkon? |Explorer_ReinaD]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 350,
+      "y": 1100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "Explorer_ReinaD",
+    "tags": "",
+    "body": "<<displayOptions>>Yup, [Harkon]. The [Harkon] is a legendary stone that shines brightly with the seven colors of the rainbow. It's a mysterious gem that supposedly has great powers. I'm sure it's worth a lot!\n[[ Oooh, rainbows! |exit]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 600,
+      "y": 1100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "SendSystemMailA",
+    "tags": "",
+    "body": "SKIP\n<<displayOptions>>Congratulations on reaching 15.\n[[ GM |exit]]\n[[ Congratulations on reaching level 15. Please take a look at the enclosed instructions of how to use the services provided by Kochi and Pachi |exit]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 850,
+      "y": 1100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "DonGiuvanniA",
+    "tags": "",
+    "body": "SKIP\n<<displayOptions>>Congratulations on participating in this game. I am the Megalo Company's Vice President, [Don Giuvanni].\n[[ Vice President? |DonGiuvanniB]]\n[[ Not Interested |DonGiuvanniB]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1100,
+      "y": 1100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "DonGiuvanniB",
+    "tags": "",
+    "body": "<<displayOptions>>Ha Ha... Well, [Don Cavalier] was an irresponsible president who left that sort of dying wish without even considering the company's business. Since he isn't here I'm in charge now!\n[[ So that means you're president? |DonGiuvanniC]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1350,
+      "y": 1100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "DonGiuvanniC",
+    "tags": "",
+    "body": "<<displayOptions>>Even though I have yet to formally become the president, there isn't another well-qualified person other than me. Haha… therefore, the winner of the game will be chosen by me. But, you know, the one thing I hate the most is waiting.\n[[ Next |DonGiuvanniD]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1600,
+      "y": 1100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "DonGiuvanniD",
+    "tags": "",
+    "body": "<<displayOptions>>I don't have the patience to sit here and watch someone move like a turtle after claiming to become a [Trickster]. So if you quickly want to become a [Trickster], then get on this training regimen I have planned.\n[[ OK sure |DonGiuvanniE]]\n[[ No thanks |DonGiuvanniE]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1850,
+      "y": 1100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "DonGiuvanniE",
+    "tags": "",
+    "body": "<<displayOptions>>Drilling is necessary in the game. Get it? Go quickly! Now!\n[[ Okay |DonGiuvanniF]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 2100,
+      "y": 1100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "Driller_MarkyA",
+    "tags": "",
+    "body": "SKIP\n<<displayOptions>>Drill~Drill~Drill~Sigh~Such a refreshing sound~\n[[ Drilling eh? |Driller_MarkyB]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 2350,
+      "y": 1100
+    },
+    "colorID": 0
+  },
+  {
+    "title": "Driller_MarkyB",
+    "tags": "",
+    "body": "<<displayOptions>>Look at me! Can you see the [Drill Gauge] show up as I'm drilling? This is the [Drill Gauge]. When you see the [Drill Gauge] then [click] with your mouse.\n[[ I see |Driller_MarkyC]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 100,
+      "y": 1350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "Driller_MarkyC",
+    "tags": "",
+    "body": "<<displayOptions>>The test is simple. In this area, there are bottles of [Tanning Oil] buried in the ground. It's from all the people who come here and throw away stuff. Might as well save the Earth while drilling, right? Bring me back 2 bottles [Tanning Oil].\n[[ OK |Driller_MarkyD]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 350,
+      "y": 1350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "Driller_MarkyD",
+    "tags": "",
+    "body": "<<displayOptions>>[Drilling for Dummies] is a book for those that want to master drilling. Also, I'm sure the pet I gave will be a lot of help for you too, so take care of it~\n[[ Okay |exit]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 600,
+      "y": 1350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "DonGiuvanniF",
+    "tags": "",
+    "body": "<<displayOptions>>...Looks like you did it quickly. Great! Then I'll give you a gift for the next stage!\n[[ The next stage? |DonGiuvanniG]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 850,
+      "y": 1350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "DonGiuvanniG",
+    "tags": "",
+    "body": "<<displayOptions>>My strict regiment for you is not over yet! Go to [Paradise] and meet my special agent to start the second stage!\n[[ Second stage? |DonGiuvanniH]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1100,
+      "y": 1350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "DonGiuvanniH",
+    "tags": "",
+    "body": "<<displayOptions>>Go to the Desert Town of Paradise and meet up with his agent, Robert. It's past Desert Beach Field 1\n[[ Excuse me, Don Giuvanni, but isn't there a quicker way to town? |DonGiuvanniI]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1350,
+      "y": 1350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "DonGiuvanniI",
+    "tags": "",
+    "body": "<<displayOptions>>Don't you know about [Trickster's] excellent [Teleport] system? Head east from here and you will see a Megalo worker in a green outfit named [Kochi]. Try asking her to send you to [Paradise]!\n[[ Oh but, [Lifeguard Bean] sent me here... |DonGiuvanniH]]\n[[ OK |DonGiuvanniH]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1600,
+      "y": 1350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "DonGiuvanniH",
+    "tags": "",
+    "body": "<<displayOptions>>Hm... I already heard from [Bean], but since you have started on my training regimen I have nothing more to say to you. Hurry up and go to [Robert]!\n[[ OK |exit]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 1850,
+      "y": 1350
+    },
+    "colorID": 0
+  },
+  {
+    "title": "KochiA",
+    "tags": "",
+    "body": "SKIP\n<<displayOptions>>Hello~ Nice to meet you. My name is Kochi and I came here to Caballa with my sister Pachi to Teleport tourists. Are you ready to go to paradise?\n[[ Teleport to Paradise (300 Galders) |exit]]\n[[ Exit |exit]]",
+    "position": {
+      "x": 2100,
+      "y": 1350
+    },
+    "colorID": 0
+  }
+]

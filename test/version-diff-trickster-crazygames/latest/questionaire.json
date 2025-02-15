@@ -1,0 +1,1802 @@
+{
+    "SandCityMapLayout": [
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "Create",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "x": 3301,
+                "y": 1170,
+                "name": "Guide",
+                "playerName": "bluey",
+                "job": "Bunny",
+                "MaxHp": 7053,
+                "Hp": 6240,
+                "Mana": 1341,
+                "MaxMp": 1490,
+                "isPlayer": 1
+            },
+            "delayTimestamp": 1716012349868,
+            "clientTime": 1716012349947
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "7693241c-ee07-4426-84ef-dc32880a9b761716005008082",
+                "X": 2924.7269793790397,
+                "Y": 1246.643523786139,
+                "seed": 271
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "33bdab6c-7397-4af4-9afc-2363e1a73f341716005829703",
+                "X": 2919.9152207180064,
+                "Y": 1231.444343350963,
+                "seed": 884
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "eb9ebf49-3080-4349-86a1-252303e174291716006332013",
+                "X": 3117.712023616967,
+                "Y": 1375.5868655240354,
+                "seed": 429
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "367a9ca7-dacb-43de-8868-42f4beb439df1716006903137",
+                "X": 3064.44933404534,
+                "Y": 1214.8175599382982,
+                "seed": 886
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "367a9ca7-dacb-43de-8868-42f4beb439df1716006912989",
+                "X": 3068.062499224197,
+                "Y": 1218.6824157487742,
+                "seed": 886
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "367a9ca7-dacb-43de-8868-42f4beb439df1716006949701",
+                "X": 2891.81795885812,
+                "Y": 950.8327396890307,
+                "seed": 780
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "f1fc4e1b-9888-495c-9e12-3a564bdac4291716009672914",
+                "X": 3011.2419649661992,
+                "Y": 1232.7484559231798,
+                "seed": 447
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "f1fc4e1b-9888-495c-9e12-3a564bdac4291716009682941",
+                "X": 3014.8504402364524,
+                "Y": 1226.204231206191,
+                "seed": 447
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "2d5c3234-47fe-4c65-9f58-78322636c1df1716009860853",
+                "X": 2680.2488722641424,
+                "Y": 1191.648584836818,
+                "seed": 928
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "e346a8f8-f72d-4e3f-a6ac-fca2eaeb7a231716010307124",
+                "X": 3210.2712583123584,
+                "Y": 1360.5311670381836,
+                "seed": 292
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "d534b923-b874-418b-8e35-583341de00e61716010428547",
+                "X": 2778.4071716283356,
+                "Y": 1017.019236655097,
+                "seed": 581
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "9095f0b0-51db-487c-a7f8-2427bfd9f4e81716010834297",
+                "X": 3101.8683253885365,
+                "Y": 1279.1202875943109,
+                "seed": 617
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "9095f0b0-51db-487c-a7f8-2427bfd9f4e81716010842807",
+                "X": 3108.071416897681,
+                "Y": 1188.333666057406,
+                "seed": 790
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "e6289844-f8ba-4696-a041-075945e158af1716011473808",
+                "X": 2935.8833547976587,
+                "Y": 952.0519587478541,
+                "seed": 288
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "e6289844-f8ba-4696-a041-075945e158af1716011481962",
+                "X": 2911.862134234602,
+                "Y": 780.5930728476436,
+                "seed": 838
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "8d1e063f-890d-4675-86f9-f04c8a3d59351716011664717",
+                "X": 2907.8522191102543,
+                "Y": 786.9472460446873,
+                "seed": 610
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "dea24e1f-82af-4a79-88d3-4b12e8c575391716011715794",
+                "X": 2853.7195179317077,
+                "Y": 886.6943612408472,
+                "seed": 288
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "dea24e1f-82af-4a79-88d3-4b12e8c575391716011724224",
+                "X": 2807.7081459472524,
+                "Y": 793.7296119109128,
+                "seed": 838
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "7af8c0a4-5d1c-4f9d-94cf-f49a252327ab1716011836938",
+                "X": 2907.8522191102543,
+                "Y": 786.9472460446873,
+                "seed": 610
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "843bcbd6-2630-483c-bc65-b220a4eb16481716011862239",
+                "X": 2853.7195179317077,
+                "Y": 886.6943612408472,
+                "seed": 288
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "843bcbd6-2630-483c-bc65-b220a4eb16481716011870636",
+                "X": 2807.7081459472524,
+                "Y": 793.7296119109128,
+                "seed": 838
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "7105a346-19ab-41c7-9904-9341f0ac59261716011889821",
+                "X": 2907.8522191102543,
+                "Y": 786.9472460446873,
+                "seed": 610
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "42841233-e782-4118-937e-2f96bb550a4b1716011977153",
+                "X": 2853.7195179317077,
+                "Y": 886.6943612408472,
+                "seed": 288
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "42841233-e782-4118-937e-2f96bb550a4b1716011985621",
+                "X": 2807.7081459472524,
+                "Y": 793.7296119109128,
+                "seed": 838
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "62bff7cd-4872-40a6-a65a-60a24c0821771716012064335",
+                "X": 2764.229646852477,
+                "Y": 892.564905240999,
+                "seed": 769
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "eedfbfff-3774-4d08-a53f-7392728a19261716012269198",
+                "X": 2960.3241808240864,
+                "Y": 1167.4299332588173,
+                "seed": 799
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "9c19198f-02a4-46b2-88e7-f51cf29878441716012288285",
+                "X": 2788.215407230483,
+                "Y": 938.6986926550159,
+                "seed": 604
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "9c19198f-02a4-46b2-88e7-f51cf29878441716012299627",
+                "X": 2982.9112608704163,
+                "Y": 966.9292021032882,
+                "seed": 826
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Idle-A"
+            },
+            "delayTimestamp": 1716012349975,
+            "clientTime": 1716012350083
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "07f2cc2b-ff15-48f8-a7d5-26baa90f50b51716005349661",
+                "X": 2871.216484145193,
+                "Y": 1276.9360544683566,
+                "seed": 726
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "621c54a0-f523-4e4c-934d-bd06ca0dcebb1716006737535",
+                "X": 2817.9441306282356,
+                "Y": 1197.3081291327824,
+                "seed": 620
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "367a9ca7-dacb-43de-8868-42f4beb439df1716006942312",
+                "X": 2854.0495115625986,
+                "Y": 975.3822304311199,
+                "seed": 226
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "f1fc4e1b-9888-495c-9e12-3a564bdac4291716009678056",
+                "X": 3004.0024166399317,
+                "Y": 1245.877888037389,
+                "seed": 447
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "2d5c3234-47fe-4c65-9f58-78322636c1df1716009864735",
+                "X": 2686.192220849655,
+                "Y": 1196.271189292216,
+                "seed": 928
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "1ea8a984-1528-4a0e-ac55-b73fd5517a0e1716010557719",
+                "X": 3039.9887289646526,
+                "Y": 1172.3719438060075,
+                "seed": 710
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "9095f0b0-51db-487c-a7f8-2427bfd9f4e81716010853008",
+                "X": 2884.8617663317873,
+                "Y": 1256.0268490571366,
+                "seed": 436
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "8d1e063f-890d-4675-86f9-f04c8a3d59351716011660518",
+                "X": 2853.7195179317077,
+                "Y": 886.6943612408472,
+                "seed": 288
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "dea24e1f-82af-4a79-88d3-4b12e8c575391716011720020",
+                "X": 2907.8522191102543,
+                "Y": 786.9472460446873,
+                "seed": 610
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "7af8c0a4-5d1c-4f9d-94cf-f49a252327ab1716011841144",
+                "X": 2807.7081459472524,
+                "Y": 793.7296119109128,
+                "seed": 838
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "7105a346-19ab-41c7-9904-9341f0ac59261716011885628",
+                "X": 2853.7195179317077,
+                "Y": 886.6943612408472,
+                "seed": 288
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "42841233-e782-4118-937e-2f96bb550a4b1716011981367",
+                "X": 2907.8522191102543,
+                "Y": 786.9472460446873,
+                "seed": 610
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "62bff7cd-4872-40a6-a65a-60a24c0821771716012070336",
+                "X": 2951.1512557332644,
+                "Y": 843.5109017127544,
+                "seed": 826
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "9c19198f-02a4-46b2-88e7-f51cf29878441716012293509",
+                "X": 2918.2222349964277,
+                "Y": 859.7006333810095,
+                "seed": 769
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "3c49334f-a131-4bff-b79a-b4e630961adf1716006135892",
+                "X": 3001.61047718992,
+                "Y": 1382.1172775640593,
+                "seed": 379
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "f1fc4e1b-9888-495c-9e12-3a564bdac4291716009666457",
+                "X": 2993.967973062664,
+                "Y": 1248.7155045025233,
+                "seed": 447
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "d534b923-b874-418b-8e35-583341de00e61716010424318",
+                "X": 2768.0576242576444,
+                "Y": 1136.5094653894237,
+                "seed": 477
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "e6289844-f8ba-4696-a041-075945e158af1716011477802",
+                "X": 2847.850949146656,
+                "Y": 882.0261815254656,
+                "seed": 610
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "7af8c0a4-5d1c-4f9d-94cf-f49a252327ab1716011832758",
+                "X": 2853.7195179317077,
+                "Y": 886.6943612408472,
+                "seed": 288
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "7105a346-19ab-41c7-9904-9341f0ac59261716011894053",
+                "X": 2807.7081459472524,
+                "Y": 793.7296119109128,
+                "seed": 838
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "eedfbfff-3774-4d08-a53f-7392728a19261716012273318",
+                "X": 2887.0734558175395,
+                "Y": 1082.1529698183595,
+                "seed": 585
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "367a9ca7-dacb-43de-8868-42f4beb439df1716006907755",
+                "X": 3067.8243894716807,
+                "Y": 1221.4811309082543,
+                "seed": 886
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "9095f0b0-51db-487c-a7f8-2427bfd9f4e81716010839423",
+                "X": 3140.4265666593565,
+                "Y": 1255.9853428318188,
+                "seed": 440
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "843bcbd6-2630-483c-bc65-b220a4eb16481716011866421",
+                "X": 2907.8522191102543,
+                "Y": 786.9472460446873,
+                "seed": 610
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "f1fc4e1b-9888-495c-9e12-3a564bdac4291716009687796",
+                "X": 3011.214586879605,
+                "Y": 1232.798108016536,
+                "seed": 447
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "62bff7cd-4872-40a6-a65a-60a24c0821771716012058759",
+                "X": 2876.237528695996,
+                "Y": 1020.1659752879908,
+                "seed": 604
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "castLocally": 1,
+            "data": {
+                "ItemId": "8d1e063f-890d-4675-86f9-f04c8a3d59351716011668933",
+                "X": 2807.7081459472524,
+                "Y": 793.7296119109128,
+                "seed": 838
+            },
+            "type": "PlaceItem",
+            "poolData": true,
+            "clientTime": null
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Idle-B"
+            },
+            "delayTimestamp": 1716012350092,
+            "clientTime": 1716012350228
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "15",
+                "type": "power",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012350432,
+            "clientTime": 1716012350569
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "MovePlayer",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "x": 3035.3547905681025,
+                "y": 1116.2740025868072,
+                "startX": 3285,
+                "startY": 1154
+            },
+            "delayTimestamp": 1716012351130,
+            "clientTime": 1716012351268
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Walking"
+            },
+            "delayTimestamp": 1716012351190,
+            "clientTime": 1716012351329
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012351449,
+            "clientTime": 1716012351589
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Idle-B"
+            },
+            "delayTimestamp": 1716012351808,
+            "clientTime": 1716012351949
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateCoordinates",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "x": 3027.8008101395353,
+                "y": 1101.9821863203554
+            },
+            "delayTimestamp": 1716012351880,
+            "clientTime": 1716012352022
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Standing"
+            },
+            "delayTimestamp": 1716012352097,
+            "clientTime": 1716012352240
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012352455,
+            "clientTime": 1716012352599
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "MovePlayer",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "seed": 813,
+                "x": 2825.4877249596357,
+                "y": 1005.0561241312535,
+                "startX": 3020.412011100318,
+                "startY": 1100.4878224697272
+            },
+            "delayTimestamp": 1716012353377,
+            "clientTime": 1716012353522
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012353547,
+            "clientTime": 1716012353693
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Walking"
+            },
+            "delayTimestamp": 1716012353453,
+            "clientTime": 1716012353600
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0,
+                "animation": "Drill"
+            },
+            "delayTimestamp": 1716012353959,
+            "clientTime": 1716012354107
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateCoordinates",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "x": 2814.9029659199605,
+                "y": 991.9170061480288
+            },
+            "delayTimestamp": 1716012354048,
+            "clientTime": 1716012354197
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012354554,
+            "clientTime": 1716012354704
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012355571,
+            "clientTime": 1716012355722
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "DrillStart",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "DrillSequence": "[\"{\\\"uid\\\":\\\"6ba802bc-8caa-408b-88e3-2c55e28bcfff\\\",\\\"seed\\\":813,\\\"x\\\":2825.4877249596357,\\\"y\\\":1005.0561241312535,\\\"startX\\\":3020.412011100318,\\\"startY\\\":1100.4878224697272,\\\"DrillState\\\":0,\\\"MoveState\\\":1,\\\"ts\\\":1716012353277}\",\"{\\\"DrillState\\\":1,\\\"ts\\\":1716012353903,\\\"DisplayEmoji\\\":1}\",\"{\\\"DrillState\\\":2,\\\"ts\\\":1716012353920}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2811.1799436601073,\\\"Y\\\":978.2742958412614,\\\"ts\\\":1716012355120}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2811.1799436601073,\\\"Y\\\":978.2742958412614,\\\"ts\\\":1716012355359}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2811.1799436601073,\\\"Y\\\":978.2742958412614,\\\"ts\\\":1716012355693}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2811.1799436601073,\\\"Y\\\":978.2742958412614,\\\"ts\\\":1716012355802}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2811.1799436601073,\\\"Y\\\":978.2742958412614,\\\"ts\\\":1716012355922}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2811.1799436601073,\\\"Y\\\":978.2742958412614,\\\"ts\\\":1716012356257}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2811.1799436601073,\\\"Y\\\":978.2742958412614,\\\"ts\\\":1716012356383}\",\"{\\\"uid\\\":\\\"6ba802bc-8caa-408b-88e3-2c55e28bcfff\\\",\\\"seed\\\":813,\\\"DrillState\\\":3,\\\"ts\\\":1716012356388}\"]"
+            },
+            "delayTimestamp": 1716012356488,
+            "clientTime": 1716012356640
+        },
+        {
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "seed": 813,
+                "DrillState": 3,
+                "ts": 1716012356388
+            },
+            "type": "DrillResult",
+            "castLocally": 1,
+            "clientTime": null
+        },
+        {
+            "data": {
+                "X": 2817.646961867251,
+                "Y": 1000.913834195654,
+                "ItemId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff1716012356577",
+                "seed": 415
+            },
+            "type": "DropRandomItem",
+            "castLocally": 1,
+            "clientTime": null
+        },
+        {
+            "data": {
+                "drillState": 0,
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff"
+            },
+            "type": "UpdateDrillState",
+            "castLocally": 1,
+            "clientTime": null
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012356613,
+            "clientTime": 1716012356769
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012357639,
+            "clientTime": 1716012357796
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Idle-B"
+            },
+            "delayTimestamp": 1716012357905,
+            "clientTime": 1716012358063
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Standing"
+            },
+            "delayTimestamp": 1716012358097,
+            "clientTime": 1716012358256
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "MovePlayer",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "seed": 231,
+                "x": 2718.1543740650422,
+                "y": 899.4313946374011,
+                "startX": 2801.646961867251,
+                "startY": 984.913834195654
+            },
+            "delayTimestamp": 1716012358369,
+            "clientTime": 1716012358529
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Walking"
+            },
+            "delayTimestamp": 1716012358428,
+            "clientTime": 1716012358589
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012358635,
+            "clientTime": 1716012358797
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0,
+                "animation": "Drill"
+            },
+            "delayTimestamp": 1716012358748,
+            "clientTime": 1716012358911
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateCoordinates",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "x": 2707.160003705947,
+                "y": 888.5371368711243
+            },
+            "delayTimestamp": 1716012358821,
+            "clientTime": 1716012358985
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012359638,
+            "clientTime": 1716012359803
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012360663,
+            "clientTime": 1716012360829
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "DrillStart",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "DrillSequence": "[\"{\\\"uid\\\":\\\"6ba802bc-8caa-408b-88e3-2c55e28bcfff\\\",\\\"seed\\\":231,\\\"x\\\":2718.1543740650422,\\\"y\\\":899.4313946374011,\\\"startX\\\":2801.646961867251,\\\"startY\\\":984.913834195654,\\\"DrillState\\\":0,\\\"MoveState\\\":1,\\\"ts\\\":1716012358269}\",\"{\\\"DrillState\\\":1,\\\"ts\\\":1716012358674}\",\"{\\\"DrillState\\\":1,\\\"ts\\\":1716012358686}\",\"{\\\"DrillState\\\":2,\\\"ts\\\":1716012358978}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2711.4426599382823,\\\"Y\\\":876.5422664449998,\\\"ts\\\":1716012360064}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2711.4426599382823,\\\"Y\\\":876.5422664449998,\\\"ts\\\":1716012360541}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2711.4426599382823,\\\"Y\\\":876.5422664449998,\\\"ts\\\":1716012360942}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2711.4426599382823,\\\"Y\\\":876.5422664449998,\\\"ts\\\":1716012361277}\",\"{\\\"uid\\\":\\\"6ba802bc-8caa-408b-88e3-2c55e28bcfff\\\",\\\"seed\\\":231,\\\"DrillState\\\":3,\\\"ts\\\":1716012361368}\"]"
+            },
+            "delayTimestamp": 1716012361468,
+            "clientTime": 1716012361635
+        },
+        {
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "seed": 231,
+                "DrillState": 3,
+                "ts": 1716012361368
+            },
+            "type": "DrillResult",
+            "castLocally": 1,
+            "clientTime": null
+        },
+        {
+            "data": {
+                "drillState": 0,
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff"
+            },
+            "type": "UpdateDrillState",
+            "castLocally": 1,
+            "clientTime": null
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012361675,
+            "clientTime": 1716012361845
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012362695,
+            "clientTime": 1716012362866
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Idle-B"
+            },
+            "delayTimestamp": 1716012362806,
+            "clientTime": 1716012362978
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012363734,
+            "clientTime": 1716012363907
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "MovePlayer",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "x": 2582.599758734422,
+                "y": 1015.5881325279765,
+                "startX": 2701.909678145426,
+                "startY": 883.1818047993924
+            },
+            "delayTimestamp": 1716012363602,
+            "clientTime": 1716012363776
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Walking"
+            },
+            "delayTimestamp": 1716012363660,
+            "clientTime": 1716012363835
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Idle-B"
+            },
+            "delayTimestamp": 1716012364066,
+            "clientTime": 1716012364242
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Standing"
+            },
+            "delayTimestamp": 1716012364093,
+            "clientTime": 1716012364270
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateCoordinates",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "x": 2571.174610107839,
+                "y": 995.6524148023166
+            },
+            "delayTimestamp": 1716012364140,
+            "clientTime": 1716012364318
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012364752,
+            "clientTime": 1716012364931
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "MovePlayer",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "seed": 483,
+                "x": 2560.612888579024,
+                "y": 1032.4476151489864,
+                "startX": 2565.5063320174877,
+                "startY": 1000.528801100633
+            },
+            "delayTimestamp": 1716012364700,
+            "clientTime": 1716012364880
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0,
+                "animation": "Walking"
+            },
+            "delayTimestamp": 1716012364753,
+            "clientTime": 1716012364934
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0,
+                "animation": "Drill"
+            },
+            "delayTimestamp": 1716012364832,
+            "clientTime": 1716012365014
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateCoordinates",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "x": 2547.593726712972,
+                "y": 1014.1765003802642
+            },
+            "delayTimestamp": 1716012364903,
+            "clientTime": 1716012365086
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012365766,
+            "clientTime": 1716012365950
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012366797,
+            "clientTime": 1716012366982
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012367799,
+            "clientTime": 1716012367985
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012368820,
+            "clientTime": 1716012369007
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012369837,
+            "clientTime": 1716012370025
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "DrillStart",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "DrillSequence": "[\"{\\\"uid\\\":\\\"6ba802bc-8caa-408b-88e3-2c55e28bcfff\\\",\\\"seed\\\":483,\\\"x\\\":2560.612888579024,\\\"y\\\":1032.4476151489864,\\\"startX\\\":2565.5063320174877,\\\"startY\\\":1000.528801100633,\\\"DrillState\\\":0,\\\"MoveState\\\":1,\\\"ts\\\":1716012364600}\",\"{\\\"DrillState\\\":1,\\\"ts\\\":1716012364719,\\\"DisplayEmoji\\\":1}\",\"{\\\"DrillState\\\":1,\\\"ts\\\":1716012364730}\",\"{\\\"DrillState\\\":2,\\\"ts\\\":1716012364830}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2551.154408293895,\\\"Y\\\":1012.0872859968679,\\\"ts\\\":1716012365962}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2551.154408293895,\\\"Y\\\":1012.0872859968679,\\\"ts\\\":1716012366088}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2551.154408293895,\\\"Y\\\":1012.0872859968679,\\\"ts\\\":1716012366439}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2551.154408293895,\\\"Y\\\":1012.0872859968679,\\\"ts\\\":1716012366679}\",\"{\\\"DrillState\\\":0,\\\"DisplayEmoji\\\":2,\\\"ts\\\":1716012366882}\",\"{\\\"DrillState\\\":1,\\\"ts\\\":1716012368208}\",\"{\\\"DrillState\\\":2,\\\"ts\\\":1716012368227}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2551.154408293895,\\\"Y\\\":1012.0872859968679,\\\"ts\\\":1716012369496}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2551.154408293895,\\\"Y\\\":1012.0872859968679,\\\"ts\\\":1716012369745}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2551.154408293895,\\\"Y\\\":1012.0872859968679,\\\"ts\\\":1716012369876}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2551.154408293895,\\\"Y\\\":1012.0872859968679,\\\"ts\\\":1716012370107}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2551.154408293895,\\\"Y\\\":1012.0872859968679,\\\"ts\\\":1716012370230}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2551.154408293895,\\\"Y\\\":1012.0872859968679,\\\"ts\\\":1716012370343}\",\"{\\\"StoneShower\\\":1,\\\"X\\\":2551.154408293895,\\\"Y\\\":1012.0872859968679,\\\"ts\\\":1716012370592}\",\"{\\\"uid\\\":\\\"6ba802bc-8caa-408b-88e3-2c55e28bcfff\\\",\\\"seed\\\":483,\\\"DrillState\\\":3,\\\"ts\\\":1716012370677}\"]"
+            },
+            "delayTimestamp": 1716012370778,
+            "clientTime": 1716012370967
+        },
+        {
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "seed": 483,
+                "DrillState": 3,
+                "ts": 1716012370677
+            },
+            "type": "DrillResult",
+            "castLocally": 1,
+            "clientTime": null
+        },
+        {
+            "data": {
+                "X": 2557.6214265010385,
+                "Y": 1034.7268243512606,
+                "ItemId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff1716012370872",
+                "seed": 832
+            },
+            "type": "DropRandomItem",
+            "castLocally": 1,
+            "clientTime": null
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012370859,
+            "clientTime": 1716012371051
+        },
+        {
+            "data": {
+                "drillState": 0,
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff"
+            },
+            "type": "UpdateDrillState",
+            "castLocally": 1,
+            "clientTime": null
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 1,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012371881,
+            "clientTime": 1716012372075
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Idle-A"
+            },
+            "delayTimestamp": 1716012372122,
+            "clientTime": 1716012372317
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "MovePlayer",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "x": 2628.2611638406065,
+                "y": 1141.1838932996238,
+                "startX": 2541.6214265010385,
+                "startY": 1018.7268243512606
+            },
+            "delayTimestamp": 1716012372661,
+            "clientTime": 1716012372857
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Walking"
+            },
+            "delayTimestamp": 1716012372712,
+            "clientTime": 1716012372909
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012372883,
+            "clientTime": 1716012373081
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Idle-A"
+            },
+            "delayTimestamp": 1716012372994,
+            "clientTime": 1716012373193
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateCoordinates",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "x": 2607.9418617950632,
+                "y": 1118.6745226112696
+            },
+            "delayTimestamp": 1716012373069,
+            "clientTime": 1716012373269
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012373893,
+            "clientTime": 1716012374094
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Idle-B"
+            },
+            "delayTimestamp": 1716012374096,
+            "clientTime": 1716012374298
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012374939,
+            "clientTime": 1716012375142
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012375988,
+            "clientTime": 1716012376192
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Standing"
+            },
+            "delayTimestamp": 1716012376101,
+            "clientTime": 1716012376306
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012377000,
+            "clientTime": 1716012377206
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012378011,
+            "clientTime": 1716012378218
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "UpdateAnimationState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0,
+                "animation": "Idle-A"
+            },
+            "delayTimestamp": 1716012378087,
+            "clientTime": 1716012378295
+        },
+        {
+            "peerId": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+            "type": "SynchronizePlayerState",
+            "data": {
+                "uid": "6ba802bc-8caa-408b-88e3-2c55e28bcfff",
+                "lvl": 194,
+                "hp": 6240,
+                "mp": 1341,
+                "pet": "pet_boxer_lina",
+                "baseStats": "{\"Gun AP\":0,\"AP\":1102,\"AC\":115.5,\"DX\":-4.923076923076923,\"MP\":1490,\"MA\":62,\"MD\":204,\"WT\":4960,\"DA\":12,\"LK\":11,\"HP\":7053,\"DP\":1022,\"HV\":47.5}",
+                "weightPercent": "4",
+                "type": "power",
+                "restState": 0,
+                "drillState": 0,
+                "gunState": 0
+            },
+            "delayTimestamp": 1716012379039,
+            "clientTime": 1716012379248
+        }
+    ]
+}

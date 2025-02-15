@@ -1,0 +1,40 @@
+{
+    "SandCityMapLayout": [
+        {
+            "name": "compound-waste",
+            "dropChance": 0.5
+        },
+        {
+            "name": "tanning-oil",
+            "dropChance": 0.4
+        },
+        {
+            "name": "shtellas-profile",
+            "dropChance": 0.1
+        }
+    ],
+    "SwampMapLayout": [
+        {
+            "name": "tangerine",
+            "dropChance": 0.1
+        }
+    ],
+    "TutorialMapLayout": [
+        {
+            "name": "torobbie-card",
+            "dropChance": 0.3
+        },
+        {
+            "name": "baby-carrot",
+            "dropChance": 0.2
+        },
+        {
+            "name": "compound-waste",
+            "dropChance": 0.1
+        },
+        {
+            "name": "shtellas-profile",
+            "dropChance": 0.4
+        }
+    ]
+}
