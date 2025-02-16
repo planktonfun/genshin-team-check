@@ -3118,14 +3118,15 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__CrazyGamesAdApi__GetUs
 }
 
 
-};gdjs.CharacterCreationCode.eventsList61 = function(runtimeScene) {
+};gdjs.CharacterCreationCode.eventsList61 = function(runtimeScene, asyncObjectsList) {
 
 {
 
 
 let isConditionTrue_0 = false;
 {
-{gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveUserCards.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtTools.storage.writeStringInJSONFile("localSession", "guestLogin", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)));
+}{gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveUserCards.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__InterfaceFunctions__SetTransparentTextMessageWithTimeout.func(runtimeScene, "Logging in...", 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__Observers__NotifyString.func(runtimeScene, "logging in", "loading-start", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtTools.camera.hideLayer(runtimeScene, "");
@@ -3134,34 +3135,40 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.CharacterCreationCode.eventsList62 = function(runtimeScene) {
+};gdjs.CharacterCreationCode.eventsList62 = function(runtimeScene, asyncObjectsList) {
 
 {
 
 
 let isConditionTrue_0 = false;
 {
-{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("UserRetrieved"), false);
-}{runtimeScene.getGame().getVariables().getFromIndex(19).setString(/* Error during generation, function not found: Text */ "");
-}{gdjs.evtTools.debuggerTools.log("logging in as " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(19))), "", "Login C");
+{runtimeScene.getGame().getVariables().getFromIndex(19).setString(gdjs.evtsExt__CrazyGamesAdApi__GetUserId.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}{/* Unknown object - skipped. */}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("UserRetrieved"), false);
+}{gdjs.evtTools.debuggerTools.log("logging in as " + gdjs.evtsExt__CrazyGamesAdApi__GetUserId.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "", "Login A");
 }
 { //Subevents
-gdjs.CharacterCreationCode.eventsList61(runtimeScene);} //End of subevents
+gdjs.CharacterCreationCode.eventsList61(runtimeScene, asyncObjectsList);} //End of subevents
 }
 
 }
 
 
-};gdjs.CharacterCreationCode.eventsList63 = function(runtimeScene) {
+};gdjs.CharacterCreationCode.asyncCallback57935628 = function (runtimeScene, asyncObjectsList) {
+
+{ //Subevents
+gdjs.CharacterCreationCode.eventsList62(runtimeScene, asyncObjectsList);} //End of subevents
+}
+gdjs.CharacterCreationCode.eventsList63 = function(runtimeScene, asyncObjectsList) {
 
 {
 
 
-let isConditionTrue_0 = false;
 {
-{/* Unknown object - skipped. */}
-{ //Subevents
-gdjs.CharacterCreationCode.eventsList62(runtimeScene);} //End of subevents
+const parentAsyncObjectsList = asyncObjectsList;
+{
+const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback57935628(runtimeScene, asyncObjectsList)));
+}
 }
 
 }
@@ -3191,7 +3198,8 @@ let isConditionTrue_0 = false;
 let isConditionTrue_0 = false;
 {
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("UserRetrieved"), false);
-}{runtimeScene.getGame().getVariables().getFromIndex(19).setString(gdjs.evtsExt__CrazyGamesAdApi__GetUserId.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}{runtimeScene.getGame().getVariables().getFromIndex(19).setString(/* Error during generation, function not found: Text */ "");
+}{gdjs.evtTools.debuggerTools.log("logging in as " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(19))), "", "Login C");
 }
 { //Subevents
 gdjs.CharacterCreationCode.eventsList64(runtimeScene, asyncObjectsList);} //End of subevents
@@ -3200,12 +3208,44 @@ gdjs.CharacterCreationCode.eventsList64(runtimeScene, asyncObjectsList);} //End 
 }
 
 
-};gdjs.CharacterCreationCode.asyncCallback14513556 = function (runtimeScene, asyncObjectsList) {
+};gdjs.CharacterCreationCode.eventsList66 = function(runtimeScene, asyncObjectsList) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.CharacterCreationCode.eventsList63(runtimeScene, asyncObjectsList);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+if (isConditionTrue_0) {
 {/* Unknown object - skipped. */}
 { //Subevents
 gdjs.CharacterCreationCode.eventsList65(runtimeScene, asyncObjectsList);} //End of subevents
 }
-gdjs.CharacterCreationCode.eventsList66 = function(runtimeScene) {
+
+}
+
+
+};gdjs.CharacterCreationCode.asyncCallback51646836 = function (runtimeScene, asyncObjectsList) {
+
+{ //Subevents
+gdjs.CharacterCreationCode.eventsList66(runtimeScene, asyncObjectsList);} //End of subevents
+}
+gdjs.CharacterCreationCode.eventsList67 = function(runtimeScene) {
 
 {
 
@@ -3213,14 +3253,14 @@ gdjs.CharacterCreationCode.eventsList66 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback14513556(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__CrazyGamesAdApi__GetUserSignIn.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback51646836(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.CharacterCreationCode.eventsList67 = function(runtimeScene) {
+};gdjs.CharacterCreationCode.eventsList68 = function(runtimeScene) {
 
 {
 
@@ -3246,7 +3286,7 @@ isConditionTrue_0 = gdjs.evtsExt__Observers__NotifiedEvent.func(runtimeScene, (t
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.CharacterCreationCode.eventsList63(runtimeScene);} //End of subevents
+gdjs.CharacterCreationCode.eventsList67(runtimeScene);} //End of subevents
 }
 
 }
@@ -3267,14 +3307,6 @@ if (isConditionTrue_0) {
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__Observers__NotifiedEvent.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) == "crazygame-login-is-pressed";
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.CharacterCreationCode.eventsList66(runtimeScene);} //End of subevents
-}
 
 }
 
@@ -3344,7 +3376,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.CharacterCreationCode.eventsList68 = function(runtimeScene) {
+};gdjs.CharacterCreationCode.eventsList69 = function(runtimeScene) {
 
 {
 
@@ -3718,7 +3750,7 @@ let isConditionTrue_0 = false;
 if (true) {
 
 { //Subevents: 
-gdjs.CharacterCreationCode.eventsList67(runtimeScene);} //Subevents end.
+gdjs.CharacterCreationCode.eventsList68(runtimeScene);} //Subevents end.
 }
 } else stopDoWhile_0 = true; 
 } while (!stopDoWhile_0);
@@ -4012,7 +4044,7 @@ gdjs.CharacterCreationCode.GDAnnouncementIconObjects5.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementIconObjects6.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementIconObjects7.length = 0;
 
-gdjs.CharacterCreationCode.eventsList68(runtimeScene);
+gdjs.CharacterCreationCode.eventsList69(runtimeScene);
 
 return;
 
