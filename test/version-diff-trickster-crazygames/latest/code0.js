@@ -1010,7 +1010,7 @@ gdjs.LoginCode.GDAnnouncementIconObjects26= [];
 gdjs.LoginCode.GDAnnouncementIconObjects27= [];
 
 
-gdjs.LoginCode.userFunc0x4e2cb70 = function(runtimeScene) {
+gdjs.LoginCode.userFunc0x509c9a0 = function(runtimeScene) {
 "use strict";
 window.runtimeScene=runtimeScene;
 };
@@ -1019,12 +1019,12 @@ gdjs.LoginCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.LoginCode.userFunc0x4e2cb70(runtimeScene);
+gdjs.LoginCode.userFunc0x509c9a0(runtimeScene);
 
 }
 
 
-};gdjs.LoginCode.userFunc0x4f42150 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x4f4f768 = function(runtimeScene) {
 "use strict";
 window.addEventListener("keydown", function (event) {
     // Check if Page Down (key code 34) is pressed
@@ -1052,7 +1052,7 @@ gdjs.LoginCode.eventsList1 = function(runtimeScene) {
 }
 
 
-};gdjs.LoginCode.userFunc0x529f0d0 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x1512c78 = function(runtimeScene) {
 "use strict";
 var a = {
         "GlobalVariables": {
@@ -1177,7 +1177,7 @@ gdjs.LoginCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.LoginCode.userFunc0x4f42150(runtimeScene);
+gdjs.LoginCode.userFunc0x4f4f768(runtimeScene);
 
 }
 
@@ -1301,7 +1301,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.LoginCode.userFunc0x529f0d0(runtimeScene);
+gdjs.LoginCode.userFunc0x1512c78(runtimeScene);
 
 }
 
@@ -1313,7 +1313,7 @@ gdjs.LoginCode.userFunc0x529f0d0(runtimeScene);
 }
 
 
-};gdjs.LoginCode.userFunc0x1d360e8 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x4117b30 = function(runtimeScene) {
 "use strict";
 console.time('test load speed')
 };
@@ -2453,7 +2453,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddIm
 {
 
 
-gdjs.LoginCode.userFunc0x1d360e8(runtimeScene);
+gdjs.LoginCode.userFunc0x4117b30(runtimeScene);
 
 }
 
@@ -2556,7 +2556,7 @@ gdjs.LoginCode.eventsList57(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.LoginCode.userFunc0x3ecc840 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x313c1d0 = function(runtimeScene) {
 "use strict";
 console.timeEnd('test load speed')
 };
@@ -2565,7 +2565,7 @@ gdjs.LoginCode.eventsList59 = function(runtimeScene) {
 {
 
 
-gdjs.LoginCode.userFunc0x3ecc840(runtimeScene);
+gdjs.LoginCode.userFunc0x313c1d0(runtimeScene);
 
 }
 
@@ -4783,11 +4783,9 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__CrazyGamesAdApi__LoadS
 
 let isConditionTrue_0 = false;
 {
-{gdjs.evtTools.storage.writeStringInJSONFile("localSession", "guestLogin", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)));
-}{gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveUserCards.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveUserCards.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__InterfaceFunctions__SetTransparentTextMessageWithTimeout.func(runtimeScene, "Logging in...", 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__Observers__NotifyString.func(runtimeScene, "logging in", "loading-start", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{gdjs.evtTools.camera.hideLayer(runtimeScene, "");
 }}
 
 }
@@ -4847,7 +4845,6 @@ let isConditionTrue_0 = false;
 }{gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveUserCards.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__InterfaceFunctions__SetTransparentTextMessageWithTimeout.func(runtimeScene, "Logging in...", 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__Observers__NotifyString.func(runtimeScene, "logging in", "loading-start", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{gdjs.evtTools.camera.hideLayer(runtimeScene, "");
 }}
 
 }
@@ -4884,7 +4881,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 if (isConditionTrue_0) {
-
+{gdjs.evtsExt__InterfaceFunctions__SetTransparentTextMessageWithTimeout.func(runtimeScene, "Retrieving data...", 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
 { //Subevents
 gdjs.LoginCode.eventsList98(runtimeScene, asyncObjectsList);} //End of subevents
 }
@@ -4934,11 +4932,9 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__CrazyGamesAdApi__GetUs
 
 let isConditionTrue_0 = false;
 {
-{gdjs.evtTools.storage.writeStringInJSONFile("localSession", "guestLogin", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)));
-}{gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveUserCards.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+{gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveUserCards.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__InterfaceFunctions__SetTransparentTextMessageWithTimeout.func(runtimeScene, "Logging in...", 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__Observers__NotifyString.func(runtimeScene, "logging in", "loading-start", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{gdjs.evtTools.camera.hideLayer(runtimeScene, "");
 }}
 
 }
@@ -4997,7 +4993,6 @@ let isConditionTrue_0 = false;
 {gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveUserCards.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__InterfaceFunctions__SetTransparentTextMessageWithTimeout.func(runtimeScene, "Logging in...", 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }{gdjs.evtsExt__Observers__NotifyString.func(runtimeScene, "logging in", "loading-start", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-}{gdjs.evtTools.camera.hideLayer(runtimeScene, "");
 }}
 
 }
@@ -5031,7 +5026,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 if (isConditionTrue_0) {
-
+{gdjs.evtsExt__InterfaceFunctions__SetTransparentTextMessageWithTimeout.func(runtimeScene, "Retrieving data...", 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
 { //Subevents
 gdjs.LoginCode.eventsList105(runtimeScene, asyncObjectsList);} //End of subevents
 }
@@ -5087,7 +5083,9 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Observers__NotifiedEvent.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) == "login-as-guest";
 if (isConditionTrue_0) {
-
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "");
+}{gdjs.evtsExt__InterfaceFunctions__SetTransparentTextMessageWithTimeout.func(runtimeScene, "Signing in...", 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
 { //Subevents
 gdjs.LoginCode.eventsList102(runtimeScene);} //End of subevents
 }
@@ -5102,7 +5100,9 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Observers__NotifiedEvent.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) == "login-as-user";
 if (isConditionTrue_0) {
-
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "");
+}{gdjs.evtsExt__InterfaceFunctions__SetTransparentTextMessageWithTimeout.func(runtimeScene, "Signing in...", 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
 { //Subevents
 gdjs.LoginCode.eventsList109(runtimeScene);} //End of subevents
 }
