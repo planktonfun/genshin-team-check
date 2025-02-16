@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__SetLoadingStopped !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__SetLoadingStopped = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__SetLoadingStopped.userFunc0x5293ca8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__SetLoadingStopped.userFunc0x2b15218 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 CrazyGames.SDK.game.loadingStop();
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__CrazyGamesAdApi__SetLoadingStopped.eventsList0 = function(runtimeS
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__SetLoadingStopped.userFunc0x5293ca8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__SetLoadingStopped.userFunc0x2b15218(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

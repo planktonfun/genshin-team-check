@@ -1,48 +1,30 @@
 
-if (typeof gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped !== "undefined") {
-  gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped.registeredGdjsCallbacks.forEach(callback =>
+if (typeof gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn !== "undefined") {
+  gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.registeredGdjsCallbacks.forEach(callback =>
     gdjs._unregisterCallback(callback)
   );
 }
 
-gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped = {};
+gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped.userFunc0x54e5698 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.userFunc0x11a44e0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
-CrazyGames.SDK.game.gameplayStop();
-
+eventsFunctionContext.returnValue = gdjs._crazyGamesExtension.userSignedIn;
 };
-gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped.eventsList0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped.userFunc0x54e5698(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
-
-}
-
-
-};gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped.eventsList1 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__CrazyGamesAdApi__IsSDKLoaded.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
-}
+gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.userFunc0x11a44e0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
 
 };
 
-gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped.func = function(runtimeScene, parentEventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.func = function(runtimeScene, parentEventsFunctionContext) {
 var eventsFunctionContext = {
   _objectsMap: {
 },
@@ -93,9 +75,9 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
 };
 
 
-gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped.eventsList1(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.eventsList0(runtimeScene, eventsFunctionContext);
 
-return;
+return !!eventsFunctionContext.returnValue;
 }
 
-gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped.registeredGdjsCallbacks = [];
+gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.registeredGdjsCallbacks = [];

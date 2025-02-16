@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ModifiedLoadImageFromURL__onScenePostEvents !== "undefi
 gdjs.evtsExt__ModifiedLoadImageFromURL__onScenePostEvents = {};
 
 
-gdjs.evtsExt__ModifiedLoadImageFromURL__onScenePostEvents.userFunc0x1bbcb98 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ModifiedLoadImageFromURL__onScenePostEvents.userFunc0x111e260 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(!window.imgLoaders) window.imgLoaders = [];
 
@@ -22,7 +22,7 @@ gdjs.evtsExt__ModifiedLoadImageFromURL__onScenePostEvents.eventsList0 = function
 {
 
 
-gdjs.evtsExt__ModifiedLoadImageFromURL__onScenePostEvents.userFunc0x1bbcb98(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ModifiedLoadImageFromURL__onScenePostEvents.userFunc0x111e260(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

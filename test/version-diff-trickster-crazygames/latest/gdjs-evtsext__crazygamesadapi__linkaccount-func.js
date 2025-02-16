@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__LinkAccount !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__LinkAccount = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__LinkAccount.userFunc0x3835ed8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__LinkAccount.userFunc0x310d838 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 async function linkAccount() {
     try {
@@ -27,7 +27,7 @@ gdjs.evtsExt__CrazyGamesAdApi__LinkAccount.eventsList0 = function(runtimeScene, 
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__LinkAccount.userFunc0x3835ed8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__LinkAccount.userFunc0x310d838(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

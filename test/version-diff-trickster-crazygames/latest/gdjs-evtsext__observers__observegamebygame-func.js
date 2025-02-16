@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Observers__ObserveGameByGame !== "undefined") {
 gdjs.evtsExt__Observers__ObserveGameByGame = {};
 
 
-gdjs.evtsExt__Observers__ObserveGameByGame.userFunc0x37f7d38 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Observers__ObserveGameByGame.userFunc0x10c7190 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs.__observers._subject.addObserver(gdjs.__observers._observer);
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__Observers__ObserveGameByGame.eventsList0 = function(runtimeScene, 
 {
 
 
-gdjs.evtsExt__Observers__ObserveGameByGame.userFunc0x37f7d38(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__ObserveGameByGame.userFunc0x10c7190(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

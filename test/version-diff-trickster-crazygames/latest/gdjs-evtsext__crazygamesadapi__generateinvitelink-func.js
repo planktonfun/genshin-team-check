@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__GenerateInviteLink !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__GenerateInviteLink = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GenerateInviteLink.userFunc0x3518998 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__GenerateInviteLink.userFunc0x10ce7e0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const roomId = eventsFunctionContext.getArgument("RoomId");
 
@@ -28,7 +28,7 @@ gdjs.evtsExt__CrazyGamesAdApi__GenerateInviteLink.eventsList0 = function(runtime
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GenerateInviteLink.userFunc0x3518998(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__GenerateInviteLink.userFunc0x10ce7e0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

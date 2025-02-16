@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.userFunc0x3835ed8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.userFunc0x310d838 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
      
       function isTokenExpired(token) {
@@ -117,7 +117,7 @@ gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.eventsList0 = function(runtimeScen
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.userFunc0x3835ed8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.userFunc0x310d838(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

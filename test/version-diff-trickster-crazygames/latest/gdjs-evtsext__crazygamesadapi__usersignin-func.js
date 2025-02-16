@@ -8,8 +8,9 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__UserSignIn !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__UserSignIn = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x3835ed8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x50a0650 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
+      console.log("Retrieving user start");
       async function authenticate() {
         const isAvailable = CrazyGames.SDK.user.isUserAccountAvailable;
         console.log("User account system available:", isAvailable);
@@ -26,6 +27,7 @@ gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x3835ed8 = function(runtimeSc
                 gdjs._crazyGamesExtension.profilePictureUrl = user.profilePictureUrl;
 
                 eventsFunctionContext.task.resolve();
+                console.log("Retrieving user done" + gdjs._crazyGamesExtension.userId);
             } else {
                 console.log("No user is signed in.");
                 // Optionally, prompt the user to sign in
@@ -35,6 +37,7 @@ gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x3835ed8 = function(runtimeSc
         } catch (error) {
             console.error("Error retrieving user info:", error);
             eventsFunctionContext.task.resolve();
+            console.log("Retrieving user done");
         }
       }
       
@@ -130,7 +133,7 @@ gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.eventsList0 = function(runtimeScene, e
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x3835ed8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x50a0650(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__ParseDialogDescriptions !== "undefi
 gdjs.evtsExt__InterfaceFunctions__ParseDialogDescriptions = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__ParseDialogDescriptions.userFunc0x320e010 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__ParseDialogDescriptions.userFunc0x3121db8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const description = eventsFunctionContext.getArgument("Description").toString();
 
@@ -33,7 +33,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__ParseDialogDescriptions.userFunc0x320e010(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__ParseDialogDescriptions.userFunc0x3121db8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

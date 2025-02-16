@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForMobs !== "
 gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForMobs = {};
 
 
-gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForMobs.userFunc0x352a4b0 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForMobs.userFunc0x323b488 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const resourceName = eventsFunctionContext.getArgument('Image_Resource');
 const jsonResource = runtimeScene.getGame().getJsonManager().getLoadedJson(eventsFunctionContext.getArgument("JSON_Resource"));
@@ -157,7 +157,7 @@ gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForMobs.eventsList0 = fu
 
 
 var objects = [];
-gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForMobs.userFunc0x352a4b0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForMobs.userFunc0x323b488(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__HideBanner !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__HideBanner = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__HideBanner.userFunc0x3835ed8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__HideBanner.userFunc0x315ff40 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const bannerName = eventsFunctionContext.getArgument("BannerName");
 CrazyGames.SDK.banner.clearBanner(bannerName);
@@ -19,7 +19,7 @@ gdjs.evtsExt__CrazyGamesAdApi__HideBanner.eventsList0 = function(runtimeScene, e
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__HideBanner.userFunc0x3835ed8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__HideBanner.userFunc0x315ff40(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
