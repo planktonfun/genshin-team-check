@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.userFunc0x8b9040 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.userFunc0x3835ed8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
      
       function isTokenExpired(token) {
@@ -117,7 +117,24 @@ gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.eventsList0 = function(runtimeScen
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.userFunc0x8b9040(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.userFunc0x3835ed8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+
+}
+
+
+};gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.eventsList1 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__CrazyGamesAdApi__IsSDKLoaded.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+}
 
 }
 
@@ -176,7 +193,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
 };
 
 
-gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.eventsList1(runtimeScene, eventsFunctionContext);
 
 return eventsFunctionContext.task
 }

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__GetNPCDialogBranch !== "undefined")
 gdjs.evtsExt__InterfaceFunctions__GetNPCDialogBranch = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__GetNPCDialogBranch.userFunc0xeacb78 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__GetNPCDialogBranch.userFunc0x320e010 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const area = eventsFunctionContext.getArgument('Area');
 const npc = eventsFunctionContext.getArgument('NpcName');
@@ -77,7 +77,7 @@ gdjs.evtsExt__InterfaceFunctions__GetNPCDialogBranch.eventsList0 = function(runt
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__GetNPCDialogBranch.userFunc0xeacb78(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__GetNPCDialogBranch.userFunc0x320e010(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

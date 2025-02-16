@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Observers__InitializeVariables !== "undefined") {
 gdjs.evtsExt__Observers__InitializeVariables = {};
 
 
-gdjs.evtsExt__Observers__InitializeVariables.userFunc0x3833000 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Observers__InitializeVariables.userFunc0x51794f0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(gdjs.__observers) {
     return;
@@ -61,7 +61,9 @@ class Subject {
   }
 
   addObserver(observer) {
-    this.observers.push(observer);
+    if (!this.observers.includes(observer)) { // Prevent duplicates
+      this.observers.push(observer);
+    }
   }
 
   removeObserver(observer) {
@@ -82,7 +84,7 @@ gdjs.evtsExt__Observers__InitializeVariables.eventsList0 = function(runtimeScene
 {
 
 
-gdjs.evtsExt__Observers__InitializeVariables.userFunc0x3833000(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__InitializeVariables.userFunc0x51794f0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -8,11 +8,11 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__LoadSDK !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__LoadSDK = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.userFunc0x3721628 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.userFunc0x3737838 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const logger = new gdjs.Logger("CrazyGames SDK");
 
-if(!window['CrazyGamesSingleton']) {
+if (!window['CrazyGamesSingleton']) {
     window.CrazyGamesSingleton = (function () {
         let isInitializing = false;
         let isInitialized = false;
@@ -32,6 +32,9 @@ if(!window['CrazyGamesSingleton']) {
             initPromise = new Promise(async (resolve, reject) => {
                 try {
                     await CrazyGames.SDK.init();
+                    if (CrazyGames.SDK.environment == 'disabled') {
+                        throw new Error('not in local or crazy game environment');
+                    }
                     console.log("CrazyGames SDK initialized successfully.");
                     isInitialized = true;
                     resolve();
@@ -48,9 +51,7 @@ if(!window['CrazyGamesSingleton']) {
 
         return { initialize };
     })();
-
 }
-
 
 // Function to check if CrazyGames SDK is already loaded
 function isCrazyGamesLoaded() {
@@ -74,23 +75,31 @@ async function initializeGame() {
     eventsFunctionContext.task.resolve();
 }
 
-// Check if SDK is already loaded
-function isCrazyGamesLoaded() {
-    return window.CrazyGames && window.CrazyGames.SDK;
-}
-
 // Load SDK only if it's missing
 if (!isCrazyGamesLoaded()) {
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://sdk.crazygames.com/crazygames-sdk-v3.js';
-    scriptElement.onload = () => {
+    
+    scriptElement.onload = async () => {
         console.log("CrazyGames SDK script loaded.");
-        CrazyGamesSingleton.initialize().then(initializeGame);
+        await CrazyGamesSingleton.initialize();
+        if (CrazyGames.SDK.environment != 'disabled') {
+            initializeGame();
+        }
+        eventsFunctionContext.task.resolve();
     };
+
     document.body.appendChild(scriptElement);
 } else {
     console.log("CrazyGames SDK already loaded.");
-    CrazyGamesSingleton.initialize().then(initializeGame);
+    
+    (async function () {
+        await CrazyGamesSingleton.initialize();
+        if (CrazyGames.SDK.environment != 'disabled') {
+            initializeGame();
+        }
+        eventsFunctionContext.task.resolve();
+    })();
 }
 };
 gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -98,7 +107,7 @@ gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.eventsList0 = function(runtimeScene, even
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.userFunc0x3721628(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.userFunc0x3737838(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

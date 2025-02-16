@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Observers__SubjectId !== "undefined") {
 gdjs.evtsExt__Observers__SubjectId = {};
 
 
-gdjs.evtsExt__Observers__SubjectId.userFunc0x37512d0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Observers__SubjectId.userFunc0x51794f0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = gdjs.__observers._observer.data.SubjectId;
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__Observers__SubjectId.eventsList0 = function(runtimeScene, eventsFu
 {
 
 
-gdjs.evtsExt__Observers__SubjectId.userFunc0x37512d0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__SubjectId.userFunc0x51794f0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

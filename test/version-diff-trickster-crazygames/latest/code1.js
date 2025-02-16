@@ -38,201 +38,241 @@ gdjs.CharacterCreationCode.GDGuideObjects2= [];
 gdjs.CharacterCreationCode.GDGuideObjects3= [];
 gdjs.CharacterCreationCode.GDGuideObjects4= [];
 gdjs.CharacterCreationCode.GDGuideObjects5= [];
+gdjs.CharacterCreationCode.GDGuideObjects6= [];
 gdjs.CharacterCreationCode.GDleftObjects1= [];
 gdjs.CharacterCreationCode.GDleftObjects2= [];
 gdjs.CharacterCreationCode.GDleftObjects3= [];
 gdjs.CharacterCreationCode.GDleftObjects4= [];
 gdjs.CharacterCreationCode.GDleftObjects5= [];
+gdjs.CharacterCreationCode.GDleftObjects6= [];
 gdjs.CharacterCreationCode.GDleftupObjects1= [];
 gdjs.CharacterCreationCode.GDleftupObjects2= [];
 gdjs.CharacterCreationCode.GDleftupObjects3= [];
 gdjs.CharacterCreationCode.GDleftupObjects4= [];
 gdjs.CharacterCreationCode.GDleftupObjects5= [];
+gdjs.CharacterCreationCode.GDleftupObjects6= [];
 gdjs.CharacterCreationCode.GDmiddleObjects1= [];
 gdjs.CharacterCreationCode.GDmiddleObjects2= [];
 gdjs.CharacterCreationCode.GDmiddleObjects3= [];
 gdjs.CharacterCreationCode.GDmiddleObjects4= [];
 gdjs.CharacterCreationCode.GDmiddleObjects5= [];
+gdjs.CharacterCreationCode.GDmiddleObjects6= [];
 gdjs.CharacterCreationCode.GDlowerLeftObjects1= [];
 gdjs.CharacterCreationCode.GDlowerLeftObjects2= [];
 gdjs.CharacterCreationCode.GDlowerLeftObjects3= [];
 gdjs.CharacterCreationCode.GDlowerLeftObjects4= [];
 gdjs.CharacterCreationCode.GDlowerLeftObjects5= [];
+gdjs.CharacterCreationCode.GDlowerLeftObjects6= [];
 gdjs.CharacterCreationCode.GDpanelTitleObjects1= [];
 gdjs.CharacterCreationCode.GDpanelTitleObjects2= [];
 gdjs.CharacterCreationCode.GDpanelTitleObjects3= [];
 gdjs.CharacterCreationCode.GDpanelTitleObjects4= [];
 gdjs.CharacterCreationCode.GDpanelTitleObjects5= [];
+gdjs.CharacterCreationCode.GDpanelTitleObjects6= [];
 gdjs.CharacterCreationCode.GDpanelSubTitleObjects1= [];
 gdjs.CharacterCreationCode.GDpanelSubTitleObjects2= [];
 gdjs.CharacterCreationCode.GDpanelSubTitleObjects3= [];
 gdjs.CharacterCreationCode.GDpanelSubTitleObjects4= [];
 gdjs.CharacterCreationCode.GDpanelSubTitleObjects5= [];
+gdjs.CharacterCreationCode.GDpanelSubTitleObjects6= [];
 gdjs.CharacterCreationCode.GDpanelDescriptionObjects1= [];
 gdjs.CharacterCreationCode.GDpanelDescriptionObjects2= [];
 gdjs.CharacterCreationCode.GDpanelDescriptionObjects3= [];
 gdjs.CharacterCreationCode.GDpanelDescriptionObjects4= [];
 gdjs.CharacterCreationCode.GDpanelDescriptionObjects5= [];
+gdjs.CharacterCreationCode.GDpanelDescriptionObjects6= [];
 gdjs.CharacterCreationCode.GDrightupObjects1= [];
 gdjs.CharacterCreationCode.GDrightupObjects2= [];
 gdjs.CharacterCreationCode.GDrightupObjects3= [];
 gdjs.CharacterCreationCode.GDrightupObjects4= [];
 gdjs.CharacterCreationCode.GDrightupObjects5= [];
+gdjs.CharacterCreationCode.GDrightupObjects6= [];
 gdjs.CharacterCreationCode.GDrightUpText1Objects1= [];
 gdjs.CharacterCreationCode.GDrightUpText1Objects2= [];
 gdjs.CharacterCreationCode.GDrightUpText1Objects3= [];
 gdjs.CharacterCreationCode.GDrightUpText1Objects4= [];
 gdjs.CharacterCreationCode.GDrightUpText1Objects5= [];
+gdjs.CharacterCreationCode.GDrightUpText1Objects6= [];
 gdjs.CharacterCreationCode.GDrightUpText2Objects1= [];
 gdjs.CharacterCreationCode.GDrightUpText2Objects2= [];
 gdjs.CharacterCreationCode.GDrightUpText2Objects3= [];
 gdjs.CharacterCreationCode.GDrightUpText2Objects4= [];
 gdjs.CharacterCreationCode.GDrightUpText2Objects5= [];
+gdjs.CharacterCreationCode.GDrightUpText2Objects6= [];
 gdjs.CharacterCreationCode.GDrightupInputObjects1= [];
 gdjs.CharacterCreationCode.GDrightupInputObjects2= [];
 gdjs.CharacterCreationCode.GDrightupInputObjects3= [];
 gdjs.CharacterCreationCode.GDrightupInputObjects4= [];
 gdjs.CharacterCreationCode.GDrightupInputObjects5= [];
+gdjs.CharacterCreationCode.GDrightupInputObjects6= [];
 gdjs.CharacterCreationCode.GDrightmiddleObjects1= [];
 gdjs.CharacterCreationCode.GDrightmiddleObjects2= [];
 gdjs.CharacterCreationCode.GDrightmiddleObjects3= [];
 gdjs.CharacterCreationCode.GDrightmiddleObjects4= [];
 gdjs.CharacterCreationCode.GDrightmiddleObjects5= [];
+gdjs.CharacterCreationCode.GDrightmiddleObjects6= [];
 gdjs.CharacterCreationCode.GDcreateButtonObjects1= [];
 gdjs.CharacterCreationCode.GDcreateButtonObjects2= [];
 gdjs.CharacterCreationCode.GDcreateButtonObjects3= [];
 gdjs.CharacterCreationCode.GDcreateButtonObjects4= [];
 gdjs.CharacterCreationCode.GDcreateButtonObjects5= [];
+gdjs.CharacterCreationCode.GDcreateButtonObjects6= [];
 gdjs.CharacterCreationCode.GDbackButtonObjects1= [];
 gdjs.CharacterCreationCode.GDbackButtonObjects2= [];
 gdjs.CharacterCreationCode.GDbackButtonObjects3= [];
 gdjs.CharacterCreationCode.GDbackButtonObjects4= [];
 gdjs.CharacterCreationCode.GDbackButtonObjects5= [];
+gdjs.CharacterCreationCode.GDbackButtonObjects6= [];
 gdjs.CharacterCreationCode.GDCreateCharacterBackgroundObjects1= [];
 gdjs.CharacterCreationCode.GDCreateCharacterBackgroundObjects2= [];
 gdjs.CharacterCreationCode.GDCreateCharacterBackgroundObjects3= [];
 gdjs.CharacterCreationCode.GDCreateCharacterBackgroundObjects4= [];
 gdjs.CharacterCreationCode.GDCreateCharacterBackgroundObjects5= [];
+gdjs.CharacterCreationCode.GDCreateCharacterBackgroundObjects6= [];
 gdjs.CharacterCreationCode.GDiconsObjects1= [];
 gdjs.CharacterCreationCode.GDiconsObjects2= [];
 gdjs.CharacterCreationCode.GDiconsObjects3= [];
 gdjs.CharacterCreationCode.GDiconsObjects4= [];
 gdjs.CharacterCreationCode.GDiconsObjects5= [];
+gdjs.CharacterCreationCode.GDiconsObjects6= [];
 gdjs.CharacterCreationCode.GDBadgesObjects1= [];
 gdjs.CharacterCreationCode.GDBadgesObjects2= [];
 gdjs.CharacterCreationCode.GDBadgesObjects3= [];
 gdjs.CharacterCreationCode.GDBadgesObjects4= [];
 gdjs.CharacterCreationCode.GDBadgesObjects5= [];
+gdjs.CharacterCreationCode.GDBadgesObjects6= [];
 gdjs.CharacterCreationCode.GDArrowsObjects1= [];
 gdjs.CharacterCreationCode.GDArrowsObjects2= [];
 gdjs.CharacterCreationCode.GDArrowsObjects3= [];
 gdjs.CharacterCreationCode.GDArrowsObjects4= [];
 gdjs.CharacterCreationCode.GDArrowsObjects5= [];
+gdjs.CharacterCreationCode.GDArrowsObjects6= [];
 gdjs.CharacterCreationCode.GDnumbersObjects1= [];
 gdjs.CharacterCreationCode.GDnumbersObjects2= [];
 gdjs.CharacterCreationCode.GDnumbersObjects3= [];
 gdjs.CharacterCreationCode.GDnumbersObjects4= [];
 gdjs.CharacterCreationCode.GDnumbersObjects5= [];
+gdjs.CharacterCreationCode.GDnumbersObjects6= [];
 gdjs.CharacterCreationCode.GDrightMiddleTextObjects1= [];
 gdjs.CharacterCreationCode.GDrightMiddleTextObjects2= [];
 gdjs.CharacterCreationCode.GDrightMiddleTextObjects3= [];
 gdjs.CharacterCreationCode.GDrightMiddleTextObjects4= [];
 gdjs.CharacterCreationCode.GDrightMiddleTextObjects5= [];
+gdjs.CharacterCreationCode.GDrightMiddleTextObjects6= [];
 gdjs.CharacterCreationCode.GDundoObjects1= [];
 gdjs.CharacterCreationCode.GDundoObjects2= [];
 gdjs.CharacterCreationCode.GDundoObjects3= [];
 gdjs.CharacterCreationCode.GDundoObjects4= [];
 gdjs.CharacterCreationCode.GDundoObjects5= [];
+gdjs.CharacterCreationCode.GDundoObjects6= [];
 gdjs.CharacterCreationCode.GDdyesObjects1= [];
 gdjs.CharacterCreationCode.GDdyesObjects2= [];
 gdjs.CharacterCreationCode.GDdyesObjects3= [];
 gdjs.CharacterCreationCode.GDdyesObjects4= [];
 gdjs.CharacterCreationCode.GDdyesObjects5= [];
+gdjs.CharacterCreationCode.GDdyesObjects6= [];
 gdjs.CharacterCreationCode.GDAvatarsObjects1= [];
 gdjs.CharacterCreationCode.GDAvatarsObjects2= [];
 gdjs.CharacterCreationCode.GDAvatarsObjects3= [];
 gdjs.CharacterCreationCode.GDAvatarsObjects4= [];
 gdjs.CharacterCreationCode.GDAvatarsObjects5= [];
+gdjs.CharacterCreationCode.GDAvatarsObjects6= [];
 gdjs.CharacterCreationCode.GDhoverInfoObjects1= [];
 gdjs.CharacterCreationCode.GDhoverInfoObjects2= [];
 gdjs.CharacterCreationCode.GDhoverInfoObjects3= [];
 gdjs.CharacterCreationCode.GDhoverInfoObjects4= [];
 gdjs.CharacterCreationCode.GDhoverInfoObjects5= [];
+gdjs.CharacterCreationCode.GDhoverInfoObjects6= [];
 gdjs.CharacterCreationCode.GDhoverTriggerObjects1= [];
 gdjs.CharacterCreationCode.GDhoverTriggerObjects2= [];
 gdjs.CharacterCreationCode.GDhoverTriggerObjects3= [];
 gdjs.CharacterCreationCode.GDhoverTriggerObjects4= [];
 gdjs.CharacterCreationCode.GDhoverTriggerObjects5= [];
+gdjs.CharacterCreationCode.GDhoverTriggerObjects6= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextPowerObjects1= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextPowerObjects2= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextPowerObjects3= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextPowerObjects4= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextPowerObjects5= [];
+gdjs.CharacterCreationCode.GDhoverInfoTextPowerObjects6= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextSenseObjects1= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextSenseObjects2= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextSenseObjects3= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextSenseObjects4= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextSenseObjects5= [];
+gdjs.CharacterCreationCode.GDhoverInfoTextSenseObjects6= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextMagicObjects1= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextMagicObjects2= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextMagicObjects3= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextMagicObjects4= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextMagicObjects5= [];
+gdjs.CharacterCreationCode.GDhoverInfoTextMagicObjects6= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextCharmObjects1= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextCharmObjects2= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextCharmObjects3= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextCharmObjects4= [];
 gdjs.CharacterCreationCode.GDhoverInfoTextCharmObjects5= [];
+gdjs.CharacterCreationCode.GDhoverInfoTextCharmObjects6= [];
 gdjs.CharacterCreationCode.GDCursorsObjects1= [];
 gdjs.CharacterCreationCode.GDCursorsObjects2= [];
 gdjs.CharacterCreationCode.GDCursorsObjects3= [];
 gdjs.CharacterCreationCode.GDCursorsObjects4= [];
 gdjs.CharacterCreationCode.GDCursorsObjects5= [];
+gdjs.CharacterCreationCode.GDCursorsObjects6= [];
 gdjs.CharacterCreationCode.GDWarpzoneObjects1= [];
 gdjs.CharacterCreationCode.GDWarpzoneObjects2= [];
 gdjs.CharacterCreationCode.GDWarpzoneObjects3= [];
 gdjs.CharacterCreationCode.GDWarpzoneObjects4= [];
 gdjs.CharacterCreationCode.GDWarpzoneObjects5= [];
+gdjs.CharacterCreationCode.GDWarpzoneObjects6= [];
 gdjs.CharacterCreationCode.GDSpawningPointObjects1= [];
 gdjs.CharacterCreationCode.GDSpawningPointObjects2= [];
 gdjs.CharacterCreationCode.GDSpawningPointObjects3= [];
 gdjs.CharacterCreationCode.GDSpawningPointObjects4= [];
 gdjs.CharacterCreationCode.GDSpawningPointObjects5= [];
+gdjs.CharacterCreationCode.GDSpawningPointObjects6= [];
 gdjs.CharacterCreationCode.GDTransitionObjects1= [];
 gdjs.CharacterCreationCode.GDTransitionObjects2= [];
 gdjs.CharacterCreationCode.GDTransitionObjects3= [];
 gdjs.CharacterCreationCode.GDTransitionObjects4= [];
 gdjs.CharacterCreationCode.GDTransitionObjects5= [];
+gdjs.CharacterCreationCode.GDTransitionObjects6= [];
 gdjs.CharacterCreationCode.GDTransparentBackgroundObjects1= [];
 gdjs.CharacterCreationCode.GDTransparentBackgroundObjects2= [];
 gdjs.CharacterCreationCode.GDTransparentBackgroundObjects3= [];
 gdjs.CharacterCreationCode.GDTransparentBackgroundObjects4= [];
 gdjs.CharacterCreationCode.GDTransparentBackgroundObjects5= [];
+gdjs.CharacterCreationCode.GDTransparentBackgroundObjects6= [];
 gdjs.CharacterCreationCode.GDTransparentBackgroundTextObjects1= [];
 gdjs.CharacterCreationCode.GDTransparentBackgroundTextObjects2= [];
 gdjs.CharacterCreationCode.GDTransparentBackgroundTextObjects3= [];
 gdjs.CharacterCreationCode.GDTransparentBackgroundTextObjects4= [];
 gdjs.CharacterCreationCode.GDTransparentBackgroundTextObjects5= [];
+gdjs.CharacterCreationCode.GDTransparentBackgroundTextObjects6= [];
 gdjs.CharacterCreationCode.GDAnnouncementBackgroundObjects1= [];
 gdjs.CharacterCreationCode.GDAnnouncementBackgroundObjects2= [];
 gdjs.CharacterCreationCode.GDAnnouncementBackgroundObjects3= [];
 gdjs.CharacterCreationCode.GDAnnouncementBackgroundObjects4= [];
 gdjs.CharacterCreationCode.GDAnnouncementBackgroundObjects5= [];
+gdjs.CharacterCreationCode.GDAnnouncementBackgroundObjects6= [];
 gdjs.CharacterCreationCode.GDAnnouncementMaskObjects1= [];
 gdjs.CharacterCreationCode.GDAnnouncementMaskObjects2= [];
 gdjs.CharacterCreationCode.GDAnnouncementMaskObjects3= [];
 gdjs.CharacterCreationCode.GDAnnouncementMaskObjects4= [];
 gdjs.CharacterCreationCode.GDAnnouncementMaskObjects5= [];
+gdjs.CharacterCreationCode.GDAnnouncementMaskObjects6= [];
 gdjs.CharacterCreationCode.GDAnnouncementBitmapTextObjects1= [];
 gdjs.CharacterCreationCode.GDAnnouncementBitmapTextObjects2= [];
 gdjs.CharacterCreationCode.GDAnnouncementBitmapTextObjects3= [];
 gdjs.CharacterCreationCode.GDAnnouncementBitmapTextObjects4= [];
 gdjs.CharacterCreationCode.GDAnnouncementBitmapTextObjects5= [];
+gdjs.CharacterCreationCode.GDAnnouncementBitmapTextObjects6= [];
 gdjs.CharacterCreationCode.GDAnnouncementIconObjects1= [];
 gdjs.CharacterCreationCode.GDAnnouncementIconObjects2= [];
 gdjs.CharacterCreationCode.GDAnnouncementIconObjects3= [];
 gdjs.CharacterCreationCode.GDAnnouncementIconObjects4= [];
 gdjs.CharacterCreationCode.GDAnnouncementIconObjects5= [];
+gdjs.CharacterCreationCode.GDAnnouncementIconObjects6= [];
 
 
 gdjs.CharacterCreationCode.mapOfGDgdjs_9546CharacterCreationCode_9546GDrightupObjects4Objects = Hashtable.newFrom({"rightup": gdjs.CharacterCreationCode.GDrightupObjects4});
@@ -1471,7 +1511,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.CharacterCreationCode.asyncCallback62999236 = function (runtimeScene, asyncObjectsList) {
+};gdjs.CharacterCreationCode.asyncCallback23759780 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Tutorial", false);
 }}
 gdjs.CharacterCreationCode.eventsList32 = function(runtimeScene, asyncObjectsList) {
@@ -1483,7 +1523,7 @@ gdjs.CharacterCreationCode.eventsList32 = function(runtimeScene, asyncObjectsLis
 const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback62999236(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(1), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback23759780(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1572,7 +1612,7 @@ gdjs.CharacterCreationCode.eventsList33(runtimeScene, asyncObjectsList);} //End 
 }
 
 
-};gdjs.CharacterCreationCode.asyncCallback62993916 = function (runtimeScene, asyncObjectsList) {
+};gdjs.CharacterCreationCode.asyncCallback23748348 = function (runtimeScene, asyncObjectsList) {
 
 { //Subevents
 gdjs.CharacterCreationCode.eventsList34(runtimeScene, asyncObjectsList);} //End of subevents
@@ -1587,7 +1627,7 @@ gdjs.CharacterCreationCode.eventsList35 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 for (const obj of gdjs.CharacterCreationCode.GDrightupInputObjects2) asyncObjectsList.addObject("rightupInput", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__InterfaceFunctions__ContainsBadWords.func(runtimeScene, (( gdjs.CharacterCreationCode.GDrightupInputObjects2.length === 0 ) ? "" :gdjs.CharacterCreationCode.GDrightupInputObjects2[0].getString()), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback62993916(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__InterfaceFunctions__ContainsBadWords.func(runtimeScene, (( gdjs.CharacterCreationCode.GDrightupInputObjects2.length === 0 ) ? "" :gdjs.CharacterCreationCode.GDrightupInputObjects2[0].getString()), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback23748348(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -1695,7 +1735,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getScene().getVariables().get("PlayerRetrieved"), true);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(62990012);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23741812);
 }
 }
 if (isConditionTrue_0) {
@@ -2397,7 +2437,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableString(runtimeScene.getScene().getVariables().get("selected")) != (gdjs.RuntimeObject.getVariableString(((gdjs.CharacterCreationCode.GDleftupObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.CharacterCreationCode.GDleftupObjects2[0].getVariables()).get("id")));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(62971228);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(23716996);
 }
 }
 }
@@ -2868,7 +2908,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "TransparentMessageTimer") >= gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("TransparentTextMessageSeconds"));
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(65637356);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(46260436);
 }
 }
 if (isConditionTrue_0) {
@@ -2878,21 +2918,9 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.CharacterCreationCode.eventsList53 = function(runtimeScene, asyncObjectsList) {
-
-{
-
-
-
+};gdjs.CharacterCreationCode.asyncCallback14488092 = function (runtimeScene, asyncObjectsList) {
 }
-
-
-};gdjs.CharacterCreationCode.asyncCallback68301604 = function (runtimeScene, asyncObjectsList) {
-
-{ //Subevents
-gdjs.CharacterCreationCode.eventsList53(runtimeScene, asyncObjectsList);} //End of subevents
-}
-gdjs.CharacterCreationCode.eventsList54 = function(runtimeScene) {
+gdjs.CharacterCreationCode.eventsList53 = function(runtimeScene) {
 
 {
 
@@ -2900,14 +2928,142 @@ gdjs.CharacterCreationCode.eventsList54 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback68301604(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__CrazyGamesAdApi__LoadSDK.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback14488092(runtimeScene, asyncObjectsList)));
 }
 }
+
+}
+
+
+};gdjs.CharacterCreationCode.eventsList54 = function(runtimeScene, asyncObjectsList) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{gdjs.evtTools.storage.writeStringInJSONFile("localSession", "guestLogin", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)));
+}{gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveUserCards.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__InterfaceFunctions__SetTransparentTextMessageWithTimeout.func(runtimeScene, "Logging in...", 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__Observers__NotifyString.func(runtimeScene, "logging in", "loading-start", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtTools.camera.hideLayer(runtimeScene, "");
+}}
 
 }
 
 
 };gdjs.CharacterCreationCode.eventsList55 = function(runtimeScene, asyncObjectsList) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{gdjs.evtTools.storage.writeStringInJSONFile("localSession", "guestLogin", gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)));
+}{gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveUserCards.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__InterfaceFunctions__SetTransparentTextMessageWithTimeout.func(runtimeScene, "Logging in...", 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__Observers__NotifyString.func(runtimeScene, "logging in", "loading-start", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtTools.camera.hideLayer(runtimeScene, "");
+}}
+
+}
+
+
+};gdjs.CharacterCreationCode.eventsList56 = function(runtimeScene, asyncObjectsList) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+{isConditionTrue_1 = (gdjs.evtsExt__CrazyGamesAdApi__GetUserId.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) == "null");
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+{isConditionTrue_1 = (gdjs.evtsExt__CrazyGamesAdApi__GetUserId.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) == "0");
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+{isConditionTrue_1 = (gdjs.evtsExt__CrazyGamesAdApi__GetUserId.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) == "undefined");
+}
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(19).setString(gdjs.evtsExt__Observers__NotifiedDataString.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}{/* Unknown object - skipped. */}{gdjs.evtTools.debuggerTools.log("loggin in as,,, " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), "", "Guest login A");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("UserRetrieved"), false);
+}
+{ //Subevents
+gdjs.CharacterCreationCode.eventsList54(runtimeScene, asyncObjectsList);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (gdjs.evtsExt__CrazyGamesAdApi__GetUserId.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) != "null");
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (gdjs.evtsExt__CrazyGamesAdApi__GetUserId.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) != "0");
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (gdjs.evtsExt__CrazyGamesAdApi__GetUserId.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) != "undefined");
+}
+}
+}
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(19).setString(gdjs.evtsExt__CrazyGamesAdApi__GetUserId.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}{/* Unknown object - skipped. */}{gdjs.evtTools.debuggerTools.log("loggin in as,,, " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), "", "Guest login B");
+}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("UserRetrieved"), false);
+}
+{ //Subevents
+gdjs.CharacterCreationCode.eventsList55(runtimeScene, asyncObjectsList);} //End of subevents
+}
+
+}
+
+
+};gdjs.CharacterCreationCode.asyncCallback14490196 = function (runtimeScene, asyncObjectsList) {
+
+{ //Subevents
+gdjs.CharacterCreationCode.eventsList56(runtimeScene, asyncObjectsList);} //End of subevents
+}
+gdjs.CharacterCreationCode.eventsList57 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback14490196(runtimeScene, asyncObjectsList)));
+}
+}
+
+}
+
+
+};gdjs.CharacterCreationCode.eventsList58 = function(runtimeScene) {
 
 {
 
@@ -2923,7 +3079,56 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.CharacterCreationCode.eventsList56 = function(runtimeScene, asyncObjectsList) {
+};gdjs.CharacterCreationCode.eventsList59 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("UserRetrieved"), false);
+}{runtimeScene.getGame().getVariables().getFromIndex(19).setString(/* Error during generation, function not found: Text */ "");
+}
+{ //Subevents
+gdjs.CharacterCreationCode.eventsList58(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.CharacterCreationCode.eventsList60 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{/* Unknown object - skipped. */}{gdjs.evtTools.debuggerTools.log("loggin in as,,, " + gdjs.evtsExt__Observers__NotifiedDataString.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), "", "User login");
+}
+{ //Subevents
+gdjs.CharacterCreationCode.eventsList59(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.CharacterCreationCode.eventsList61 = function(runtimeScene, asyncObjectsList) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveUserCards.func(runtimeScene, gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__InterfaceFunctions__SetTransparentTextMessageWithTimeout.func(runtimeScene, "Logging in...", 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__Observers__NotifyString.func(runtimeScene, "logging in", "loading-start", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtTools.camera.hideLayer(runtimeScene, "");
+}}
+
+}
+
+
+};gdjs.CharacterCreationCode.eventsList62 = function(runtimeScene, asyncObjectsList) {
 
 {
 
@@ -2934,18 +3139,18 @@ let isConditionTrue_0 = false;
 }{runtimeScene.getGame().getVariables().getFromIndex(19).setString(gdjs.evtsExt__CrazyGamesAdApi__GetUserId.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
 }
 { //Subevents
-gdjs.CharacterCreationCode.eventsList55(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.CharacterCreationCode.eventsList61(runtimeScene, asyncObjectsList);} //End of subevents
 }
 
 }
 
 
-};gdjs.CharacterCreationCode.asyncCallback68304180 = function (runtimeScene, asyncObjectsList) {
+};gdjs.CharacterCreationCode.asyncCallback14513556 = function (runtimeScene, asyncObjectsList) {
 {/* Unknown object - skipped. */}
 { //Subevents
-gdjs.CharacterCreationCode.eventsList56(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.CharacterCreationCode.eventsList62(runtimeScene, asyncObjectsList);} //End of subevents
 }
-gdjs.CharacterCreationCode.eventsList57 = function(runtimeScene) {
+gdjs.CharacterCreationCode.eventsList63 = function(runtimeScene) {
 
 {
 
@@ -2953,23 +3158,43 @@ gdjs.CharacterCreationCode.eventsList57 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback68304180(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__CrazyGamesAdApi__ShowAuthWindow.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)), (runtimeScene) => (gdjs.CharacterCreationCode.asyncCallback14513556(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.CharacterCreationCode.eventsList58 = function(runtimeScene) {
+};gdjs.CharacterCreationCode.eventsList64 = function(runtimeScene) {
 
 {
 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__Observers__NotifiedEvent.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) == "login-input-displayed";
+isConditionTrue_0 = gdjs.evtsExt__Observers__NotifiedEvent.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) == "login-as-guest";
 if (isConditionTrue_0) {
-{/* Unknown object - skipped. */}}
+{gdjs.evtTools.debuggerTools.log("Current Username is: " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), "", "");
+}
+{ //Subevents
+gdjs.CharacterCreationCode.eventsList57(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__Observers__NotifiedEvent.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) == "login-as-user";
+if (isConditionTrue_0) {
+{gdjs.evtTools.debuggerTools.log("Current Username is: " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), "", "");
+}
+{ //Subevents
+gdjs.CharacterCreationCode.eventsList60(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -2995,7 +3220,7 @@ isConditionTrue_0 = gdjs.evtsExt__Observers__NotifiedEvent.func(runtimeScene, (t
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.CharacterCreationCode.eventsList57(runtimeScene);} //End of subevents
+gdjs.CharacterCreationCode.eventsList63(runtimeScene);} //End of subevents
 }
 
 }
@@ -3066,7 +3291,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.CharacterCreationCode.eventsList59 = function(runtimeScene) {
+};gdjs.CharacterCreationCode.eventsList65 = function(runtimeScene) {
 
 {
 
@@ -3373,7 +3598,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(65213596);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(25398324);
 }
 }
 if (isConditionTrue_0) {
@@ -3421,7 +3646,7 @@ isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.CharacterCreationCode.eventsList54(runtimeScene);} //End of subevents
+gdjs.CharacterCreationCode.eventsList53(runtimeScene);} //End of subevents
 }
 
 }
@@ -3440,7 +3665,7 @@ let isConditionTrue_0 = false;
 if (true) {
 
 { //Subevents: 
-gdjs.CharacterCreationCode.eventsList58(runtimeScene);} //Subevents end.
+gdjs.CharacterCreationCode.eventsList64(runtimeScene);} //Subevents end.
 }
 } else stopDoWhile_0 = true; 
 } while (!stopDoWhile_0);
@@ -3458,203 +3683,243 @@ gdjs.CharacterCreationCode.GDGuideObjects2.length = 0;
 gdjs.CharacterCreationCode.GDGuideObjects3.length = 0;
 gdjs.CharacterCreationCode.GDGuideObjects4.length = 0;
 gdjs.CharacterCreationCode.GDGuideObjects5.length = 0;
+gdjs.CharacterCreationCode.GDGuideObjects6.length = 0;
 gdjs.CharacterCreationCode.GDleftObjects1.length = 0;
 gdjs.CharacterCreationCode.GDleftObjects2.length = 0;
 gdjs.CharacterCreationCode.GDleftObjects3.length = 0;
 gdjs.CharacterCreationCode.GDleftObjects4.length = 0;
 gdjs.CharacterCreationCode.GDleftObjects5.length = 0;
+gdjs.CharacterCreationCode.GDleftObjects6.length = 0;
 gdjs.CharacterCreationCode.GDleftupObjects1.length = 0;
 gdjs.CharacterCreationCode.GDleftupObjects2.length = 0;
 gdjs.CharacterCreationCode.GDleftupObjects3.length = 0;
 gdjs.CharacterCreationCode.GDleftupObjects4.length = 0;
 gdjs.CharacterCreationCode.GDleftupObjects5.length = 0;
+gdjs.CharacterCreationCode.GDleftupObjects6.length = 0;
 gdjs.CharacterCreationCode.GDmiddleObjects1.length = 0;
 gdjs.CharacterCreationCode.GDmiddleObjects2.length = 0;
 gdjs.CharacterCreationCode.GDmiddleObjects3.length = 0;
 gdjs.CharacterCreationCode.GDmiddleObjects4.length = 0;
 gdjs.CharacterCreationCode.GDmiddleObjects5.length = 0;
+gdjs.CharacterCreationCode.GDmiddleObjects6.length = 0;
 gdjs.CharacterCreationCode.GDlowerLeftObjects1.length = 0;
 gdjs.CharacterCreationCode.GDlowerLeftObjects2.length = 0;
 gdjs.CharacterCreationCode.GDlowerLeftObjects3.length = 0;
 gdjs.CharacterCreationCode.GDlowerLeftObjects4.length = 0;
 gdjs.CharacterCreationCode.GDlowerLeftObjects5.length = 0;
+gdjs.CharacterCreationCode.GDlowerLeftObjects6.length = 0;
 gdjs.CharacterCreationCode.GDpanelTitleObjects1.length = 0;
 gdjs.CharacterCreationCode.GDpanelTitleObjects2.length = 0;
 gdjs.CharacterCreationCode.GDpanelTitleObjects3.length = 0;
 gdjs.CharacterCreationCode.GDpanelTitleObjects4.length = 0;
 gdjs.CharacterCreationCode.GDpanelTitleObjects5.length = 0;
+gdjs.CharacterCreationCode.GDpanelTitleObjects6.length = 0;
 gdjs.CharacterCreationCode.GDpanelSubTitleObjects1.length = 0;
 gdjs.CharacterCreationCode.GDpanelSubTitleObjects2.length = 0;
 gdjs.CharacterCreationCode.GDpanelSubTitleObjects3.length = 0;
 gdjs.CharacterCreationCode.GDpanelSubTitleObjects4.length = 0;
 gdjs.CharacterCreationCode.GDpanelSubTitleObjects5.length = 0;
+gdjs.CharacterCreationCode.GDpanelSubTitleObjects6.length = 0;
 gdjs.CharacterCreationCode.GDpanelDescriptionObjects1.length = 0;
 gdjs.CharacterCreationCode.GDpanelDescriptionObjects2.length = 0;
 gdjs.CharacterCreationCode.GDpanelDescriptionObjects3.length = 0;
 gdjs.CharacterCreationCode.GDpanelDescriptionObjects4.length = 0;
 gdjs.CharacterCreationCode.GDpanelDescriptionObjects5.length = 0;
+gdjs.CharacterCreationCode.GDpanelDescriptionObjects6.length = 0;
 gdjs.CharacterCreationCode.GDrightupObjects1.length = 0;
 gdjs.CharacterCreationCode.GDrightupObjects2.length = 0;
 gdjs.CharacterCreationCode.GDrightupObjects3.length = 0;
 gdjs.CharacterCreationCode.GDrightupObjects4.length = 0;
 gdjs.CharacterCreationCode.GDrightupObjects5.length = 0;
+gdjs.CharacterCreationCode.GDrightupObjects6.length = 0;
 gdjs.CharacterCreationCode.GDrightUpText1Objects1.length = 0;
 gdjs.CharacterCreationCode.GDrightUpText1Objects2.length = 0;
 gdjs.CharacterCreationCode.GDrightUpText1Objects3.length = 0;
 gdjs.CharacterCreationCode.GDrightUpText1Objects4.length = 0;
 gdjs.CharacterCreationCode.GDrightUpText1Objects5.length = 0;
+gdjs.CharacterCreationCode.GDrightUpText1Objects6.length = 0;
 gdjs.CharacterCreationCode.GDrightUpText2Objects1.length = 0;
 gdjs.CharacterCreationCode.GDrightUpText2Objects2.length = 0;
 gdjs.CharacterCreationCode.GDrightUpText2Objects3.length = 0;
 gdjs.CharacterCreationCode.GDrightUpText2Objects4.length = 0;
 gdjs.CharacterCreationCode.GDrightUpText2Objects5.length = 0;
+gdjs.CharacterCreationCode.GDrightUpText2Objects6.length = 0;
 gdjs.CharacterCreationCode.GDrightupInputObjects1.length = 0;
 gdjs.CharacterCreationCode.GDrightupInputObjects2.length = 0;
 gdjs.CharacterCreationCode.GDrightupInputObjects3.length = 0;
 gdjs.CharacterCreationCode.GDrightupInputObjects4.length = 0;
 gdjs.CharacterCreationCode.GDrightupInputObjects5.length = 0;
+gdjs.CharacterCreationCode.GDrightupInputObjects6.length = 0;
 gdjs.CharacterCreationCode.GDrightmiddleObjects1.length = 0;
 gdjs.CharacterCreationCode.GDrightmiddleObjects2.length = 0;
 gdjs.CharacterCreationCode.GDrightmiddleObjects3.length = 0;
 gdjs.CharacterCreationCode.GDrightmiddleObjects4.length = 0;
 gdjs.CharacterCreationCode.GDrightmiddleObjects5.length = 0;
+gdjs.CharacterCreationCode.GDrightmiddleObjects6.length = 0;
 gdjs.CharacterCreationCode.GDcreateButtonObjects1.length = 0;
 gdjs.CharacterCreationCode.GDcreateButtonObjects2.length = 0;
 gdjs.CharacterCreationCode.GDcreateButtonObjects3.length = 0;
 gdjs.CharacterCreationCode.GDcreateButtonObjects4.length = 0;
 gdjs.CharacterCreationCode.GDcreateButtonObjects5.length = 0;
+gdjs.CharacterCreationCode.GDcreateButtonObjects6.length = 0;
 gdjs.CharacterCreationCode.GDbackButtonObjects1.length = 0;
 gdjs.CharacterCreationCode.GDbackButtonObjects2.length = 0;
 gdjs.CharacterCreationCode.GDbackButtonObjects3.length = 0;
 gdjs.CharacterCreationCode.GDbackButtonObjects4.length = 0;
 gdjs.CharacterCreationCode.GDbackButtonObjects5.length = 0;
+gdjs.CharacterCreationCode.GDbackButtonObjects6.length = 0;
 gdjs.CharacterCreationCode.GDCreateCharacterBackgroundObjects1.length = 0;
 gdjs.CharacterCreationCode.GDCreateCharacterBackgroundObjects2.length = 0;
 gdjs.CharacterCreationCode.GDCreateCharacterBackgroundObjects3.length = 0;
 gdjs.CharacterCreationCode.GDCreateCharacterBackgroundObjects4.length = 0;
 gdjs.CharacterCreationCode.GDCreateCharacterBackgroundObjects5.length = 0;
+gdjs.CharacterCreationCode.GDCreateCharacterBackgroundObjects6.length = 0;
 gdjs.CharacterCreationCode.GDiconsObjects1.length = 0;
 gdjs.CharacterCreationCode.GDiconsObjects2.length = 0;
 gdjs.CharacterCreationCode.GDiconsObjects3.length = 0;
 gdjs.CharacterCreationCode.GDiconsObjects4.length = 0;
 gdjs.CharacterCreationCode.GDiconsObjects5.length = 0;
+gdjs.CharacterCreationCode.GDiconsObjects6.length = 0;
 gdjs.CharacterCreationCode.GDBadgesObjects1.length = 0;
 gdjs.CharacterCreationCode.GDBadgesObjects2.length = 0;
 gdjs.CharacterCreationCode.GDBadgesObjects3.length = 0;
 gdjs.CharacterCreationCode.GDBadgesObjects4.length = 0;
 gdjs.CharacterCreationCode.GDBadgesObjects5.length = 0;
+gdjs.CharacterCreationCode.GDBadgesObjects6.length = 0;
 gdjs.CharacterCreationCode.GDArrowsObjects1.length = 0;
 gdjs.CharacterCreationCode.GDArrowsObjects2.length = 0;
 gdjs.CharacterCreationCode.GDArrowsObjects3.length = 0;
 gdjs.CharacterCreationCode.GDArrowsObjects4.length = 0;
 gdjs.CharacterCreationCode.GDArrowsObjects5.length = 0;
+gdjs.CharacterCreationCode.GDArrowsObjects6.length = 0;
 gdjs.CharacterCreationCode.GDnumbersObjects1.length = 0;
 gdjs.CharacterCreationCode.GDnumbersObjects2.length = 0;
 gdjs.CharacterCreationCode.GDnumbersObjects3.length = 0;
 gdjs.CharacterCreationCode.GDnumbersObjects4.length = 0;
 gdjs.CharacterCreationCode.GDnumbersObjects5.length = 0;
+gdjs.CharacterCreationCode.GDnumbersObjects6.length = 0;
 gdjs.CharacterCreationCode.GDrightMiddleTextObjects1.length = 0;
 gdjs.CharacterCreationCode.GDrightMiddleTextObjects2.length = 0;
 gdjs.CharacterCreationCode.GDrightMiddleTextObjects3.length = 0;
 gdjs.CharacterCreationCode.GDrightMiddleTextObjects4.length = 0;
 gdjs.CharacterCreationCode.GDrightMiddleTextObjects5.length = 0;
+gdjs.CharacterCreationCode.GDrightMiddleTextObjects6.length = 0;
 gdjs.CharacterCreationCode.GDundoObjects1.length = 0;
 gdjs.CharacterCreationCode.GDundoObjects2.length = 0;
 gdjs.CharacterCreationCode.GDundoObjects3.length = 0;
 gdjs.CharacterCreationCode.GDundoObjects4.length = 0;
 gdjs.CharacterCreationCode.GDundoObjects5.length = 0;
+gdjs.CharacterCreationCode.GDundoObjects6.length = 0;
 gdjs.CharacterCreationCode.GDdyesObjects1.length = 0;
 gdjs.CharacterCreationCode.GDdyesObjects2.length = 0;
 gdjs.CharacterCreationCode.GDdyesObjects3.length = 0;
 gdjs.CharacterCreationCode.GDdyesObjects4.length = 0;
 gdjs.CharacterCreationCode.GDdyesObjects5.length = 0;
+gdjs.CharacterCreationCode.GDdyesObjects6.length = 0;
 gdjs.CharacterCreationCode.GDAvatarsObjects1.length = 0;
 gdjs.CharacterCreationCode.GDAvatarsObjects2.length = 0;
 gdjs.CharacterCreationCode.GDAvatarsObjects3.length = 0;
 gdjs.CharacterCreationCode.GDAvatarsObjects4.length = 0;
 gdjs.CharacterCreationCode.GDAvatarsObjects5.length = 0;
+gdjs.CharacterCreationCode.GDAvatarsObjects6.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoObjects1.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoObjects2.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoObjects3.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoObjects4.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoObjects5.length = 0;
+gdjs.CharacterCreationCode.GDhoverInfoObjects6.length = 0;
 gdjs.CharacterCreationCode.GDhoverTriggerObjects1.length = 0;
 gdjs.CharacterCreationCode.GDhoverTriggerObjects2.length = 0;
 gdjs.CharacterCreationCode.GDhoverTriggerObjects3.length = 0;
 gdjs.CharacterCreationCode.GDhoverTriggerObjects4.length = 0;
 gdjs.CharacterCreationCode.GDhoverTriggerObjects5.length = 0;
+gdjs.CharacterCreationCode.GDhoverTriggerObjects6.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextPowerObjects1.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextPowerObjects2.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextPowerObjects3.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextPowerObjects4.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextPowerObjects5.length = 0;
+gdjs.CharacterCreationCode.GDhoverInfoTextPowerObjects6.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextSenseObjects1.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextSenseObjects2.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextSenseObjects3.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextSenseObjects4.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextSenseObjects5.length = 0;
+gdjs.CharacterCreationCode.GDhoverInfoTextSenseObjects6.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextMagicObjects1.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextMagicObjects2.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextMagicObjects3.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextMagicObjects4.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextMagicObjects5.length = 0;
+gdjs.CharacterCreationCode.GDhoverInfoTextMagicObjects6.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextCharmObjects1.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextCharmObjects2.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextCharmObjects3.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextCharmObjects4.length = 0;
 gdjs.CharacterCreationCode.GDhoverInfoTextCharmObjects5.length = 0;
+gdjs.CharacterCreationCode.GDhoverInfoTextCharmObjects6.length = 0;
 gdjs.CharacterCreationCode.GDCursorsObjects1.length = 0;
 gdjs.CharacterCreationCode.GDCursorsObjects2.length = 0;
 gdjs.CharacterCreationCode.GDCursorsObjects3.length = 0;
 gdjs.CharacterCreationCode.GDCursorsObjects4.length = 0;
 gdjs.CharacterCreationCode.GDCursorsObjects5.length = 0;
+gdjs.CharacterCreationCode.GDCursorsObjects6.length = 0;
 gdjs.CharacterCreationCode.GDWarpzoneObjects1.length = 0;
 gdjs.CharacterCreationCode.GDWarpzoneObjects2.length = 0;
 gdjs.CharacterCreationCode.GDWarpzoneObjects3.length = 0;
 gdjs.CharacterCreationCode.GDWarpzoneObjects4.length = 0;
 gdjs.CharacterCreationCode.GDWarpzoneObjects5.length = 0;
+gdjs.CharacterCreationCode.GDWarpzoneObjects6.length = 0;
 gdjs.CharacterCreationCode.GDSpawningPointObjects1.length = 0;
 gdjs.CharacterCreationCode.GDSpawningPointObjects2.length = 0;
 gdjs.CharacterCreationCode.GDSpawningPointObjects3.length = 0;
 gdjs.CharacterCreationCode.GDSpawningPointObjects4.length = 0;
 gdjs.CharacterCreationCode.GDSpawningPointObjects5.length = 0;
+gdjs.CharacterCreationCode.GDSpawningPointObjects6.length = 0;
 gdjs.CharacterCreationCode.GDTransitionObjects1.length = 0;
 gdjs.CharacterCreationCode.GDTransitionObjects2.length = 0;
 gdjs.CharacterCreationCode.GDTransitionObjects3.length = 0;
 gdjs.CharacterCreationCode.GDTransitionObjects4.length = 0;
 gdjs.CharacterCreationCode.GDTransitionObjects5.length = 0;
+gdjs.CharacterCreationCode.GDTransitionObjects6.length = 0;
 gdjs.CharacterCreationCode.GDTransparentBackgroundObjects1.length = 0;
 gdjs.CharacterCreationCode.GDTransparentBackgroundObjects2.length = 0;
 gdjs.CharacterCreationCode.GDTransparentBackgroundObjects3.length = 0;
 gdjs.CharacterCreationCode.GDTransparentBackgroundObjects4.length = 0;
 gdjs.CharacterCreationCode.GDTransparentBackgroundObjects5.length = 0;
+gdjs.CharacterCreationCode.GDTransparentBackgroundObjects6.length = 0;
 gdjs.CharacterCreationCode.GDTransparentBackgroundTextObjects1.length = 0;
 gdjs.CharacterCreationCode.GDTransparentBackgroundTextObjects2.length = 0;
 gdjs.CharacterCreationCode.GDTransparentBackgroundTextObjects3.length = 0;
 gdjs.CharacterCreationCode.GDTransparentBackgroundTextObjects4.length = 0;
 gdjs.CharacterCreationCode.GDTransparentBackgroundTextObjects5.length = 0;
+gdjs.CharacterCreationCode.GDTransparentBackgroundTextObjects6.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementBackgroundObjects1.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementBackgroundObjects2.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementBackgroundObjects3.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementBackgroundObjects4.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementBackgroundObjects5.length = 0;
+gdjs.CharacterCreationCode.GDAnnouncementBackgroundObjects6.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementMaskObjects1.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementMaskObjects2.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementMaskObjects3.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementMaskObjects4.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementMaskObjects5.length = 0;
+gdjs.CharacterCreationCode.GDAnnouncementMaskObjects6.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementBitmapTextObjects1.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementBitmapTextObjects2.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementBitmapTextObjects3.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementBitmapTextObjects4.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementBitmapTextObjects5.length = 0;
+gdjs.CharacterCreationCode.GDAnnouncementBitmapTextObjects6.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementIconObjects1.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementIconObjects2.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementIconObjects3.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementIconObjects4.length = 0;
 gdjs.CharacterCreationCode.GDAnnouncementIconObjects5.length = 0;
+gdjs.CharacterCreationCode.GDAnnouncementIconObjects6.length = 0;
 
-gdjs.CharacterCreationCode.eventsList59(runtimeScene);
+gdjs.CharacterCreationCode.eventsList65(runtimeScene);
 
 return;
 

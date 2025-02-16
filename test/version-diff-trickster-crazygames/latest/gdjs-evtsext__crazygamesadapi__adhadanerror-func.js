@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError.userFunc0xebcf80 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError.userFunc0x3835ed8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue=gdjs._crazyGamesExtension.adHadAnError;
 };
@@ -17,17 +17,24 @@ gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError.eventsList0 = function(runtimeScene,
 {
 
 
+gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError.userFunc0x3835ed8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+
+}
+
+
+};gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError.eventsList1 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
 let isConditionTrue_0 = false;
-{
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__CrazyGamesAdApi__IsSDKLoaded.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
 }
-
-}
-
-
-{
-
-
-gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError.userFunc0xebcf80(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -85,7 +92,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
 };
 
 
-gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError.eventsList1(runtimeScene, eventsFunctionContext);
 
 return !!eventsFunctionContext.returnValue;
 }

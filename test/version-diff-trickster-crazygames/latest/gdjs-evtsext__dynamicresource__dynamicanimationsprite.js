@@ -59,7 +59,7 @@ gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.pro
 gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.prototype.onCreatedContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.prototype.onCreatedContext.userFunc0x8610d0 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.prototype.onCreatedContext.userFunc0x527a178 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 function basename(str, sep) {
     return str.substr(str.lastIndexOf(sep) + 1);
@@ -134,7 +134,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Dynamic
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.prototype.onCreatedContext.GDObjectObjects1);
-gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.prototype.onCreatedContext.userFunc0x8610d0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__DynamicAnimationSprite.DynamicAnimationSprite.prototype.onCreatedContext.userFunc0x527a178(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

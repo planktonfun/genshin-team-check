@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam.userFunc0x1162428 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam.userFunc0x3834c60 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const param = eventsFunctionContext.getArgument("Param").toString();
 eventsFunctionContext.returnValue=CrazyGames.SDK.game.getInviteParam(param);
@@ -18,17 +18,24 @@ gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam.eventsList0 = function(runtimeScen
 {
 
 
+gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam.userFunc0x3834c60(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+
+}
+
+
+};gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam.eventsList1 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
 let isConditionTrue_0 = false;
-{
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__CrazyGamesAdApi__IsSDKLoaded.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
 }
-
-}
-
-
-{
-
-
-gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam.userFunc0x1162428(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -97,7 +104,7 @@ if (argName === "Param") return Param;
 };
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__CrazyGamesAdApi__GetInviteParam.eventsList1(runtimeScene, eventsFunctionContext);
 
 return "" + eventsFunctionContext.returnValue;
 }

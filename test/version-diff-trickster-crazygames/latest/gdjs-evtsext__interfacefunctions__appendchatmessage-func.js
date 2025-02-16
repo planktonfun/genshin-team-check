@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__AppendChatMessage !== "undefined") 
 gdjs.evtsExt__InterfaceFunctions__AppendChatMessage = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x1153340 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x3bf23a0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 function splitStringByPixelWidth(text, maxWidth) {
     const canvas = document.createElement('canvas');
@@ -74,7 +74,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x1153340(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__AppendChatMessage.userFunc0x3bf23a0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -14,7 +14,7 @@ gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistance.GDWarpzoneObjects2= [];
 
 gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistance.mapOfGDgdjs_9546evtsExt_9595_9595BaseGameFunctions_9595_9595PlaySoundAtADistance_9546GDPlayerSpawnObjects1Objects = Hashtable.newFrom({"PlayerSpawn": gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistance.GDPlayerSpawnObjects1});
 gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistance.mapOfGDgdjs_9546evtsExt_9595_9595BaseGameFunctions_9595_9595PlaySoundAtADistance_9546GDWarpzoneObjects1Objects = Hashtable.newFrom({"Warpzone": gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistance.GDWarpzoneObjects1});
-gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistance.userFunc0x35af8e8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistance.userFunc0x3562118 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 var volume = runtimeScene.getVariables().get('Volume').getAsNumber();
 var soundFileName = eventsFunctionContext.getArgument("SoundResource"); //eventsFunctionContext.getArgument("SoundResource").toString();
@@ -30,7 +30,7 @@ gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistance.eventsList0 = function(run
 {
 
 
-gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistance.userFunc0x35af8e8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BaseGameFunctions__PlaySoundAtADistance.userFunc0x3562118(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

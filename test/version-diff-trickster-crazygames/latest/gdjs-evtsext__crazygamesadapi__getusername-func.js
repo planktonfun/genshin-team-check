@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__GetUserName !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__GetUserName = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetUserName.userFunc0xe8d5e8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__GetUserName.userFunc0x2f7d160 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue=gdjs._crazyGamesExtension.username;
 };
@@ -17,17 +17,24 @@ gdjs.evtsExt__CrazyGamesAdApi__GetUserName.eventsList0 = function(runtimeScene, 
 {
 
 
+gdjs.evtsExt__CrazyGamesAdApi__GetUserName.userFunc0x2f7d160(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+
+}
+
+
+};gdjs.evtsExt__CrazyGamesAdApi__GetUserName.eventsList1 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
 let isConditionTrue_0 = false;
-{
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__CrazyGamesAdApi__IsSDKLoaded.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.evtsExt__CrazyGamesAdApi__GetUserName.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
 }
-
-}
-
-
-{
-
-
-gdjs.evtsExt__CrazyGamesAdApi__GetUserName.userFunc0xe8d5e8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -85,7 +92,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
 };
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetUserName.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__CrazyGamesAdApi__GetUserName.eventsList1(runtimeScene, eventsFunctionContext);
 
 return "" + eventsFunctionContext.returnValue;
 }

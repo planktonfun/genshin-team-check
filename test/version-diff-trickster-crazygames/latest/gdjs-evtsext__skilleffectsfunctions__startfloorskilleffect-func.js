@@ -10,7 +10,7 @@ gdjs.evtsExt__SkillEffectsFunctions__StartFloorSkillEffect.GDNewShapePainterObje
 gdjs.evtsExt__SkillEffectsFunctions__StartFloorSkillEffect.GDNewShapePainterObjects2= [];
 
 
-gdjs.evtsExt__SkillEffectsFunctions__StartFloorSkillEffect.userFunc0xbf2a08 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__SkillEffectsFunctions__StartFloorSkillEffect.userFunc0x364c3c0 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const shapePainter = objects[0]._renderer._graphics;
 
@@ -161,7 +161,7 @@ gdjs.evtsExt__SkillEffectsFunctions__StartFloorSkillEffect.eventsList0 = functio
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__SkillEffectsFunctions__StartFloorSkillEffect.GDNewShapePainterObjects1);
-gdjs.evtsExt__SkillEffectsFunctions__StartFloorSkillEffect.userFunc0xbf2a08(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__SkillEffectsFunctions__StartFloorSkillEffect.userFunc0x364c3c0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

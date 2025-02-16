@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__onFirstSceneLoaded !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__onFirstSceneLoaded = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__onFirstSceneLoaded.userFunc0x3721628 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__onFirstSceneLoaded.userFunc0x3efc6d0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs._crazyGamesExtension = {
     isSdkReady: false,
@@ -18,6 +18,7 @@ gdjs._crazyGamesExtension = {
     isAdBlockerDetected: false,
     links: new Map(),
     userChanged: false,
+    userId: null,
 };
 };
 gdjs.evtsExt__CrazyGamesAdApi__onFirstSceneLoaded.eventsList0 = function(runtimeScene, eventsFunctionContext) {
@@ -25,7 +26,7 @@ gdjs.evtsExt__CrazyGamesAdApi__onFirstSceneLoaded.eventsList0 = function(runtime
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__onFirstSceneLoaded.userFunc0x3721628(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__onFirstSceneLoaded.userFunc0x3efc6d0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

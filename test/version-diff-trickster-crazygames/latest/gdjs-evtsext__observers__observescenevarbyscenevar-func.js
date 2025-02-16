@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Observers__ObserveSceneVarBySceneVar !== "undefined") {
 gdjs.evtsExt__Observers__ObserveSceneVarBySceneVar = {};
 
 
-gdjs.evtsExt__Observers__ObserveSceneVarBySceneVar.userFunc0xc338f0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Observers__ObserveSceneVarBySceneVar.userFunc0x37f7d38 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const ObserverVariable = eventsFunctionContext.getArgument("ObserverVariable");
 const SubjectVariable = eventsFunctionContext.getArgument('SubjectVariable');
@@ -21,7 +21,9 @@ class Subject {
   }
 
   addObserver(observer) {
-    this.observers.push(observer);
+    if (!this.observers.includes(observer)) { // Prevent duplicates
+      this.observers.push(observer);
+    }
   }
 
   removeObserver(observer) {
@@ -102,7 +104,7 @@ gdjs.evtsExt__Observers__ObserveSceneVarBySceneVar.eventsList0 = function(runtim
 {
 
 
-gdjs.evtsExt__Observers__ObserveSceneVarBySceneVar.userFunc0xc338f0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__ObserveSceneVarBySceneVar.userFunc0x37f7d38(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton.userFunc0x8b9040 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton.userFunc0x3835ed8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 CrazyGames.SDK.game.hideInviteButton();
 };
@@ -17,7 +17,24 @@ gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton.eventsList0 = function(runtimeSc
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton.userFunc0x8b9040(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton.userFunc0x3835ed8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+
+}
+
+
+};gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton.eventsList1 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__CrazyGamesAdApi__IsSDKLoaded.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+}
 
 }
 
@@ -75,7 +92,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
 };
 
 
-gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__CrazyGamesAdApi__HideInviteButton.eventsList1(runtimeScene, eventsFunctionContext);
 
 return;
 }

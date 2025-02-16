@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__UserSignIn !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__UserSignIn = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x8b9040 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x3835ed8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
       async function authenticate() {
         const isAvailable = CrazyGames.SDK.user.isUserAccountAvailable;
@@ -24,8 +24,6 @@ gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x8b9040 = function(runtimeSce
                 gdjs._crazyGamesExtension.userId = data.userId;
                 gdjs._crazyGamesExtension.username = user.username;
                 gdjs._crazyGamesExtension.profilePictureUrl = user.profilePictureUrl;
-
-                await getUserData();
 
                 eventsFunctionContext.task.resolve();
             } else {
@@ -52,7 +50,6 @@ gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x8b9040 = function(runtimeSce
             if (user) {
                 console.log("User signed in:", user);
                 // Proceed with authenticated user
-                await getUserData();
                 const data = await getUserSession();
                 gdjs._crazyGamesExtension.userId = data.userId;
                 gdjs._crazyGamesExtension.username = user.username;
@@ -69,19 +66,6 @@ gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x8b9040 = function(runtimeSce
         }
       }
 
-    async function getUserData() {
-        const userData = await getUserSession();
-        console.log("Decoded user data:", userData);
-
-        // const publicKey = await fetchPublicKey();
-        // console.log('Public Key:', publicKey);
-        // Send this token to your backend server for verification
-        // // Note: Signature verification should be done on a secure server
-        // For testing purposes, you can display the public key
-        // let token = localStorage.getItem('crazygamesUserToken');
-        // console.log('verified', verifyToken(token, publicKey));
-
-      }
 
     async function getUserSession() {
           let token = null;
@@ -146,7 +130,37 @@ gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.eventsList0 = function(runtimeScene, e
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x8b9040(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x3835ed8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+
+}
+
+
+};gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.eventsList1 = function(runtimeScene, eventsFunctionContext) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtsExt__CrazyGamesAdApi__IsSDKLoaded.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = !(gdjs.evtsExt__CrazyGamesAdApi__IsSDKLoaded.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+if (isConditionTrue_0) {
+{gdjs.evtTools.common.resolveAsyncEventsFunction((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
 
 }
 
@@ -205,7 +219,7 @@ parentEventsFunctionContext.getInstancesCountOnScene(objectName) :
 };
 
 
-gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.eventsList1(runtimeScene, eventsFunctionContext);
 
 return eventsFunctionContext.task
 }
