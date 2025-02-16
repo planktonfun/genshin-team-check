@@ -1010,7 +1010,7 @@ gdjs.LoginCode.GDAnnouncementIconObjects26= [];
 gdjs.LoginCode.GDAnnouncementIconObjects27= [];
 
 
-gdjs.LoginCode.userFunc0x32bb8f8 = function(runtimeScene) {
+gdjs.LoginCode.userFunc0x4e2cb70 = function(runtimeScene) {
 "use strict";
 window.runtimeScene=runtimeScene;
 };
@@ -1019,12 +1019,12 @@ gdjs.LoginCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.LoginCode.userFunc0x32bb8f8(runtimeScene);
+gdjs.LoginCode.userFunc0x4e2cb70(runtimeScene);
 
 }
 
 
-};gdjs.LoginCode.userFunc0x509c7a0 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x4f42150 = function(runtimeScene) {
 "use strict";
 window.addEventListener("keydown", function (event) {
     // Check if Page Down (key code 34) is pressed
@@ -1052,7 +1052,7 @@ gdjs.LoginCode.eventsList1 = function(runtimeScene) {
 }
 
 
-};gdjs.LoginCode.userFunc0x1b07ea0 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x529f0d0 = function(runtimeScene) {
 "use strict";
 var a = {
         "GlobalVariables": {
@@ -1177,7 +1177,7 @@ gdjs.LoginCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.LoginCode.userFunc0x509c7a0(runtimeScene);
+gdjs.LoginCode.userFunc0x4f42150(runtimeScene);
 
 }
 
@@ -1301,7 +1301,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.LoginCode.userFunc0x1b07ea0(runtimeScene);
+gdjs.LoginCode.userFunc0x529f0d0(runtimeScene);
 
 }
 
@@ -1313,7 +1313,7 @@ gdjs.LoginCode.userFunc0x1b07ea0(runtimeScene);
 }
 
 
-};gdjs.LoginCode.userFunc0x46fe068 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x1d360e8 = function(runtimeScene) {
 "use strict";
 console.time('test load speed')
 };
@@ -2453,7 +2453,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddIm
 {
 
 
-gdjs.LoginCode.userFunc0x46fe068(runtimeScene);
+gdjs.LoginCode.userFunc0x1d360e8(runtimeScene);
 
 }
 
@@ -2556,7 +2556,7 @@ gdjs.LoginCode.eventsList57(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.LoginCode.userFunc0x309fb40 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x3ecc840 = function(runtimeScene) {
 "use strict";
 console.timeEnd('test load speed')
 };
@@ -2565,7 +2565,7 @@ gdjs.LoginCode.eventsList59 = function(runtimeScene) {
 {
 
 
-gdjs.LoginCode.userFunc0x309fb40(runtimeScene);
+gdjs.LoginCode.userFunc0x3ecc840(runtimeScene);
 
 }
 
@@ -4866,7 +4866,7 @@ gdjs.copyArray(runtimeScene.getObjects("Nickname"), gdjs.LoginCode.GDNicknameObj
     gdjs.LoginCode.GDNicknameObjects4[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)));
 }
 }{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("UserRetrieved"), false);
-}{gdjs.evtTools.debuggerTools.log("logging in as " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(19))), "", "Login B");
+}{gdjs.evtTools.debuggerTools.log("logging in as " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), "", "Login B");
 }
 { //Subevents
 gdjs.LoginCode.eventsList99(runtimeScene, asyncObjectsList);} //End of subevents
@@ -5013,7 +5013,7 @@ let isConditionTrue_0 = false;
 /* Reuse gdjs.LoginCode.GDNicknameObjects4 */
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("UserRetrieved"), false);
 }{runtimeScene.getGame().getVariables().getFromIndex(19).setString((( gdjs.LoginCode.GDNicknameObjects4.length === 0 ) ? "" :gdjs.LoginCode.GDNicknameObjects4[0].getString()));
-}{gdjs.evtTools.debuggerTools.log("logging in as " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(19))), "", "Login C");
+}{gdjs.evtTools.debuggerTools.log("logging in as " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), "", "Login C");
 }
 { //Subevents
 gdjs.LoginCode.eventsList106(runtimeScene, asyncObjectsList);} //End of subevents
@@ -5048,7 +5048,7 @@ isConditionTrue_0 = !(gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.func(runtimeSc
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Nickname"), gdjs.LoginCode.GDNicknameObjects4);
 {for(var i = 0, len = gdjs.LoginCode.GDNicknameObjects4.length ;i < len;++i) {
-    gdjs.LoginCode.GDNicknameObjects4[i].setString(gdjs.evtsExt__Observers__NotifiedDataString.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+    gdjs.LoginCode.GDNicknameObjects4[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)));
 }
 }
 { //Subevents

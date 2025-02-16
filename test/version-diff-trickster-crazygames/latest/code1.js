@@ -3057,7 +3057,7 @@ let isConditionTrue_0 = false;
 {
 {runtimeScene.getGame().getVariables().getFromIndex(19).setString(gdjs.evtTools.common.toString(gdjs.evtTools.runtimeScene.getTime(runtimeScene, "timestamp")));
 }{/* Unknown object - skipped. */}{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("UserRetrieved"), false);
-}{gdjs.evtTools.debuggerTools.log("logging in as " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(19))), "", "Login B");
+}{gdjs.evtTools.debuggerTools.log("logging in as " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), "", "Login B");
 }
 { //Subevents
 gdjs.CharacterCreationCode.eventsList57(runtimeScene, asyncObjectsList);} //End of subevents
@@ -3199,7 +3199,7 @@ let isConditionTrue_0 = false;
 {
 {gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getScene().getVariables().get("UserRetrieved"), false);
 }{runtimeScene.getGame().getVariables().getFromIndex(19).setString(/* Error during generation, function not found: Text */ "");
-}{gdjs.evtTools.debuggerTools.log("logging in as " + gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(19))), "", "Login C");
+}{gdjs.evtTools.debuggerTools.log("logging in as " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)), "", "Login C");
 }
 { //Subevents
 gdjs.CharacterCreationCode.eventsList64(runtimeScene, asyncObjectsList);} //End of subevents
