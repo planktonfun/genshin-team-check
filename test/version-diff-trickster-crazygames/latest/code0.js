@@ -1010,7 +1010,7 @@ gdjs.LoginCode.GDAnnouncementIconObjects26= [];
 gdjs.LoginCode.GDAnnouncementIconObjects27= [];
 
 
-gdjs.LoginCode.userFunc0x509cd70 = function(runtimeScene) {
+gdjs.LoginCode.userFunc0x1e236a0 = function(runtimeScene) {
 "use strict";
 window.runtimeScene=runtimeScene;
 };
@@ -1019,12 +1019,12 @@ gdjs.LoginCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.LoginCode.userFunc0x509cd70(runtimeScene);
+gdjs.LoginCode.userFunc0x1e236a0(runtimeScene);
 
 }
 
 
-};gdjs.LoginCode.userFunc0x3585818 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x2ffe970 = function(runtimeScene) {
 "use strict";
 window.addEventListener("keydown", function (event) {
     // Check if Page Down (key code 34) is pressed
@@ -1052,7 +1052,7 @@ gdjs.LoginCode.eventsList1 = function(runtimeScene) {
 }
 
 
-};gdjs.LoginCode.userFunc0x407af48 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x5235930 = function(runtimeScene) {
 "use strict";
 var a = {
         "GlobalVariables": {
@@ -1177,7 +1177,7 @@ gdjs.LoginCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
-gdjs.LoginCode.userFunc0x3585818(runtimeScene);
+gdjs.LoginCode.userFunc0x2ffe970(runtimeScene);
 
 }
 
@@ -1301,7 +1301,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.LoginCode.userFunc0x407af48(runtimeScene);
+gdjs.LoginCode.userFunc0x5235930(runtimeScene);
 
 }
 
@@ -1313,7 +1313,7 @@ gdjs.LoginCode.userFunc0x407af48(runtimeScene);
 }
 
 
-};gdjs.LoginCode.userFunc0x32bc918 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x47fe9c8 = function(runtimeScene) {
 "use strict";
 console.time('test load speed')
 };
@@ -2453,7 +2453,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtsExt__DynamicResource__AddIm
 {
 
 
-gdjs.LoginCode.userFunc0x32bc918(runtimeScene);
+gdjs.LoginCode.userFunc0x47fe9c8(runtimeScene);
 
 }
 
@@ -2556,7 +2556,7 @@ gdjs.LoginCode.eventsList57(runtimeScene);} //End of subevents
 }
 
 
-};gdjs.LoginCode.userFunc0xc13480 = function(runtimeScene) {
+};gdjs.LoginCode.userFunc0x4ee6028 = function(runtimeScene) {
 "use strict";
 console.timeEnd('test load speed')
 };
@@ -2565,7 +2565,7 @@ gdjs.LoginCode.eventsList59 = function(runtimeScene) {
 {
 
 
-gdjs.LoginCode.userFunc0xc13480(runtimeScene);
+gdjs.LoginCode.userFunc0x4ee6028(runtimeScene);
 
 }
 
@@ -4861,7 +4861,7 @@ let isConditionTrue_0 = false;
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("Nickname"), gdjs.LoginCode.GDNicknameObjects4);
-{runtimeScene.getGame().getVariables().getFromIndex(19).setString(gdjs.evtsExt__Observers__NotifiedDataString.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+{runtimeScene.getGame().getVariables().getFromIndex(19).setString(gdjs.evtTools.common.toString(gdjs.evtTools.runtimeScene.getTime(runtimeScene, "timestamp")));
 }{for(var i = 0, len = gdjs.LoginCode.GDNicknameObjects4.length ;i < len;++i) {
     gdjs.LoginCode.GDNicknameObjects4[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(19)));
 }
