@@ -9,7 +9,7 @@ gdjs.evtsExt__Observers__ObserveObjectByGame = {};
 gdjs.evtsExt__Observers__ObserveObjectByGame.GDSubjectObjectObjects1= [];
 
 
-gdjs.evtsExt__Observers__ObserveObjectByGame.userFunc0x10c7190 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Observers__ObserveObjectByGame.userFunc0x17e4158 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const subjects = eventsFunctionContext.getObjects('SubjectObject');
 
@@ -22,7 +22,7 @@ gdjs.evtsExt__Observers__ObserveObjectByGame.eventsList0 = function(runtimeScene
 {
 
 
-gdjs.evtsExt__Observers__ObserveObjectByGame.userFunc0x10c7190(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__ObserveObjectByGame.userFunc0x17e4158(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

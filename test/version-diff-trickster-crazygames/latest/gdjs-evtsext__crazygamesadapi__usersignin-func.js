@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__UserSignIn !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__UserSignIn = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x50a0650 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x1b7c3d8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
       console.log("Retrieving user start");
       async function authenticate() {
@@ -20,14 +20,13 @@ gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x50a0650 = function(runtimeSc
             if (user) {
                 console.log("User info:", user);
                 // Example: Display the user's username in the game
-                console.log({user});
                 const data = await getUserSession();
                 gdjs._crazyGamesExtension.userId = data.userId;
                 gdjs._crazyGamesExtension.username = user.username;
                 gdjs._crazyGamesExtension.profilePictureUrl = user.profilePictureUrl;
 
                 eventsFunctionContext.task.resolve();
-                console.log("Retrieving user done" + gdjs._crazyGamesExtension.userId);
+                console.log("Retrieving user done");
             } else {
                 console.log("No user is signed in.");
                 // Optionally, prompt the user to sign in
@@ -133,7 +132,7 @@ gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.eventsList0 = function(runtimeScene, e
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x50a0650(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x1b7c3d8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

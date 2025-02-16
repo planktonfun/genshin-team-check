@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Observers__Notified !== "undefined") {
 gdjs.evtsExt__Observers__Notified = {};
 
 
-gdjs.evtsExt__Observers__Notified.userFunc0x509ac30 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Observers__Notified.userFunc0x3381950 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(gdjs.__observers._observer.data.Notified) {
     eventsFunctionContext.returnValue = true;
@@ -22,7 +22,7 @@ gdjs.evtsExt__Observers__Notified.eventsList0 = function(runtimeScene, eventsFun
 {
 
 
-gdjs.evtsExt__Observers__Notified.userFunc0x509ac30(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__Notified.userFunc0x3381950(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

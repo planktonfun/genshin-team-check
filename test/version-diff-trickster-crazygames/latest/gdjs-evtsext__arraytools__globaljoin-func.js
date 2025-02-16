@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ArrayTools__GlobalJoin !== "undefined") {
 gdjs.evtsExt__ArrayTools__GlobalJoin = {};
 
 
-gdjs.evtsExt__ArrayTools__GlobalJoin.userFunc0x3857050 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ArrayTools__GlobalJoin.userFunc0x32ca3e8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable} */
 const array = eventsFunctionContext.getArgument("Array");
@@ -26,7 +26,7 @@ gdjs.evtsExt__ArrayTools__GlobalJoin.eventsList0 = function(runtimeScene, events
 {
 
 
-gdjs.evtsExt__ArrayTools__GlobalJoin.userFunc0x3857050(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ArrayTools__GlobalJoin.userFunc0x32ca3e8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

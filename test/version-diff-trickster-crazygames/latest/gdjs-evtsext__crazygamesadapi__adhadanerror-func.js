@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError.userFunc0x11033f0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError.userFunc0x4f32d30 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue=gdjs._crazyGamesExtension.adHadAnError;
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError.eventsList0 = function(runtimeScene,
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError.userFunc0x11033f0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__AdHadAnError.userFunc0x4f32d30(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
