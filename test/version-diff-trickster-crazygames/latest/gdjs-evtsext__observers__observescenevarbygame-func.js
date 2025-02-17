@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Observers__ObserveSceneVarByGame !== "undefined") {
 gdjs.evtsExt__Observers__ObserveSceneVarByGame = {};
 
 
-gdjs.evtsExt__Observers__ObserveSceneVarByGame.userFunc0x17e4e08 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Observers__ObserveSceneVarByGame.userFunc0x1bce350 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const sceneVar = eventsFunctionContext.getArgument("SceneVariable");
 
@@ -83,7 +83,7 @@ gdjs.evtsExt__Observers__ObserveSceneVarByGame.eventsList0 = function(runtimeSce
 {
 
 
-gdjs.evtsExt__Observers__ObserveSceneVarByGame.userFunc0x17e4e08(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__ObserveSceneVarByGame.userFunc0x1bce350(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

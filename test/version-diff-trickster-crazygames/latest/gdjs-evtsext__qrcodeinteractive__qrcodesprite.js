@@ -160,7 +160,7 @@ gdjs.evtsExt__QRCodeInteractive__QrCodeSprite.QrCodeSprite.prototype.CreateGiftC
 gdjs.evtsExt__QRCodeInteractive__QrCodeSprite.QrCodeSprite.prototype.CreateGiftContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__QRCodeInteractive__QrCodeSprite.QrCodeSprite.prototype.CreateGiftContext.userFunc0x32bcef8 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__QRCodeInteractive__QrCodeSprite.QrCodeSprite.prototype.CreateGiftContext.userFunc0x52c5508 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 function generateUUIDv4() {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -238,7 +238,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__QRCodeI
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__QRCodeInteractive__QrCodeSprite.QrCodeSprite.prototype.CreateGiftContext.GDObjectObjects1);
-gdjs.evtsExt__QRCodeInteractive__QrCodeSprite.QrCodeSprite.prototype.CreateGiftContext.userFunc0x32bcef8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__QRCodeInteractive__QrCodeSprite.QrCodeSprite.prototype.CreateGiftContext.userFunc0x52c5508(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -326,7 +326,7 @@ gdjs.evtsExt__QRCodeInteractive__QrCodeSprite.QrCodeSprite.prototype.onDestroyCo
 gdjs.evtsExt__QRCodeInteractive__QrCodeSprite.QrCodeSprite.prototype.onDestroyContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__QRCodeInteractive__QrCodeSprite.QrCodeSprite.prototype.onDestroyContext.userFunc0x3772f18 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__QRCodeInteractive__QrCodeSprite.QrCodeSprite.prototype.onDestroyContext.userFunc0x3812e48 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 objects[0].__qrCodeExtension.channel.unsubscribe(objects[0].__qrCodeExtension.peerId);
 };
@@ -348,7 +348,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__QRCodeI
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__QRCodeInteractive__QrCodeSprite.QrCodeSprite.prototype.onDestroyContext.GDObjectObjects1);
-gdjs.evtsExt__QRCodeInteractive__QrCodeSprite.QrCodeSprite.prototype.onDestroyContext.userFunc0x3772f18(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__QRCodeInteractive__QrCodeSprite.QrCodeSprite.prototype.onDestroyContext.userFunc0x3812e48(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

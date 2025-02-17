@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__GetSessionData !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__GetSessionData = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetSessionData.userFunc0x32ffb10 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__GetSessionData.userFunc0x54d34c0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const key = eventsFunctionContext.getArgument('Id').toString();
 
@@ -19,7 +19,7 @@ gdjs.evtsExt__CrazyGamesAdApi__GetSessionData.eventsList0 = function(runtimeScen
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetSessionData.userFunc0x32ffb10(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__GetSessionData.userFunc0x54d34c0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

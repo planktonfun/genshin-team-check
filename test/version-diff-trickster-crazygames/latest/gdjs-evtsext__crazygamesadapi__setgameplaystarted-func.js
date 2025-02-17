@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStarted !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStarted = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStarted.userFunc0x4f32d30 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStarted.userFunc0x3b18110 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 CrazyGames.SDK.game.gameplayStart();
 
@@ -18,7 +18,7 @@ gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStarted.eventsList0 = function(runtime
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStarted.userFunc0x4f32d30(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStarted.userFunc0x3b18110(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

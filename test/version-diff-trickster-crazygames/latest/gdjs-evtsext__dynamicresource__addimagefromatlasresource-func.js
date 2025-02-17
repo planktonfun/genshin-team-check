@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource !== "undefin
 gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource = {};
 
 
-gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource.userFunc0x37c0a20 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource.userFunc0x56ebb88 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const resourceName = eventsFunctionContext.getArgument('Image_Resource');
 const jsonResource = runtimeScene.getGame().getJsonManager().getLoadedJson(eventsFunctionContext.getArgument("JSON_Resource"));
@@ -98,7 +98,7 @@ gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource.eventsList0 = function(
 
 
 var objects = [];
-gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource.userFunc0x37c0a20(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__AddImageFromAtlasResource.userFunc0x56ebb88(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
