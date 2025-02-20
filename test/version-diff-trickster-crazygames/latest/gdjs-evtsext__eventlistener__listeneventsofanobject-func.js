@@ -9,7 +9,7 @@ gdjs.evtsExt__EventListener__ListenEventsOfAnObject = {};
 gdjs.evtsExt__EventListener__ListenEventsOfAnObject.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__EventListener__ListenEventsOfAnObject.userFunc0x56ebb88 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__EventListener__ListenEventsOfAnObject.userFunc0x1661a10 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 if(!window.__eventListenerObjectsToBeTracked) {
     window.__eventListenerObjectsToBeTracked = new Set();
@@ -25,7 +25,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__EventLi
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__EventListener__ListenEventsOfAnObject.GDObjectObjects1);
-gdjs.evtsExt__EventListener__ListenEventsOfAnObject.userFunc0x56ebb88(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__EventListener__ListenEventsOfAnObject.userFunc0x1661a10(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

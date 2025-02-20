@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.userFunc0xc0a858 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.userFunc0x134baf0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = gdjs._crazyGamesExtension.userSignedIn;
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.eventsList0 = function(runtimeScene,
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.userFunc0xc0a858(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__UserSignedIn.userFunc0x134baf0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

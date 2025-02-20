@@ -172,7 +172,7 @@
 	{
 		"title": "exitTutorial",
 		"tags": "",
-		"body": "<<warpPlayer 1 NorthWest>>SKIP\n<<startQuest quest11>>SKIP\nSKIP",
+		"body": "<<warpPlayer 1 NorthWest>>SKIP\n<<logEvent FinishedTutorial>> \n<<startQuest quest11>>SKIP\nSKIP",
 		"position": {
 			"x": 1080,
 			"y": 320

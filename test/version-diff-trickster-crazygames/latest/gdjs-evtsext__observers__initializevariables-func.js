@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Observers__InitializeVariables !== "undefined") {
 gdjs.evtsExt__Observers__InitializeVariables = {};
 
 
-gdjs.evtsExt__Observers__InitializeVariables.userFunc0x50e0200 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Observers__InitializeVariables.userFunc0x13a57d8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(gdjs.__observers) {
     return;
@@ -84,7 +84,7 @@ gdjs.evtsExt__Observers__InitializeVariables.eventsList0 = function(runtimeScene
 {
 
 
-gdjs.evtsExt__Observers__InitializeVariables.userFunc0x50e0200(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__InitializeVariables.userFunc0x13a57d8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
