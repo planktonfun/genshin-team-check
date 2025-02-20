@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__MilisecondsToSentence !== "undefine
 gdjs.evtsExt__InterfaceFunctions__MilisecondsToSentence = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__MilisecondsToSentence.userFunc0x37d3140 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__MilisecondsToSentence.userFunc0x32a2f50 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 function millisecondsToSentence(milliseconds) {
   const seconds = Math.floor(milliseconds / 1000);
@@ -62,7 +62,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__MilisecondsToSentence.userFunc0x37d3140(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__MilisecondsToSentence.userFunc0x32a2f50(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

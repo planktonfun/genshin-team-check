@@ -9,7 +9,7 @@ gdjs.evtsExt__Observers__ObserveGameByObject = {};
 gdjs.evtsExt__Observers__ObserveGameByObject.GDObserverObjectObjects1= [];
 
 
-gdjs.evtsExt__Observers__ObserveGameByObject.userFunc0x19ad9d0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Observers__ObserveGameByObject.userFunc0x3441a18 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const observers = eventsFunctionContext.getObjects('ObserverObject');
 
@@ -22,7 +22,7 @@ gdjs.evtsExt__Observers__ObserveGameByObject.eventsList0 = function(runtimeScene
 {
 
 
-gdjs.evtsExt__Observers__ObserveGameByObject.userFunc0x19ad9d0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__ObserveGameByObject.userFunc0x3441a18(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

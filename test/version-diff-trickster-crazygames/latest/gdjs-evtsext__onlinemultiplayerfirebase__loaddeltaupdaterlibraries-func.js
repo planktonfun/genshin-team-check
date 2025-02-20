@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries !=
 gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x36f47a0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x2f0adf0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 var diff_match_patch=function(){this.Diff_Timeout=1;this.Diff_EditCost=4;this.Match_Threshold=.5;this.Match_Distance=1E3;this.Patch_DeleteThreshold=.5;this.Patch_Margin=4;this.Match_MaxBits=32},DIFF_DELETE=-1,DIFF_INSERT=1,DIFF_EQUAL=0;diff_match_patch.Diff=function(a,b){this[0]=a;this[1]=b};diff_match_patch.Diff.prototype.length=2;diff_match_patch.Diff.prototype.toString=function(){return this[0]+","+this[1]};
 diff_match_patch.prototype.diff_main=function(a,b,c,d){"undefined"==typeof d&&(d=0>=this.Diff_Timeout?Number.MAX_VALUE:(new Date).getTime()+1E3*this.Diff_Timeout);if(null==a||null==b)throw Error("Null input. (diff_main)");if(a==b)return a?[new diff_match_patch.Diff(DIFF_EQUAL,a)]:[];"undefined"==typeof c&&(c=!0);var e=c,f=this.diff_commonPrefix(a,b);c=a.substring(0,f);a=a.substring(f);b=b.substring(f);f=this.diff_commonSuffix(a,b);var g=a.substring(a.length-f);a=a.substring(0,a.length-f);b=b.substring(0,
@@ -103,7 +103,7 @@ window.protobuf=protobuf;
 window.jsyaml=jsyaml;
 window.LZString = LZString;
 };
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x370b600 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x326e400 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
         class DeltaUpdateError extends Error {
           constructor(message, code=101) {
@@ -2699,7 +2699,7 @@ window.PatcherI = PatcherI;
 window.ProtoBuffer = ProtoBuffer;
 window.ProtoKnockOff = ProtoKnockOff;
 };
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x37d3140 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x326e4a8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 window.eventTypeDictionary = new WordIdMapper([
   "action",
@@ -2935,7 +2935,7 @@ window.sendAsDeflated = sendAsDeflated;
 
 
 };
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x379b3b0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x326e538 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 // Define the dictionary mapping
 const generalDictionary = [
@@ -3199,7 +3199,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x36f47a0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x2f0adf0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -3207,7 +3207,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x36f
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x370b600(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x326e400(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -3215,7 +3215,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x370
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x37d3140(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x326e4a8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -3223,7 +3223,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x37d
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x379b3b0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__LoadDeltaUpdaterLibraries.userFunc0x326e538(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

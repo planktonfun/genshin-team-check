@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__IsDisableChat !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__IsDisableChat = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__IsDisableChat.userFunc0xee7bd8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__IsDisableChat.userFunc0x1ec8b98 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue=CrazyGames.SDK.game.settings.disableChat;
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__CrazyGamesAdApi__IsDisableChat.eventsList0 = function(runtimeScene
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__IsDisableChat.userFunc0xee7bd8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__IsDisableChat.userFunc0x1ec8b98(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__DisplayCrazyGamesAd !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__DisplayCrazyGamesAd = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__DisplayCrazyGamesAd.userFunc0xee7bd8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__DisplayCrazyGamesAd.userFunc0x1ec8b98 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const logger = new gdjs.Logger("CrazyGames SDK");
 
@@ -20,7 +20,6 @@ CrazyGames.SDK.ad.requestAd(adType, {
         gdjs._crazyGamesExtension.isPlayingVideoAd = true;
         runtimeScene.getSoundManager().setGlobalVolume(0);
         gdjs._crazyGamesExtension.adHadAnError = false;
-        eventsFunctionContext.task.resolve();
     },
     adFinished: () => {
         gdjs._crazyGamesExtension.hasVideoAdJustFinishedPlaying = true;
@@ -38,7 +37,7 @@ CrazyGames.SDK.ad.requestAd(adType, {
         if (runtimeScene.getSoundManager().getGlobalVolume() === 0) {
             runtimeScene.getSoundManager().setGlobalVolume(volume);
         }
-        logger.error(`Error ${adType} ad (callback): `, error, errorData);
+        // logger.error(`Error ${adType} ad (callback): `, error, errorData); // causes an blocker error
         eventsFunctionContext.task.resolve();
     },
 });
@@ -48,7 +47,7 @@ gdjs.evtsExt__CrazyGamesAdApi__DisplayCrazyGamesAd.eventsList0 = function(runtim
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__DisplayCrazyGamesAd.userFunc0xee7bd8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__DisplayCrazyGamesAd.userFunc0x1ec8b98(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

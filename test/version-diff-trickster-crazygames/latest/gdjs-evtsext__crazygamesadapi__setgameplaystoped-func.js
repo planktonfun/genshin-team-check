@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped.userFunc0xee7bd8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped.userFunc0x1ec8b98 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 CrazyGames.SDK.game.gameplayStop();
 
@@ -18,7 +18,7 @@ gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped.eventsList0 = function(runtimeS
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped.userFunc0xee7bd8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__SetGameplayStoped.userFunc0x1ec8b98(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
