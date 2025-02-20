@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ArrayTools__GlobalMin !== "undefined") {
 gdjs.evtsExt__ArrayTools__GlobalMin = {};
 
 
-gdjs.evtsExt__ArrayTools__GlobalMin.userFunc0x1580a18 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ArrayTools__GlobalMin.userFunc0xca0488 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable[]} */
 const internalArray = eventsFunctionContext.getArgument("Array").getAllChildrenArray();
@@ -39,7 +39,7 @@ gdjs.evtsExt__ArrayTools__GlobalMin.eventsList0 = function(runtimeScene, eventsF
 {
 
 
-gdjs.evtsExt__ArrayTools__GlobalMin.userFunc0x1580a18(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ArrayTools__GlobalMin.userFunc0xca0488(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

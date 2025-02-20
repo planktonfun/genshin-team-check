@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__StepFunctions__TweenStep !== "undefined") {
 gdjs.evtsExt__StepFunctions__TweenStep = {};
 
 
-gdjs.evtsExt__StepFunctions__TweenStep.userFunc0x43053e0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__StepFunctions__TweenStep.userFunc0x15f58b8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = stepFunctions.tweenStep(
     eventsFunctionContext.getArgument("TimeStamp").valueOf(),
@@ -31,7 +31,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__StepFunctions__TweenStep.userFunc0x43053e0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__StepFunctions__TweenStep.userFunc0x15f58b8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

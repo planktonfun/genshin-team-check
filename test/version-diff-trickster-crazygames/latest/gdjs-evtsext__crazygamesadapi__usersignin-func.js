@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__UserSignIn !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__UserSignIn = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x2b72cc0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0xe82ac8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
       console.log("Retrieving user start");
       async function authenticate() {
@@ -132,7 +132,7 @@ gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.eventsList0 = function(runtimeScene, e
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0x2b72cc0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__UserSignIn.userFunc0xe82ac8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

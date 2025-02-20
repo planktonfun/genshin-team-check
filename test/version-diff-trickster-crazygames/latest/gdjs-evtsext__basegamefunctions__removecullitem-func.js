@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__BaseGameFunctions__RemoveCullItem !== "undefined") {
 gdjs.evtsExt__BaseGameFunctions__RemoveCullItem = {};
 
 
-gdjs.evtsExt__BaseGameFunctions__RemoveCullItem.userFunc0x43053e0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__BaseGameFunctions__RemoveCullItem.userFunc0x15dc288 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(!window.game) return;
 
@@ -26,7 +26,7 @@ gdjs.evtsExt__BaseGameFunctions__RemoveCullItem.eventsList0 = function(runtimeSc
 {
 
 
-gdjs.evtsExt__BaseGameFunctions__RemoveCullItem.userFunc0x43053e0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BaseGameFunctions__RemoveCullItem.userFunc0x15dc288(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

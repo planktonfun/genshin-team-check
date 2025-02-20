@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__IsAdBlocked !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__IsAdBlocked = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__IsAdBlocked.userFunc0x19a5ba8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__IsAdBlocked.userFunc0xe82ac8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = gdjs._crazyGamesExtension.isAdBlockerDetected;
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__CrazyGamesAdApi__IsAdBlocked.eventsList0 = function(runtimeScene, 
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__IsAdBlocked.userFunc0x19a5ba8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__IsAdBlocked.userFunc0xe82ac8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

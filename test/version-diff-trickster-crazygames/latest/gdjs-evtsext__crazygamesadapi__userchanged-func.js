@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__UserChanged !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__UserChanged = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__UserChanged.userFunc0x4246998 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__UserChanged.userFunc0xe82ac8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(gdjs._crazyGamesExtension.userChanged) {
     eventsFunctionContext.returnValue = true;
@@ -21,7 +21,7 @@ gdjs.evtsExt__CrazyGamesAdApi__UserChanged.eventsList0 = function(runtimeScene, 
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__UserChanged.userFunc0x4246998(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__UserChanged.userFunc0xe82ac8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
