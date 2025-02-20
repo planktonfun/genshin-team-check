@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__IsInstantMultiplayer !== "undefined") 
 gdjs.evtsExt__CrazyGamesAdApi__IsInstantMultiplayer = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__IsInstantMultiplayer.userFunc0xebfd28 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__IsInstantMultiplayer.userFunc0xee7bd8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue=CrazyGames.SDK.game.isInstantMultiplayer;
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__CrazyGamesAdApi__IsInstantMultiplayer.eventsList0 = function(runti
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__IsInstantMultiplayer.userFunc0xebfd28(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__IsInstantMultiplayer.userFunc0xee7bd8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce !== "undefined
 gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xfbbb88 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x37cdf90 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const enableDeflation = runtimeScene.getGame().getVariables().get('DeflateMessages').getAsBoolean(); // deflation costs about 5 fps to lower end settings
 
@@ -48,12 +48,12 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.eventsList0 = function(ru
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0xfbbb88(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x37cdf90(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
 
-};gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x86de48 = function(runtimeScene, eventsFunctionContext) {
+};gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x38e6738 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const enableDeflation = runtimeScene.getGame().getVariables().get('DeflateMessages').getAsBoolean(); // deflation costs about 5 fps to lower end settings
 
@@ -83,7 +83,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.eventsList1 = function(ru
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x86de48(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__BroadCastOnce.userFunc0x38e6738(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

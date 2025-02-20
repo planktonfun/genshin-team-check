@@ -133,7 +133,7 @@ gdjs.evtsExt__Observers__Observer.Observer.prototype.onCreatedContext = {};
 gdjs.evtsExt__Observers__Observer.Observer.prototype.onCreatedContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Observers__Observer.Observer.prototype.onCreatedContext.userFunc0x14b4498 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Observers__Observer.Observer.prototype.onCreatedContext.userFunc0x2071118 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 // Observer
 class Observer {
@@ -184,7 +184,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Observe
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Observers__Observer.Observer.prototype.onCreatedContext.GDObjectObjects1);
-gdjs.evtsExt__Observers__Observer.Observer.prototype.onCreatedContext.userFunc0x14b4498(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__Observer.Observer.prototype.onCreatedContext.userFunc0x2071118(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -381,7 +381,7 @@ gdjs.evtsExt__Observers__Observer.Observer.prototype.ConsumeDataContext = {};
 gdjs.evtsExt__Observers__Observer.Observer.prototype.ConsumeDataContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Observers__Observer.Observer.prototype.ConsumeDataContext.userFunc0x14b4498 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Observers__Observer.Observer.prototype.ConsumeDataContext.userFunc0x2071b98 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 
@@ -395,7 +395,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Observe
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Observers__Observer.Observer.prototype.ConsumeDataContext.GDObjectObjects1);
-gdjs.evtsExt__Observers__Observer.Observer.prototype.ConsumeDataContext.userFunc0x14b4498(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__Observer.Observer.prototype.ConsumeDataContext.userFunc0x2071b98(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -643,7 +643,7 @@ gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext = {};
 gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext.userFunc0xec68e8 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext.userFunc0x2071118 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const pointName = eventsFunctionContext.getArgument("PointName").toString();
 
@@ -657,7 +657,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Observe
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext.GDObjectObjects1);
-gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext.userFunc0xec68e8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointXContext.userFunc0x2071118(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -734,7 +734,7 @@ gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext = {};
 gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext.userFunc0xec6878 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext.userFunc0x2071118 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const pointName = eventsFunctionContext.getArgument("PointName").toString();
 
@@ -748,7 +748,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Observe
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext.GDObjectObjects1);
-gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext.userFunc0xec6878(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__Observer.Observer.prototype.PointYContext.userFunc0x2071118(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

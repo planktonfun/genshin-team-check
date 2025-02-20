@@ -9,7 +9,7 @@ gdjs.evtsExt__ArrayTools__ObjectSort = {};
 gdjs.evtsExt__ArrayTools__ObjectSort.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__ArrayTools__ObjectSort.userFunc0x16f7560 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ArrayTools__ObjectSort.userFunc0x22d9640 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable} */
 const array = eventsFunctionContext.getArgument("Array");
@@ -30,7 +30,7 @@ gdjs.evtsExt__ArrayTools__ObjectSort.eventsList0 = function(runtimeScene, events
 {
 
 
-gdjs.evtsExt__ArrayTools__ObjectSort.userFunc0x16f7560(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ArrayTools__ObjectSort.userFunc0x22d9640(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

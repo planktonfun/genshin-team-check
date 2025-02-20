@@ -59,7 +59,7 @@ gdjs.evtsExt__DynamicResource__DynamicAnimationNpcAvatar.DynamicAnimationNpcAvat
 gdjs.evtsExt__DynamicResource__DynamicAnimationNpcAvatar.DynamicAnimationNpcAvatar.prototype.onCreatedContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__DynamicResource__DynamicAnimationNpcAvatar.DynamicAnimationNpcAvatar.prototype.onCreatedContext.userFunc0x1222b28 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__DynamicAnimationNpcAvatar.DynamicAnimationNpcAvatar.prototype.onCreatedContext.userFunc0x2085608 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 function basename(str, sep) {
     return str.substr(str.lastIndexOf(sep) + 1);
@@ -147,7 +147,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Dynamic
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__DynamicResource__DynamicAnimationNpcAvatar.DynamicAnimationNpcAvatar.prototype.onCreatedContext.GDObjectObjects1);
-gdjs.evtsExt__DynamicResource__DynamicAnimationNpcAvatar.DynamicAnimationNpcAvatar.prototype.onCreatedContext.userFunc0x1222b28(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__DynamicAnimationNpcAvatar.DynamicAnimationNpcAvatar.prototype.onCreatedContext.userFunc0x2085608(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

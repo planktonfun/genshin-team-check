@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__GetUserSignIn !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__GetUserSignIn = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetUserSignIn.userFunc0x14b0260 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__GetUserSignIn.userFunc0x2085608 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
       console.log("Checking user is signed in start");
       function wait(ms) {
@@ -52,7 +52,7 @@ gdjs.evtsExt__CrazyGamesAdApi__GetUserSignIn.eventsList0 = function(runtimeScene
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__GetUserSignIn.userFunc0x14b0260(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__GetUserSignIn.userFunc0x2085608(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

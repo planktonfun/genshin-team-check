@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__DisplayCrazyGamesAd !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__DisplayCrazyGamesAd = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__DisplayCrazyGamesAd.userFunc0x16c4910 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__DisplayCrazyGamesAd.userFunc0xee7bd8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const logger = new gdjs.Logger("CrazyGames SDK");
 
@@ -48,7 +48,7 @@ gdjs.evtsExt__CrazyGamesAdApi__DisplayCrazyGamesAd.eventsList0 = function(runtim
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__DisplayCrazyGamesAd.userFunc0x16c4910(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__DisplayCrazyGamesAd.userFunc0xee7bd8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

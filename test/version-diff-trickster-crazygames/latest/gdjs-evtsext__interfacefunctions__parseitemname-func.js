@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__ParseItemName !== "undefined") {
 gdjs.evtsExt__InterfaceFunctions__ParseItemName = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__ParseItemName.userFunc0xe5ad40 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__ParseItemName.userFunc0x37d3140 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 var str = eventsFunctionContext.getArgument("StringToParse").toString();
 
@@ -29,7 +29,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__ParseItemName.userFunc0xe5ad40(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__ParseItemName.userFunc0x37d3140(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
