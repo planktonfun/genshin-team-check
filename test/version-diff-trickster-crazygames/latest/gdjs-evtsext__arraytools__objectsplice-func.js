@@ -9,7 +9,7 @@ gdjs.evtsExt__ArrayTools__ObjectSplice = {};
 gdjs.evtsExt__ArrayTools__ObjectSplice.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__ArrayTools__ObjectSplice.userFunc0x35f6948 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ArrayTools__ObjectSplice.userFunc0x171a518 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.Variable} */
 const array = eventsFunctionContext.getArgument("Array");
@@ -32,7 +32,7 @@ gdjs.evtsExt__ArrayTools__ObjectSplice.eventsList0 = function(runtimeScene, even
 {
 
 
-gdjs.evtsExt__ArrayTools__ObjectSplice.userFunc0x35f6948(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ArrayTools__ObjectSplice.userFunc0x171a518(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

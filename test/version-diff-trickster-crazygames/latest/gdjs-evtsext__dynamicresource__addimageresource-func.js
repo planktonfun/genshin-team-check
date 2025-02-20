@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__DynamicResource__AddImageResource !== "undefined") {
 gdjs.evtsExt__DynamicResource__AddImageResource = {};
 
 
-gdjs.evtsExt__DynamicResource__AddImageResource.userFunc0x3eda408 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__AddImageResource.userFunc0x86a3c0 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const resourceName = eventsFunctionContext.getArgument('Image_Resource');
 
@@ -33,7 +33,7 @@ gdjs.evtsExt__DynamicResource__AddImageResource.eventsList0 = function(runtimeSc
 {
 
 
-gdjs.evtsExt__DynamicResource__AddImageResource.userFunc0x3eda408(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__AddImageResource.userFunc0x86a3c0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

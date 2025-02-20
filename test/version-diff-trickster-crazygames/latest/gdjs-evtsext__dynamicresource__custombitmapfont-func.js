@@ -9,7 +9,7 @@ gdjs.evtsExt__DynamicResource__CustomBitmapFont = {};
 gdjs.evtsExt__DynamicResource__CustomBitmapFont.GDSpriteObjectObjects1= [];
 
 
-gdjs.evtsExt__DynamicResource__CustomBitmapFont.userFunc0x3eda408 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__CustomBitmapFont.userFunc0x37878e0 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 function getPixiTextureFromResourceName(resourceName) {
     return runtimeScene.getGame().getImageManager().getPIXITexture(resourceName);
@@ -292,7 +292,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("SpriteObject"), gdjs.evtsExt__D
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__DynamicResource__CustomBitmapFont.GDSpriteObjectObjects1);
-gdjs.evtsExt__DynamicResource__CustomBitmapFont.userFunc0x3eda408(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__CustomBitmapFont.userFunc0x37878e0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

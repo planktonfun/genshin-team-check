@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Observers__Z !== "undefined") {
 gdjs.evtsExt__Observers__Z = {};
 
 
-gdjs.evtsExt__Observers__Z.userFunc0xcb4d20 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Observers__Z.userFunc0x37a3b38 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = gdjs.__observers._observer.data.Z;
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__Observers__Z.eventsList0 = function(runtimeScene, eventsFunctionCo
 {
 
 
-gdjs.evtsExt__Observers__Z.userFunc0xcb4d20(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Observers__Z.userFunc0x37a3b38(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

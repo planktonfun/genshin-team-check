@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__CrazyGamesAdApi__InviteButton !== "undefined") {
 gdjs.evtsExt__CrazyGamesAdApi__InviteButton = {};
 
 
-gdjs.evtsExt__CrazyGamesAdApi__InviteButton.userFunc0xe82ac8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__CrazyGamesAdApi__InviteButton.userFunc0x14b0260 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const logger = new gdjs.Logger("CrazyGames SDK");
 
@@ -31,7 +31,7 @@ gdjs.evtsExt__CrazyGamesAdApi__InviteButton.eventsList0 = function(runtimeScene,
 {
 
 
-gdjs.evtsExt__CrazyGamesAdApi__InviteButton.userFunc0xe82ac8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__CrazyGamesAdApi__InviteButton.userFunc0x14b0260(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
