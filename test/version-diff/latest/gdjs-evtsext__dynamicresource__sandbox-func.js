@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__DynamicResource__Sandbox !== "undefined") {
 gdjs.evtsExt__DynamicResource__Sandbox = {};
 
 
-gdjs.evtsExt__DynamicResource__Sandbox.userFunc0x455c960 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__Sandbox.userFunc0x8fef88 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const resourceName = eventsFunctionContext.getArgument('Image_Resource');
 const jsonResource = runtimeScene.getGame().getJsonManager().getLoadedJson(eventsFunctionContext.getArgument("JSON_Resource"));
@@ -146,7 +146,7 @@ gdjs.evtsExt__DynamicResource__Sandbox.eventsList0 = function(runtimeScene, even
 {
 
 
-gdjs.evtsExt__DynamicResource__Sandbox.userFunc0x455c960(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__Sandbox.userFunc0x8fef88(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -9,7 +9,7 @@ gdjs.evtsExt__ModifiedLoadImageFromURL__LoadURLIntoSprite = {};
 gdjs.evtsExt__ModifiedLoadImageFromURL__LoadURLIntoSprite.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__ModifiedLoadImageFromURL__LoadURLIntoSprite.userFunc0x2b6add0 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__ModifiedLoadImageFromURL__LoadURLIntoSprite.userFunc0x364a998 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 if (eventsFunctionContext.getArgument("ChangeResource")) {
     const texture = PIXI.BaseTexture.from(eventsFunctionContext.getArgument("URL"));
@@ -94,7 +94,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Modifie
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__ModifiedLoadImageFromURL__LoadURLIntoSprite.GDObjectObjects1);
-gdjs.evtsExt__ModifiedLoadImageFromURL__LoadURLIntoSprite.userFunc0x2b6add0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ModifiedLoadImageFromURL__LoadURLIntoSprite.userFunc0x364a998(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
