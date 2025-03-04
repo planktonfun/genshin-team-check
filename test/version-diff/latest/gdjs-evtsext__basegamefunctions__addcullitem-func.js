@@ -9,7 +9,7 @@ gdjs.evtsExt__BaseGameFunctions__AddCullItem = {};
 gdjs.evtsExt__BaseGameFunctions__AddCullItem.GDobjectObjects1= [];
 
 
-gdjs.evtsExt__BaseGameFunctions__AddCullItem.userFunc0x147b908 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BaseGameFunctions__AddCullItem.userFunc0x41e0f60 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 if(!window.game) return;
 
@@ -25,7 +25,7 @@ function deleteObject(obj) {
 // Add objects (x, y, width, height)
 objects.forEach(obj=>{
     const id = eventsFunctionContext.getArgument("id").toString();
-    const result = eventsFunctionContext.getArgument("UseAutoId").valueOf() ? addCulled(obj) : addCulled(obj, id);
+    const result = eventsFunctionContext.getArgument("UseAutoId").valueOf() ? addCulled(obj) : addCulled(obj, id, false);
 
     if(result) {
         if(eventsFunctionContext.getArgument("removeItem").valueOf()) {
@@ -43,7 +43,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("object"), gdjs.evtsExt__BaseGam
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__BaseGameFunctions__AddCullItem.GDobjectObjects1);
-gdjs.evtsExt__BaseGameFunctions__AddCullItem.userFunc0x147b908(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BaseGameFunctions__AddCullItem.userFunc0x41e0f60(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

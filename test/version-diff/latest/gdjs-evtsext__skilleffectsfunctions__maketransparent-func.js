@@ -10,7 +10,7 @@ gdjs.evtsExt__SkillEffectsFunctions__MakeTransparent.GDNewShapePainterObjects1= 
 gdjs.evtsExt__SkillEffectsFunctions__MakeTransparent.GDNewShapePainterObjects2= [];
 
 
-gdjs.evtsExt__SkillEffectsFunctions__MakeTransparent.userFunc0x134ec20 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__SkillEffectsFunctions__MakeTransparent.userFunc0x41e0f60 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const shapePainter = objects[0]._renderer._graphics;
 
@@ -105,7 +105,7 @@ gdjs.evtsExt__SkillEffectsFunctions__MakeTransparent.eventsList0 = function(runt
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__SkillEffectsFunctions__MakeTransparent.GDNewShapePainterObjects1);
-gdjs.evtsExt__SkillEffectsFunctions__MakeTransparent.userFunc0x134ec20(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__SkillEffectsFunctions__MakeTransparent.userFunc0x41e0f60(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

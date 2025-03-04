@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__BaseGameFunctions__CreateRecievedDamageObject !== "unde
 gdjs.evtsExt__BaseGameFunctions__CreateRecievedDamageObject = {};
 
 
-gdjs.evtsExt__BaseGameFunctions__CreateRecievedDamageObject.userFunc0x1464ed8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__BaseGameFunctions__CreateRecievedDamageObject.userFunc0x41e0f60 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 var baseStats = eventsFunctionContext.getArgument("BaseStats").toJSObject();
 var damageObject = eventsFunctionContext.getArgument("DamageObject").toJSObject();
@@ -141,7 +141,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__BaseGameFunctions__CreateRecievedDamageObject.userFunc0x1464ed8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BaseGameFunctions__CreateRecievedDamageObject.userFunc0x41e0f60(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
