@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__JsonLoader__LoadJSFile !== "undefined") {
 gdjs.evtsExt__JsonLoader__LoadJSFile = {};
 
 
-gdjs.evtsExt__JsonLoader__LoadJSFile.userFunc0x12d0db8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__JsonLoader__LoadJSFile.userFunc0xb9a570 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const url = eventsFunctionContext.getArgument("URL");
 
@@ -37,7 +37,7 @@ gdjs.evtsExt__JsonLoader__LoadJSFile.eventsList0 = function(runtimeScene, events
 {
 
 
-gdjs.evtsExt__JsonLoader__LoadJSFile.userFunc0x12d0db8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__JsonLoader__LoadJSFile.userFunc0xb9a570(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

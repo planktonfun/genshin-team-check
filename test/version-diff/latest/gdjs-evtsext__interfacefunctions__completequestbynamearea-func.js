@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__CompleteQuestByNameArea !== "undefi
 gdjs.evtsExt__InterfaceFunctions__CompleteQuestByNameArea = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__CompleteQuestByNameArea.userFunc0x1331678 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__CompleteQuestByNameArea.userFunc0x8cab90 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(!window['questManager']) return;
     
@@ -38,7 +38,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__CompleteQuestByNameArea.userFunc0x1331678(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__CompleteQuestByNameArea.userFunc0x8cab90(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

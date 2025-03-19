@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__FormatPlayerName !== "undefined") {
 gdjs.evtsExt__InterfaceFunctions__FormatPlayerName = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__FormatPlayerName.userFunc0x1331678 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__FormatPlayerName.userFunc0x134d558 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 function formatPlayerName(inputName) {
   return inputName.replace(/[^a-zA-Z0-9_]/g, '');
@@ -31,7 +31,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__FormatPlayerName.userFunc0x1331678(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__FormatPlayerName.userFunc0x134d558(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

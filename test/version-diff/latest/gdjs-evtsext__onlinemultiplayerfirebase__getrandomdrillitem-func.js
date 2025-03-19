@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__GetRandomDrillItem !== "unde
 gdjs.evtsExt__OnlineMultiplayerFirebase__GetRandomDrillItem = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__GetRandomDrillItem.userFunc0x3986060 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__GetRandomDrillItem.userFunc0x8aea20 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 function getSceneVar(VarName) {
     return runtimeScene.getVariables().get(VarName).toJSObject();
@@ -80,7 +80,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__GetRandomDrillItem.userFunc0x3986060(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__GetRandomDrillItem.userFunc0x8aea20(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

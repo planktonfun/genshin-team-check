@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveRespawnTimes !== "un
 gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveRespawnTimes = {};
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveRespawnTimes.userFunc0x3522490 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveRespawnTimes.userFunc0xe5c8a8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(window['lobby']) {
     lobby.getServerVariable(runtimeScene.getGame().getVariables().get('ServerPath').getAsString(), 'RespawnCooldowns').then(e=>{
@@ -21,7 +21,7 @@ gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveRespawnTimes.eventsList0 = func
 {
 
 
-gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveRespawnTimes.userFunc0x3522490(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__OnlineMultiplayerFirebase__RetrieveRespawnTimes.userFunc0xe5c8a8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

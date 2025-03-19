@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__StepFunctions__TriangleStep !== "undefined") {
 gdjs.evtsExt__StepFunctions__TriangleStep = {};
 
 
-gdjs.evtsExt__StepFunctions__TriangleStep.userFunc0x3a57e18 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__StepFunctions__TriangleStep.userFunc0xe62470 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 eventsFunctionContext.returnValue = stepFunctions.triangleStep(
     eventsFunctionContext.getArgument("TimeStamp").valueOf(),
@@ -31,7 +31,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.evtsExt__StepFunctions__TriangleStep.userFunc0x3a57e18(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__StepFunctions__TriangleStep.userFunc0xe62470(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

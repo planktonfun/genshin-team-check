@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__ContainsBadWords !== "undefined") {
 gdjs.evtsExt__InterfaceFunctions__ContainsBadWords = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__ContainsBadWords.userFunc0x370cec8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__ContainsBadWords.userFunc0x93b910 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 function containsBadWords(text) {
   const hasProfanity = hasBadWords(text);
@@ -43,7 +43,7 @@ gdjs.evtsExt__InterfaceFunctions__ContainsBadWords.eventsList0 = function(runtim
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__ContainsBadWords.userFunc0x370cec8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__ContainsBadWords.userFunc0x93b910(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
