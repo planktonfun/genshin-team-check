@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Folder to Base64 JSON</title>
     <style>
-        h1 {
+        h1, video {
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             font-family: Arial, sans-serif;
             margin: 20px auto;
+        }
+
+        video {
+            border: 1px solid black;
         }
 
         #drop-zone {
@@ -51,7 +55,10 @@
     </div>
     <!-- <button onclick="processFiles()">processFiles</button> -->
     <div id="output"></div>
-
+    <div id="tutorial">
+        <h1>How to use:</h1>
+        <video src="d.mp4" controls></video>
+    </div>
     <script>
         const dropZone = document.getElementById('drop-zone');
         const output = document.getElementById('output');
