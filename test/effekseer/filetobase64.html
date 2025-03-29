@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder to Base64 JSON</title>
+    <style>
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 20px auto;
+        }
+
+        #drop-zone {
+            width: 300px;
+            height: 200px;
+            border: 2px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 20px auto;
+        }
+        #drop-zone.dragover {
+            border-color: #000;
+            background-color: #f0f0f0;
+        }
+        #output {
+            white-space: pre-wrap;
+            font-family: monospace;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 80%;
+            max-width: 600px;
+            background-color: #f9f9f9;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Folder files to Base64 JSON</h1>
+    <div id="drop-zone">
+        Drag and drop files here (max 10MB per file)
+    </div>
+    <!-- <button onclick="processFiles()">processFiles</button> -->
+    <div id="output"></div>
+
+    <script>
+        const dropZone = document.getElementById('drop-zone');
+        const output = document.getElementById('output');
+        const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB limit per file
+        const CHUNK_SIZE = 64 * 1024; // Process files in 64KB chunks
+
+        // Prevent default drag behaviors
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, preventDefaults, false);
+        });
+
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        // Highlight drop zone when file is dragged over
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropZone.addEventListener(eventName, () => dropZone.classList.add('dragover'), false);
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, () => dropZone.classList.remove('dragover'), false);
+        });
+
+        // Handle file drop
+        dropZone.addEventListener('drop', handleDrop, false);
+
+        function handleDrop(e) {
+            const items = e.dataTransfer.items;
+            output.textContent = 'Processing...';
+            // Process each item
+            for (const item of items) {
+                if (item.kind === 'file') {
+                    const entry = item.webkitGetAsEntry ? item.webkitGetAsEntry() : null;
+                    if (entry && entry.isDirectory) {
+                      processDirectory(entry);
+                    } else {
+                      processFileAsync(entry);
+                    }
+                }
+            }
+
+            console.log({files});
+            processFiles(files)
+        }
+
+        // Helper function to read directory entries asynchronously
+        function readEntriesAsync(directoryReader) {
+            return new Promise((resolve, reject) => {
+                directoryReader.readEntries(
+                    (entries) => resolve(entries),
+                    (error) => reject(error)
+                );
+            });
+        }
+
+        // Helper function to process files asynchronously
+        function processFileAsync(fileEntry) {
+            return new Promise((resolve, reject) => {
+                fileEntry.file((file) => {
+                    processFile(file, fileEntry.fullPath);
+                    resolve();
+                }, (error) => {
+                    reject(error);
+                });
+            });
+        }
+
+        // Process a directory
+        async function processDirectory(directoryEntry) {
+            const directoryReader = directoryEntry.createReader();
+            const entries = await readEntriesAsync(directoryReader);
+
+            // Process all entries in parallel
+            await Promise.all(entries.map(async (entry) => {
+                if (entry.isDirectory) {
+                    // Recursively process subdirectories
+                    await processDirectory(entry);
+                } else if (entry.isFile) {
+                    // Process files
+                    await processFileAsync(entry);
+                }
+            }));
+        }
+
+        const files = [];
+
+        // Process a file
+        function processFile(file, fullPath) {
+          files.push([file, fullPath.replace(/^\/+/, "")])
+        }
+
+        const result = {};
+
+        async function processFiles() {
+            console.log({files});
+
+            for (const blep of files) {
+              const file = blep[0];
+              const filename = blep[1];
+                if (file.size > MAX_FILE_SIZE) {
+                    output.innerHTML += `<div class="error">File "${file.name}" is too large (max 10MB).</div>`;
+                    continue; // Skip this file
+                }
+
+                try {
+                    const base64String = await readFileInChunks(file);
+                    result[filename] = `data:${file.type};base64,${base64String}`; // Use the filename as the key
+                } catch (error) {
+                    output.innerHTML += `<div class="error">Failed to process file "${file.name}": ${error.message}</div>`;
+                }
+            }
+
+            // Display the result as JSON
+            // output.innerHTML += `<button onclick="downloadAsJs()">Download as JS</button>`;
+            output.innerHTML += `<button onclick="downloadAsJson()">Download as JSON</button>`;
+            output.textContent = '';
+            console.log({result})
+        }
+
+        function readFileInChunks(file) {
+            return new Promise((resolve, reject) => {
+                const fileReader = new FileReader();
+                let offset = 0;
+                let base64String = '';
+
+                fileReader.onload = function(event) {
+                    if (event.target.error) {
+                        reject(new Error('Failed to read file'));
+                        return;
+                    }
+
+                    // Append the chunk to the base64 string
+                    const chunk = new Uint8Array(event.target.result);
+                    base64String += Array.from(chunk).map(byte => String.fromCharCode(byte)).join('');
+
+                    // Move to the next chunk
+                    offset += CHUNK_SIZE;
+                    if (offset < file.size) {
+                        readNextChunk();
+                    } else {
+                        // All chunks processed, convert to base64
+                        resolve(btoa(base64String));
+                    }
+                };
+
+                fileReader.onerror = function(error) {
+                    reject(new Error('Failed to read file'));
+                };
+
+                function readNextChunk() {
+                    const slice = file.slice(offset, offset + CHUNK_SIZE);
+                    fileReader.readAsArrayBuffer(slice);
+                }
+
+                // Start reading the first chunk
+                readNextChunk();
+            });
+        }
+
+        function downloadAsJson() {
+            // Create a Blob from the JavaScript content
+            const blob = new Blob([JSON.stringify(result, null, 2)], { type: 'application/json' });
+
+            // Create a download link
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'data.json'; // File name
+            document.body.appendChild(link);
+
+            // Trigger the download
+            link.click();
+
+            // Clean up
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+
+        function downloadAsJs() {
+            // Wrap the JSON string in a JavaScript variable declaration
+            const jsContent = `var data = ${JSON.stringify(result, null, 2)};`;
+
+            // Create a Blob from the JavaScript content
+            const blob = new Blob([jsContent], { type: 'application/javascript' });
+
+            // Create a download link
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'data.js'; // File name
+            document.body.appendChild(link);
+
+            // Trigger the download
+            link.click();
+
+            // Clean up
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
