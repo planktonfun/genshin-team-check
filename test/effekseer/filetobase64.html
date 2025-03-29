@@ -96,7 +96,10 @@
             }
 
             console.log({files});
-            processFiles(files)
+
+            setTimeout(()=>{
+                processFiles(files)
+            }, 2000);
         }
 
         // Helper function to read directory entries asynchronously
@@ -167,9 +170,10 @@
             }
 
             // Display the result as JSON
+            // output.textContent = '';
             // output.innerHTML += `<button onclick="downloadAsJs()">Download as JS</button>`;
+            output.innerHTML += "\nDone.\n";
             output.innerHTML += `<button onclick="downloadAsJson()">Download as JSON</button>`;
-            output.textContent = '';
             console.log({result})
         }
 
