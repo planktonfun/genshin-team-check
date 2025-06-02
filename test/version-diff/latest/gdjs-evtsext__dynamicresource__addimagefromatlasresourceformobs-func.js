@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForMobs !== "
 gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForMobs = {};
 
 
-gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForMobs.userFunc0x375d720 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForMobs.userFunc0x41940e0 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const resourceName = eventsFunctionContext.getArgument('Image_Resource');
 const jsonResource = runtimeScene.getGame().getJsonManager().getLoadedJson(eventsFunctionContext.getArgument("JSON_Resource"));
@@ -44,7 +44,7 @@ function createImageResourceFromUrl(resourceName, canvas) {
     // return getPixiTextureFromResourceName(resourceName); // make sure to load it
 }
 
-gdjs.__dynamicResources.mobs[`${eventsFunctionContext.getArgument('Prefix').toString()}`] = {...jsonResource};
+gdjs.__dynamicResources.mobs[`${eventsFunctionContext.getArgument('Prefix').toString()}`] = jsonResource;
 
 // if(jsonResource.variables) delete jsonResource.variables;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -90,7 +90,7 @@ function calculateCroppedCanvas(jsonResource) {
     croppedData.animationIndex = 0;
 
     for(const i in jsonResource) {
-        if(i=="variables") continue;
+        if(!jsonResource[i].animations) continue;
 
         const animations = jsonResource[i].animations;
         const offsets = jsonResource[i].offsets;
@@ -157,7 +157,7 @@ gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForMobs.eventsList0 = fu
 
 
 var objects = [];
-gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForMobs.userFunc0x375d720(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__AddImageFromAtlasResourceForMobs.userFunc0x41940e0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -9,7 +9,7 @@ gdjs.evtsExt__DynamicResource__AddAnimationEnemyMob = {};
 gdjs.evtsExt__DynamicResource__AddAnimationEnemyMob.GDGeneralMobObjects1= [];
 
 
-gdjs.evtsExt__DynamicResource__AddAnimationEnemyMob.userFunc0xcc4bb8 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__AddAnimationEnemyMob.userFunc0x41f1868 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 function basename(str, sep) {
     return str.substr(str.lastIndexOf(sep) + 1);
@@ -90,7 +90,7 @@ function getCommonRectangle() {
     const rectangles = [];
 
     for(var i in egg) {
-        if(i=="variables") continue;
+        if(!egg[i].animations) continue;
 
         rectangles.push(
             getRectangle(egg[i].animations[0].position, egg['variables'].size, egg[i].offsets)
@@ -190,7 +190,7 @@ if(egg.variables) {
 const commonRectangle = getCommonRectangle(egg); // or you could use the first frame idle sprite as a common rectangle
 
 for(var i in egg) {
-    if(i=="variables") continue;
+    if(!egg[i].animations) continue;
     addAnimation(objects[0], i, egg[i].animations, egg['variables'], egg[i].offsets, commonRectangle);
 }
 
@@ -215,7 +215,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("GeneralMob"), gdjs.evtsExt__Dyn
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__DynamicResource__AddAnimationEnemyMob.GDGeneralMobObjects1);
-gdjs.evtsExt__DynamicResource__AddAnimationEnemyMob.userFunc0xcc4bb8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__AddAnimationEnemyMob.userFunc0x41f1868(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

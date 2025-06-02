@@ -68,7 +68,7 @@ gdjs.evtsExt__DynamicResource__DynamicAnimationCharacterIcons.DynamicAnimationCh
 gdjs.evtsExt__DynamicResource__DynamicAnimationCharacterIcons.DynamicAnimationCharacterIcons.prototype.onCreatedContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__DynamicResource__DynamicAnimationCharacterIcons.DynamicAnimationCharacterIcons.prototype.onCreatedContext.userFunc0x874358 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__DynamicAnimationCharacterIcons.DynamicAnimationCharacterIcons.prototype.onCreatedContext.userFunc0x265e5c0 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 function basename(str, sep) {
     return str.substr(str.lastIndexOf(sep) + 1);
@@ -112,6 +112,45 @@ function createSprites(resourceName) {
                 points: [],
                 originPoint: {
                     name: 'Origin', x: 0, y: offsetY
+                },
+                centerPoint: {
+                    name: 'Center', automatic: true, x: 0, y: 0
+                },
+                hasCustomCollisionMask: false,
+                customCollisionMask: [],
+            })
+        })
+    } else if(resourceName.includes('gun-mode')) {
+        [ 0, 0, -1, -1 ].forEach(offsetY=>{
+            sprites.push({
+                image: '', //resource.cacheId, //pixiTexture.textureCacheIds[0],
+                points: [{
+                    name: 'Barrel', x: 27, y: 22
+                }],
+                originPoint: {
+                    name: 'Origin', x: 0, y: offsetY
+                },
+                centerPoint: {
+                    name: 'Center', automatic: true, x: 0, y: 0
+                },
+                hasCustomCollisionMask: false,
+                customCollisionMask: [],
+            })
+        })
+    }  else if(resourceName.includes('gun-shoot')) {
+        [
+            {x: -8, y: -5},
+            {x: 0, y: 0},
+            {x: 0, y: 0},
+            {x: 0, y: 0},
+        ].forEach(offset=>{
+            sprites.push({
+                image: '', //resource.cacheId, //pixiTexture.textureCacheIds[0],
+                points: [{
+                    name: 'Barrel', x: 27, y: 22
+                }],
+                originPoint: {
+                    name: 'Origin', x: offset.x, y: offset.y
                 },
                 centerPoint: {
                     name: 'Center', automatic: true, x: 0, y: 0
@@ -188,7 +227,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Dynamic
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__DynamicResource__DynamicAnimationCharacterIcons.DynamicAnimationCharacterIcons.prototype.onCreatedContext.GDObjectObjects1);
-gdjs.evtsExt__DynamicResource__DynamicAnimationCharacterIcons.DynamicAnimationCharacterIcons.prototype.onCreatedContext.userFunc0x874358(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__DynamicAnimationCharacterIcons.DynamicAnimationCharacterIcons.prototype.onCreatedContext.userFunc0x265e5c0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
