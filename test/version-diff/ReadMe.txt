@@ -6,5 +6,5 @@ how to use steps:
 
 update steps:
 - copy paste compressed_png.zip
-- run process.sh
+- run process.sh or light-process.sh (light-process is for updates only, process includes base file for first time downloaders)
 - done!
