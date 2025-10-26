@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork !== "und
 gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork = {};
 
 
-gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork.userFunc0x26b1fd0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork.userFunc0x3885010 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 function isMessageACommand(text) {
   return text.search(': /') > -1;
@@ -48,7 +48,7 @@ gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork.eventsList0 = funct
 {
 
 
-gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork.userFunc0x26b1fd0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__InterfaceFunctions__SendUserMessageOverNetwork.userFunc0x3885010(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

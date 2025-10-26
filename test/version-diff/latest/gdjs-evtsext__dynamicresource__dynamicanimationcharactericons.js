@@ -68,7 +68,7 @@ gdjs.evtsExt__DynamicResource__DynamicAnimationCharacterIcons.DynamicAnimationCh
 gdjs.evtsExt__DynamicResource__DynamicAnimationCharacterIcons.DynamicAnimationCharacterIcons.prototype.onCreatedContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__DynamicResource__DynamicAnimationCharacterIcons.DynamicAnimationCharacterIcons.prototype.onCreatedContext.userFunc0x265e5c0 = function(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__DynamicAnimationCharacterIcons.DynamicAnimationCharacterIcons.prototype.onCreatedContext.userFunc0xe8e8f8 = function(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 function basename(str, sep) {
     return str.substr(str.lastIndexOf(sep) + 1);
@@ -227,7 +227,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Dynamic
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__DynamicResource__DynamicAnimationCharacterIcons.DynamicAnimationCharacterIcons.prototype.onCreatedContext.GDObjectObjects1);
-gdjs.evtsExt__DynamicResource__DynamicAnimationCharacterIcons.DynamicAnimationCharacterIcons.prototype.onCreatedContext.userFunc0x265e5c0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__DynamicAnimationCharacterIcons.DynamicAnimationCharacterIcons.prototype.onCreatedContext.userFunc0xe8e8f8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

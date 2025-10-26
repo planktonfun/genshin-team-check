@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__DynamicResource__InitializeVariables !== "undefined") {
 gdjs.evtsExt__DynamicResource__InitializeVariables = {};
 
 
-gdjs.evtsExt__DynamicResource__InitializeVariables.userFunc0x404b390 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__DynamicResource__InitializeVariables.userFunc0xdfe3d8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 if(!gdjs.__dynamicResources) {
     gdjs.__dynamicResources = {};
@@ -27,7 +27,7 @@ gdjs.evtsExt__DynamicResource__InitializeVariables.eventsList0 = function(runtim
 {
 
 
-gdjs.evtsExt__DynamicResource__InitializeVariables.userFunc0x404b390(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__DynamicResource__InitializeVariables.userFunc0xdfe3d8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
